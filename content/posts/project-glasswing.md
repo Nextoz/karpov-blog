@@ -1,7 +1,10 @@
 ---
 title: "Project Glasswing — Når AI finder de fejl mennesker overser"
 date: 2026-04-16
+description: "Anthropics Project Glasswing bruger AI til at finde kritiske sikkerhedssårbarheder i open source software. Hvad betyder det for DevOps og cybersikkerhed?"
 tags: ["AI", "Cybersecurity", "DevOps"]
+categories: ["Teknologi"]
+author: "Evgeny Karpov"
 summary: "En AI-model fandt en 27 år gammel sikkerhedssårbarhed i OpenBSD. Det er Project Glasswing — og det ændrer alt for defensiv sikkerhed."
 ShowReadingTime: true
 ---

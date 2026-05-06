@@ -2,7 +2,8 @@
 title: "Om mig"
 layout: "single"
 url: "/om/"
-summary: "Software engineer, DevOps konsulent og teknologipolitisk engageret"
+summary: "Evgeny Karpov — DevOps-ingeniør, softwareudvikler og teknologipolitisk engageret. Erfaring med .NET, Azure, Kubernetes og AI."
+hidemeta: true
 ShowReadingTime: false
 ShowShareButtons: false
 ShowWordCount: false
@@ -13,10 +14,10 @@ ShowWordCount: false
   <div class="profile-info">
     <h2>Evgeny Karpov</h2>
     <p>Senior Consultant @ Twoday | DevOps & AI</p>
-    <p>Københavns Universitet — Datalogi</p>
+    <p>BSc Datalogi — Københavns Universitet</p>
     <div class="profile-links">
       <a href="https://www.linkedin.com/in/evgeny-karpov-dk/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/evgenykarpov" target="_blank">GitHub</a>
+      <a href="https://github.com/Nextoz" target="_blank">GitHub</a>
       <a href="https://www.instagram.com/big_karpowskii/" target="_blank">Instagram</a>
     </div>
   </div>
@@ -24,9 +25,11 @@ ShowWordCount: false
 
 ## Hvem er jeg
 
-Software engineer med erfaring inden for .NET, backend-udvikling, integrationer og DevOps. Jeg arbejder med forretningskritiske systemer, cloud-infrastruktur og CI/CD — med fokus på stabile leverancer og teknisk kvalitet.
+DevOps- og softwareingeniør med fem års erfaring inden for backend-udvikling, CI/CD og drift af cloud-baserede systemer. Jeg arbejder med automatisering af deployments, Azure DevOps pipelines og drift af containerbaserede løsninger.
 
-Til daglig er jeg Senior Consultant hos **Twoday**, hvor jeg er tilknyttet Arbejdstilsynet som DevOps-konsulent. Jeg bygger og vedligeholder infrastruktur, pipelines, monitoring og deployments på tværs af on-prem og Azure-miljøer.
+Til daglig er jeg Senior Consultant hos **Twoday**, hvor jeg er tilknyttet **Arbejdstilsynet** som infrastrukturkonsulent. Jeg bygger og vedligeholder pipelines, monitoring og deployments på tværs af on-prem og Azure-miljøer.
+
+Tidligere har jeg arbejdet med .NET-baserede systemer hos **Landsbyggefonden** og **Visma Enterprise**, og som freelance DevOps-konsulent hos **Boyum IT Solutions**.
 
 Jeg er optaget af hvordan **AI forandrer softwareudvikling** — og hvordan Danmark som samfund navigerer den forandring. Det har ført mig ind i **teknologipolitik**, hvor jeg engagerer mig i spørgsmål om digitalisering, regulering og arbejdsmarkedets fremtid.
 
@@ -35,15 +38,15 @@ Jeg er optaget af hvordan **AI forandrer softwareudvikling** — og hvordan Danm
 <div class="skills-grid">
   <div class="skill-card">
     <h3>DevOps & Infra</h3>
-    <p>Azure DevOps, CI/CD pipelines, IaC (Bicep/DSC), IIS, on-prem & cloud</p>
+    <p>Azure DevOps, CI/CD pipelines, IaC (Bicep/Terraform), Docker, Kubernetes, IIS</p>
   </div>
   <div class="skill-card">
     <h3>Backend</h3>
-    <p>.NET 8, C#, REST APIs, Entity Framework, IdentityServer, SQL Server</p>
+    <p>.NET 8, C#, Blazor, REST APIs, Entity Framework, SQL Server, PostgreSQL</p>
   </div>
   <div class="skill-card">
     <h3>Monitoring</h3>
-    <p>Grafana, Jaeger, OpenTelemetry, OpenSearch, Serilog</p>
+    <p>Grafana, Jaeger, OpenTelemetry, Elasticsearch, Kibana, Serilog</p>
   </div>
   <div class="skill-card">
     <h3>AI & Automation</h3>
@@ -63,19 +66,29 @@ Jeg er optaget af hvordan **AI forandrer softwareudvikling** — og hvordan Danm
 
 <div class="timeline">
   <div class="timeline-item">
-    <span class="timeline-date">2026 — nu</span>
+    <span class="timeline-date">2025 — nu</span>
     <h3>Senior Consultant — Twoday</h3>
     <p>DevOps & AI Integrations. Tilknyttet Arbejdstilsynet som infrastrukturkonsulent.</p>
   </div>
   <div class="timeline-item">
     <span class="timeline-date">2024 — 2025</span>
-    <h3>Freelance Consultant — Karpov Consulting</h3>
-    <p>Selvstændig konsulent med fokus på .NET, DevOps og cloud-løsninger.</p>
+    <h3>DevOps Engineer — Boyum IT Solutions</h3>
+    <p>Cloud-baseret platform til dokumenthåndtering og SAP-integration. CI/CD pipelines, Kubernetes, KEDA autoscaling og Infrastructure as Code med Bicep og Terraform.</p>
   </div>
   <div class="timeline-item">
-    <span class="timeline-date">Uddannelse</span>
-    <h3>Københavns Universitet</h3>
-    <p>Datalogi</p>
+    <span class="timeline-date">2022 — 2024</span>
+    <h3>Software Developer — Landsbyggefonden</h3>
+    <p>Udvikling af DCAB — offentligt system til bygningsdata. Blazor Server, REST APIs, opgradering fra .NET 6 til .NET 8, TDD.</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2020 — 2022</span>
+    <h3>Software Developer — Visma Enterprise</h3>
+    <p>Vedligeholdelse af større lønsystem. Implementering af ny ferielov, SKAT-integrationer og modernisering af legacy kode.</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2014 — 2019</span>
+    <h3>BSc Datalogi — Københavns Universitet</h3>
+    <p>Bachelor i datalogi.</p>
   </div>
 </div>
 
