@@ -23,4 +23,4 @@ Man tror det er løgn. Men tavlen lyver ikke.
 
 ---
 
-*Først publiceret på [LinkedIn](https://www.linkedin.com/in/evgeny-karpov-dk/).*
+*Først publiceret på [LinkedIn](https://www.linkedin.com/in/evgenykarpov91/).*
