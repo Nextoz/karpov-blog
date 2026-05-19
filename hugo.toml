@@ -18,7 +18,7 @@ buildDrafts = false
   description = "DevOps-ingeniør og softwareudvikler med erfaring i .NET, CI/CD, Kubernetes og AI. Skriver om teknologi, digitalisering og teknologipolitik i Danmark."
   keywords = ["DevOps", "AI", "Teknologipolitik", "Digitalisering", "Danmark", ".NET", "CI/CD", "Kubernetes", "Azure", "softwareudvikling"]
   author = "Evgeny Karpov"
-  images = ["/images/profile.jpg"]
+  images = ["images/profile.jpg"]
   DateFormat = "2. January 2006"
   defaultTheme = "dark"
   disableThemeToggle = false
@@ -60,7 +60,7 @@ Skriver om teknologi, digitalisering og politik."""
 
   [params.label]
     text = "Evgeny Karpov"
-    icon = "/images/profile.jpg"
+    icon = "images/profile.jpg"
     iconHeight = 35
 
   [params.profileMode]

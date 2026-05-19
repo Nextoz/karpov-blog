@@ -10,7 +10,7 @@ ShowWordCount: false
 ---
 
 <div class="profile-card">
-  <img src="/images/profile.jpg" alt="Evgeny Karpov">
+  <img src="../images/profile.jpg" alt="Evgeny Karpov">
   <div class="profile-info">
     <h2>Evgeny Karpov</h2>
     <p>Senior Consultant / Senior Software Engineer | DevOps & AI</p>
