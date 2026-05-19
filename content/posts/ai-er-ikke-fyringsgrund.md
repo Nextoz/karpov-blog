@@ -1,6 +1,7 @@
 ---
 title: "AI er ikke fyringsgrund — selv Kina forstår det"
 date: 2026-05-06
+lastmod: 2026-05-19
 description: "En kinesisk domstol har besluttet at AI ikke er en gyldig fyringsgrund. Hvad betyder det for Danmark og Liberal Alliances AI-politik?"
 tags: ["AI", "Politik", "Regulering", "Danmark"]
 categories: ["Teknologipolitik"]

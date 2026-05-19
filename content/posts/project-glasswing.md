@@ -1,6 +1,7 @@
 ---
 title: "Project Glasswing — Når AI finder de fejl mennesker overser"
 date: 2026-04-16
+lastmod: 2026-05-19
 description: "Anthropics Project Glasswing bruger AI til at finde kritiske sikkerhedssårbarheder i open source software. Hvad betyder det for DevOps og cybersikkerhed?"
 tags: ["AI", "Cybersecurity", "DevOps"]
 categories: ["Teknologi"]
@@ -9,27 +10,45 @@ summary: "En AI-model fandt en 27 år gammel sikkerhedssårbarhed i OpenBSD. Det
 ShowReadingTime: true
 ---
 
-En AI-model fandt for nylig en **27 år gammel sikkerhedssårbarhed** i OpenBSD — et af de mest hærdede operativsystemer i verden. Fejlen havde overlevet årtiers menneskelig kodegennemgang.
+Anthropic lancerede i april 2026 **Project Glasswing**: et initiativ hvor frontier AI bruges defensivt til at finde og rette sikkerhedssårbarheder i kritisk software.
 
-Det er **Project Glasswing** — et nyt samarbejde mellem Anthropic, Microsoft, Google, Apple, AWS, NVIDIA og Linux Foundation. De bruger frontier AI-modeller til at finde og rette kritiske sårbarheder i verdens vigtigste software. Modellen bag har autonomt fundet tusindvis af zero-day vulnerabilities i alle store operativsystemer og browsere.
+Det mest opsigtsvækkende eksempel er en **27 år gammel sårbarhed i OpenBSD**. Ifølge Anthropics tekniske gennemgang har Claude Mythos Preview også vist markant stærkere evner til at finde, reproducere og i nogle tilfælde udnytte sårbarheder end tidligere modeller.
 
-Én fejl i FFmpeg havde overlevet **5 millioner automatiserede tests** uden at blive fanget.
+Det er ikke kun interessant for sikkerhedsforskere. Det er interessant for alle os der bygger og driver software.
 
-## Hvad betyder det for os?
+## Hvad betyder det for DevOps?
 
-Som infrastrukturkonsulent tænker jeg: hvis AI kan finde den slags, er det kun et spørgsmål om tid før angribere har samme kapacitet. Det gør defensiv AI-sikkerhed til noget vi alle skal forholde os til — ikke kun de store tech-virksomheder.
+Som DevOps- og infrastrukturperson tænker jeg ikke kun: "AI kan finde flere fejl."
 
-Det positive er at værktøjerne nu begynder at komme i hænderne på forsvarerne. Det er et kapløb — og vi skal sørge for at de vinder det.
+Jeg tænker:
 
-## Tidslinje
+- Hvor hurtigt kan vi triagere fund?
+- Hvor hurtigt kan vi patche?
+- Hvor sikkert kan vi deploye?
+- Kan vi se effekten i logs og dashboards?
+- Har vi rollback klar hvis en sikkerhedsrettelse knækker noget?
 
-| År | Hændelse |
-|-----|----------|
-| 1999 | Sårbarhed introduceret i OpenBSD — betroet som "mest sikkert OS" |
-| 2010 | FFmpeg-sårbarhed introduceret — brugt i milliarder af enheder |
-| 2018 | Flere kædede Linux Kernel-sårbarheder — fuld system-overtagelse |
-| 2026 | AI finder dem ALLE — autonomt, uden menneskelig styring |
+Hvis AI øger hastigheden på sårbarhedsfinding, bliver flaskehalsen hurtigt alt det bagefter: prioritering, test, release, kommunikation og drift.
+
+Det er her DevOps bliver relevant. Ikke som buzzword, men som den praktiske disciplin der forbinder udvikling, sikkerhed og produktion.
+
+## En praktisk forsvarsliste
+
+Hvis man vil forberede sig på en verden med AI-assisteret sårbarhedsfinding, ville jeg starte her:
+
+- Kend dine vigtigste open source-afhængigheder.
+- Sørg for at dependency scanning faktisk bliver fulgt op.
+- Gør patch-deployments hurtigere og mindre dramatiske.
+- Hav gode miljøer til at teste sikkerhedsrettelser.
+- Brug observability til at se om rettelser ændrer systemadfærd.
+- Dokumentér hvordan kritiske sårbarheder prioriteres.
+- Lad AI hjælpe med analyse, men behold menneskelig validering.
+
+Det positive er, at værktøjerne nu begynder at komme i hænderne på forsvarerne. Det er et kapløb, og vi skal sørge for at de vinder det.
 
 ---
 
-*Baseret på Anthropics annoncering af Project Glasswing, april 2026.*
+Kilder:
+
+- [Anthropic: Project Glasswing](https://www.anthropic.com/project/glasswing)
+- [Anthropic Frontier Red Team: Assessing Claude Mythos Preview's cybersecurity capabilities](https://red.anthropic.com/2026/mythos-preview/)

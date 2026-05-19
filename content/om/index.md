@@ -1,5 +1,7 @@
 ---
 title: "Om mig"
+date: 2026-05-19
+lastmod: 2026-05-19
 layout: "single"
 url: "/om/"
 summary: "Evgeny Karpov — DevOps-ingeniør, softwareudvikler og teknologipolitisk engageret. Erfaring med .NET, Azure, Kubernetes og AI."
@@ -22,6 +24,12 @@ ShowWordCount: false
     </div>
   </div>
 </div>
+
+## Åben for nye roller
+
+Jeg er åben for seniorroller i København inden for **DevOps**, **platform engineering**, **SRE** eller **backend-udvikling med platformansvar**.
+
+Jeg trives bedst dér, hvor software, drift og forretning mødes: CI/CD, cloud, observability, dokumentation, automatisering og teams der gerne vil gøre systemer mere robuste.
 
 ## Hvem er jeg
 

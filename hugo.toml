@@ -85,6 +85,12 @@ Skriver om teknologi, digitalisering og politik."""
 
 [menu]
   [[menu.main]]
+    identifier = "start"
+    name = "Start her"
+    url = "/start/"
+    weight = 5
+
+  [[menu.main]]
     identifier = "blog"
     name = "Blog"
     url = "/posts/"
