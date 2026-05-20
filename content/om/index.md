@@ -1,5 +1,7 @@
 ---
 title: "Om mig"
+date: 2026-05-19
+lastmod: 2026-05-19
 layout: "single"
 url: "/om/"
 summary: "Evgeny Karpov — DevOps-ingeniør, softwareudvikler og teknologipolitisk engageret. Erfaring med .NET, Azure, Kubernetes og AI."
@@ -10,24 +12,32 @@ ShowWordCount: false
 ---
 
 <div class="profile-card">
-  <img src="/images/profile.jpg" alt="Evgeny Karpov">
+  <img src="../images/profile.jpg" alt="Evgeny Karpov">
   <div class="profile-info">
     <h2>Evgeny Karpov</h2>
-    <p>Senior Consultant @ Twoday | DevOps & AI</p>
+    <p>Senior Consultant / Senior Software Engineer | DevOps & AI</p>
     <p>BSc Datalogi — Københavns Universitet</p>
     <div class="profile-links">
-      <a href="https://www.linkedin.com/in/evgeny-karpov-dk/" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/evgenykarpov91/" target="_blank">LinkedIn</a>
       <a href="https://github.com/Nextoz" target="_blank">GitHub</a>
       <a href="https://www.instagram.com/big_karpowskii/" target="_blank">Instagram</a>
     </div>
   </div>
 </div>
 
+## Åben for nye roller
+
+Jeg er åben for seniorroller i København inden for **DevOps**, **platform engineering**, **SRE** eller **backend-udvikling med platformansvar**.
+
+Jeg trives bedst dér, hvor software, drift og forretning mødes: CI/CD, cloud, observability, dokumentation, automatisering og teams der gerne vil gøre systemer mere robuste.
+
 ## Hvem er jeg
 
-DevOps- og softwareingeniør med fem års erfaring inden for backend-udvikling, CI/CD og drift af cloud-baserede systemer. Jeg arbejder med automatisering af deployments, Azure DevOps pipelines og drift af containerbaserede løsninger.
+Senior software- og DevOps-ingeniør med 6+ års erfaring inden for backend-udvikling, CI/CD og drift af cloud-baserede systemer. Jeg arbejder med automatisering af deployments, Azure DevOps pipelines og drift af containerbaserede løsninger.
 
-Til daglig er jeg Senior Consultant hos **Twoday**, hvor jeg er tilknyttet **Arbejdstilsynet** som infrastrukturkonsulent. Jeg bygger og vedligeholder pipelines, monitoring og deployments på tværs af on-prem og Azure-miljøer.
+Senest arbejdede jeg som **Senior Consultant hos twoday** med primært fokus på DevOps og infrastruktur. Arbejdet omfattede CI/CD, deployments, et nyt testmiljø, monitoring, fejlsøgning og praktisk dokumentation.
+
+Jeg er nu på udkig efter min næste seniorrolle i København, gerne inden for platform engineering, DevOps, SRE eller backend med platformansvar.
 
 Tidligere har jeg arbejdet med .NET-baserede systemer hos **Landsbyggefonden** og **Visma Enterprise**, og som freelance DevOps-konsulent hos **Boyum IT Solutions**.
 
@@ -66,9 +76,9 @@ Jeg er optaget af hvordan **AI forandrer softwareudvikling** — og hvordan Danm
 
 <div class="timeline">
   <div class="timeline-item">
-    <span class="timeline-date">2025 — nu</span>
-    <h3>Senior Consultant — Twoday</h3>
-    <p>DevOps & AI Integrations. Tilknyttet Arbejdstilsynet som infrastrukturkonsulent.</p>
+    <span class="timeline-date">Mar 2026 — Maj 2026</span>
+    <h3>Senior Consultant — twoday</h3>
+    <p>DevOps og infrastruktur med fokus på CI/CD, deployments, et nyt testmiljø, monitoring, fejlsøgning og dokumentation.</p>
   </div>
   <div class="timeline-item">
     <span class="timeline-date">2024 — 2025</span>

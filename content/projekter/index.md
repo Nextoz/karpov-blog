@@ -1,5 +1,7 @@
 ---
 title: "Projekter"
+date: 2026-05-19
+lastmod: 2026-05-19
 description: "Udvalgte projekter og sideprojekter af Evgeny Karpov — DevOps, AI og open source."
 layout: "single"
 url: "/projekter/"
