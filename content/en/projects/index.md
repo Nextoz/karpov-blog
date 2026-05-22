@@ -1,8 +1,8 @@
 ---
-translationKey: "portfolio"
 title: "Portfolio"
 description: "Portfolio for Evgeny Karpov: .NET, Azure DevOps, CI/CD, Kubernetes, infrastructure, observability and platform engineering."
 summary: "Selected professional work and projects across .NET, DevOps, Azure DevOps, CI/CD, Kubernetes and platform engineering."
+translationKey: "portfolio"
 hidemeta: true
 ShowReadingTime: false
 ShowShareButtons: false
@@ -121,7 +121,7 @@ This website is my personal technical blog and portfolio. I use it to write abou
 - Built and maintain the site with Hugo and GitHub Pages
 - Set up content structure, SEO metadata and deployment workflow
 - Use the site as a public writing platform and professional portfolio
-- Write about technical topics in Danish with a practical engineering angle
+- Write about technical topics in Danish and English with a practical engineering angle
 
 ### Why it matters
 
@@ -142,4 +142,3 @@ I can contribute as a:
 - .NET Engineer working close to infrastructure and delivery
 
 My value is that I understand both application code and the systems needed to build, deploy, monitor and operate it.
-

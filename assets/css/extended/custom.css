@@ -409,3 +409,28 @@ body::before {
 .post-content strong {
   font-weight: 700;
 }
+/* Clearer language switcher in header */
+.lang-switcher,
+.lang-switch {
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.lang-switcher a,
+.lang-switch a {
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.35rem;
+  text-decoration: none;
+}
+
+.lang-switcher a:hover,
+.lang-switch a:hover {
+  text-decoration: underline;
+}
+
+/* Make language items in PaperMod menu slightly clearer */
+#menu a[href*="/en/"],
+#menu a[href="/karpov-blog/"],
+#menu a[href="/"] {
+  white-space: nowrap;
+}

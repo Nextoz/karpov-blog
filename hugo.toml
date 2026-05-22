@@ -13,6 +13,8 @@ pagerSize = 10
 unsafe = true
 
 [params]
+
+ShowLanguageSwitcher = true
 env = "production"
 title = "Evgeny Karpov"
 description = "DevOps & Platform Engineer i København. Skriver om Azure DevOps, .NET, Kubernetes, CI/CD, observability, AI-assisteret softwareudvikling og teknologipolitik."
@@ -164,8 +166,76 @@ guessSyntax = true
 lineNos = true
 style = "monokai"
 
+defaultContentLanguage = "da"
+defaultContentLanguageInSubdir = false
 
+[languages]
 
+[languages.da]
+languageName = "Dansk"
+languageCode = "da-DK"
+contentDir = "content"
+weight = 1
+title = "Evgeny Karpov"
 
+[languages.da.params]
+displayName = "DA"
 
+[[languages.da.menu.main]]
+identifier = "home"
+name = "Forside"
+url = "/"
+weight = 10
+
+[[languages.da.menu.main]]
+identifier = "posts"
+name = "Blog"
+url = "/posts/"
+weight = 20
+
+[[languages.da.menu.main]]
+identifier = "projects"
+name = "Portfolio"
+url = "/projekter/"
+weight = 30
+
+[[languages.da.menu.main]]
+identifier = "about"
+name = "Om"
+url = "/om/"
+weight = 40
+
+[languages.en]
+languageName = "English"
+languageCode = "en-GB"
+contentDir = "content/en"
+weight = 2
+title = "Evgeny Karpov"
+
+[languages.en.params]
+displayName = "EN"
+
+[[languages.en.menu.main]]
+identifier = "home"
+name = "Home"
+url = "/en/"
+weight = 10
+
+[[languages.en.menu.main]]
+identifier = "posts"
+name = "Blog"
+url = "/en/posts/"
+weight = 20
+
+[[languages.en.menu.main]]
+identifier = "projects"
+name = "Portfolio"
+url = "/en/projects/"
+weight = 30
+
+[[languages.en.menu.main]]
+identifier = "about"
+name = "About"
+url = "/en/about/"
+weight = 40
 
