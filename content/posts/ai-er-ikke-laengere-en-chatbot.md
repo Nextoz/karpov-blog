@@ -205,3 +205,8 @@ AI er ved at blive en del af produktionsapparatet.
 Og så bliver spørgsmålet ikke længere, om man “bruger AI”.
 
 Spørgsmålet bliver, om man har styr på den.
+
+Læs også:
+
+- [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/)
+- [Portfolio: DevOps, Platform Engineering og .NET](/karpov-blog/projekter/)
