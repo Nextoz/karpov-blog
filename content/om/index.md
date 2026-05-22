@@ -52,3 +52,8 @@ Jeg arbejder bedst, når jeg kan kombinere teknisk fordybelse med konkret forbed
 ## Kontakt
 
 Du kan finde mig på GitHub og LinkedIn via links på forsiden.
+
+Du kan også kontakte mig direkte:
+
+- Telefon: [+45 25 50 00 24](tel:+4525500024)
+- E-mail: [evgeny@karpov.dk](mailto:evgeny@karpov.dk)

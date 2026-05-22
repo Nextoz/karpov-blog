@@ -45,3 +45,11 @@ Ambitionen er at gøre siden til en seriøs dansk tech blog og portfolio:
 - personlig nok til ikke at ligne endnu en AI-genereret standardblog
 
 Jeg skriver ikke kun om tools. Jeg skriver om, hvad der sker, når software, AI, infrastruktur og organisationer møder virkeligheden.
+
+## Kontakt
+
+Hvis du vil i kontakt med mig om DevOps, platform engineering, .NET, AI eller teknisk samarbejde:
+
+- Telefon: [+45 25 50 00 24](tel:+4525500024)
+- E-mail: [evgeny@karpov.dk](mailto:evgeny@karpov.dk)
+
