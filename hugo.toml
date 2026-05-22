@@ -31,6 +31,7 @@ keywords = [
   "Danmark"
 ]
 author = "Evgeny Karpov"
+phone = "+45 25 50 00 24"
 images = ["images/profile.jpg"]
 DateFormat = "2. January 2006"
 defaultTheme = "dark"
@@ -71,6 +72,10 @@ url = "https://github.com/Nextoz"
 name = "email"
 url = "mailto:evgeny@karpov.dk"
 
+
+[[params.socialIcons]]
+name = "phone"
+url = "tel:+4525500024"
 [params.analytics]
 # google = "G-XXXXXXXXXX"
 
@@ -152,3 +157,5 @@ codeFences = true
 guessSyntax = true
 lineNos = true
 style = "monokai"
+
+
