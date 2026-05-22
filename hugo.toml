@@ -3,11 +3,12 @@ locale = "da-DK"
 defaultContentLanguage = "da"
 title = "Evgeny Karpov"
 theme = "PaperMod"
-paginate = 10
 ignoreLogs = ["warning-goldmark-raw-html"]
 enableRobotsTXT = true
 buildDrafts = false
 
+[pagination]
+pagerSize = 10
 [markup.goldmark.renderer]
 unsafe = true
 
@@ -157,5 +158,6 @@ codeFences = true
 guessSyntax = true
 lineNos = true
 style = "monokai"
+
 
 
