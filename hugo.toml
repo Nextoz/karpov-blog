@@ -152,7 +152,7 @@ url = "/search/"
 weight = 50
 
 [outputs]
-home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON", "SITEMAP"]
 
 [sitemap]
 changefreq = "daily"
@@ -182,4 +182,3 @@ languageCode = "en-GB"
 contentDir = "content/en"
 weight = 2
 title = "Evgeny Karpov"
-
