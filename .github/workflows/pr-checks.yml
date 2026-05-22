@@ -1,0 +1,33 @@
+name: PR checks
+
+on:
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  hugo-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.147.9"
+          extended: true
+
+      - name: Build Hugo site
+        run: hugo --gc --minify --baseURL "https://nextoz.github.io/karpov-blog/"
+
+      - name: Confirm build output exists
+        shell: bash
+        run: |
+          test -d public
+          find public -maxdepth 2 -type f | head -50

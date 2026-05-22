@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nextoz.github.io/karpov-blog/sitemap.xml

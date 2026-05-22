@@ -1,61 +1,27 @@
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Evgeny Karpov",
-  "url": "https://nextoz.github.io/karpov-blog/",
-  "jobTitle": "DevOps and Platform Engineer",
-  "telephone": "+4525500024",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Copenhagen",
-    "addressCountry": "DK"
-  },
-  "knowsAbout": [
-    "Azure DevOps",
-    ".NET",
-    "C#",
-    "Kubernetes",
-    "Docker",
-    "Helm",
-    "KEDA",
-    "CI/CD",
-    "Platform Engineering",
-    "Site Reliability Engineering",
-    "Observability",
-    "AI-assisted software engineering",
-    "Technology policy"
-  ],
-  "sameAs": [
-    "https://github.com/Nextoz",
-    "https://www.linkedin.com/in/evgenykarpov91/"
-  ]
-}
-</script>
+{{- $base := "https://nextoz.github.io/karpov-blog" -}}
+{{- $path := .RelPermalink -}}
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Evgeny Karpov",
-  "url": "https://nextoz.github.io/karpov-blog/",
-  "description": "Tech blog and portfolio about DevOps, platform engineering, .NET, Kubernetes, CI/CD, observability, AI-assisted software development and technology policy.",
-  "author": {
-    "@type": "Person",
-    "name": "Evgeny Karpov"
-  },
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://nextoz.github.io/karpov-blog/search/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-}
-</script>
+{{- $daPath := $path -}}
+{{- $enPath := $path -}}
 
-<meta name="author" content="Evgeny Karpov">
-<meta name="keywords" content="DevOps Engineer Copenhagen, Platform Engineer Copenhagen, Azure DevOps, .NET, Kubernetes, CI/CD, Observability, Platform Engineering, AI software engineering, teknologipolitik">
-<link rel="sitemap" type="application/xml" title="Sitemap" href="https://nextoz.github.io/karpov-blog/sitemap.xml">
+{{- if hasPrefix $path "/en/" -}}
+  {{- $daPath = replace $path "/en/" "/" -}}
+  {{- $enPath = $path -}}
+{{- else -}}
+  {{- $daPath = $path -}}
+  {{- $enPath = printf "/en%s" $path -}}
+{{- end -}}
 
+{{- if or (eq $path "/projekter/") (eq $path "/en/projects/") -}}
+  {{- $daPath = "/projekter/" -}}
+  {{- $enPath = "/en/projects/" -}}
+{{- end -}}
 
+{{- if or (eq $path "/om/") (eq $path "/en/about/") -}}
+  {{- $daPath = "/om/" -}}
+  {{- $enPath = "/en/about/" -}}
+{{- end -}}
 
-
+<link rel="alternate" hreflang="da" href="{{ $base }}{{ $daPath }}">
+<link rel="alternate" hreflang="en" href="{{ $base }}{{ $enPath }}">
+<link rel="alternate" hreflang="x-default" href="{{ $base }}{{ $daPath }}">
