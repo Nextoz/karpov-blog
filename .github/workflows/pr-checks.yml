@@ -45,16 +45,30 @@ jobs:
         run: |
           echo "Checking expected Danish root pages and English /en/ pages..."
 
-          test -f public/index.html
-          test -f public/en/index.html
+          missing=0
 
-          test -f public/projekter/index.html
-          test -f public/en/projekter/index.html
+          for file in \
+            public/index.html \
+            public/en/index.html \
+            public/projekter/index.html \
+            public/en/projekter/index.html \
+            public/posts/index.html \
+            public/en/posts/index.html \
+            public/sitemap.xml
+          do
+            if [ -f "$file" ]; then
+              echo "OK: $file"
+            else
+              echo "MISSING: $file"
+              missing=1
+            fi
+          done
 
-          test -f public/posts/index.html
-          test -f public/en/posts/index.html
+          echo ""
+          echo "Generated HTML files:"
+          find public -maxdepth 4 -name "index.html" | sort
 
-          test -f public/sitemap.xml
+          exit $missing
 
       - name: Check language switcher exists on important pages
         shell: bash
@@ -111,3 +125,4 @@ jobs:
         shell: bash
         run: |
           ! git ls-files | grep -E '\.bak$|before-language-fix|before-i18n-fix'
+
