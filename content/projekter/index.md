@@ -91,6 +91,8 @@ Denne blog fungerer som både portfolio og skriveplatform. Formålet er at samle
 - Portfolio-positionering som DevOps og Platform Engineer
 - Formidling om AI, DevOps og teknologipolitik
 
+Læs en praktisk DevOps-note her: [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/).
+
 ---
 
 ## Nøglekompetencer

@@ -80,6 +80,11 @@ url = "tel:+4525500024"
 [params.analytics]
 # google = "G-XXXXXXXXXX"
 
+[params.analytics.google]
+# Paste the Search Console HTML tag content here after Google provides it.
+# Example: SiteVerificationTag = "abc123"
+SiteVerificationTag = ""
+
 [params.label]
 text = "Evgeny Karpov"
 icon = "images/profile.jpg"
@@ -147,9 +152,9 @@ weight = 50
 home = ["HTML", "RSS", "JSON"]
 
 [sitemap]
-changefreq = "weekly"
+changefreq = "daily"
 filename = "sitemap.xml"
-priority = 0.5
+priority = 0.7
 
 [markup]
 

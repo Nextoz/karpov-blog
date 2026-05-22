@@ -46,6 +46,11 @@ Hvis man vil forberede sig på en verden med AI-assisteret sårbarhedsfinding, v
 
 Det positive er, at værktøjerne nu begynder at komme i hænderne på forsvarerne. Det er et kapløb, og vi skal sørge for at de vinder det.
 
+Læs også:
+
+- [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/)
+- [AI er ikke længere en chatbot - det er det nye produktionsapparat](/karpov-blog/posts/ai-er-ikke-laengere-en-chatbot/)
+
 ---
 
 Kilder:
