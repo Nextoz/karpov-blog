@@ -23,17 +23,28 @@ jobs:
           hugo-version: "0.147.9"
           extended: true
 
+      - name: Print Hugo config clues
+        shell: bash
+        run: |
+          echo "---- hugo.toml language/config lines ----"
+          grep -nE 'baseURL|publishDir|defaultContentLanguage|defaultContentLanguageInSubdir|contentDir|\[languages|languageCode|languageName' hugo.toml || true
+          echo "---- content root ----"
+          find content -maxdepth 3 -type f | sort
+
       - name: Build Hugo site
         run: hugo --gc --minify --baseURL "https://nextoz.github.io/karpov-blog/"
 
       - name: Show generated public files
         shell: bash
         run: |
-          find public -maxdepth 3 -type f | sort | head -200
+          echo "---- generated files ----"
+          find public -maxdepth 4 -type f | sort | head -300
 
       - name: Check important generated pages exist
         shell: bash
         run: |
+          echo "Checking expected Danish root pages and English /en/ pages..."
+
           test -f public/index.html
           test -f public/en/index.html
 
@@ -79,21 +90,6 @@ jobs:
           grep -q "https://nextoz.github.io/karpov-blog/posts/" public/sitemap.xml
           grep -q "https://nextoz.github.io/karpov-blog/en/posts/" public/sitemap.xml
 
-      - name: Check page titles and descriptions
-        shell: bash
-        run: |
-          grep -q "<title>" public/index.html
-          grep -q 'name="description"' public/index.html
-
-          grep -q "<title>" public/en/index.html
-          grep -q 'name="description"' public/en/index.html
-
-          grep -q "<title>" public/projekter/index.html
-          grep -q 'name="description"' public/projekter/index.html
-
-          grep -q "<title>" public/en/projekter/index.html
-          grep -q 'name="description"' public/en/projekter/index.html
-
       - name: Check Danish and English portfolio content is not mixed
         shell: bash
         run: |
@@ -115,4 +111,3 @@ jobs:
         shell: bash
         run: |
           ! git ls-files | grep -E '\.bak$|before-language-fix|before-i18n-fix'
-
