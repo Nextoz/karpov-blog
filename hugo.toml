@@ -146,31 +146,31 @@ weight = 10
 [[languages.da.menu.main]]
 identifier = "posts"
 name = "Blog"
-url = "/posts/"
+pageRef = "/posts"
 weight = 20
 
 [[languages.da.menu.main]]
 identifier = "portfolio"
 name = "Portfolio"
-url = "/projekter/"
+pageRef = "/projekter"
 weight = 30
 
 [[languages.da.menu.main]]
 identifier = "about"
 name = "Om mig"
-url = "/om/"
+pageRef = "/om"
 weight = 40
 
 [[languages.da.menu.main]]
 identifier = "tags"
 name = "Emner"
-url = "/tags/"
+pageRef = "/tags"
 weight = 50
 
 [[languages.da.menu.main]]
 identifier = "search"
 name = "Søg"
-url = "/search/"
+pageRef = "/search"
 weight = 60
 
 [languages.en]
@@ -188,30 +188,31 @@ weight = 10
 [[languages.en.menu.main]]
 identifier = "posts"
 name = "Blog"
-url = "/posts/"
+pageRef = "/posts"
 weight = 20
 
 [[languages.en.menu.main]]
 identifier = "portfolio"
 name = "Portfolio"
-url = "/projects/"
+pageRef = "/projekter"
 weight = 30
 
 [[languages.en.menu.main]]
 identifier = "about"
 name = "About"
-url = "/about/"
+pageRef = "/om"
 weight = 40
 
 [[languages.en.menu.main]]
 identifier = "tags"
 name = "Topics"
-url = "/tags/"
+pageRef = "/tags"
 weight = 50
 
 [[languages.en.menu.main]]
 identifier = "search"
 name = "Search"
-url = "/search/"
+pageRef = "/search"
 weight = 60
+
 

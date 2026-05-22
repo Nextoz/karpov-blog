@@ -13,6 +13,9 @@ ShowReadingTime: true
 
 # DevOps er ikke en pipeline
 
+
+![En stiliseret pipeline med teksten: Dette er ikke DevOps.](/karpov-blog/images/this-is-not-devops-pipeline.svg)
+
 Der er en særlig type optimisme, der opstår, når nogen siger:
 
 > "Vi har DevOps. Vi har en pipeline."
@@ -140,6 +143,8 @@ Læs også:
 
 ## Kilder
 
+- [Wikipedia: The Treachery of Images](https://en.wikipedia.org/wiki/The_Treachery_of_Images)
 - [DORA: Continuous delivery](https://dora.dev/capabilities/continuous-delivery/)
 - [Google SRE Book: Release Engineering](https://sre.google/sre-book/release-engineering/)
 - [OpenTelemetry: Observability primer](https://opentelemetry.io/docs/concepts/observability-primer/)
+
