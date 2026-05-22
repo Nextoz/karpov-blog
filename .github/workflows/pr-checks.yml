@@ -26,6 +26,11 @@ jobs:
       - name: Build Hugo site
         run: hugo --gc --minify --baseURL "https://nextoz.github.io/karpov-blog/"
 
+      - name: Show generated public files
+        shell: bash
+        run: |
+          find public -maxdepth 3 -type f | sort | head -200
+
       - name: Check important generated pages exist
         shell: bash
         run: |
@@ -110,3 +115,4 @@ jobs:
         shell: bash
         run: |
           ! git ls-files | grep -E '\.bak$|before-language-fix|before-i18n-fix'
+
