@@ -182,36 +182,36 @@ title = "Evgeny Karpov"
 [[languages.en.menu.main]]
 identifier = "home"
 name = "Home"
-url = "/en/"
+url = "/"
 weight = 10
 
 [[languages.en.menu.main]]
 identifier = "posts"
 name = "Blog"
-url = "/en/posts/"
+url = "/posts/"
 weight = 20
 
 [[languages.en.menu.main]]
 identifier = "portfolio"
 name = "Portfolio"
-url = "/en/projects/"
+url = "/projects/"
 weight = 30
 
 [[languages.en.menu.main]]
 identifier = "about"
 name = "About"
-url = "/en/about/"
+url = "/about/"
 weight = 40
 
 [[languages.en.menu.main]]
 identifier = "tags"
 name = "Topics"
-url = "/en/tags/"
+url = "/tags/"
 weight = 50
 
 [[languages.en.menu.main]]
 identifier = "search"
 name = "Search"
-url = "/en/search/"
+url = "/search/"
 weight = 60
 
