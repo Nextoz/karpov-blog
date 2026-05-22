@@ -51,7 +51,7 @@ jobs:
             public/index.html \
             public/en/index.html \
             public/projekter/index.html \
-            public/en/projekter/index.html \
+            public/en/projects/index.html \
             public/posts/index.html \
             public/en/posts/index.html \
             public/sitemap.xml
@@ -76,7 +76,7 @@ jobs:
           grep -q "global-language-switch" public/index.html
           grep -q "global-language-switch" public/en/index.html
           grep -q "global-language-switch" public/projekter/index.html
-          grep -q "global-language-switch" public/en/projekter/index.html
+          grep -q "global-language-switch" public/en/projects/index.html
           grep -q "global-language-switch" public/posts/index.html
           grep -q "global-language-switch" public/en/posts/index.html
 
@@ -85,8 +85,8 @@ jobs:
         run: |
           grep -q 'hreflang="da' public/projekter/index.html
           grep -q 'hreflang="en' public/projekter/index.html
-          grep -q 'hreflang="da' public/en/projekter/index.html
-          grep -q 'hreflang="en' public/en/projekter/index.html
+          grep -q 'hreflang="da' public/en/projects/index.html
+          grep -q 'hreflang="en' public/en/projects/index.html
 
       - name: Check canonical links exist
         shell: bash
@@ -94,13 +94,13 @@ jobs:
           grep -q 'rel="canonical"' public/index.html
           grep -q 'rel="canonical"' public/en/index.html
           grep -q 'rel="canonical"' public/projekter/index.html
-          grep -q 'rel="canonical"' public/en/projekter/index.html
+          grep -q 'rel="canonical"' public/en/projects/index.html
 
       - name: Check sitemap contains both languages
         shell: bash
         run: |
           grep -q "https://nextoz.github.io/karpov-blog/projekter/" public/sitemap.xml
-          grep -q "https://nextoz.github.io/karpov-blog/en/projekter/" public/sitemap.xml
+          grep -q "https://nextoz.github.io/karpov-blog/en/projects/" public/sitemap.xml
           grep -q "https://nextoz.github.io/karpov-blog/posts/" public/sitemap.xml
           grep -q "https://nextoz.github.io/karpov-blog/en/posts/" public/sitemap.xml
 
@@ -110,8 +110,8 @@ jobs:
           grep -q "Det recruiters skal forstå" public/projekter/index.html
           ! grep -q "What I want recruiters to understand" public/projekter/index.html
 
-          grep -q "What I want recruiters to understand" public/en/projekter/index.html
-          ! grep -q "Det recruiters skal forstå" public/en/projekter/index.html
+          grep -q "What I want recruiters to understand" public/en/projects/index.html
+          ! grep -q "Det recruiters skal forstå" public/en/projects/index.html
 
       - name: Check English blog posts were generated
         shell: bash
@@ -125,4 +125,5 @@ jobs:
         shell: bash
         run: |
           ! git ls-files | grep -E '\.bak$|before-language-fix|before-i18n-fix'
+
 
