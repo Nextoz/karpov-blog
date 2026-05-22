@@ -80,6 +80,18 @@ jobs:
           grep -q "global-language-switch" public/posts/index.html
           grep -q "global-language-switch" public/en/posts/index.html
 
+      - name: Debug hreflang output
+        shell: bash
+        run: |
+          echo "---- Danish portfolio head hreflang/canonical/alternate ----"
+          grep -oiE '<link[^>]+(alternate|canonical|hreflang)[^>]*>' public/projekter/index.html || true
+
+          echo "---- English portfolio head hreflang/canonical/alternate ----"
+          grep -oiE '<link[^>]+(alternate|canonical|hreflang)[^>]*>' public/en/projects/index.html || true
+
+          echo "---- Does generated HTML contain extend_head output? ----"
+          grep -R "x-default" public/projekter/index.html public/en/projects/index.html || true
+
       - name: Check multilingual hreflang links exist
         shell: bash
         run: |
@@ -125,5 +137,6 @@ jobs:
         shell: bash
         run: |
           ! git ls-files | grep -E '\.bak$|before-language-fix|before-i18n-fix'
+
 
 
