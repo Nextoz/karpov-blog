@@ -56,4 +56,5 @@ Du kan finde mig på GitHub og LinkedIn via links på forsiden.
 Du kan også kontakte mig direkte:
 
 - Telefon: [+45 25 50 00 24](tel:+4525500024)
-- E-mail: [evgeny@karpov.dk](mailto:evgeny@karpov.dk)
+- E-mail: [evkar91@gmail.com](mailto:evkar91@gmail.com)
+
