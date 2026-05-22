@@ -382,3 +382,30 @@ body::before {
     font-size: 0.9rem;
     margin: 0;
 }
+
+/* Portfolio / blog polish */
+.post-entry {
+  border-radius: 18px;
+}
+
+.home-info .entry-header h1 {
+  font-size: 2.4rem;
+  letter-spacing: -0.04em;
+}
+
+.home-info .entry-content {
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.post-content h2 {
+  margin-top: 2.4rem;
+}
+
+.post-content h3 {
+  margin-top: 1.8rem;
+}
+
+.post-content strong {
+  font-weight: 700;
+}

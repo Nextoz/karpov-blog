@@ -1,46 +1,47 @@
 ---
-title: "Evgeny Karpov"
-description: "Senior DevOps og Platform Engineer i København med erfaring i Azure DevOps, .NET, Kubernetes, CI/CD, observability og AI-assisteret softwareudvikling."
+title: "Start her"
+description: "Startside for Evgeny Karpovs tech blog og portfolio om DevOps, platform engineering, .NET, Azure DevOps, Kubernetes, AI og teknologipolitik."
+summary: "Start her, hvis du vil læse om DevOps, platform engineering, AI, .NET, Kubernetes og teknologipolitik."
 ---
 
-# Evgeny Karpov
+# Start her
 
-## Senior DevOps & Platform Engineer i København
+Jeg er **Evgeny Karpov**, DevOps & Platform Engineer i København.
 
-Jeg bygger, moderniserer og driver softwareplatforme med fokus på Azure DevOps, .NET, Kubernetes, CI/CD, observability og automatisering.
+Denne side samler mine tekniske erfaringer, projekter og refleksioner om softwareudvikling, platform engineering, AI og digitalisering.
 
-Min baggrund kombinerer backend-udvikling med praktisk DevOps-arbejde: pipelines, deployments, cloud-infrastruktur, drift, testmiljøer, dokumentation og produktionsnær fejlsøgning.
+## Hvad bloggen handler om
 
-[Se portfolio](/karpov-blog/projekter/) · [Læs bloggen](/karpov-blog/posts/) · [Om mig](/karpov-blog/om/)
+Jeg skriver især om:
 
----
+- DevOps, CI/CD og Azure DevOps
+- Platform engineering, Kubernetes, Docker, Helm og KEDA
+- .NET, backend-systemer og cloud-native software
+- Observability, driftbarhed, logs, metrics og tracing
+- AI-assisteret softwareudvikling og teknologipolitik
+- Hvordan teknologi går fra hype til produktion
 
-## Det jeg arbejder med
+## Start her, hvis du er recruiter eller hiring manager
 
-- Azure DevOps pipelines, release flows og deployment automation
-- .NET, C#, ASP.NET Core og backend-systemer
-- Kubernetes, Docker, Helm, KEDA og platform engineering
-- Observability, logs, metrics, tracing og driftbarhed
-- AI-assisteret softwareudvikling, dokumentation og engineering workflows
+Se min [portfolio](/karpov-blog/projekter/) for konkrete projekter og erfaringer med .NET, Azure DevOps, Kubernetes, CI/CD, platform engineering og offentlig IT.
 
----
+Læs også [om mig](/karpov-blog/om/) for en kortere professionel profil.
 
-## Udvalgte områder
+## Start her, hvis du er udvikler eller DevOps-interesseret
 
-### Platform engineering og DevOps
+Læs bloggen, hvis du er interesseret i praktiske erfaringer med DevOps, platform engineering, AI i softwareudvikling og moderne teknisk infrastruktur.
 
-Jeg arbejder med at gøre softwareleverancer mere stabile, automatiserede og målbare. Det handler både om CI/CD, infrastruktur, miljøer, monitorering og samarbejdet mellem udvikling og drift.
+Et godt sted at starte:
 
-### .NET og backend
+- [AI er ikke længere en chatbot — det er det nye produktionsapparat](/karpov-blog/posts/ai-er-ikke-laengere-en-chatbot/)
 
-Jeg har en udviklerbaggrund i .NET og backend-systemer, hvilket gør mig stærk i spændingsfeltet mellem applikationskode, deployment, cloud og drift.
+## Hvad jeg prøver at bygge
 
-### AI i softwareudvikling
+Ambitionen er at gøre siden til en seriøs dansk tech blog og portfolio:
 
-Jeg interesserer mig for, hvordan AI kan bruges praktisk i udvikling: bedre dokumentation, hurtigere debugging, automatisering, kodeforståelse og mere effektive engineering-processer.
+- praktisk nok til udviklere
+- tydelig nok til recruiters
+- skarp nok til teknologidebat
+- personlig nok til ikke at ligne endnu en AI-genereret standardblog
 
----
-
-## Seneste fokus
-
-Jeg skriver om DevOps, platform engineering, AI, softwareudvikling og teknologipolitik — ofte med udgangspunkt i praktiske erfaringer fra rigtige systemer.
+Jeg skriver ikke kun om tools. Jeg skriver om, hvad der sker, når software, AI, infrastruktur og organisationer møder virkeligheden.
