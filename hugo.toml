@@ -1,3 +1,4 @@
+defaultContentLanguageInSubdir = false
 baseURL = "https://nextoz.github.io/karpov-blog/"
 locale = "da-DK"
 defaultContentLanguage = "da"
@@ -13,6 +14,8 @@ pagerSize = 10
 unsafe = true
 
 [params]
+
+ShowLanguageSwitcher = true
 env = "production"
 title = "Evgeny Karpov"
 description = "DevOps & Platform Engineer i København. Skriver om Azure DevOps, .NET, Kubernetes, CI/CD, observability, AI-assisteret softwareudvikling og teknologipolitik."
@@ -164,8 +167,19 @@ guessSyntax = true
 lineNos = true
 style = "monokai"
 
+[languages]
 
+[languages.da]
+languageName = "Dansk"
+languageCode = "da-DK"
+contentDir = "content"
+weight = 1
+title = "Evgeny Karpov"
 
-
-
+[languages.en]
+languageName = "English"
+languageCode = "en-GB"
+contentDir = "content/en"
+weight = 2
+title = "Evgeny Karpov"
 
