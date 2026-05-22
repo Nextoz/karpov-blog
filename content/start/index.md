@@ -1,60 +1,46 @@
 ---
-title: "Start her"
-date: 2026-05-19
-lastmod: 2026-05-19
-description: "En kort indgang til Evgeny Karpovs blog om DevOps, AI, platform engineering og teknologipolitik."
-summary: "Start her hvis du vil forstå hvem jeg er, hvad jeg arbejder med, og hvilke blogindlæg der er mest relevante."
-layout: "single"
-url: "/start/"
-hidemeta: true
-ShowReadingTime: false
-ShowShareButtons: false
-ShowWordCount: false
-showtoc: true
+title: "Evgeny Karpov"
+description: "Senior DevOps og Platform Engineer i København med erfaring i Azure DevOps, .NET, Kubernetes, CI/CD, observability og AI-assisteret softwareudvikling."
 ---
 
-Velkommen. Jeg hedder **Evgeny Karpov** og arbejder i krydsfeltet mellem softwareudvikling, DevOps, platform engineering og AI.
+# Evgeny Karpov
 
-Bloggen handler ikke om AI som tryllestøv. Den handler om det mere interessante spørgsmål: hvordan bygger vi systemer, teams og arbejdsgange der faktisk kan bruge ny teknologi uden at miste driftssikkerhed, sikkerhed og sund fornuft undervejs?
+## Senior DevOps & Platform Engineer i København
 
-## Hvis du er recruiter eller hiring manager
+Jeg bygger, moderniserer og driver softwareplatforme med fokus på Azure DevOps, .NET, Kubernetes, CI/CD, observability og automatisering.
 
-Jeg er åben for seniorroller i København inden for:
+Min baggrund kombinerer backend-udvikling med praktisk DevOps-arbejde: pipelines, deployments, cloud-infrastruktur, drift, testmiljøer, dokumentation og produktionsnær fejlsøgning.
 
-- DevOps engineering
-- Platform engineering
-- SRE
-- Backend-udvikling med platformansvar
-- AI-adjacent software- og automationsarbejde
+[Se portfolio](/karpov-blog/projekter/) · [Læs bloggen](/karpov-blog/posts/) · [Om mig](/karpov-blog/om/)
 
-Start her:
+---
 
-- [Om mig](../om/) - kort profil, kompetencer og karriere
-- [Projekter](../projekter/) - udvalgte projekter og teknologier
-- [Project Glasswing](../posts/project-glasswing/) - mine tanker om AI og defensiv cybersikkerhed
+## Det jeg arbejder med
 
-Kort version: jeg er stærkest dér, hvor kode, drift og forretning mødes. CI/CD, cloud, observability, dokumentation, automatisering og robuste systemer.
+- Azure DevOps pipelines, release flows og deployment automation
+- .NET, C#, ASP.NET Core og backend-systemer
+- Kubernetes, Docker, Helm, KEDA og platform engineering
+- Observability, logs, metrics, tracing og driftbarhed
+- AI-assisteret softwareudvikling, dokumentation og engineering workflows
 
-## Hvis du er udvikler
+---
 
-Du vil sandsynligvis få mest ud af indlæg om:
+## Udvalgte områder
 
-- AI i udviklingsarbejde
-- DevOps og platform engineering
-- Sikkerhed, observability og drift
-- Hvordan man bruger AI uden at slukke for dømmekraften
+### Platform engineering og DevOps
 
-Jeg skriver helst praktisk: hvad betyder en ny teknologi for et rigtigt team, en rigtig pipeline, en rigtig deployment eller en rigtig incident?
+Jeg arbejder med at gøre softwareleverancer mere stabile, automatiserede og målbare. Det handler både om CI/CD, infrastruktur, miljøer, monitorering og samarbejdet mellem udvikling og drift.
 
-## Hvis du interesserer dig for AI og politik
+### .NET og backend
 
-Jeg er optaget af hvordan Danmark og EU håndterer AI-revolutionen. Ikke kun som regulering på papir, men som konkrete krav til produkter, virksomheder og offentlige systemer.
+Jeg har en udviklerbaggrund i .NET og backend-systemer, hvilket gør mig stærk i spændingsfeltet mellem applikationskode, deployment, cloud og drift.
 
-Det bedste sted at starte er de indlæg, hvor AI, regulering og praktisk engineering mødes.
+### AI i softwareudvikling
 
-## Gode første indlæg
+Jeg interesserer mig for, hvordan AI kan bruges praktisk i udvikling: bedre dokumentation, hurtigere debugging, automatisering, kodeforståelse og mere effektive engineering-processer.
 
-- [AI er ikke fyringsgrund](../posts/ai-er-ikke-fyringsgrund/) - om AI, arbejdsmarked og politisk realitet
-- [Project Glasswing](../posts/project-glasswing/) - om AI-modeller der finder sikkerhedsfejl, og hvad det betyder for DevOps
+---
 
-Flere praktiske indlæg er på vej om EU AI Act, AI-agenter i enterprise-miljøer og hvordan platform teams kan gøre AI brugbart uden at gøre sikkerhedsfolkene trætte i øjnene.
+## Seneste fokus
+
+Jeg skriver om DevOps, platform engineering, AI, softwareudvikling og teknologipolitik — ofte med udgangspunkt i praktiske erfaringer fra rigtige systemer.
