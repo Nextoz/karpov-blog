@@ -1,7 +1,8 @@
 ---
-title: "Portfolio"
-description: "Portfolio for Evgeny Karpov: .NET, Azure DevOps, CI/CD, Kubernetes, infrastructure, observability and platform engineering."
-summary: "Selected professional work and projects across .NET, DevOps, Azure DevOps, CI/CD, Kubernetes and platform engineering."
+title: "DevOps, Platform Engineering og .NET Portfolio"
+description: "Portfolio for Evgeny Karpov: Azure DevOps, .NET, Kubernetes, CI/CD, observability, platform engineering, offentlig IT og AI-assisteret softwareudvikling."
+summary: "Udvalgte projekter og erfaringer inden for DevOps, platform engineering, .NET backend, cloud, CI/CD, observability og AI-assisteret softwareudvikling."
+translationKey: "portfolio"
 hidemeta: true
 ShowReadingTime: false
 ShowShareButtons: false
@@ -10,134 +11,134 @@ ShowWordCount: false
 
 # Portfolio
 
-I am a software engineer with a strong .NET/backend foundation and a recent focus on DevOps, platform engineering, CI/CD, infrastructure, observability and production troubleshooting.
+Jeg er software engineer med en stærk .NET/backend-baggrund og et nyere fokus på DevOps, platform engineering, CI/CD, infrastruktur, observability og produktionstroubleshooting.
 
-My experience sits between application development and operations: building software, deploying it, automating delivery, improving environments and helping teams make systems easier to run.
+Min professionelle profil ligger i krydsfeltet mellem softwareudvikling og drift: jeg forstår både applikationskode, pipelines, cloud-infrastruktur, deployments, miljøer og de praktiske problemer, der opstår, når systemer skal fungere i produktion.
 
-## Quick overview
+## Kort overblik
 
-- **6+ years of professional software engineering experience**
-- **Core stack:** .NET, C#, Azure DevOps, SQL, REST APIs, Blazor
+- **6+ års professionel erfaring med softwareudvikling**
+- **Kernestack:** .NET, C#, Azure DevOps, SQL, REST APIs, Blazor
 - **DevOps/platform:** CI/CD, Docker, Kubernetes, Helm, KEDA, Bicep, Terraform
-- **Operations:** deployments, troubleshooting, monitoring, logs, tracing, OpenTelemetry, OpenSearch
-- **Domains:** public-sector IT, payroll systems, document automation, SAP integration
+- **Drift:** deployments, fejlsøgning, monitoring, logs, tracing, OpenTelemetry, OpenSearch
+- **Domæner:** offentlig IT, lønsystemer, dokumentautomatisering, SAP-integration
 
 ---
 
-## twoday / Arbejdstilsynet — DevOps & Infrastructure
+## twoday / Arbejdstilsynet — DevOps og Infrastruktur
 
-**Area:** DevOps, infrastructure, CI/CD, observability, public-sector IT  
-**Technologies:** Azure DevOps, Azure, Bicep, PowerShell DSC, IIS, OpenTelemetry, OpenSearch, C#/.NET
+**Område:** DevOps, infrastruktur, CI/CD, observability, offentlig IT  
+**Teknologier:** Azure DevOps, Azure, Bicep, PowerShell DSC, IIS, OpenTelemetry, OpenSearch, C#/.NET
 
-At twoday, I worked as a DevOps and infrastructure consultant for Arbejdstilsynet on a large .NET and Sitecore-based platform.
+Hos twoday arbejdede jeg som DevOps- og infrastrukturkonsulent for Arbejdstilsynet på en større .NET- og Sitecore-baseret platform.
 
-### My contribution
+### Mit bidrag
 
-- Built and improved CI/CD pipelines and deployment flows
-- Helped establish and configure a new test environment
-- Supported monitoring, troubleshooting and documentation
-- Worked with infrastructure automation and environment setup
-- Helped bridge development, operations and platform concerns
+- Byggede og forbedrede CI/CD pipelines og deployment flows
+- Var med til at etablere og konfigurere et nyt testmiljø
+- Understøttede monitoring, fejlsøgning og dokumentation
+- Arbejdede med infrastrukturautomatisering og miljøopsætning
+- Var med til at bygge bro mellem udvikling, drift og platform
 
-### Why it matters
+### Hvorfor det er relevant
 
-This experience shows my ability to work in an enterprise/public-sector environment where stability, documentation, controlled deployments and operational understanding matter.
-
----
-
-## MyPaperFlow — Cloud DevOps, Kubernetes and SAP Integration
-
-**Area:** DevOps, cloud infrastructure, document automation, SAP integration  
-**Technologies:** Azure DevOps, Docker, Kubernetes, Helm, KEDA, Azure Service Bus, Azure, Bicep, Terraform, PostgreSQL, .NET
-
-MyPaperFlow was a cloud-based document and invoice platform with integration to SAP Business One.
-
-### My contribution
-
-- Built and maintained Azure DevOps CI/CD pipelines
-- Worked with Docker images, Kubernetes deployments and Helm configuration
-- Improved autoscaling with KEDA based on Azure Service Bus queues
-- Worked with infrastructure as code using Bicep and Terraform
-- Troubleshot deployments, identities, environments and cloud components
-
-### Why it matters
-
-This project demonstrates practical DevOps work beyond writing YAML: building, deploying, scaling and operating real cloud services.
+Erfaringen viser, at jeg kan arbejde i enterprise- og offentlig IT, hvor stabilitet, dokumentation, kontrollerede deployments og driftsforståelse er afgørende.
 
 ---
 
-## DCAB — Public-sector .NET System
+## MyPaperFlow — Cloud DevOps, Kubernetes og SAP-integration
 
-**Area:** Backend development, public-sector systems, data, registers  
-**Technologies:** .NET, C#, ASP.NET, Blazor, MSSQL, Azure DevOps, OpenShift, Elasticsearch
+**Område:** DevOps, cloud-infrastruktur, dokumentautomatisering, SAP-integration  
+**Teknologier:** Azure DevOps, Docker, Kubernetes, Helm, KEDA, Azure Service Bus, Azure, Bicep, Terraform, PostgreSQL, .NET
 
-DCAB was a central register system within the Danish public housing sector. The project involved complex domain logic, data quality, integrations and structured delivery processes.
+MyPaperFlow var en cloud-baseret dokument- og fakturaplatform med integration til SAP Business One.
 
-### My contribution
+### Mit bidrag
 
-- Developed backend and Blazor features
-- Worked with REST APIs, domain logic and data models
-- Supported release processes and Azure DevOps workflows
-- Worked with testing, quality and .NET upgrades
-- Contributed to data migration and system maintenance work
+- Byggede og vedligeholdt Azure DevOps CI/CD pipelines
+- Arbejdede med Docker images, Kubernetes deployments og Helm-konfiguration
+- Forbedrede autoskalering med KEDA baseret på Azure Service Bus queues
+- Arbejdede med infrastructure as code i Bicep og Terraform
+- Fejlsøgte deployments, identities, miljøer og cloud-komponenter
 
-### Why it matters
+### Hvorfor det er relevant
 
-This project shows experience with serious business-critical software, domain complexity and collaboration in a larger development team.
-
----
-
-## Visma Enterprise — Payroll and Legacy Modernization
-
-**Area:** Payroll systems, business-critical software, legacy modernization  
-**Technologies:** C#, ASP.NET, DB2, MSSQL, GitHub, TeamCity, Octopus Deploy, COBOL
-
-At Visma Enterprise, I developed and maintained functionality for payroll systems.
-
-### My contribution
-
-- Developed and maintained payroll functionality in C#
-- Worked on implementation of the new Danish holiday act
-- Worked with tax-card integration and salary-related business logic
-- Analyzed production issues and rewrote legacy COBOL logic
-- Supported systems where correctness directly affected salary payments
-
-### Why it matters
-
-Payroll systems require precision, responsibility and understanding of business-critical software. This experience shows that I can work with legacy systems, complex rules and high-stakes production logic.
+Projektet viser praktisk DevOps-erfaring med rigtige cloud-systemer. Ikke kun YAML, men arbejdet med at bygge, deploye, skalere og drifte services i rigtige miljøer.
 
 ---
 
-## Karpov Blog — Technical Writing and Personal Platform
+## DCAB — Offentligt .NET-system
 
-**Area:** Technical communication, portfolio, SEO, static site  
-**Technologies:** Hugo, PaperMod, GitHub Pages, Markdown, GitHub Actions
+**Område:** Backendudvikling, offentlig IT, data, registre  
+**Teknologier:** .NET, C#, ASP.NET, Blazor, MSSQL, Azure DevOps, OpenShift, Elasticsearch
 
-This website is my personal technical blog and portfolio. I use it to write about software engineering, DevOps, AI, digitalization and technology policy.
+DCAB var et centralt registersystem inden for den almene boligsektor. Projektet involverede kompleks domænelogik, datakvalitet, integrationer og strukturerede leveranceprocesser.
 
-### My contribution
+### Mit bidrag
 
-- Built and maintain the site with Hugo and GitHub Pages
-- Set up content structure, SEO metadata and deployment workflow
-- Use the site as a public writing platform and professional portfolio
-- Write about technical topics in Danish with a practical engineering angle
+- Udviklede backend- og Blazor-features
+- Arbejdede med REST APIs, domænelogik og datamodeller
+- Understøttede releaseprocesser og Azure DevOps workflows
+- Arbejdede med test, kvalitet og .NET-opgraderinger
+- Bidrog til datamigrering og systemvedligeholdelse
 
-### Why it matters
+### Hvorfor det er relevant
 
-Clear technical communication is part of senior engineering work. This site shows that I can explain technology, document ideas and think beyond code.
+Projektet viser erfaring med forretningskritisk software, komplekse domæner og samarbejde i et større udviklingsteam.
 
 ---
 
-## What I want recruiters to understand
+## Visma Enterprise — Lønsystemer og legacy-modernisering
 
-I am strongest in roles where backend development, DevOps and platform work meet.
+**Område:** Lønsystemer, forretningskritisk software, legacy-modernisering  
+**Teknologier:** C#, ASP.NET, DB2, MSSQL, GitHub, TeamCity, Octopus Deploy, COBOL
 
-I can contribute as a:
+Hos Visma Enterprise udviklede og vedligeholdt jeg funktionalitet til lønsystemer.
+
+### Mit bidrag
+
+- Udviklede og vedligeholdt lønfunktionalitet i C#
+- Arbejdede med implementering af den nye ferielov
+- Arbejdede med eSkattekort-integration og lønrelateret forretningslogik
+- Analyserede produktionsfejl og omskrev legacy COBOL-logik
+- Understøttede systemer hvor korrekthed direkte påvirkede lønudbetalinger
+
+### Hvorfor det er relevant
+
+Lønsystemer kræver præcision, ansvarlighed og forståelse for forretningskritisk software. Erfaringen viser, at jeg kan arbejde med legacy, komplekse regler og produktionsnær fejlsøgning.
+
+---
+
+## Karpov Blog — Teknisk formidling og personlig platform
+
+**Område:** Teknisk formidling, portfolio, SEO, statisk website  
+**Teknologier:** Hugo, PaperMod, GitHub Pages, Markdown, GitHub Actions
+
+Denne hjemmeside er min personlige tekniske blog og portfolio. Jeg bruger den til at skrive om software engineering, DevOps, AI, digitalisering og teknologipolitik.
+
+### Mit bidrag
+
+- Bygger og vedligeholder siden med Hugo og GitHub Pages
+- Arbejder med indholdsstruktur, SEO metadata og deployment workflow
+- Bruger siden som offentlig skriveplatform og professionel portfolio
+- Skriver om tekniske emner på dansk med en praktisk engineering-vinkel
+
+### Hvorfor det er relevant
+
+Klar teknisk formidling er en del af senior engineering-arbejde. Siden viser, at jeg kan forklare teknologi, dokumentere idéer og tænke ud over selve koden.
+
+---
+
+## Det recruiters skal forstå
+
+Jeg er stærkest i roller, hvor backendudvikling, DevOps og platformarbejde mødes.
+
+Jeg kan bidrage som:
 
 - DevOps Engineer
 - Platform Engineer
 - Site Reliability Engineer
-- Backend Developer with DevOps/platform responsibility
-- .NET Engineer working close to infrastructure and delivery
+- Backend Developer med DevOps/platform-ansvar
+- .NET Engineer tæt på infrastruktur og delivery
 
-My value is that I understand both application code and the systems needed to build, deploy, monitor and operate it.
+Min værdi er, at jeg både forstår applikationskode og de systemer, der skal bygge, deploye, monitorere og drifte den.
