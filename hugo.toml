@@ -141,7 +141,7 @@ weight = 30
 
 [[menu.main]]
 identifier = "tags"
-name = "Emner"
+name = "Topics"
 url = "/tags/"
 weight = 40
 
@@ -182,3 +182,4 @@ languageCode = "en-GB"
 contentDir = "content/en"
 weight = 2
 title = "Evgeny Karpov"
+
