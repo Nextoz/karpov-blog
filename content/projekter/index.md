@@ -1,5 +1,4 @@
 ---
-translationKey: "portfolio"
 title: "Portfolio"
 description: "Portfolio for Evgeny Karpov: .NET, Azure DevOps, CI/CD, Kubernetes, infrastructure, observability and platform engineering."
 summary: "Selected professional work and projects across .NET, DevOps, Azure DevOps, CI/CD, Kubernetes and platform engineering."
@@ -142,4 +141,3 @@ I can contribute as a:
 - .NET Engineer working close to infrastructure and delivery
 
 My value is that I understand both application code and the systems needed to build, deploy, monitor and operate it.
-

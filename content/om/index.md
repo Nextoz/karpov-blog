@@ -1,5 +1,4 @@
 ---
-translationKey: "about"
 title: "Om Evgeny Karpov"
 description: "Om Evgeny Karpov, Senior DevOps og Platform Engineer i København med erfaring i .NET, Azure DevOps, Kubernetes, CI/CD og AI-assisteret softwareudvikling."
 ---
@@ -58,5 +57,4 @@ Du kan også kontakte mig direkte:
 
 - Telefon: [+45 25 50 00 24](tel:+4525500024)
 - E-mail: [evkar91@gmail.com](mailto:evkar91@gmail.com)
-
 
