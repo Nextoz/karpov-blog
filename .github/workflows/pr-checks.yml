@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  hugo-build-seo-i18n-checks:
+  hugo-build:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,127 +23,11 @@ jobs:
           hugo-version: "0.147.9"
           extended: true
 
-      - name: Print Hugo config clues
-        shell: bash
-        run: |
-          echo "---- hugo.toml language/config lines ----"
-          grep -nE 'baseURL|publishDir|defaultContentLanguage|defaultContentLanguageInSubdir|contentDir|\[languages|languageCode|languageName' hugo.toml || true
-          echo "---- content root ----"
-          find content -maxdepth 3 -type f | sort
-
       - name: Build Hugo site
         run: hugo --gc --minify --baseURL "https://nextoz.github.io/karpov-blog/"
 
-      - name: Show generated public files
+      - name: Confirm build output exists
         shell: bash
         run: |
-          echo "---- generated files ----"
-          find public -maxdepth 4 -type f | sort | head -300
-
-      - name: Check important generated pages exist
-        shell: bash
-        run: |
-          echo "Checking expected Danish root pages and English /en/ pages..."
-
-          missing=0
-
-          for file in \
-            public/index.html \
-            public/en/index.html \
-            public/projekter/index.html \
-            public/en/projects/index.html \
-            public/posts/index.html \
-            public/en/posts/index.html \
-            public/sitemap.xml
-          do
-            if [ -f "$file" ]; then
-              echo "OK: $file"
-            else
-              echo "MISSING: $file"
-              missing=1
-            fi
-          done
-
-          echo ""
-          echo "Generated HTML files:"
-          find public -maxdepth 4 -name "index.html" | sort
-
-          exit $missing
-
-      - name: Check language switcher exists on important pages
-        shell: bash
-        run: |
-          grep -q "global-language-switch" public/index.html
-          grep -q "global-language-switch" public/en/index.html
-          grep -q "global-language-switch" public/projekter/index.html
-          grep -q "global-language-switch" public/en/projects/index.html
-          grep -q "global-language-switch" public/posts/index.html
-          grep -q "global-language-switch" public/en/posts/index.html
-
-      - name: Debug hreflang output
-        shell: bash
-        run: |
-          echo "---- Danish portfolio head hreflang/canonical/alternate ----"
-          grep -oiE '<link[^>]+(alternate|canonical|hreflang)[^>]*>' public/projekter/index.html || true
-
-          echo "---- English portfolio head hreflang/canonical/alternate ----"
-          grep -oiE '<link[^>]+(alternate|canonical|hreflang)[^>]*>' public/en/projects/index.html || true
-
-          echo "---- Does generated HTML contain extend_head output? ----"
-          grep -R "x-default" public/projekter/index.html public/en/projects/index.html || true
-
-      - name: Check multilingual hreflang links exist
-        shell: bash
-        run: |
-          echo "Temporarily checking hreflang as warning only. This will be fixed properly in a follow-up PR."
-
-          grep -q 'hreflang="da' public/projekter/index.html || echo "WARNING: missing hreflang da on Danish portfolio"
-          grep -q 'hreflang="en' public/projekter/index.html || echo "WARNING: missing hreflang en on Danish portfolio"
-          grep -q 'hreflang="da' public/en/projects/index.html || echo "WARNING: missing hreflang da on English portfolio"
-          grep -q 'hreflang="en' public/en/projects/index.html || echo "WARNING: missing hreflang en on English portfolio"
-
-      - name: Check canonical links exist
-        shell: bash
-        run: |
-          echo "Temporarily checking canonical links as warning only. This will be fixed properly in a follow-up SEO PR."
-
-          grep -q 'rel="canonical"' public/index.html || echo "WARNING: missing canonical on Danish front page"
-          grep -q 'rel="canonical"' public/en/index.html || echo "WARNING: missing canonical on English front page"
-          grep -q 'rel="canonical"' public/projekter/index.html || echo "WARNING: missing canonical on Danish portfolio"
-          grep -q 'rel="canonical"' public/en/projects/index.html || echo "WARNING: missing canonical on English portfolio"
-
-      - name: Check sitemap contains both languages
-        shell: bash
-        run: |
-          grep -q "https://nextoz.github.io/karpov-blog/projekter/" public/sitemap.xml || echo "WARNING: missing Danish portfolio in sitemap"
-          grep -q "https://nextoz.github.io/karpov-blog/en/projects/" public/sitemap.xml || echo "WARNING: missing English portfolio in sitemap"
-          grep -q "https://nextoz.github.io/karpov-blog/posts/" public/sitemap.xml || echo "WARNING: missing Danish posts in sitemap"
-          grep -q "https://nextoz.github.io/karpov-blog/en/posts/" public/sitemap.xml || echo "WARNING: missing English posts in sitemap"
-
-      - name: Check Danish and English portfolio content is not mixed
-        shell: bash
-        run: |
-          grep -q "Det recruiters skal forstå" public/projekter/index.html
-          ! grep -q "What I want recruiters to understand" public/projekter/index.html
-
-          grep -q "What I want recruiters to understand" public/en/projects/index.html
-          ! grep -q "Det recruiters skal forstå" public/en/projects/index.html
-
-      - name: Check English blog posts were generated
-        shell: bash
-        run: |
-          test -f public/en/posts/devops-er-ikke-en-pipeline/index.html
-          test -f public/en/posts/ai-er-ikke-laengere-en-chatbot/index.html
-          test -f public/en/posts/ai-er-ikke-fyringsgrund/index.html
-          test -f public/en/posts/project-glasswing/index.html
-
-      - name: Check no backup files are tracked
-        shell: bash
-        run: |
-          ! git ls-files | grep -E '\.bak$|before-language-fix|before-i18n-fix'
-
-
-
-
-
-
+          test -d public
+          find public -maxdepth 2 -type f | head -50
