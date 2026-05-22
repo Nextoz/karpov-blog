@@ -103,3 +103,4 @@ Denne blog fungerer som både portfolio og skriveplatform. Formålet er at samle
 - Cloud-infrastruktur og deployment automation
 - AI-assisteret softwareudvikling
 - Teknisk dokumentation og formidling
+

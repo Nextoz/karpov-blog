@@ -71,7 +71,7 @@ url = "https://github.com/Nextoz"
 
 [[params.socialIcons]]
 name = "email"
-url = "mailto:evgeny@karpov.dk"
+url = "mailto:evkar91@gmail.com"
 
 
 [[params.socialIcons]]
@@ -158,6 +158,7 @@ codeFences = true
 guessSyntax = true
 lineNos = true
 style = "monokai"
+
 
 
 
