@@ -1,11 +1,14 @@
 ---
 title: "DevOps, Platform Engineering og .NET Portfolio"
-description: "Portfolio for Evgeny Karpov: Azure DevOps, .NET, Kubernetes, CI/CD, observability, platform engineering og AI-assisteret softwareudvikling."
+description: "Portfolio for Evgeny Karpov: Azure DevOps, .NET, Kubernetes, CI/CD, observability, platform engineering, offentlig IT og AI-assisteret softwareudvikling."
+summary: "Udvalgte projekter og erfaringer inden for DevOps, platform engineering, .NET backend, cloud, CI/CD, observability og AI-assisteret softwareudvikling."
 ---
 
 # Portfolio
 
-Udvalgte projekter og erfaringer inden for DevOps, platform engineering, .NET backend, cloud, CI/CD og AI-assisteret softwareudvikling.
+Udvalgte projekter og erfaringer inden for **DevOps**, **platform engineering**, **.NET backend**, **cloud**, **CI/CD**, **observability** og **AI-assisteret softwareudvikling**.
+
+Min professionelle profil ligger i krydsfeltet mellem softwareudvikling og drift: jeg forstår både applikationskode, pipelines, cloud-infrastruktur, deployments, miljøer og de praktiske problemer, der opstår, når systemer skal fungere i produktion.
 
 ---
 
@@ -14,19 +17,20 @@ Udvalgte projekter og erfaringer inden for DevOps, platform engineering, .NET ba
 **Område:** DevOps, cloud, Kubernetes, dokumentbehandling, SAP-integration  
 **Teknologier:** Azure DevOps, Docker, Kubernetes, Helm, KEDA, Azure Service Bus, Azure, .NET
 
-MyPaperFlow var en cloud-baseret dokument- og fakturaplatform med integration til SAP. Arbejdet lå i spændingsfeltet mellem applikationsudvikling, cloud-infrastruktur, pipelines og drift.
+MyPaperFlow var en cloud-baseret dokument- og fakturaplatform med integration til SAP. Arbejdet lå i spændingsfeltet mellem applikationsudvikling, cloud-infrastruktur, pipelines, identitet, autoskalering og drift.
 
 ### Mit fokus
 
 - CI/CD og Azure DevOps pipelines
 - Kubernetes deployments og Helm-konfiguration
 - Autoskalering med KEDA baseret på Azure Service Bus queues
-- Fejlsøgning på miljøer, deployments, identities og cloud-komponenter
+- Fejlsøgning på deployments, identities, miljøer og cloud-komponenter
 - Samspil mellem udvikling, infrastruktur og drift
+- Dokumentation og forbedring af deployment flows
 
-### Relevans
+### Hvorfor det er relevant
 
-Projektet viser min praktiske erfaring med moderne DevOps-arbejde, hvor software ikke kun skal bygges, men også deployes, observeres, skaleres og drives stabilt.
+Projektet viser praktisk DevOps-erfaring med rigtige cloud-systemer. Ikke kun teori, men arbejdet med at få software bygget, deployet, observeret, skaleret og fejlsøgt på tværs af miljøer.
 
 ---
 
@@ -43,11 +47,11 @@ DCAB var et nationalt registersystem inden for den almene boligsektor. Projektet
 - Datamodellering og forretningslogik
 - Test, kvalitet og leveranceprocesser
 - Samarbejde i et større udviklingsteam
-- Azure DevOps som en del af udviklingsflowet
+- Azure DevOps som del af udviklingsflowet
 
-### Relevans
+### Hvorfor det er relevant
 
-Projektet viser min erfaring med kritiske systemer, domænekompleksitet og offentlig digitalisering.
+Projektet viser erfaring med kritiske systemer, offentlig digitalisering og software, hvor korrekthed, dataforståelse og stabilitet betyder mere end hurtige demoer.
 
 ---
 
@@ -64,10 +68,11 @@ SSOIDP er et identitets- og loginprojekt med fokus på moderne authentication fl
 - OIDC-baseret authentication
 - MFA og FIDO2-perspektiver
 - .NET-baseret backend og sikkerhedsnær udvikling
+- Forståelse for enterprise login, adgang og sikkerhed
 
-### Relevans
+### Hvorfor det er relevant
 
-Projektet viser interesse og erfaring inden for identity, security og enterprise login-løsninger.
+Identity er et af de områder, hvor software hurtigt bliver kritisk infrastruktur. Projektet viser interesse og erfaring med sikkerhedsnær backend-udvikling og moderne loginflows.
 
 ---
 
@@ -76,7 +81,7 @@ Projektet viser interesse og erfaring inden for identity, security og enterprise
 **Område:** Personlig portfolio, teknisk formidling, SEO  
 **Teknologier:** Hugo, PaperMod, GitHub Pages, Markdown, GitHub Actions
 
-Denne blog fungerer som både portfolio og skriveplatform. Formålet er at samle tekniske noter, refleksioner, projekter og erfaringer på et sted.
+Denne blog fungerer som både portfolio og skriveplatform. Formålet er at samle tekniske noter, refleksioner, projekter og erfaringer ét sted.
 
 ### Mit fokus
 
@@ -84,6 +89,7 @@ Denne blog fungerer som både portfolio og skriveplatform. Formålet er at samle
 - Deployment via GitHub Pages
 - Teknisk SEO og struktureret indhold
 - Portfolio-positionering som DevOps og Platform Engineer
+- Formidling om AI, DevOps og teknologipolitik
 
 ---
 
@@ -96,3 +102,4 @@ Denne blog fungerer som både portfolio og skriveplatform. Formålet er at samle
 - Observability, logs, metrics og tracing
 - Cloud-infrastruktur og deployment automation
 - AI-assisteret softwareudvikling
+- Teknisk dokumentation og formidling
