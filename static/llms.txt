@@ -1,0 +1,26 @@
+# Evgeny Karpov
+
+Personal website and technical blog by Evgeny Karpov.
+
+Focus areas:
+- DevOps
+- Platform engineering
+- .NET and C#
+- Azure DevOps
+- Kubernetes
+- CI/CD
+- Observability
+- AI and digitalization
+- Public-sector technology
+
+Important pages:
+- https://nextoz.github.io/karpov-blog/
+- https://nextoz.github.io/karpov-blog/projekter/
+- https://nextoz.github.io/karpov-blog/om/
+- https://nextoz.github.io/karpov-blog/posts/
+- https://nextoz.github.io/karpov-blog/en/
+- https://nextoz.github.io/karpov-blog/en/projekter/
+- https://nextoz.github.io/karpov-blog/en/posts/
+
+Author:
+Evgeny Karpov is a software engineer based in Copenhagen, working with .NET, DevOps, Azure DevOps, CI/CD, infrastructure and platform engineering.

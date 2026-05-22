@@ -1,0 +1,112 @@
+name: PR checks
+
+on:
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  hugo-build-seo-i18n-checks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.147.9"
+          extended: true
+
+      - name: Build Hugo site
+        run: hugo --gc --minify --baseURL "https://nextoz.github.io/karpov-blog/"
+
+      - name: Check important generated pages exist
+        shell: bash
+        run: |
+          test -f public/index.html
+          test -f public/en/index.html
+
+          test -f public/projekter/index.html
+          test -f public/en/projekter/index.html
+
+          test -f public/posts/index.html
+          test -f public/en/posts/index.html
+
+          test -f public/sitemap.xml
+
+      - name: Check language switcher exists on important pages
+        shell: bash
+        run: |
+          grep -q "global-language-switch" public/index.html
+          grep -q "global-language-switch" public/en/index.html
+          grep -q "global-language-switch" public/projekter/index.html
+          grep -q "global-language-switch" public/en/projekter/index.html
+          grep -q "global-language-switch" public/posts/index.html
+          grep -q "global-language-switch" public/en/posts/index.html
+
+      - name: Check multilingual hreflang links exist
+        shell: bash
+        run: |
+          grep -q 'hreflang="da' public/projekter/index.html
+          grep -q 'hreflang="en' public/projekter/index.html
+          grep -q 'hreflang="da' public/en/projekter/index.html
+          grep -q 'hreflang="en' public/en/projekter/index.html
+
+      - name: Check canonical links exist
+        shell: bash
+        run: |
+          grep -q 'rel="canonical"' public/index.html
+          grep -q 'rel="canonical"' public/en/index.html
+          grep -q 'rel="canonical"' public/projekter/index.html
+          grep -q 'rel="canonical"' public/en/projekter/index.html
+
+      - name: Check sitemap contains both languages
+        shell: bash
+        run: |
+          grep -q "https://nextoz.github.io/karpov-blog/projekter/" public/sitemap.xml
+          grep -q "https://nextoz.github.io/karpov-blog/en/projekter/" public/sitemap.xml
+          grep -q "https://nextoz.github.io/karpov-blog/posts/" public/sitemap.xml
+          grep -q "https://nextoz.github.io/karpov-blog/en/posts/" public/sitemap.xml
+
+      - name: Check page titles and descriptions
+        shell: bash
+        run: |
+          grep -q "<title>" public/index.html
+          grep -q 'name="description"' public/index.html
+
+          grep -q "<title>" public/en/index.html
+          grep -q 'name="description"' public/en/index.html
+
+          grep -q "<title>" public/projekter/index.html
+          grep -q 'name="description"' public/projekter/index.html
+
+          grep -q "<title>" public/en/projekter/index.html
+          grep -q 'name="description"' public/en/projekter/index.html
+
+      - name: Check Danish and English portfolio content is not mixed
+        shell: bash
+        run: |
+          grep -q "Det recruiters skal forstå" public/projekter/index.html
+          ! grep -q "What I want recruiters to understand" public/projekter/index.html
+
+          grep -q "What I want recruiters to understand" public/en/projekter/index.html
+          ! grep -q "Det recruiters skal forstå" public/en/projekter/index.html
+
+      - name: Check English blog posts were generated
+        shell: bash
+        run: |
+          test -f public/en/posts/devops-er-ikke-en-pipeline/index.html
+          test -f public/en/posts/ai-er-ikke-laengere-en-chatbot/index.html
+          test -f public/en/posts/ai-er-ikke-fyringsgrund/index.html
+          test -f public/en/posts/project-glasswing/index.html
+
+      - name: Check no backup files are tracked
+        shell: bash
+        run: |
+          ! git ls-files | grep -E '\.bak$|before-language-fix|before-i18n-fix'
