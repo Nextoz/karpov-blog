@@ -33,6 +33,7 @@ Læs bloggen, hvis du er interesseret i praktiske erfaringer med DevOps, platfor
 
 Et godt sted at starte:
 
+- [EU AI Act i praksis: transparens er ikke bare en pop-up](/karpov-blog/posts/eu-ai-act-transparens-er-ikke-bare-en-popup/)
 - [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/)
 - [AI er ikke længere en chatbot — det er det nye produktionsapparat](/karpov-blog/posts/ai-er-ikke-laengere-en-chatbot/)
 - [Project Glasswing — Når AI finder de fejl mennesker overser](/karpov-blog/posts/project-glasswing/)

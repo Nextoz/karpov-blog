@@ -138,6 +138,7 @@ DevOps er evnen til at ændre software uden at hele rummet instinktivt begynder 
 Læs også:
 
 - [AI er ikke længere en chatbot - det er det nye produktionsapparat](/karpov-blog/posts/ai-er-ikke-laengere-en-chatbot/)
+- [EU AI Act i praksis: transparens er ikke bare en pop-up](/karpov-blog/posts/eu-ai-act-transparens-er-ikke-bare-en-popup/)
 - [Project Glasswing - Når AI finder de fejl mennesker overser](/karpov-blog/posts/project-glasswing/)
 - [Portfolio: DevOps, Platform Engineering og .NET](/karpov-blog/projekter/)
 

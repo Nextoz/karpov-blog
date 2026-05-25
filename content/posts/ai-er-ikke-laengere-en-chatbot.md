@@ -209,4 +209,5 @@ Spørgsmålet bliver, om man har styr på den.
 Læs også:
 
 - [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/)
+- [EU AI Act i praksis: transparens er ikke bare en pop-up](/karpov-blog/posts/eu-ai-act-transparens-er-ikke-bare-en-popup/)
 - [Portfolio: DevOps, Platform Engineering og .NET](/karpov-blog/projekter/)
