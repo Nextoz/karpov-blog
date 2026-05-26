@@ -44,6 +44,12 @@ Worked on backend and Blazor features for a central registry system with complex
 
 Worked with business-critical payroll functionality, C#, ASP.NET, DB2, MSSQL, TeamCity, Octopus Deploy and legacy COBOL logic.
 
+### Vintønden — Local SEO, WordPress and AI-assisted content structure
+
+For [Vintønden](https://vintonden.dk/) in Frederiksberg, I worked on a practical SEO and website improvement effort that connected local search intent, information architecture and concrete WordPress execution into an actionable plan.
+
+The work covered technical and content SEO review, metadata improvements, landing-page ideas for events and private-room bookings, multilingual content guidance, and reusable AI-assisted workflows for research, copywriting and implementation notes.
+
 ## What recruiters should understand
 
 I am strongest in roles where backend development, DevOps and platform work meet.

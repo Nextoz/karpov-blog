@@ -129,6 +129,22 @@ Clear technical communication is part of senior engineering work. This site show
 
 ---
 
+## Vintønden — Local SEO, WordPress and AI-assisted Content Structure
+
+**Area:** Local SEO, website structure, WordPress, AI-assisted research
+
+**Link:** [vintonden.dk](https://vintonden.dk/)
+
+For Vintønden in Frederiksberg, I worked on a practical SEO and website improvement effort that connected local search intent, information architecture and concrete WordPress execution into an actionable plan.
+
+The work covered technical and content SEO review, metadata improvements, landing-page ideas for events and private-room bookings, multilingual content guidance, and reusable AI-assisted workflows for research, copywriting and implementation notes.
+
+### Why it matters
+
+This project shows that I can translate technical analysis, AI tooling and business context into concrete improvements for a real local business without turning the solution into unnecessary theory.
+
+---
+
 ## What I want recruiters to understand
 
 I am strongest in roles where backend development, DevOps and platform work meet.
