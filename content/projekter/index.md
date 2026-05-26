@@ -129,6 +129,22 @@ Klar teknisk formidling er en del af senior engineering-arbejde. Siden viser, at
 
 ---
 
+## Vintønden — Lokal SEO, WordPress og AI-assisteret indholdsstruktur
+
+**Område:** Lokal SEO, website-struktur, WordPress, AI-assisteret research
+
+**Link:** [vintonden.dk](https://vintonden.dk/)
+
+For Vintønden på Frederiksberg har jeg arbejdet med en praktisk SEO- og websiteforbedring, hvor lokal søgeintention, informationsarkitektur og konkret WordPress-eksekvering blev samlet i en handlingsplan.
+
+Arbejdet omfattede teknisk og indholdsmæssig SEO-gennemgang, forbedring af metadata, forslag til landingssider for events og selskabslokaler, multilingual content guidance samt genbrugelige AI-assisterede workflows til research, copy og implementeringsnoter.
+
+### Hvorfor det er relevant
+
+Projektet viser, at jeg kan omsætte teknisk analyse, AI-værktøjer og forretningsforståelse til konkrete forbedringer for en rigtig lokal virksomhed, uden at gøre løsningen unødigt akademisk.
+
+---
+
 ## Det recruiters skal forstå
 
 Jeg er stærkest i roller, hvor backendudvikling, DevOps og platformarbejde mødes.
