@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Obsidian vault knowledge graph</title>
+  <desc id="desc">A dark Obsidian-style knowledge graph with connected notes around a central Vault Knowledge Graph node.</desc>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="55%" r="60%">
+      <stop offset="0%" stop-color="#3a3548"/>
+      <stop offset="55%" stop-color="#202024"/>
+      <stop offset="100%" stop-color="#171719"/>
+    </radialGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+  <rect x="0" y="0" width="1600" height="4" fill="#8b5cf6"/>
+  <rect x="0" y="896" width="1600" height="4" fill="#8b5cf6"/>
+  <g stroke="#3f3f46" stroke-width="1.15" opacity="0.72">
+    <path d="M646 533 512 472 381 568 268 529 170 625"/>
+    <path d="M646 533 610 391 489 305 421 194 301 121"/>
+    <path d="M646 533 770 435 905 486 1035 399 1198 455"/>
+    <path d="M646 533 788 616 943 632 1127 689 1305 655"/>
+    <path d="M646 533 616 716 508 791 371 764 249 817"/>
+    <path d="M646 533 705 328 815 225 946 184 1095 116"/>
+    <path d="M646 533 821 552 978 543 1148 555 1331 521"/>
+    <path d="M646 533 552 612 441 630 322 688 197 703"/>
+    <path d="M646 533 733 699 847 787 1021 790 1191 812"/>
+    <path d="M646 533 666 244 578 121 455 78"/>
+    <path d="M1198 455 1266 327 1377 246 1490 190"/>
+    <path d="M1198 455 1301 392 1432 407 1550 326"/>
+    <path d="M1198 455 1252 574 1414 612 1532 694"/>
+    <path d="M381 568 405 430 333 323 219 280"/>
+    <path d="M421 194 544 218 610 391 759 375"/>
+    <path d="M943 632 1002 469 946 184 815 225"/>
+    <path d="M508 791 552 612 770 435 759 375"/>
+    <path d="M1127 689 1148 555 1035 399 946 184"/>
+  </g>
+  <g fill="#d4d4d8" opacity="0.92">
+    <circle cx="646" cy="533" r="18" fill="#c4c4cc"/>
+    <circle cx="1198" cy="455" r="15"/>
+    <circle cx="512" cy="472" r="7"/>
+    <circle cx="381" cy="568" r="6"/>
+    <circle cx="268" cy="529" r="5"/>
+    <circle cx="170" cy="625" r="5"/>
+    <circle cx="610" cy="391" r="7"/>
+    <circle cx="489" cy="305" r="6"/>
+    <circle cx="421" cy="194" r="6"/>
+    <circle cx="301" cy="121" r="5"/>
+    <circle cx="770" cy="435" r="7"/>
+    <circle cx="905" cy="486" r="5"/>
+    <circle cx="1035" cy="399" r="6"/>
+    <circle cx="788" cy="616" r="5"/>
+    <circle cx="943" cy="632" r="6"/>
+    <circle cx="1127" cy="689" r="5"/>
+    <circle cx="1305" cy="655" r="6"/>
+    <circle cx="616" cy="716" r="5"/>
+    <circle cx="508" cy="791" r="6"/>
+    <circle cx="371" cy="764" r="5"/>
+    <circle cx="249" cy="817" r="5"/>
+    <circle cx="705" cy="328" r="5"/>
+    <circle cx="815" cy="225" r="6"/>
+    <circle cx="946" cy="184" r="6"/>
+    <circle cx="1095" cy="116" r="5"/>
+    <circle cx="821" cy="552" r="5"/>
+    <circle cx="978" cy="543" r="6"/>
+    <circle cx="1148" cy="555" r="5"/>
+    <circle cx="1331" cy="521" r="5"/>
+    <circle cx="552" cy="612" r="6"/>
+    <circle cx="441" cy="630" r="5"/>
+    <circle cx="322" cy="688" r="5"/>
+    <circle cx="197" cy="703" r="5"/>
+    <circle cx="733" cy="699" r="5"/>
+    <circle cx="847" cy="787" r="5"/>
+    <circle cx="1021" cy="790" r="6"/>
+    <circle cx="1191" cy="812" r="5"/>
+    <circle cx="666" cy="244" r="6"/>
+    <circle cx="578" cy="121" r="5"/>
+    <circle cx="455" cy="78" r="5"/>
+    <circle cx="1266" cy="327" r="6"/>
+    <circle cx="1377" cy="246" r="5"/>
+    <circle cx="1490" cy="190" r="5"/>
+    <circle cx="1301" cy="392" r="5"/>
+    <circle cx="1432" cy="407" r="6"/>
+    <circle cx="1550" cy="326" r="5"/>
+    <circle cx="1252" cy="574" r="5"/>
+    <circle cx="1414" cy="612" r="5"/>
+    <circle cx="1532" cy="694" r="5"/>
+    <circle cx="405" cy="430" r="5"/>
+    <circle cx="333" cy="323" r="6"/>
+    <circle cx="219" cy="280" r="5"/>
+    <circle cx="544" cy="218" r="5"/>
+    <circle cx="759" cy="375" r="5"/>
+    <circle cx="1002" cy="469" r="5"/>
+  </g>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#a1a1aa" opacity="0.9">
+    <text x="596" y="562" font-size="18" fill="#d4d4d8">Vault Knowledge Graph</text>
+    <text x="1170" y="485" font-size="16" fill="#d4d4d8">Job Search 2026</text>
+    <text x="512" y="494">AI Runtime Context Layer</text>
+    <text x="342" y="594">Daily Research Scout</text>
+    <text x="730" y="458">Self-improving graph memory</text>
+    <text x="905" y="510">MCP &amp; Tooling</text>
+    <text x="1012" y="421">Blog - START HERE</text>
+    <text x="760" y="640">AI CS Agents Quantum Gap Review</text>
+    <text x="500" y="820">Research Intake Index</text>
+    <text x="1082" y="716">Draft blog posts</text>
+    <text x="278" y="146">SSOIDP telemetry notes</text>
+    <text x="1180" y="350">Application sprint plan</text>
+    <text x="1348" y="270">LinkedIn and recruiter messages</text>
+    <text x="1030" y="138">Platform engineering portfolio</text>
+    <text x="164" y="655">GraphRAG for Obsidian</text>
+    <text x="193" y="724">DevOps guides</text>
+    <text x="1322" y="681">EU AI Act post</text>
+  </g>
+  <g opacity="0.25" filter="url(#soft)">
+    <circle cx="646" cy="533" r="42" fill="#a78bfa"/>
+    <circle cx="1198" cy="455" r="32" fill="#a78bfa"/>
+  </g>
+</svg>
