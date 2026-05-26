@@ -36,9 +36,9 @@ Et godt DevOps-flow svarer på fem spørgsmål:
 - Kan vi teste ændringen hurtigt nok til at turde merge?
 - Kan vi deploye uden håndholdt ceremonidans?
 - Kan vi se, om systemet har det godt bagefter?
-- Kan vi rulle tilbage, når virkeligheden får en kreativ ide?
+- Kan vi rulle tilbage, når virkeligheden får en kreativ idé?
 
-Hvis svaret er nej, har man ikke et DevOps-problem.
+Hvis svaret er nej, har man ikke ét DevOps-problem.
 
 Man har fem DevOps-problemer i trenchcoat.
 
@@ -64,7 +64,7 @@ Kedelige deployments kræver:
 
 - samme build-artefakt gennem miljøerne
 - konfiguration uden hemmelige manuelle klik
-- migrations der er tænkt igennem
+- migrations, der er tænkt igennem
 - feature flags eller anden måde at styre risiko på
 - rollback-plan før rollback bliver poesi
 
@@ -72,7 +72,7 @@ Release engineering handler i praksis om reproducerbarhed, automatisering og spo
 
 ## Observability er ikke pynt
 
-Logs, metrics og traces er ikke noget, man drysser på systemet bagefter, som persille på en lidt trist suppe.
+Logs, metrics og traces er ikke noget, man drysser på systemet bagefter som persille på en lidt trist suppe.
 
 De er en del af designet.
 
@@ -112,7 +112,7 @@ Hvis jeg skulle forbedre et DevOps-flow i morgen, ville jeg starte her:
 1. Find den mest smertefulde manuelle release-opgave.
 2. Gør den synlig i pipeline eller dokumentation.
 3. Tilføj en hurtig test, der fanger den mest pinlige fejl.
-4. Sørg for at deployment efterlader spor: commit, version, miljø, tidspunkt.
+4. Sørg for, at deployment efterlader spor: commit, version, miljø og tidspunkt.
 5. Lav et dashboard, der viser brugeroplevet sundhed, ikke kun CPU-fitness.
 6. Skriv en rollback-note, mens alt er roligt.
 7. Gentag uden at kalde det en transformation.

@@ -42,7 +42,7 @@ Ikke bare:
 
 Men:
 
-“Generér en kampagne, lav videoen, ret den efter feedback, tilpas budskabet til målgruppen, og mål bagefter hvad der virker.”
+“Generér en kampagne, lav videoen, ret den efter feedback, tilpas budskabet til målgruppen, og mål bagefter, hvad der virker.”
 
 Det lyder stadig lidt futuristisk. Men det er ikke science fiction længere. Det er produktroadmaps.
 
@@ -129,7 +129,7 @@ Hvem kan forbinde AI med deres data uden at lække dem?
 
 Hvem kan bygge interne copilots, der faktisk forstår organisationen?
 
-Hvem kan automatisere de kedelige manuelle processer uden at skabe nye risici?
+Hvem kan automatisere de kedelige, manuelle processer uden at skabe nye risici?
 
 Hvem kan give udviklere bedre værktøjer uden at miste kvalitet og ejerskab?
 

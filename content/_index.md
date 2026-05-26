@@ -13,7 +13,7 @@ ShowWordCount: false
 
 Software engineer i København med erfaring inden for .NET, Azure DevOps, CI/CD, DevOps, infrastruktur og platform engineering.
 
-Jeg skriver om software engineering, AI, DevOps, digitalisering og teknologi — især fra vinklen af en udvikler, der også interesserer sig for drift, delivery og hvordan systemer faktisk fungerer i produktion.
+Jeg skriver om software engineering, AI, DevOps, digitalisering og teknologi — især fra vinklen af en udvikler, der også interesserer sig for drift, delivery og for, hvordan systemer faktisk fungerer i produktion.
 
 ## Start her
 

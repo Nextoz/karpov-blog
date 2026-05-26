@@ -34,7 +34,7 @@ Relevant areas: Azure DevOps, Azure, Bicep, PowerShell DSC, IIS, OpenTelemetry, 
 
 ### MyPaperFlow — Cloud DevOps, Kubernetes and SAP integration
 
-Worked with cloud infrastructure, Azure DevOps pipelines, Docker images, Kubernetes deployments, Helm configuration, KEDA autoscaling and Azure Service Bus based workloads.
+Worked with cloud infrastructure, Azure DevOps pipelines, Docker images, Kubernetes deployments, Helm configuration, KEDA autoscaling and Azure Service Bus-based workloads.
 
 ### DCAB — Public-sector .NET system
 
