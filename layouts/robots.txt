@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: {{ "sitemap.xml" | absURL }}
+Sitemap: {{ "da/sitemap.xml" | absURL }}
+Sitemap: {{ "en/sitemap.xml" | absURL }}
