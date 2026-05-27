@@ -12,7 +12,7 @@ ShowReadingTime: true
 cover:
   image: "/karpov-blog/images/obsidian-vault-knowledge-graph.svg"
   alt: "Et Obsidian-lignende knowledge graph over noter, research, job search og blogarbejde."
-  caption: "Mit vault som graf. Det ligner lidt en efterfest for noter, men der er faktisk en ide med det."
+  caption: "Mit vault som graf. Det ligner lidt en efterfest for noter, men der er faktisk en idé med det."
 ---
 
 # Mit Obsidian-vault fik en lille forskningsafdeling
@@ -54,7 +54,7 @@ Men et vault kan også langsomt blive en kælder.
 
 Ikke en hyggelig vinkælder.
 
-Mere sådan en kælder hvor der står en kasse med "vigtige kabler" fra 2011, og man er bange for at smide den ud, fordi der måske ligger et mini-USB-kabel der en dag redder civilisationen.
+Mere sådan en kælder, hvor der står en kasse med "vigtige kabler" fra 2011, og man er bange for at smide den ud, fordi der måske ligger et mini-USB-kabel, der en dag redder civilisationen.
 
 Problemet med en personlig knowledge base er sjældent, at man ikke kan skrive mere.
 
@@ -111,7 +111,7 @@ Det er en assistent med situationsfornemmelse.
 
 ## Selvforbedrende betyder ikke selvforherligende
 
-"Self-improving graph" kan hurtigt lyde som om systemet sidder om natten og bliver klogere, mens man selv sover.
+"Self-improving graph" kan hurtigt lyde, som om systemet sidder om natten og bliver klogere, mens man selv sover.
 
 Det gør det ikke.
 

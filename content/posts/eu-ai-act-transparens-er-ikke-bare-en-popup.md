@@ -17,11 +17,11 @@ EU AI Act lyder som noget, man kan parkere hos Legal.
 
 Det tror jeg er en fejl.
 
-Ikke fordi juristerne ikke skal være med. Det skal de. Meget gerne tidligt, før nogen har bygget en AI-feature, der sender persondata på sightseeing gennem tre SaaS-produkter og en optimistisk proof-of-concept.
+Ikke fordi juristerne ikke skal være med. Det skal de. Meget gerne tidligt, før nogen har bygget en AI-feature, der sender persondata på sightseeing gennem tre SaaS-produkter og en optimistisk proof of concept.
 
-Men fordi transparens ikke kun er en juridisk tekst. Det bliver også et produktproblem, et UX-problem, et arkitekturproblem og til sidst et driftproblem.
+Men fordi transparens ikke kun er en juridisk tekst. Det bliver også et produktproblem, et UX-problem, et arkitekturproblem og til sidst et driftsproblem.
 
-Og driftproblemer har det med at lande hos de mennesker, der bygger, deployer og vedligeholder systemerne.
+Og driftsproblemer har det med at lande hos de mennesker, der bygger, deployer og vedligeholder systemerne.
 
 ## Hvorfor det betyder noget nu
 
@@ -35,10 +35,10 @@ Reglerne handler blandt andet om, at brugere skal informeres, når de interagere
 
 Den korte version:
 
-- bruger du AI direkte i produktet, skal brugeren måske vide det
-- genererer du syntetisk tekst, lyd, billede eller video, skal det måske markeres
-- bruger du emotion recognition eller biometrisk kategorisering, skal mennesker informeres
-- publicerer du AI-genereret tekst om emner af offentlig interesse, skal du tænke dig særligt godt om
+- Bruger du AI direkte i produktet, skal brugeren måske vide det.
+- Genererer du syntetisk tekst, lyd, billede eller video, skal det måske markeres.
+- Bruger du emotion recognition eller biometrisk kategorisering, skal mennesker informeres.
+- Publicerer du AI-genereret tekst om emner af offentlig interesse, skal du tænke dig særligt godt om.
 
 Det lyder måske som compliance.
 
@@ -100,12 +100,12 @@ Ellers har man ikke et krav. Så har man en intention med pæn skrifttype.
 
 Eksempler:
 
-- UI-tests, der sikrer at AI-labels vises i relevante flows
+- UI-tests, der sikrer, at AI-labels vises i relevante flows
 - API-tests, der sikrer metadata på AI-genereret indhold
-- integrationstests, der sikrer at labels overlever eksport eller videresendelse
-- log-tests, der sikrer at AI-relaterede hændelser kan spores
+- integrationstests, der sikrer, at labels overlever eksport eller videresendelse
+- log-tests, der sikrer, at AI-relaterede hændelser kan spores
 - deployment checks, der fanger manglende konfiguration
-- runbooks, der forklarer hvad support skal svare, når en bruger spørger
+- runbooks, der forklarer, hvad support skal svare, når en bruger spørger
 
 Det lyder tørt. Det er også pointen.
 
@@ -205,7 +205,7 @@ Find alle steder, hvor organisationen bruger AI:
 - billed-, video- eller lydgenerering
 - rapporter og resuméer
 
-Man kan ikke lave transparens for systemer, man ikke ved findes.
+Man kan ikke lave transparens for systemer, man ikke ved, findes.
 
 ### 2. Sæt ejer på hver AI-feature
 
@@ -270,11 +270,11 @@ Det betyder: gem nok til at kunne forstå, forklare og fejlfinde systemet, uden 
 
 Det kræver balance:
 
-- hvad skal logges?
-- hvad skal maskeres?
-- hvor længe gemmes det?
-- hvem må læse det?
-- hvordan slettes det?
+- Hvad skal logges?
+- Hvad skal maskeres?
+- Hvor længe gemmes det?
+- Hvem må læse det?
+- Hvordan slettes det?
 
 Det er her, DevOps, sikkerhed, produkt og jura skal tale sammen, helst før produktion gør det for dem.
 

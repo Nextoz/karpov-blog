@@ -55,7 +55,7 @@ MyPaperFlow var en cloud-baseret dokument- og fakturaplatform med integration ti
 
 ### Mit bidrag
 
-- Byggede og vedligeholdt Azure DevOps CI/CD pipelines
+- Byggede og vedligeholdt Azure DevOps CI/CD-pipelines
 - Arbejdede med Docker images, Kubernetes deployments og Helm-konfiguration
 - Forbedrede autoskalering med KEDA baseret på Azure Service Bus queues
 - Arbejdede med infrastructure as code i Bicep og Terraform

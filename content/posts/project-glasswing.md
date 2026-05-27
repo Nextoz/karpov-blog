@@ -14,7 +14,7 @@ Anthropic lancerede i april 2026 **Project Glasswing**: et initiativ hvor fronti
 
 Det mest opsigtsvækkende eksempel er en **27 år gammel sårbarhed i OpenBSD**. Ifølge Anthropics tekniske gennemgang har Claude Mythos Preview også vist markant stærkere evner til at finde, reproducere og i nogle tilfælde udnytte sårbarheder end tidligere modeller.
 
-Det er ikke kun interessant for sikkerhedsforskere. Det er interessant for alle os der bygger og driver software.
+Det er ikke kun interessant for sikkerhedsforskere. Det er interessant for alle os, der bygger og driver software.
 
 ## Hvad betyder det for DevOps?
 
@@ -28,7 +28,7 @@ Jeg tænker:
 - Kan vi se effekten i logs og dashboards?
 - Har vi rollback klar hvis en sikkerhedsrettelse knækker noget?
 
-Hvis AI øger hastigheden på sårbarhedsfinding, bliver flaskehalsen hurtigt alt det bagefter: prioritering, test, release, kommunikation og drift.
+Hvis AI øger hastigheden på sårbarhedsfinding, bliver flaskehalsen hurtigt alt det, der kommer bagefter: prioritering, test, release, kommunikation og drift.
 
 Det er her DevOps bliver relevant. Ikke som buzzword, men som den praktiske disciplin der forbinder udvikling, sikkerhed og produktion.
 
@@ -44,7 +44,7 @@ Hvis man vil forberede sig på en verden med AI-assisteret sårbarhedsfinding, v
 - Dokumentér hvordan kritiske sårbarheder prioriteres.
 - Lad AI hjælpe med analyse, men behold menneskelig validering.
 
-Det positive er, at værktøjerne nu begynder at komme i hænderne på forsvarerne. Det er et kapløb, og vi skal sørge for at de vinder det.
+Det positive er, at værktøjerne nu begynder at komme i hænderne på forsvarerne. Det er et kapløb, og vi skal sørge for, at de vinder det.
 
 Læs også:
 

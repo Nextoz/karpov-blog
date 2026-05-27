@@ -7,7 +7,7 @@ description: "Om Evgeny Karpov, Senior DevOps og Platform Engineer i København 
 
 Jeg hedder **Evgeny Karpov** og arbejder med softwareudvikling, DevOps og platform engineering i København.
 
-Min styrke ligger i krydsfeltet mellem backend-udvikling og driftbar software: jeg forstår både applikationskode, pipelines, cloud-infrastruktur, deployments og de praktiske problemer, der opstår når systemer skal fungere i rigtige miljøer.
+Min styrke ligger i krydsfeltet mellem backend-udvikling og driftbar software: jeg forstår både applikationskode, pipelines, cloud-infrastruktur, deployments og de praktiske problemer, der opstår, når systemer skal fungere i rigtige miljøer.
 
 ---
 
