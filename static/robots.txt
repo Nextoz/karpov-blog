@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://nextoz.github.io/karpov-blog/sitemap.xml
+Sitemap: https://nextoz.github.io/karpov-blog/da/sitemap.xml
+Sitemap: https://nextoz.github.io/karpov-blog/en/sitemap.xml

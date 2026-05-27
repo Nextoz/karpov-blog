@@ -1,6 +1,7 @@
 ---
 title: "AI er ikke længere en chatbot — det er det nye produktionsapparat"
 date: 2026-05-22
+lastmod: 2026-05-27
 draft: false
 description: "AI er på vej fra chatbot og hype til produktionsapparat. Google, OpenAI, EU og USA viser samme tendens: AI bliver infrastruktur, agenter og regulering."
 summary: "AI er på vej fra chatbot og hype til produktionsapparat. Det handler ikke længere kun om prompts, men om agenter, deployment, regulering og hvem der ejer fremtidens digitale infrastruktur."
