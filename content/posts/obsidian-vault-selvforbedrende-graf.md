@@ -1,7 +1,7 @@
 ---
 title: "Mit Obsidian-vault fik en lille forskningsafdeling"
 date: 2026-05-26
-lastmod: 2026-05-26
+lastmod: 2026-05-27
 draft: false
 description: "Jeg har bygget et Obsidian-setup med graph memory, daglig research scout og blogkladder. Ikke som magi, men som et praktisk AI-arbejdsbord."
 summary: "Et kig ind i mit Obsidian-vault: graph memory, daglig research scout, kandidatnoter og blogkladder. AI som arbejdsbord, ikke som tryllestav."
@@ -366,6 +366,18 @@ Men som en tålmodig assistent, der hver morgen møder ind og siger:
 > "Jeg har ryddet lidt op i grafen, fundet tre papers og lavet en blogkladde. Kaffen må du selv stå for."
 
 Det kan jeg godt leve med.
+
+## Sådan er systemet bygget
+
+Det er ikke en tung platform. Det er et sæt små vaner og filer, der gør det lettere at arbejde videre:
+
+- Obsidian som lokal knowledge base.
+- Markdown-noter med frontmatter, links og korte svar øverst.
+- Daglige research-scouts, der laver kladder i stedet for færdige artikler.
+- Blogkladder, der skal verificeres og have en menneskelig vinkel, før de publiceres.
+- Git og Hugo som den offentlige udgivelseskanal.
+
+Det vigtigste er ikke værktøjet. Det vigtigste er, at research, noter, job search og blog ikke ligger i hver sin mentale skuffe. De kan pege på hinanden.
 
 Læs også:
 

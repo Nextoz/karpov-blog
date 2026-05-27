@@ -21,22 +21,43 @@ Jeg skriver især om:
 - AI-assisteret softwareudvikling og teknologipolitik
 - Hvordan teknologi går fra hype til produktion
 
+## Mine tre spor
+
+**DevOps field notes**
+Praktiske noter om CI/CD, Azure DevOps, Kubernetes, observability, dokumentation og deployment-flow.
+
+**AI i produktion**
+Hvordan AI går fra chatbot til tools, agenter, pipelines, tests, logs, permissions og governance.
+
+**Sikkerhed, drift og regulering**
+Hvor AI, cybersikkerhed, EU AI Act og dansk digitalisering bliver til noget, teams faktisk skal bygge, teste og drive.
+
 ## Start her, hvis du er recruiter eller hiring manager
 
 Se min [portfolio](/karpov-blog/projekter/) for konkrete projekter og erfaringer med .NET, Azure DevOps, Kubernetes, CI/CD, platform engineering og offentlig IT.
 
 Læs også [om mig](/karpov-blog/om/) for en kortere professionel profil.
 
+Jeg leder efter min næste seniorrolle i København, gerne inden for DevOps, platform engineering, SRE eller backend med platformansvar.
+
+Gode indgange:
+
+- [Portfolio: DevOps, Platform Engineering og .NET](/karpov-blog/projekter/)
+- [Om Evgeny Karpov](/karpov-blog/om/)
+- [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/)
+- [EU AI Act i praksis: transparens er ikke bare en pop-up](/karpov-blog/posts/eu-ai-act-transparens-er-ikke-bare-en-popup/)
+
 ## Start her, hvis du er udvikler eller DevOps-interesseret
 
 Læs bloggen, hvis du er interesseret i praktiske erfaringer med DevOps, platform engineering, AI i softwareudvikling og moderne teknisk infrastruktur.
 
-Et godt sted at starte:
+## Bedste indlæg at starte med
 
-- [EU AI Act i praksis: transparens er ikke bare en pop-up](/karpov-blog/posts/eu-ai-act-transparens-er-ikke-bare-en-popup/)
-- [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/)
-- [AI er ikke længere en chatbot — det er det nye produktionsapparat](/karpov-blog/posts/ai-er-ikke-laengere-en-chatbot/)
-- [Project Glasswing — Når AI finder de fejl mennesker overser](/karpov-blog/posts/project-glasswing/)
+- [EU AI Act i praksis: transparens er ikke bare en pop-up](/karpov-blog/posts/eu-ai-act-transparens-er-ikke-bare-en-popup/) - for dig, der vil forstå AI-governance som produkt-, DevOps- og arkitekturarbejde.
+- [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/) - for dig, der vil læse mit syn på deployment, rollback, observability og dokumentation.
+- [AI er ikke længere en chatbot — det er det nye produktionsapparat](/karpov-blog/posts/ai-er-ikke-laengere-en-chatbot/) - for dig, der følger AI som infrastruktur og ikke kun som prompt-værktøj.
+- [Mit Obsidian-vault fik en lille forskningsafdeling](/karpov-blog/posts/obsidian-vault-selvforbedrende-graf/) - for dig, der vil se, hvordan jeg bruger AI som praktisk arbejdsbord.
+- [Project Glasswing — Når AI finder de fejl mennesker overser](/karpov-blog/posts/project-glasswing/) - for dig, der interesserer dig for AI, sikkerhed og patching som driftsproblem.
 
 ## Hvad jeg prøver at bygge
 
