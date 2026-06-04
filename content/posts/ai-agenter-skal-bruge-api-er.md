@@ -1,7 +1,8 @@
 ---
 title: "AI-agenter skal bruge API'er"
-date: 2026-06-05
-lastmod: 2026-06-05
+date: 2026-06-04
+lastmod: 2026-06-04
+slug: "ai-agenter-skal-bruge-api-er"
 draft: false
 description: "En kort note om hvorfor AI-agenter hurtigt bliver et API-, governance- og platform engineering-problem."
 summary: "Postman, Microsoft og OpenAI peger i samme retning: AI-agenter skal ikke kun blive klogere. De skal kunne arbejde mod rigtige systemer med kontekst, adgangsstyring, logs og klare grænser."
