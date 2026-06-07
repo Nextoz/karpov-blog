@@ -2,6 +2,7 @@
 title: "AI er ikke fyringsgrund — selv Kina forstår det"
 date: 2026-05-06
 lastmod: 2026-05-27
+translationKey: "ai-er-ikke-fyringsgrund"
 description: "AI er ikke en undskyldning for dårlig ledelse. En kort kommentar om automatisering, ansvar, regulering og hvad det betyder for danske teams."
 tags: ["AI", "Politik", "Regulering", "Danmark", "DevOps"]
 categories: ["Teknologipolitik"]

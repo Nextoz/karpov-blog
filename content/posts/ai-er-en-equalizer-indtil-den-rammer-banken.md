@@ -3,6 +3,7 @@ title: "AI er en equalizer, indtil den rammer banken"
 date: 2026-05-28
 lastmod: 2026-05-28
 draft: false
+translationKey: "ai-er-en-equalizer-indtil-den-rammer-banken"
 description: "En kort note fra AI4Diversity hos Danske Bank om AI som equalizer, vibe-coding, inklusion og hvorfor banker har brug for mere end flotte AI-demoer."
 summary: "AI kan være en equalizer. Men i banker bliver den også hurtigt en risikomaskine, hvis data, governance, forklaringer og kontrol ikke følger med."
 tags: ["AI", "Banking", "Danske Bank", "Responsible AI", "DevOps", "Governance"]

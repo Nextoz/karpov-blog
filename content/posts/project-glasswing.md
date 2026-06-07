@@ -2,6 +2,7 @@
 title: "Project Glasswing — Når AI finder de fejl mennesker overser"
 date: 2026-04-16
 lastmod: 2026-05-27
+translationKey: "project-glasswing"
 description: "Anthropics Project Glasswing viser, at AI kan hjælpe med defensiv sikkerhed. Den svære del for teams bliver triage, patching, rollout, observability og drift."
 tags: ["AI", "Cybersecurity", "DevOps", "Platform Engineering", "Open Source"]
 categories: ["Teknologi", "DevOps"]

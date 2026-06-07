@@ -1,27 +1,76 @@
-{{- $base := "https://nextoz.github.io/karpov-blog" -}}
-{{- $path := .RelPermalink -}}
-
-{{- $daPath := $path -}}
-{{- $enPath := $path -}}
-
-{{- if hasPrefix $path "/en/" -}}
-  {{- $daPath = replace $path "/en/" "/" -}}
-  {{- $enPath = $path -}}
-{{- else -}}
-  {{- $daPath = $path -}}
-  {{- $enPath = printf "/en%s" $path -}}
+{{- $translations := .AllTranslations -}}
+{{- if gt (len $translations) 1 -}}
+  {{- range $translations -}}
+    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+  {{- end -}}
+  {{- with index (where $translations "Lang" "da") 0 -}}
+    <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+  {{- end -}}
+{{- else if .IsHome -}}
+  {{- range site.Languages -}}
+    {{- with site.GetPage (printf "/%s" .Lang) -}}
+      <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+    {{- end -}}
+  {{- end -}}
+  <link rel="alternate" hreflang="x-default" href="{{ site.Home.Permalink }}">
 {{- end -}}
 
-{{- if or (eq $path "/projekter/") (eq $path "/en/projects/") -}}
-  {{- $daPath = "/projekter/" -}}
-  {{- $enPath = "/en/projects/" -}}
+{{- $translationPath := "" -}}
+{{- range .AllTranslations -}}
+  {{- if ne .Lang $.Lang -}}
+    {{- $translationPath = .RelPermalink -}}
+  {{- end -}}
 {{- end -}}
+<script>
+(function () {
+  function ready(fn) {
+    if (document.readyState !== "loading") fn();
+    else document.addEventListener("DOMContentLoaded", fn);
+  }
 
-{{- if or (eq $path "/om/") (eq $path "/en/about/") -}}
-  {{- $daPath = "/om/" -}}
-  {{- $enPath = "/en/about/" -}}
-{{- end -}}
+  ready(function () {
+    var base = "/karpov-blog";
+    var path = window.location.pathname;
+    var translatedPath = "{{ $translationPath }}";
+    var isEnglish = path === base + "/en/" || path.indexOf(base + "/en/") === 0;
 
-<link rel="alternate" hreflang="da" href="{{ $base }}{{ $daPath }}">
-<link rel="alternate" hreflang="en" href="{{ $base }}{{ $enPath }}">
-<link rel="alternate" hreflang="x-default" href="{{ $base }}{{ $daPath }}">
+    function toEnglish(p) {
+      if (p === base + "/" || p === base) return base + "/en/";
+      if (p === base + "/projekter/" || p === base + "/projekter") return base + "/en/projects/";
+      if (p === base + "/om/" || p === base + "/om") return base + "/en/about/";
+      if (p.indexOf(base + "/en/") === 0) return p;
+      return p.replace(base + "/", base + "/en/");
+    }
+
+    function toDanish(p) {
+      if (p === base + "/en/" || p === base + "/en") return base + "/";
+      if (p === base + "/en/projects/" || p === base + "/en/projects") return base + "/projekter/";
+      if (p === base + "/en/about/" || p === base + "/en/about") return base + "/om/";
+      return p.replace(base + "/en/", base + "/");
+    }
+
+    var target = translatedPath || (isEnglish ? toDanish(path) : toEnglish(path));
+    var label = isEnglish ? "DA" : "EN";
+    var title = isEnglish ? "Skift til dansk" : "Switch to English";
+
+    var link = document.createElement("a");
+    link.href = target;
+    link.textContent = label;
+    link.title = title;
+    link.setAttribute("aria-label", title);
+    link.className = "global-language-switch";
+
+    var menu = document.querySelector("#menu");
+    if (menu) {
+      var li = document.createElement("li");
+      li.appendChild(link);
+      return;
+    }
+
+    var header = document.querySelector("header");
+    if (header) {
+      header.appendChild(link);
+    }
+  });
+})();
+</script>

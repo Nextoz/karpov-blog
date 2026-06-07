@@ -3,6 +3,7 @@ title: "Mit Obsidian-vault fik en lille forskningsafdeling"
 date: 2026-05-26
 lastmod: 2026-05-27
 draft: false
+translationKey: "obsidian-vault-selvforbedrende-graf"
 description: "Jeg har bygget et Obsidian-setup med graph memory, daglig research scout og blogkladder. Ikke som magi, men som et praktisk AI-arbejdsbord."
 summary: "Et kig ind i mit Obsidian-vault: graph memory, daglig research scout, kandidatnoter og blogkladder. AI som arbejdsbord, ikke som tryllestav."
 tags: ["AI", "Obsidian", "DevOps", "Platform Engineering", "Knowledge Management", "AI Agents"]

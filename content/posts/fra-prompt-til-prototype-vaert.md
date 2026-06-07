@@ -3,6 +3,7 @@ title: "Fra prompt til prototype: AI hjalp mig ikke med at få flere ideer — d
 date: 2026-05-30
 lastmod: 2026-05-30
 draft: false
+translationKey: "fra-prompt-til-prototype-vaert"
 description: "Et praktisk kig på hvordan en app-idé blev skåret frem med AI: fra for mange prompts og for brede ideer til en konkret prototype på Vært, en privat dansk concierge."
 summary: "Jeg brugte AI som produktpartner til at teste, forkaste og skærpe app-idéer. Resultatet blev ikke endnu en chatbot, men en prototype på Vært: en diskret dansk concierge for hosting, dining, kultur og trusted services."
 tags: ["AI", "Produktudvikling", "Prototyping", "Vibe Coding", "Obsidian", "DevOps"]

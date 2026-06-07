@@ -182,7 +182,7 @@ title = "Evgeny Karpov"
 [[languages.en.menu.main]]
 identifier = "home"
 name = "Home"
-url = "/"
+pageRef = "/"
 weight = 10
 
 [[languages.en.menu.main]]

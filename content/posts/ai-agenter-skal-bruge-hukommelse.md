@@ -3,6 +3,7 @@ title: "AI-agenter skal bruge hukommelse"
 date: 2026-06-06
 lastmod: 2026-06-06
 slug: "ai-agenter-skal-bruge-hukommelse"
+translationKey: "ai-agenter-skal-bruge-hukommelse"
 draft: false
 description: "En praktisk note om hvorfor AI-agenter ikke kun skal bruge API'er, men også hukommelse, kilder, validering og menneskelig review."
 summary: "API'er giver AI-agenter adgang til systemer. Hukommelse afgør, om de kan arbejde ansvarligt over tid uden at gentage fejl, miste kontekst eller opfinde en flot forklaring bagefter."
