@@ -47,6 +47,9 @@ jobs:
         run: |
           hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
+      - name: Check generated site coverage
+        run: python scripts/check_sitemaps.py public
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
