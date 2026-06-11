@@ -409,3 +409,18 @@ body::before {
 .post-content strong {
   font-weight: 700;
 }
+
+.author-note {
+  margin: 2.5rem 0 1.5rem;
+  padding: 1rem 1.1rem;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  background: var(--accent-dim);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.author-note a {
+  color: var(--accent);
+  font-weight: 600;
+}

@@ -1,0 +1,11 @@
+{{- if and .IsPage (eq .Section "posts") -}}
+<aside class="author-note">
+  {{- if eq .Lang "da" -}}
+  <strong>Om forfatteren:</strong> Jeg er Evgeny Karpov, software engineer i København med fokus på DevOps, platform engineering, .NET, observability og AI i produktion.
+  Læs mere på <a href="{{ "/start/" | relLangURL }}">Start her</a>, <a href="{{ "/projekter/" | relLangURL }}">Portfolio</a> eller <a href="{{ "/om/" | relLangURL }}">Om mig</a>.
+  {{- else -}}
+  <strong>About the author:</strong> I am Evgeny Karpov, a Copenhagen-based software engineer focused on DevOps, platform engineering, .NET, observability and AI in production.
+  Read more on <a href="{{ "/" | relLangURL }}">Home</a>, <a href="{{ "/projects/" | relLangURL }}">Portfolio</a> or <a href="{{ "/about/" | relLangURL }}">About</a>.
+  {{- end -}}
+</aside>
+{{- end -}}
