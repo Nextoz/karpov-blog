@@ -7,6 +7,8 @@ draft: false
 translationKey: "obsidian-vault-selvforbedrende-graf"
 description: "I built an Obsidian setup with graph memory, a daily research scout and blog drafts. Not as magic, but as a practical AI workbench."
 summary: "A look inside my Obsidian vault: graph memory, daily research scout, candidate notes and blog drafts. AI as a workbench, not a magic wand."
+featured: true
+featuredOrder: 2
 tags: ["AI", "Obsidian", "DevOps", "Platform Engineering", "Knowledge Management", "AI Agents"]
 categories: ["AI", "DevOps", "Technology"]
 author: "Evgeny Karpov"
@@ -16,9 +18,6 @@ cover:
   alt: "An Obsidian-like knowledge graph across notes, research, job search and blog work."
   caption: "My vault as a graph. It looks a bit like an afterparty for notes, but there is a real idea behind it."
 ---
-
-# My Obsidian Vault Got a Small Research Department
-
 ![An Obsidian-like knowledge graph across notes, research, job search and blog work.](/karpov-blog/images/obsidian-vault-knowledge-graph.svg)
 
 I have done something that sounds slightly dangerous on paper:

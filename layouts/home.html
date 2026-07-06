@@ -1,0 +1,109 @@
+{{- define "main" -}}
+{{- $isDA := eq .Lang "da" -}}
+{{- $posts := where site.RegularPages "Section" "posts" -}}
+{{- $featured := where $posts "Params.featured" true -}}
+
+<div class="home-shell">
+<section class="home-hero" aria-labelledby="home-title">
+  <div class="home-hero-copy">
+    <p class="eyebrow">{{ if $isDA }}Engineering notes fra København{{ else }}Engineering notes from Copenhagen{{ end }}</p>
+    <h1 id="home-title">{{ if $isDA }}Software, der skal virke i virkeligheden.{{ else }}Software that has to work in the real world.{{ end }}</h1>
+    <p class="home-lead">
+      {{ if $isDA }}Jeg skriver om DevOps, platform engineering, .NET, observability og AI-systemer — med fokus på det, der sker mellem en god idé og stabil produktion.{{ else }}I write about DevOps, platform engineering, .NET, observability and AI systems — with a focus on what happens between a good idea and reliable production.{{ end }}
+    </p>
+    <div class="hero-actions">
+      <a class="button button-primary" href="#featured">{{ if $isDA }}Læs de bedste indlæg{{ else }}Read the best posts{{ end }}</a>
+      {{- with site.GetPage "/projekter" }}
+      <a class="button button-secondary" href="{{ .RelPermalink }}">{{ if $isDA }}Se portfolio{{ else }}View portfolio{{ end }}</a>
+      {{- end }}
+    </div>
+  </div>
+  <div class="home-portrait-wrap">
+    <img class="home-portrait" src="{{ "images/profile.png" | absURL }}" alt="Evgeny Karpov" width="230" height="230">
+    <p><strong>Evgeny Karpov</strong><br>{{ if $isDA }}Software engineer · DevOps · Platform{{ else }}Software engineer · DevOps · Platform{{ end }}</p>
+  </div>
+</section>
+
+<div class="proof-strip" aria-label="{{ if $isDA }}Fagligt fokus{{ else }}Editorial focus{{ end }}">
+  <span><strong>.NET</strong> → Platform</span>
+  <span><strong>AI</strong> → Production</span>
+  <span><strong>Build</strong> → Operate</span>
+</div>
+
+<section class="home-section" aria-labelledby="lanes-title">
+  <div class="section-heading">
+    <p class="eyebrow">{{ if $isDA }}Tre spor{{ else }}Three tracks{{ end }}</p>
+    <h2 id="lanes-title">{{ if $isDA }}Læs efter det problem, du prøver at løse{{ else }}Read by the problem you are trying to solve{{ end }}</h2>
+  </div>
+  <div class="topic-grid">
+    <a class="topic-card" href="{{ "tags/devops/" | relLangURL }}">
+      <span class="topic-number">01</span>
+      <h3>DevOps &amp; platform</h3>
+      <p>{{ if $isDA }}CI/CD, Kubernetes, observability, deployment og de kedelige detaljer, der holder systemet i live.{{ else }}CI/CD, Kubernetes, observability, deployment and the unglamorous details that keep systems alive.{{ end }}</p>
+    </a>
+    <a class="topic-card" href="{{ "tags/ai-agents/" | relLangURL }}">
+      <span class="topic-number">02</span>
+      <h3>{{ if $isDA }}AI i produktion{{ else }}AI in production{{ end }}</h3>
+      <p>{{ if $isDA }}Agenter, memory, tools, omkostninger, governance og hvorfor modellen kun er én del af systemet.{{ else }}Agents, memory, tools, cost, governance and why the model is only one part of the system.{{ end }}</p>
+    </a>
+    <a class="topic-card" href="{{ "tags/observability/" | relLangURL }}">
+      <span class="topic-number">03</span>
+      <h3>{{ if $isDA }}Drift &amp; tillid{{ else }}Operations &amp; trust{{ end }}</h3>
+      <p>{{ if $isDA }}Logs, metrics, tracing, regulering og den dokumentation, man først savner, når noget går galt.{{ else }}Logs, metrics, tracing, regulation and the documentation everyone misses when something breaks.{{ end }}</p>
+    </a>
+  </div>
+</section>
+
+<section class="home-section" id="featured" aria-labelledby="featured-title">
+  <div class="section-heading section-heading-row">
+    <div>
+      <p class="eyebrow">{{ if $isDA }}Redaktørens valg{{ else }}Editor's picks{{ end }}</p>
+      <h2 id="featured-title">{{ if $isDA }}Start med de stærkeste indlæg{{ else }}Start with the strongest posts{{ end }}</h2>
+    </div>
+  </div>
+  <div class="featured-grid">
+    {{- range sort $featured "Params.featuredOrder" }}
+    <article class="featured-card">
+      <div class="featured-meta">{{ .Date | time.Format "2006-01-02" }} · {{ .ReadingTime }} min</div>
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      <p>{{ .Summary | plainify }}</p>
+      <a class="text-link" href="{{ .RelPermalink }}">{{ if $isDA }}Læs indlægget →{{ else }}Read the post →{{ end }}</a>
+    </article>
+    {{- end }}
+  </div>
+</section>
+
+<section class="home-section" aria-labelledby="latest-title">
+  <div class="section-heading section-heading-row">
+    <div>
+      <p class="eyebrow">{{ if $isDA }}Seneste{{ else }}Latest{{ end }}</p>
+      <h2 id="latest-title">{{ if $isDA }}Nye noter fra maskinrummet{{ else }}New notes from the engine room{{ end }}</h2>
+    </div>
+    <a class="text-link" href="{{ "posts/" | relLangURL }}">{{ if $isDA }}Alle indlæg →{{ else }}All posts →{{ end }}</a>
+  </div>
+  <div class="latest-list">
+    {{- range first 6 $posts.ByDate.Reverse }}
+    <article class="latest-item">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format "2006-01-02" }}</time>
+      <div>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p>{{ .Summary | plainify }}</p>
+      </div>
+    </article>
+    {{- end }}
+  </div>
+</section>
+
+<section class="home-cta" aria-labelledby="follow-title">
+  <div>
+    <p class="eyebrow">{{ if $isDA }}Følg arbejdet{{ else }}Follow the work{{ end }}</p>
+    <h2 id="follow-title">{{ if $isDA }}Ingen growth hacks. Bare nye tekniske noter.{{ else }}No growth hacks. Just new engineering notes.{{ end }}</h2>
+    <p>{{ if $isDA }}Brug RSS, eller følg med på LinkedIn.{{ else }}Subscribe with RSS, or follow along on LinkedIn.{{ end }}</p>
+  </div>
+  <div class="hero-actions">
+    {{- with site.Home.OutputFormats.Get "rss" }}<a class="button button-primary" href="{{ .RelPermalink }}">RSS</a>{{ end }}
+    <a class="button button-secondary" href="https://www.linkedin.com/in/evgenykarpov91/" rel="me">LinkedIn</a>
+  </div>
+</section>
+</div>
+{{- end -}}

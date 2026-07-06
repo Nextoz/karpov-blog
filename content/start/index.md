@@ -4,8 +4,6 @@ description: "Startside for Evgeny Karpovs tech blog og portfolio om DevOps, pla
 summary: "Start her, hvis du vil læse om DevOps, platform engineering, AI, .NET, Kubernetes og teknologipolitik."
 ---
 
-# Start her
-
 Jeg er **Evgeny Karpov**, DevOps & Platform Engineer i København.
 
 Denne side samler mine tekniske erfaringer, projekter og refleksioner om softwareudvikling, platform engineering, AI og digitalisering.

@@ -13,8 +13,6 @@ author: "Evgeny Karpov"
 ShowReadingTime: true
 ---
 
-# AI-tokens er billige. Regningen er det ikke.
-
 En token er ikke særlig imponerende.
 
 Det er et ord, et stykke af et ord, et tegn eller noget andet, som en tokenizer har skåret teksten op i.

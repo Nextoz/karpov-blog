@@ -12,8 +12,6 @@ ShowShareButtons: false
 ShowWordCount: false
 ---
 
-# About
-
 The English About page is available here:
 
 [Go to About](/karpov-blog/en/about/)

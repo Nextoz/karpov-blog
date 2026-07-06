@@ -12,9 +12,6 @@ categories: ["AI", "DevOps"]
 author: "Evgeny Karpov"
 ShowReadingTime: true
 ---
-
-# AI Agents Need APIs
-
 AI agents have run into a very ordinary software problem:
 
 They need APIs.

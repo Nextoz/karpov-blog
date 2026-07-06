@@ -10,7 +10,7 @@ ShowShareButtons: false
 ShowWordCount: false
 ---
 
-# About
+<img class="about-portrait" src="/karpov-blog/images/profile.png" alt="Evgeny Karpov" width="230" height="230">
 
 I am a software engineer based in Copenhagen, working across .NET backend development, DevOps, CI/CD, infrastructure and platform engineering.
 

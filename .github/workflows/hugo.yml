@@ -45,9 +45,9 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo --gc --minify --cleanDestinationDir --baseURL "${{ steps.pages.outputs.base_url }}/"
 
-      - name: Check generated site coverage
+      - name: Check generated site quality
         run: python scripts/check_sitemaps.py public
 
       - name: Upload artifact

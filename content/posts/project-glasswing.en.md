@@ -11,9 +11,6 @@ author: "Evgeny Karpov"
 summary: "Project Glasswing is interesting because AI can find more security flaws. But the practical bottleneck becomes everything afterwards: triage, patching, rollout, observability and incident response."
 ShowReadingTime: true
 ---
-
-# Project Glasswing: When AI Finds the Bugs Humans Miss
-
 In April 2026, Anthropic launched **Project Glasswing**: an initiative where frontier AI is used defensively to find and fix security vulnerabilities in critical software.
 
 The most striking example is a **27-year-old vulnerability in OpenBSD**. According to Anthropic's technical write-up, Claude Mythos Preview also showed significantly stronger ability to find, reproduce and in some cases exploit vulnerabilities than previous models.

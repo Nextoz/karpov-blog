@@ -6,6 +6,8 @@ draft: false
 translationKey: "obsidian-vault-selvforbedrende-graf"
 description: "Jeg har bygget et Obsidian-setup med graph memory, daglig research scout og blogkladder. Ikke som magi, men som et praktisk AI-arbejdsbord."
 summary: "Et kig ind i mit Obsidian-vault: graph memory, daglig research scout, kandidatnoter og blogkladder. AI som arbejdsbord, ikke som tryllestav."
+featured: true
+featuredOrder: 2
 tags: ["AI", "Obsidian", "DevOps", "Platform Engineering", "Knowledge Management", "AI Agents"]
 categories: ["AI", "DevOps", "Teknologi"]
 author: "Evgeny Karpov"
@@ -15,8 +17,6 @@ cover:
   alt: "Et Obsidian-lignende knowledge graph over noter, research, job search og blogarbejde."
   caption: "Mit vault som graf. Det ligner lidt en efterfest for noter, men der er faktisk en idé med det."
 ---
-
-# Mit Obsidian-vault fik en lille forskningsafdeling
 
 ![Et Obsidian-lignende knowledge graph over noter, research, job search og blogarbejde.](/karpov-blog/images/obsidian-vault-knowledge-graph.svg)
 

@@ -12,8 +12,6 @@ ShowShareButtons: false
 ShowWordCount: false
 ---
 
-# Topics
-
 The English topic overview is available here:
 
 [Go to topics](/karpov-blog/en/tags/)

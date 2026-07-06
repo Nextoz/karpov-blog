@@ -12,5 +12,3 @@ ShowReadingTime: false
 ShowShareButtons: false
 ShowWordCount: false
 ---
-
-# Search

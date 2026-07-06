@@ -24,9 +24,9 @@ jobs:
           extended: true
 
       - name: Build Hugo site
-        run: hugo --gc --minify --baseURL "https://nextoz.github.io/karpov-blog/"
+        run: hugo --gc --minify --cleanDestinationDir --baseURL "https://nextoz.github.io/karpov-blog/"
 
-      - name: Check generated site coverage
+      - name: Check generated site quality
         run: python scripts/check_sitemaps.py public
 
       - name: Confirm build output exists

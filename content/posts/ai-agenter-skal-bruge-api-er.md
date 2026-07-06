@@ -13,8 +13,6 @@ author: "Evgeny Karpov"
 ShowReadingTime: true
 ---
 
-# AI-agenter skal bruge API'er
-
 AI-agenter har fået et meget almindeligt softwareproblem:
 
 De skal bruge API'er.

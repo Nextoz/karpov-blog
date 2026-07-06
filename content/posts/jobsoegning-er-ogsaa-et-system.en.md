@@ -13,8 +13,6 @@ author: "Evgeny Karpov"
 ShowReadingTime: true
 ---
 
-# Job Search Is Also a System
-
 I think many people make job search harder than it has to be.
 
 Not because it is easy. It is not. Job search is a strange mix of research, sales, self-awareness, timing, randomness and tiny forms that all want your CV in a slightly different way.

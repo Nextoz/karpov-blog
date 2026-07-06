@@ -18,7 +18,7 @@ unsafe = true
 ShowLanguageSwitcher = true
 env = "production"
 title = "Evgeny Karpov"
-description = "DevOps & Platform Engineer i København. Skriver om Azure DevOps, .NET, Kubernetes, CI/CD, observability, AI-assisteret softwareudvikling og teknologipolitik."
+description = "Engineering notes fra København om DevOps, platform engineering, .NET, observability og AI-systemer, der skal fungere i produktion."
 keywords = [
   "DevOps Engineer Copenhagen",
   "Platform Engineer Copenhagen",
@@ -36,12 +36,14 @@ keywords = [
 ]
 author = "Evgeny Karpov"
 phone = "+45 25 50 00 24"
-images = ["images/profile.jpg"]
+images = ["images/profile.png"]
+mainSections = ["posts"]
 DateFormat = "2. January 2006"
 defaultTheme = "dark"
 disableThemeToggle = false
 ShowReadingTime = true
 ShowShareButtons = true
+ShareButtons = ["linkedin", "x", "reddit"]
 ShowPostNavLinks = true
 ShowBreadCrumbs = true
 ShowCodeCopyButtons = true
@@ -53,16 +55,6 @@ disableScrollToTop = false
 hidemeta = false
 hideSummary = false
 showtoc = true
-
-[params.homeInfoParams]
-Title = "Evgeny Karpov"
-Content = """
-DevOps & Platform Engineer i København med baggrund i .NET, Azure DevOps, Kubernetes, CI/CD og platform engineering.
-
-Jeg skriver om software, drift, AI, digitalisering og hvordan moderne teknologi faktisk bliver sat i produktion.
-
-Start med portfolioen, hvis du vil se mine tekniske erfaringer. Start med bloggen, hvis du vil læse mine klummer og tekniske noter.
-"""
 
 [[params.socialIcons]]
 name = "linkedin"
@@ -90,14 +82,26 @@ SiteVerificationTag = ""
 
 [params.label]
 text = "Evgeny Karpov"
-icon = "images/profile.jpg"
-iconHeight = 35
+icon = "images/profile.png"
+iconHeight = 38
 
 [params.profileMode]
 enabled = false
 
 [params.assets]
 disableFingerprinting = false
+favicon = "images/karpov-mark.svg"
+favicon16x16 = "images/profile.png"
+favicon32x32 = "images/profile.png"
+apple_touch_icon = "images/profile.png"
+safari_pinned_tab = "images/karpov-mark.svg"
+
+[params.schema]
+publisherType = "Person"
+sameAs = [
+  "https://www.linkedin.com/in/evgenykarpov91/",
+  "https://github.com/Nextoz"
+]
 
 [params.cover]
 hidden = false

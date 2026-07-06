@@ -12,9 +12,6 @@ categories: ["AI", "Technology Policy"]
 author: "Evgeny Karpov"
 ShowReadingTime: true
 ---
-
-# AI Is an Equalizer, Until It Reaches the Bank
-
 I went to AI4Diversity at Danske Bank.
 
 There was a lot of sensible talk about AI, inclusion, skills and responsibility. Events like that can sometimes become a long panel version of a LinkedIn post, but this one actually had something to take home.

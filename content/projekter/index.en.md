@@ -10,8 +10,6 @@ ShowShareButtons: false
 ShowWordCount: false
 ---
 
-# Portfolio
-
 I am a software engineer with a strong .NET/backend background and a growing focus on DevOps, platform engineering, CI/CD, infrastructure, observability and production troubleshooting.
 
 My professional profile sits between software development and operations: I understand application code, pipelines, cloud infrastructure, deployments, environments and the practical problems that appear when systems need to work reliably in production.
