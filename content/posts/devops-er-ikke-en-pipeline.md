@@ -6,13 +6,13 @@ draft: false
 translationKey: "devops-er-ikke-en-pipeline"
 description: "En kort praktisk note om DevOps, CI/CD, observability, rollback og dokumentation. DevOps er ikke bare YAML med selvtillid."
 summary: "DevOps er ikke bare en pipeline. Det er evnen til at få software sikkert fra ide til drift, opdage problemer hurtigt og rette dem uden panik."
+featured: true
+featuredOrder: 1
 tags: ["DevOps", "Platform Engineering", "CI/CD", "Observability", "Azure DevOps", "Kubernetes"]
 categories: ["DevOps", "Platform Engineering"]
 author: "Evgeny Karpov"
 ShowReadingTime: true
 ---
-
-# DevOps er ikke en pipeline
 
 
 ![En stiliseret pipeline med teksten: Dette er ikke DevOps.](/karpov-blog/images/this-is-not-devops-pipeline.svg)

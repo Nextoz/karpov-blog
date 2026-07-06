@@ -10,8 +10,6 @@ tags: ["AI", "DevOps", "Platform Engineering", "EU AI Act", "Google Gemini", "Op
 categories: ["AI", "Teknologi"]
 ---
 
-# AI er ikke længere en chatbot — det er det nye produktionsapparat
-
 Der var en periode, hvor AI mest blev omtalt som en lidt klogere chatbot.
 
 Man skrev en prompt, fik et svar, blev imponeret eller irriteret, og så kunne man diskutere, om det var snyd at bruge den til en skoleopgave.

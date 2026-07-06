@@ -8,15 +8,3 @@ ShowReadingTime: false
 ShowShareButtons: false
 ShowWordCount: false
 ---
-
-# Evgeny Karpov
-
-Software engineer i København med erfaring inden for .NET, Azure DevOps, CI/CD, DevOps, infrastruktur og platform engineering.
-
-Jeg skriver om software engineering, AI, DevOps, digitalisering og teknologi — især fra vinklen af en udvikler, der også interesserer sig for drift, delivery og for, hvordan systemer faktisk fungerer i produktion.
-
-## Start her
-
-- [Portfolio](/karpov-blog/projekter/)
-- [Blog](/karpov-blog/posts/)
-- [Om mig](/karpov-blog/om/)

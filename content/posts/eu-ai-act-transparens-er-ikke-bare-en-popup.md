@@ -6,13 +6,13 @@ draft: false
 translationKey: "eu-ai-act-transparens-er-ikke-bare-en-popup"
 description: "EU AI Act gør transparens til et praktisk produkt-, DevOps- og arkitekturproblem. Her er hvad teams bør begynde at forberede nu."
 summary: "Fra 2. august 2026 begynder Article 50-transparensreglerne i EU AI Act at gælde. Det lyder som jura, men i praksis bliver det også et spørgsmål om UI, metadata, logs, audit trails, test og drift."
+featured: true
+featuredOrder: 3
 tags: ["AI", "EU AI Act", "DevOps", "Platform Engineering", "Regulering", "Compliance"]
 categories: ["Teknologipolitik", "AI"]
 author: "Evgeny Karpov"
 ShowReadingTime: true
 ---
-
-# EU AI Act i praksis: transparens er ikke bare en pop-up
 
 EU AI Act lyder som noget, man kan parkere hos Legal.
 

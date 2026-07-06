@@ -12,9 +12,6 @@ categories: ["AI", "DevOps"]
 author: "Evgeny Karpov"
 ShowReadingTime: true
 ---
-
-# AI Agents Need Memory
-
 I recently wrote that AI agents need APIs.
 
 I still think so.

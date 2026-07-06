@@ -13,8 +13,6 @@ author: "Evgeny Karpov"
 ShowReadingTime: true
 ---
 
-# AI-agenter holder ikke sommerferie. Men de kræver stadig en god overlevering.
-
 Det er sommer.
 
 Halvdelen af Danmark har sat autosvar på mailen. Den anden halvdel holder Teams-status grøn fra et sommerhus med tvivlsomt Wi-Fi.

@@ -1,11 +1,18 @@
 {{- if and .IsPage (eq .Section "posts") -}}
-<aside class="author-note">
-  {{- if eq .Lang "da" -}}
-  <strong>Om forfatteren:</strong> Jeg er Evgeny Karpov, software engineer i København med fokus på DevOps, platform engineering, .NET, observability og AI i produktion.
-  Læs mere på <a href="{{ "/start/" | relLangURL }}">Start her</a>, <a href="{{ "/projekter/" | relLangURL }}">Portfolio</a> eller <a href="{{ "/om/" | relLangURL }}">Om mig</a>.
-  {{- else -}}
-  <strong>About the author:</strong> I am Evgeny Karpov, a Copenhagen-based software engineer focused on DevOps, platform engineering, .NET, observability and AI in production.
-  Read more on <a href="{{ "/" | relLangURL }}">Home</a>, <a href="{{ "/projects/" | relLangURL }}">Portfolio</a> or <a href="{{ "/about/" | relLangURL }}">About</a>.
-  {{- end -}}
+{{- $portfolio := site.GetPage "/projekter" -}}
+{{- $about := site.GetPage "/om" -}}
+<aside class="author-note" aria-label="{{ if eq .Lang "da" }}Om forfatteren{{ else }}About the author{{ end }}">
+  <img src="{{ "images/profile.png" | absURL }}" alt="Evgeny Karpov" width="72" height="72" loading="lazy">
+  <div>
+    {{- if eq .Lang "da" -}}
+    <strong>Skrevet af Evgeny Karpov</strong>
+    <p>Software engineer i København med fokus på DevOps, platform engineering, .NET, observability og AI i produktion.</p>
+    <p><a href="{{ site.Home.RelPermalink }}">Start her</a>{{ with $portfolio }}, <a href="{{ .RelPermalink }}">se portfolio</a>{{ end }}{{ with $about }} eller <a href="{{ .RelPermalink }}">læs mere om mig</a>{{ end }}.</p>
+    {{- else -}}
+    <strong>Written by Evgeny Karpov</strong>
+    <p>Copenhagen-based software engineer focused on DevOps, platform engineering, .NET, observability and AI in production.</p>
+    <p><a href="{{ site.Home.RelPermalink }}">Start here</a>{{ with $portfolio }}, <a href="{{ .RelPermalink }}">view the portfolio</a>{{ end }}{{ with $about }} or <a href="{{ .RelPermalink }}">read more about me</a>{{ end }}.</p>
+    {{- end -}}
+  </div>
 </aside>
 {{- end -}}

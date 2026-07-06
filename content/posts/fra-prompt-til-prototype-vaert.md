@@ -16,8 +16,6 @@ cover:
   caption: "Første prototype af Vært. Ikke en færdig virksomhed. Men langt bedre end endnu en løs AI-idé i en note."
 ---
 
-# Fra prompt til prototype: AI hjalp mig ikke med at få flere ideer — den hjalp mig med at dræbe de dårlige
-
 ![Prototype af Vært, en privat dansk concierge med dashboard, request-flow og kuraterede anbefalinger.](/karpov-blog/images/vaert-prototype-desktop.png)
 
 Jeg satte mig egentlig bare for at finde en god app-idé.

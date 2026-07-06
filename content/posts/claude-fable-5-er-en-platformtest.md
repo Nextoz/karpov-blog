@@ -13,8 +13,6 @@ author: "Evgeny Karpov"
 ShowReadingTime: true
 ---
 
-# Claude Fable 5 er ikke bare en ny model. Det er en platformtest.
-
 ![Infografik med centrale tal for Claude Fable 5 og platformkonsekvensen.](/karpov-blog/images/claude-fable-5-platform-signal.svg)
 
 Anthropic lancerede den 9. juni 2026 Claude Fable 5 og Claude Mythos 5.

@@ -13,8 +13,6 @@ author: "Evgeny Karpov"
 ShowReadingTime: true
 ---
 
-# AI-agenter skal bruge hukommelse
-
 Jeg skrev for nylig, at AI-agenter skal bruge API'er.
 
 Det mener jeg stadig.

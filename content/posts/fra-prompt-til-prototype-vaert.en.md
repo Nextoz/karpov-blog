@@ -16,9 +16,6 @@ cover:
   alt: "Prototype of Vært, a private Danish concierge with dashboard, request flow and curated recommendations."
   caption: "First prototype of Vært. Not a finished company. But much better than another loose AI idea in a note."
 ---
-
-# From Prompt to Prototype: AI Helped Me Kill the Bad Ideas
-
 ![Prototype of Vært, a private Danish concierge with dashboard, request flow and curated recommendations.](/karpov-blog/images/vaert-prototype-desktop.png)
 
 I originally just wanted to find a good app idea.

@@ -11,9 +11,6 @@ tags: ["AI", "DevOps", "Platform Engineering", "EU AI Act", "Google Gemini", "Op
 categories: ["AI", "Technology"]
 ShowReadingTime: true
 ---
-
-# AI Is No Longer a Chatbot
-
 There was a period when AI was mostly described as a slightly smarter chatbot.
 
 You wrote a prompt, got an answer, felt impressed or annoyed, and then everyone could argue about whether using it for homework counted as cheating.

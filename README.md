@@ -2,7 +2,7 @@
 
 Personal portfolio and technical blog for **Evgeny Karpov**.
 
-The site focuses on DevOps, platform engineering, .NET, Azure DevOps, Kubernetes, CI/CD, observability, AI-assisted software development and technology policy.
+The site publishes engineering notes about DevOps, platform engineering, .NET, observability, AI systems and the work required to make software reliable in production.
 
 Live site:
 
@@ -38,6 +38,22 @@ Open the local URL shown in the terminal.
 The site is deployed through GitHub Actions to GitHub Pages.
 
 Changes merged into `master` trigger a new deployment automatically.
+
+Every pull request builds the production site and validates:
+
+- sitemap coverage
+- internal links and generated assets
+- bilingual translation targets
+- one primary heading on representative pages
+- JSON-LD parsing
+- required identity and favicon assets
+
+Run the same checks locally with:
+
+```powershell
+hugo --gc --minify --cleanDestinationDir --baseURL "https://nextoz.github.io/karpov-blog/"
+python scripts/check_sitemaps.py public
+```
 
 ## SEO focus
 

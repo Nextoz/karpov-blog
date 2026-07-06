@@ -11,9 +11,6 @@ author: "Evgeny Karpov"
 summary: "AI is not a firing button. If automation is going to improve workplaces, it requires responsibility, training, good systems and leaders who do not hide behind technology."
 ShowReadingTime: true
 ---
-
-# AI Is Not Grounds for Dismissal
-
 A Chinese court has ruled that AI is not a valid reason to fire employees.
 
 China. Communist China.

@@ -12,8 +12,6 @@ author: "Evgeny Karpov"
 ShowReadingTime: true
 ---
 
-# AI er en equalizer, indtil den rammer banken
-
 Jeg var til AI4Diversity hos Danske Bank.
 
 Der blev sagt meget fornuftigt om AI, inklusion, kompetencer og ansvar. Den slags arrangementer kan nogle gange ende som en lang panelversion af en LinkedIn-post, men her var der faktisk noget at tage med hjem.

@@ -13,8 +13,6 @@ author: "Evgeny Karpov"
 ShowReadingTime: true
 ---
 
-# Jobsøgning er også et system
-
 Jeg tror, mange gør jobsøgning sværere, end den behøver at være.
 
 Ikke fordi det er nemt. Det er det ikke. Jobsøgning er en mærkelig blanding af research, salg, selvindsigt, timing, tilfældigheder og små formularer, der alle sammen gerne vil have ens CV på en lidt ny måde.
