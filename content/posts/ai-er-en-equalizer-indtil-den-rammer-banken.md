@@ -3,6 +3,7 @@ title: "AI er en equalizer, indtil den rammer banken"
 date: 2026-05-28
 lastmod: 2026-05-28
 draft: false
+authorship: "legacy-ai-drafted"
 translationKey: "ai-er-en-equalizer-indtil-den-rammer-banken"
 description: "En kort note fra AI4Diversity hos Danske Bank om AI som equalizer, vibe-coding, inklusion og hvorfor banker har brug for mere end flotte AI-demoer."
 summary: "AI kan være en equalizer. Men i banker bliver den også hurtigt en risikomaskine, hvis data, governance, forklaringer og kontrol ikke følger med."
@@ -113,9 +114,8 @@ Bare hurtigere, pænere og med en bedre demo.
 
 Læs også:
 
-- [AI er ikke længere en chatbot - det er det nye produktionsapparat](/karpov-blog/posts/ai-er-ikke-laengere-en-chatbot/)
-- [EU AI Act i praksis: transparens er ikke bare en pop-up](/karpov-blog/posts/eu-ai-act-transparens-er-ikke-bare-en-popup/)
 - [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/)
+- [Jobsøgning er også et system](/karpov-blog/posts/jobsoegning-er-ogsaa-et-system/)
 
 ## Kilder
 

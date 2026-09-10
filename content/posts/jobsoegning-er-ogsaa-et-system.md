@@ -5,6 +5,7 @@ lastmod: 2026-06-16
 slug: "jobsoegning-er-ogsaa-et-system"
 translationKey: "jobsoegning-er-ogsaa-et-system"
 draft: false
+authorship: "legacy-ai-drafted"
 description: "En praktisk note om at behandle jobsøgning som et lille delivery-system: backlog, positionering, feedback loops, interview stories og portfolio-bevis."
 summary: "Da jeg begyndte at behandle jobsøgning som et system i stedet for en bunke enkeltstående ansøgninger, blev arbejdet roligere, skarpere og mere ærligt."
 tags: ["Job Search", "DevOps", "Platform Engineering", "Career", "AI Workflows"]

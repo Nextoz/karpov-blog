@@ -38,3 +38,9 @@ I also write about technology, AI, DevOps and digitalization on this blog. Partl
 ## Outside work
 
 Outside software, I am interested in reading, swimming, salsa, photography, drones, and trying to understand why every small technical fix somehow becomes an infrastructure project.
+
+## Contact
+
+- LinkedIn: [linkedin.com/in/evgenykarpov91](https://www.linkedin.com/in/evgenykarpov91/)
+- GitHub: [github.com/Nextoz](https://github.com/Nextoz)
+- Email: [evkar91@gmail.com](mailto:evkar91@gmail.com)

@@ -4,7 +4,7 @@ date: 2026-06-04
 lastmod: 2026-06-07
 slug: "ai-agents-need-apis"
 translationKey: "ai-agenter-skal-bruge-api-er"
-draft: false
+draft: true
 description: "A short note on why AI agents quickly become an API, governance and platform engineering problem."
 summary: "Postman, Microsoft and OpenAI all point in the same direction: AI agents do not only need better models. They need to work against real systems with context, access control, logs and clear boundaries."
 tags: ["AI", "AI Agents", "APIs", "DevOps", "Platform Engineering", "Governance"]

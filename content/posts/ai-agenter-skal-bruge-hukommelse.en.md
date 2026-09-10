@@ -5,6 +5,7 @@ lastmod: 2026-06-07
 slug: "ai-agents-need-memory"
 translationKey: "ai-agenter-skal-bruge-hukommelse"
 draft: false
+authorship: "legacy-ai-drafted"
 description: "A practical note on why AI agents need not only APIs, but also memory, sources, validation and human review."
 summary: "APIs give AI agents access to systems. Memory determines whether they can work responsibly over time without repeating mistakes, losing context or inventing a beautiful explanation afterwards."
 tags: ["AI", "AI Agents", "Agent Memory", "DevOps", "Platform Engineering", "Observability"]
@@ -220,8 +221,6 @@ Sorry.
 
 Read also:
 
-- [AI Agents Need APIs](/karpov-blog/en/posts/ai-agents-need-apis/)
-- [AI Is No Longer a Chatbot](/karpov-blog/en/posts/ai-is-no-longer-a-chatbot/)
 - [DevOps Is Not a Pipeline](/karpov-blog/en/posts/devops-is-not-a-pipeline/)
 - [My Obsidian Vault Got a Small Research Department](/karpov-blog/en/posts/my-obsidian-vault-got-a-small-research-department/)
 

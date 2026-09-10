@@ -5,6 +5,7 @@ lastmod: 2026-06-06
 slug: "ai-agenter-skal-bruge-hukommelse"
 translationKey: "ai-agenter-skal-bruge-hukommelse"
 draft: false
+authorship: "legacy-ai-drafted"
 description: "En praktisk note om hvorfor AI-agenter ikke kun skal bruge API'er, men også hukommelse, kilder, validering og menneskelig review."
 summary: "API'er giver AI-agenter adgang til systemer. Hukommelse afgør, om de kan arbejde ansvarligt over tid uden at gentage fejl, miste kontekst eller opfinde en flot forklaring bagefter."
 tags: ["AI", "AI Agents", "Agent Memory", "DevOps", "Platform Engineering", "Observability"]
@@ -221,8 +222,6 @@ Beklager.
 
 Læs også:
 
-- [AI-agenter skal bruge API'er](/karpov-blog/posts/ai-agenter-skal-bruge-api-er/)
-- [AI er ikke længere en chatbot - det er det nye produktionsapparat](/karpov-blog/posts/ai-er-ikke-laengere-en-chatbot/)
 - [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/)
 - [Obsidian som selvforbedrende graf](/karpov-blog/posts/obsidian-vault-selvforbedrende-graf/)
 

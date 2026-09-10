@@ -4,6 +4,7 @@ date: 2026-05-26
 lastmod: 2026-06-07
 slug: "my-obsidian-vault-got-a-small-research-department"
 draft: false
+authorship: "legacy-ai-drafted"
 translationKey: "obsidian-vault-selvforbedrende-graf"
 description: "I built an Obsidian setup with graph memory, a daily research scout and blog drafts. Not as magic, but as a practical AI workbench."
 summary: "A look inside my Obsidian vault: graph memory, daily research scout, candidate notes and blog drafts. AI as a workbench, not a magic wand."
@@ -372,6 +373,5 @@ The most important thing is not the tool. The most important thing is that resea
 
 Read also:
 
-- [AI Is No Longer a Chatbot](/karpov-blog/en/posts/ai-is-no-longer-a-chatbot/)
 - [DevOps Is Not a Pipeline](/karpov-blog/en/posts/devops-is-not-a-pipeline/)
-- [EU AI Act in Practice: Transparency Is Not Just a Pop-up](/karpov-blog/en/posts/eu-ai-act-in-practice-transparency-is-not-just-a-popup/)
+- [Job Search Is Also a System](/karpov-blog/en/posts/job-search-is-also-a-system/)

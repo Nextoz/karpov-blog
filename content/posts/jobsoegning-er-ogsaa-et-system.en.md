@@ -5,6 +5,7 @@ lastmod: 2026-06-16
 slug: "job-search-is-also-a-system"
 translationKey: "jobsoegning-er-ogsaa-et-system"
 draft: false
+authorship: "legacy-ai-drafted"
 description: "A practical note on treating job search as a small delivery system: backlog, positioning, feedback loops, interview stories and portfolio proof."
 summary: "When I started treating job search as a system instead of a pile of individual applications, the work became calmer, sharper and more honest."
 tags: ["Job Search", "DevOps", "Platform Engineering", "Career", "AI Workflows"]

@@ -51,6 +51,12 @@ def read_html(public: Path, relative: str) -> str:
     return path.read_text(encoding="utf-8")
 
 
+def reject_generated_page(public: Path, relative: str) -> None:
+    path = public / relative / "index.html"
+    if path.exists():
+        raise AssertionError(f"Unpublished page should not have been generated: {path}")
+
+
 def require_text(haystack: str, needle: str, label: str) -> None:
     if needle not in haystack:
         raise AssertionError(f"{label} is missing {needle!r}")
@@ -123,48 +129,87 @@ def main() -> int:
     da = read_locs(public / "da" / "sitemap.xml")
     en = read_locs(public / "en" / "sitemap.xml")
 
-    require(da, f"{BASE}/posts/ai-agenter-skal-bruge-api-er/", "da/sitemap.xml")
-    require(da, f"{BASE}/posts/devops-er-ikke-en-pipeline/", "da/sitemap.xml")
-    require(en, f"{BASE}/en/posts/ai-agents-need-apis/", "en/sitemap.xml")
-    require(en, f"{BASE}/en/posts/devops-is-not-a-pipeline/", "en/sitemap.xml")
-    require(en, f"{BASE}/en/posts/eu-ai-act-in-practice-transparency-is-not-just-a-popup/", "en/sitemap.xml")
-    require(da, f"{BASE}/posts/claude-fable-5-er-en-platformtest/", "da/sitemap.xml")
-    require(en, f"{BASE}/en/posts/claude-fable-5-is-a-platform-test/", "en/sitemap.xml")
+    kept_da = (
+        "ai-agenter-skal-bruge-hukommelse",
+        "ai-er-en-equalizer-indtil-den-rammer-banken",
+        "ai-tokens-er-billige-regningen-er-det-ikke",
+        "devops-er-ikke-en-pipeline",
+        "fra-prompt-til-prototype-vaert",
+        "jobsoegning-er-ogsaa-et-system",
+        "obsidian-vault-selvforbedrende-graf",
+    )
+    kept_en = (
+        "ai-agents-need-memory",
+        "ai-is-an-equalizer-until-it-reaches-the-bank",
+        "devops-is-not-a-pipeline",
+        "from-prompt-to-prototype-vaert",
+        "job-search-is-also-a-system",
+        "my-obsidian-vault-got-a-small-research-department",
+    )
+    retired_da = (
+        "ai-agenter-holder-ikke-sommerferie",
+        "ai-agenter-skal-bruge-api-er",
+        "ai-er-ikke-fyringsgrund",
+        "ai-er-ikke-laengere-en-chatbot",
+        "claude-fable-5-er-en-platformtest",
+        "eu-ai-act-transparens-er-ikke-bare-en-popup",
+        "project-glasswing",
+    )
+    retired_en = (
+        "ai-agents-need-apis",
+        "ai-is-not-grounds-for-dismissal",
+        "ai-is-no-longer-a-chatbot",
+        "claude-fable-5-is-a-platform-test",
+        "eu-ai-act-in-practice-transparency-is-not-just-a-popup",
+        "project-glasswing",
+    )
+
+    for slug in kept_da:
+        require(da, f"{BASE}/posts/{slug}/", "da/sitemap.xml")
+    for slug in kept_en:
+        require(en, f"{BASE}/en/posts/{slug}/", "en/sitemap.xml")
+    for slug in retired_da:
+        reject(da, f"{BASE}/posts/{slug}/", "da/sitemap.xml")
+        reject_generated_page(public, f"posts/{slug}")
+    for slug in retired_en:
+        reject(en, f"{BASE}/en/posts/{slug}/", "en/sitemap.xml")
+        reject_generated_page(public, f"en/posts/{slug}")
 
     reject(da, f"{BASE}/search/", "da/sitemap.xml")
     reject(en, f"{BASE}/en/search/", "en/sitemap.xml")
     reject(en, f"{BASE}/en/om/", "en/sitemap.xml")
     reject(en, f"{BASE}/en/emner/", "en/sitemap.xml")
+    reject(da, f"{BASE}/start/", "da/sitemap.xml")
+    reject_generated_page(public, "start")
 
     home = read_html(public, "")
     en_home = read_html(public, "en")
-    da_post = read_html(public, "posts/ai-agenter-skal-bruge-api-er")
-    en_post = read_html(public, "en/posts/ai-agents-need-apis")
+    da_post = read_html(public, "posts/obsidian-vault-selvforbedrende-graf")
+    en_post = read_html(public, "en/posts/my-obsidian-vault-got-a-small-research-department")
     unpaired_post = read_html(public, "posts/ai-tokens-er-billige-regningen-er-det-ikke")
-    da_claude_post = read_html(public, "posts/claude-fable-5-er-en-platformtest")
-    en_claude_post = read_html(public, "en/posts/claude-fable-5-is-a-platform-test")
 
-    require_text(home, "Software, der skal virke i virkeligheden.", "Danish home")
-    require_text(en_home, "Software that has to work in the real world.", "English home")
+    require_text(home, "Noter fra det, jeg bygger, lærer og prøver at forstå.", "Danish home")
+    require_text(en_home, "Notes from what I build, learn and try to understand.", "English home")
+    require_text(home, "Jeg vil selv tilbage i teksten.", "Danish editorial reset")
+    require_text(en_home, "I want to return to the writing myself.", "English editorial reset")
     require_text(home, "images/profile.png", "Danish home portrait")
     require_text(home, "class=language-links", "Danish home language switch")
     require_text(home, "/karpov-blog/en/", "Danish home English target")
-    require_text(home, "Redaktørens valg", "Danish featured section")
-    require_text(en_home, "Editor's picks", "English featured section")
+    if "Redaktørens valg" in home or "Editor's picks" in en_home:
+        raise AssertionError("The retired editor-picks framing must not appear on either homepage")
     require_one_h1(home, "Danish home")
     require_one_h1(en_home, "English home")
     require_one_h1(unpaired_post, "Unpaired Danish post")
 
-    require_text(da_post, f"{BASE}/en/posts/ai-agents-need-apis/", "Danish post")
-    require_text(en_post, f"{BASE}/posts/ai-agenter-skal-bruge-api-er/", "English post")
-    require_text(da_claude_post, f"{BASE}/en/posts/claude-fable-5-is-a-platform-test/", "Danish Claude post")
-    require_text(en_claude_post, f"{BASE}/posts/claude-fable-5-er-en-platformtest/", "English Claude post")
-    require_text(en_claude_post, "claude-fable-5-platform-signal-en.svg", "English Claude post")
-    require_text(en_claude_post, "ai-agent-adoption-gap-2026-en.svg", "English Claude post")
+    require_text(da_post, f"{BASE}/en/posts/my-obsidian-vault-got-a-small-research-department/", "Danish post")
+    require_text(en_post, f"{BASE}/posts/obsidian-vault-selvforbedrende-graf/", "English post")
     require_text(da_post, "class=language-links", "Danish paired-post language switch")
     require_text(en_post, "class=language-links", "English paired-post language switch")
     require_text(da_post, "author-note", "Danish author note")
     require_text(en_post, "author-note", "English author note")
+    require_text(da_post, "AI skrev størstedelen af dette ældre indlæg", "Danish legacy disclosure")
+    require_text(en_post, "AI wrote most of this older post", "English legacy disclosure")
+    require_text(unpaired_post, "AI skrev størstedelen af dette ældre indlæg", "Unpaired legacy disclosure")
     if "class=language-links" in unpaired_post or "/en/posts/ai-tokens-er-billige-regningen-er-det-ikke/" in unpaired_post:
         raise AssertionError("Unpaired Danish post must not advertise a missing English translation")
 
@@ -179,7 +224,7 @@ def main() -> int:
     check_json_ld(unpaired_post, "Unpaired Danish post")
     check_internal_links(public)
 
-    print("Generated-site checks passed: sitemaps, headings, translations, JSON-LD, assets and internal links.")
+    print("Generated-site checks passed: editorial reset, retired pages, disclosures, sitemaps, headings, translations, JSON-LD, assets and internal links.")
     return 0
 
 

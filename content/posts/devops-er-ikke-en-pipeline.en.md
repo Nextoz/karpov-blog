@@ -4,6 +4,7 @@ date: 2026-05-22
 lastmod: 2026-06-07
 slug: "devops-is-not-a-pipeline"
 draft: false
+authorship: "legacy-ai-drafted"
 translationKey: "devops-er-ikke-en-pipeline"
 description: "A short practical note about DevOps, CI/CD, observability, rollback and documentation. DevOps is not just YAML with confidence."
 summary: "DevOps is not just a pipeline. It is the ability to move software safely from idea to operations, detect problems quickly and fix them without panic."
@@ -137,9 +138,7 @@ DevOps is the ability to change software without everyone in the room instinctiv
 
 Read also:
 
-- [AI Is No Longer a Chatbot](/karpov-blog/en/posts/ai-is-no-longer-a-chatbot/)
-- [EU AI Act in Practice: Transparency Is Not Just a Pop-up](/karpov-blog/en/posts/eu-ai-act-in-practice-transparency-is-not-just-a-popup/)
-- [Project Glasswing](/karpov-blog/en/posts/project-glasswing/)
+- [My Obsidian Vault Got a Small Research Department](/karpov-blog/en/posts/my-obsidian-vault-got-a-small-research-department/)
 - [Portfolio: DevOps, Platform Engineering and .NET](/karpov-blog/en/projects/)
 
 ## Sources

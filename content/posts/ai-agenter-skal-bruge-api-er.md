@@ -4,7 +4,7 @@ date: 2026-06-04
 lastmod: 2026-06-04
 slug: "ai-agenter-skal-bruge-api-er"
 translationKey: "ai-agenter-skal-bruge-api-er"
-draft: false
+draft: true
 description: "En kort note om hvorfor AI-agenter hurtigt bliver et API-, governance- og platform engineering-problem."
 summary: "Postman, Microsoft og OpenAI peger i samme retning: AI-agenter skal ikke kun blive klogere. De skal kunne arbejde mod rigtige systemer med kontekst, adgangsstyring, logs og klare grænser."
 tags: ["AI", "AI Agents", "APIs", "DevOps", "Platform Engineering", "Governance"]

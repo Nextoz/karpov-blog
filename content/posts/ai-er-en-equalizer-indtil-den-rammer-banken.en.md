@@ -4,6 +4,7 @@ date: 2026-05-28
 lastmod: 2026-06-07
 slug: "ai-is-an-equalizer-until-it-reaches-the-bank"
 draft: false
+authorship: "legacy-ai-drafted"
 translationKey: "ai-er-en-equalizer-indtil-den-rammer-banken"
 description: "A short note from AI4Diversity at Danske Bank about AI as an equalizer, vibe coding, inclusion and why banks need more than impressive AI demos."
 summary: "AI can be an equalizer. But in banking it quickly becomes a risk machine too, if data, governance, explanations and control do not follow."
@@ -113,9 +114,8 @@ Just faster, cleaner and with a better demo.
 
 Read also:
 
-- [AI Is No Longer a Chatbot](/karpov-blog/en/posts/ai-is-no-longer-a-chatbot/)
-- [EU AI Act in Practice: Transparency Is Not Just a Pop-up](/karpov-blog/en/posts/eu-ai-act-in-practice-transparency-is-not-just-a-popup/)
 - [DevOps Is Not a Pipeline](/karpov-blog/en/posts/devops-is-not-a-pipeline/)
+- [Job Search Is Also a System](/karpov-blog/en/posts/job-search-is-also-a-system/)
 
 ## Sources
 

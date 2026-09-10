@@ -19,23 +19,7 @@ ShowLanguageSwitcher = true
 env = "production"
 title = "Evgeny Karpov"
 description = "Engineering notes fra København om DevOps, platform engineering, .NET, observability og AI-systemer, der skal fungere i produktion."
-keywords = [
-  "DevOps Engineer Copenhagen",
-  "Platform Engineer Copenhagen",
-  "Azure DevOps",
-  ".NET",
-  "C#",
-  "Kubernetes",
-  "CI/CD",
-  "Observability",
-  "AI",
-  "AI-assisteret softwareudvikling",
-  "Teknologipolitik",
-  "Digitalisering",
-  "Danmark"
-]
 author = "Evgeny Karpov"
-phone = "+45 25 50 00 24"
 images = ["images/profile.png"]
 mainSections = ["posts"]
 DateFormat = "2. January 2006"
@@ -68,10 +52,6 @@ url = "https://github.com/Nextoz"
 name = "email"
 url = "mailto:evkar91@gmail.com"
 
-
-[[params.socialIcons]]
-name = "phone"
-url = "tel:+4525500024"
 [params.analytics]
 # google = "G-XXXXXXXXXX"
 

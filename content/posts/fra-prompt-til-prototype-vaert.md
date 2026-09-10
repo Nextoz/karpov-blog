@@ -3,6 +3,7 @@ title: "Fra prompt til prototype: AI hjalp mig ikke med at få flere ideer — d
 date: 2026-05-30
 lastmod: 2026-05-30
 draft: false
+authorship: "legacy-ai-drafted"
 translationKey: "fra-prompt-til-prototype-vaert"
 description: "Et praktisk kig på hvordan en app-idé blev skåret frem med AI: fra for mange prompts og for brede ideer til en konkret prototype på Vært, en privat dansk concierge."
 summary: "Jeg brugte AI som produktpartner til at teste, forkaste og skærpe app-idéer. Resultatet blev ikke endnu en chatbot, men en prototype på Vært: en diskret dansk concierge for hosting, dining, kultur og trusted services."
@@ -419,5 +420,4 @@ Men at få den til at hjælpe dig med at skære væk, indtil idéen bliver tydel
 Læs også:
 
 - [Mit Obsidian-vault fik en lille forskningsafdeling](/karpov-blog/posts/obsidian-vault-selvforbedrende-graf/)
-- [AI er ikke længere en chatbot — det er det nye produktionsapparat](/karpov-blog/posts/ai-er-ikke-laengere-en-chatbot/)
 - [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/)

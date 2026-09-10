@@ -3,7 +3,7 @@ title: "AI Is No Longer a Chatbot"
 date: 2026-05-22
 lastmod: 2026-06-07
 slug: "ai-is-no-longer-a-chatbot"
-draft: false
+draft: true
 translationKey: "ai-er-ikke-laengere-en-chatbot"
 description: "AI is moving from chatbot and hype to production machinery. Google, OpenAI, the EU and the US point in the same direction: AI is becoming infrastructure, agents and regulation."
 summary: "AI is moving from chatbot and hype to production machinery. It is no longer only about prompts, but about agents, deployment, regulation and who owns the future digital infrastructure."

@@ -7,10 +7,16 @@ summary: ""
 tags: ["DevOps", "Platform Engineering"]
 categories: ["DevOps"]
 author: "Evgeny Karpov"
+authorship: "human-written"
+ai_assistance: "questions-research-fact-check-feedback"
 ShowReadingTime: true
 ---
 
-# {{ replace .File.ContentBaseName "-" " " | title }}
+<!--
+Keep authorship: human-written only when you wrote the article prose yourself.
+Use AI for questions, research, fact-checking and feedback, not for the draft or final wording.
+Remove these instructions before publishing.
+-->
 
 ## Problem
 
@@ -28,7 +34,7 @@ ShowReadingTime: true
 
 Læs også:
 
-- [Start her](/karpov-blog/start/)
+- [Forside](/karpov-blog/)
 - [Portfolio](/karpov-blog/projekter/)
 
 ## Kilder

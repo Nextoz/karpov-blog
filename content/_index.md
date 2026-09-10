@@ -1,7 +1,7 @@
 ---
 title: "Evgeny Karpov"
-description: "Personlig hjemmeside og teknisk blog af Evgeny Karpov om software engineering, DevOps, AI, digitalisering, Azure DevOps, .NET og platform engineering."
-summary: "Software engineering, DevOps, AI og digitalisering."
+description: "Evgeny Karpovs personlige noter om software, DevOps, AI og det, han bygger og lærer undervejs."
+summary: "Personlige noter om software, DevOps, AI og en skriveproces under forandring."
 translationKey: "home"
 hidemeta: true
 ShowReadingTime: false

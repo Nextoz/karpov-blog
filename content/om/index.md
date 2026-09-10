@@ -51,10 +51,7 @@ Jeg arbejder bedst, når jeg kan kombinere teknisk fordybelse med konkret forbed
 
 ## Kontakt
 
-Du kan finde mig på GitHub og LinkedIn via links på forsiden.
-
-Du kan også kontakte mig direkte:
-
-- Telefon: [+45 25 50 00 24](tel:+4525500024)
+- LinkedIn: [linkedin.com/in/evgenykarpov91](https://www.linkedin.com/in/evgenykarpov91/)
+- GitHub: [github.com/Nextoz](https://github.com/Nextoz)
 - E-mail: [evkar91@gmail.com](mailto:evkar91@gmail.com)
 
