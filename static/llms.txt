@@ -14,13 +14,13 @@ Focus areas:
 - Public-sector technology
 
 Important pages:
-- https://nextoz.github.io/karpov-blog/
-- https://nextoz.github.io/karpov-blog/projekter/
-- https://nextoz.github.io/karpov-blog/om/
-- https://nextoz.github.io/karpov-blog/posts/
-- https://nextoz.github.io/karpov-blog/en/
-- https://nextoz.github.io/karpov-blog/en/projekter/
-- https://nextoz.github.io/karpov-blog/en/posts/
+- https://karpov.dk/
+- https://karpov.dk/projekter/
+- https://karpov.dk/om/
+- https://karpov.dk/posts/
+- https://karpov.dk/en/
+- https://karpov.dk/en/projekter/
+- https://karpov.dk/en/posts/
 
 Author:
 Evgeny Karpov is a software engineer based in Copenhagen, working with .NET, DevOps, Azure DevOps, CI/CD, infrastructure and platform engineering.

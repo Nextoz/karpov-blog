@@ -114,8 +114,8 @@ Just faster, cleaner and with a better demo.
 
 Read also:
 
-- [DevOps Is Not a Pipeline](/karpov-blog/en/posts/devops-is-not-a-pipeline/)
-- [Job Search Is Also a System](/karpov-blog/en/posts/job-search-is-also-a-system/)
+- [DevOps Is Not a Pipeline](/en/posts/devops-is-not-a-pipeline/)
+- [Job Search Is Also a System](/en/posts/job-search-is-also-a-system/)
 
 ## Sources
 

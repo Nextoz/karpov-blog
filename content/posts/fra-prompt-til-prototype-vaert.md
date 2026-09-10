@@ -12,12 +12,12 @@ categories: ["AI", "Teknologi"]
 author: "Evgeny Karpov"
 ShowReadingTime: true
 cover:
-  image: "/karpov-blog/images/vaert-prototype-desktop.png"
+  image: "/images/vaert-prototype-desktop.png"
   alt: "Prototype af Vært, en privat dansk concierge med dashboard, request-flow og kuraterede anbefalinger."
   caption: "Første prototype af Vært. Ikke en færdig virksomhed. Men langt bedre end endnu en løs AI-idé i en note."
 ---
 
-![Prototype af Vært, en privat dansk concierge med dashboard, request-flow og kuraterede anbefalinger.](/karpov-blog/images/vaert-prototype-desktop.png)
+![Prototype af Vært, en privat dansk concierge med dashboard, request-flow og kuraterede anbefalinger.](/images/vaert-prototype-desktop.png)
 
 Jeg satte mig egentlig bare for at finde en god app-idé.
 
@@ -419,5 +419,5 @@ Men at få den til at hjælpe dig med at skære væk, indtil idéen bliver tydel
 
 Læs også:
 
-- [Mit Obsidian-vault fik en lille forskningsafdeling](/karpov-blog/posts/obsidian-vault-selvforbedrende-graf/)
-- [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/)
+- [Mit Obsidian-vault fik en lille forskningsafdeling](/posts/obsidian-vault-selvforbedrende-graf/)
+- [DevOps er ikke en pipeline](/posts/devops-er-ikke-en-pipeline/)

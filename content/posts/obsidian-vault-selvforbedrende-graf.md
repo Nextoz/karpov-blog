@@ -14,12 +14,12 @@ categories: ["AI", "DevOps", "Teknologi"]
 author: "Evgeny Karpov"
 ShowReadingTime: true
 cover:
-  image: "/karpov-blog/images/obsidian-vault-knowledge-graph.svg"
+  image: "/images/obsidian-vault-knowledge-graph.svg"
   alt: "Et Obsidian-lignende knowledge graph over noter, research, job search og blogarbejde."
   caption: "Mit vault som graf. Det ligner lidt en efterfest for noter, men der er faktisk en idé med det."
 ---
 
-![Et Obsidian-lignende knowledge graph over noter, research, job search og blogarbejde.](/karpov-blog/images/obsidian-vault-knowledge-graph.svg)
+![Et Obsidian-lignende knowledge graph over noter, research, job search og blogarbejde.](/images/obsidian-vault-knowledge-graph.svg)
 
 Jeg har gjort noget, der på papiret lyder en smule farligt:
 
@@ -383,6 +383,6 @@ Det vigtigste er ikke værktøjet. Det vigtigste er, at research, noter, job sea
 
 Læs også:
 
-- [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/)
-- [Jobsøgning er også et system](/karpov-blog/posts/jobsoegning-er-ogsaa-et-system/)
+- [DevOps er ikke en pipeline](/posts/devops-er-ikke-en-pipeline/)
+- [Jobsøgning er også et system](/posts/jobsoegning-er-ogsaa-et-system/)
 

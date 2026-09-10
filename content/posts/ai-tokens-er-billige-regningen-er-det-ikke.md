@@ -227,9 +227,9 @@ Softwarebranchen har altid haft rigeligt af det.
 
 ## Læs også
 
-- [AI-agenter skal bruge hukommelse](/karpov-blog/posts/ai-agenter-skal-bruge-hukommelse/)
-- [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/)
-- [Mit Obsidian-vault fik en lille forskningsafdeling](/karpov-blog/posts/obsidian-vault-selvforbedrende-graf/)
+- [AI-agenter skal bruge hukommelse](/posts/ai-agenter-skal-bruge-hukommelse/)
+- [DevOps er ikke en pipeline](/posts/devops-er-ikke-en-pipeline/)
+- [Mit Obsidian-vault fik en lille forskningsafdeling](/posts/obsidian-vault-selvforbedrende-graf/)
 
 ## Kilder
 

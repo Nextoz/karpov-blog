@@ -307,10 +307,10 @@ Og små systemer bliver bedre, når man giver dem struktur, feedback og lidt obs
 
 ## Læs også
 
-- [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/)
-- [AI-agenter skal bruge hukommelse](/karpov-blog/posts/ai-agenter-skal-bruge-hukommelse/)
-- [Fra prompt til prototype: AI hjalp mig ikke bare med at bygge. Den hjalp mig med at slette.](/karpov-blog/posts/fra-prompt-til-prototype-vaert/)
-- [Portfolio: DevOps, Platform Engineering og .NET](/karpov-blog/projekter/)
+- [DevOps er ikke en pipeline](/posts/devops-er-ikke-en-pipeline/)
+- [AI-agenter skal bruge hukommelse](/posts/ai-agenter-skal-bruge-hukommelse/)
+- [Fra prompt til prototype: AI hjalp mig ikke bare med at bygge. Den hjalp mig med at slette.](/posts/fra-prompt-til-prototype-vaert/)
+- [Portfolio: DevOps, Platform Engineering og .NET](/projekter/)
 
 ## Note
 

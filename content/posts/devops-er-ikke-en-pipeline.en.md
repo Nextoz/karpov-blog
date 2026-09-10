@@ -15,7 +15,7 @@ categories: ["DevOps", "Platform Engineering"]
 author: "Evgeny Karpov"
 ShowReadingTime: true
 ---
-![A stylized pipeline with the text: This is not DevOps.](/karpov-blog/images/this-is-not-devops-pipeline.svg)
+![A stylized pipeline with the text: This is not DevOps.](/images/this-is-not-devops-pipeline.svg)
 
 There is a special kind of optimism that appears when someone says:
 
@@ -138,8 +138,8 @@ DevOps is the ability to change software without everyone in the room instinctiv
 
 Read also:
 
-- [My Obsidian Vault Got a Small Research Department](/karpov-blog/en/posts/my-obsidian-vault-got-a-small-research-department/)
-- [Portfolio: DevOps, Platform Engineering and .NET](/karpov-blog/en/projects/)
+- [My Obsidian Vault Got a Small Research Department](/en/posts/my-obsidian-vault-got-a-small-research-department/)
+- [Portfolio: DevOps, Platform Engineering and .NET](/en/projects/)
 
 ## Sources
 

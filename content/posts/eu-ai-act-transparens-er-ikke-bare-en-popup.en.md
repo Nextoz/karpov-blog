@@ -249,10 +249,10 @@ But in production, trust infrastructure beats demo magic almost every time.
 
 ## Read Also
 
-- [DevOps Is Not a Pipeline](/karpov-blog/en/posts/devops-is-not-a-pipeline/)
-- [AI Is No Longer a Chatbot](/karpov-blog/en/posts/ai-is-no-longer-a-chatbot/)
-- [Project Glasswing](/karpov-blog/en/posts/project-glasswing/)
-- [Portfolio: DevOps, Platform Engineering and .NET](/karpov-blog/en/projects/)
+- [DevOps Is Not a Pipeline](/en/posts/devops-is-not-a-pipeline/)
+- [AI Is No Longer a Chatbot](/en/posts/ai-is-no-longer-a-chatbot/)
+- [Project Glasswing](/en/posts/project-glasswing/)
+- [Portfolio: DevOps, Platform Engineering and .NET](/en/projects/)
 
 ## Sources
 

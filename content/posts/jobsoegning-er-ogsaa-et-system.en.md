@@ -307,10 +307,10 @@ And small systems get better when you give them structure, feedback and a little
 
 ## Read Also
 
-- [DevOps Is Not a Pipeline](/karpov-blog/en/posts/devops-is-not-a-pipeline/)
-- [AI Agents Need Memory](/karpov-blog/en/posts/ai-agents-need-memory/)
-- [From Prompt to Prototype: AI Helped Me Kill the Idea Faster](/karpov-blog/en/posts/from-prompt-to-prototype-vaert/)
-- [Portfolio: DevOps, Platform Engineering and .NET](/karpov-blog/en/projects/)
+- [DevOps Is Not a Pipeline](/en/posts/devops-is-not-a-pipeline/)
+- [AI Agents Need Memory](/en/posts/ai-agents-need-memory/)
+- [From Prompt to Prototype: AI Helped Me Kill the Idea Faster](/en/posts/from-prompt-to-prototype-vaert/)
+- [Portfolio: DevOps, Platform Engineering and .NET](/en/projects/)
 
 ## Note
 

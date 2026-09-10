@@ -144,9 +144,9 @@ Og det har softwarebranchen, trods alt, allerede ret god erfaring med.
 
 Læs også:
 
-- [AI er ikke længere en chatbot - det er det nye produktionsapparat](/karpov-blog/posts/ai-er-ikke-laengere-en-chatbot/)
-- [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/)
-- [EU AI Act i praksis: transparens er ikke bare en pop-up](/karpov-blog/posts/eu-ai-act-transparens-er-ikke-bare-en-popup/)
+- [AI er ikke længere en chatbot - det er det nye produktionsapparat](/posts/ai-er-ikke-laengere-en-chatbot/)
+- [DevOps er ikke en pipeline](/posts/devops-er-ikke-en-pipeline/)
+- [EU AI Act i praksis: transparens er ikke bare en pop-up](/posts/eu-ai-act-transparens-er-ikke-bare-en-popup/)
 
 ## Kilder
 

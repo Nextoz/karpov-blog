@@ -78,8 +78,8 @@ Det positive er, at værktøjerne nu begynder at komme i hænderne på forsvarer
 
 Læs også:
 
-- [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/)
-- [AI er ikke længere en chatbot - det er det nye produktionsapparat](/karpov-blog/posts/ai-er-ikke-laengere-en-chatbot/)
+- [DevOps er ikke en pipeline](/posts/devops-er-ikke-en-pipeline/)
+- [AI er ikke længere en chatbot - det er det nye produktionsapparat](/posts/ai-er-ikke-laengere-en-chatbot/)
 
 ---
 

@@ -183,10 +183,10 @@ God ferie.
 
 ## Læs også
 
-- [AI-agenter skal bruge hukommelse](/karpov-blog/posts/ai-agenter-skal-bruge-hukommelse/)
-- [AI-agenter skal bruge API'er](/karpov-blog/posts/ai-agenter-skal-bruge-api-er/)
-- [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/)
-- [Claude Fable 5 er ikke bare en ny model. Det er en platformtest.](/karpov-blog/posts/claude-fable-5-er-en-platformtest/)
+- [AI-agenter skal bruge hukommelse](/posts/ai-agenter-skal-bruge-hukommelse/)
+- [AI-agenter skal bruge API'er](/posts/ai-agenter-skal-bruge-api-er/)
+- [DevOps er ikke en pipeline](/posts/devops-er-ikke-en-pipeline/)
+- [Claude Fable 5 er ikke bare en ny model. Det er en platformtest.](/posts/claude-fable-5-er-en-platformtest/)
 
 ## Kilder
 

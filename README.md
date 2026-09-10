@@ -6,7 +6,7 @@ The site publishes engineering notes about DevOps, platform engineering, .NET, o
 
 Live site:
 
-https://nextoz.github.io/karpov-blog/
+https://karpov.dk/
 
 ## Stack
 
@@ -51,7 +51,7 @@ Every pull request builds the production site and validates:
 Run the same checks locally with:
 
 ```powershell
-hugo --gc --minify --cleanDestinationDir --baseURL "https://nextoz.github.io/karpov-blog/"
+hugo --gc --minify --cleanDestinationDir --baseURL "https://karpov.dk/"
 python scripts/check_sitemaps.py public
 ```
 
