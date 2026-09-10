@@ -16,7 +16,7 @@ ShowReadingTime: true
 ---
 
 
-![En stiliseret pipeline med teksten: Dette er ikke DevOps.](/karpov-blog/images/this-is-not-devops-pipeline.svg)
+![En stiliseret pipeline med teksten: Dette er ikke DevOps.](/images/this-is-not-devops-pipeline.svg)
 
 Der er en særlig type optimisme, der opstår, når nogen siger:
 
@@ -139,8 +139,8 @@ DevOps er evnen til at ændre software uden at hele rummet instinktivt begynder 
 
 Læs også:
 
-- [Mit Obsidian-vault fik en lille forskningsafdeling](/karpov-blog/posts/obsidian-vault-selvforbedrende-graf/)
-- [Portfolio: DevOps, Platform Engineering og .NET](/karpov-blog/projekter/)
+- [Mit Obsidian-vault fik en lille forskningsafdeling](/posts/obsidian-vault-selvforbedrende-graf/)
+- [Portfolio: DevOps, Platform Engineering og .NET](/projekter/)
 
 ## Kilder
 

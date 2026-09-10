@@ -221,8 +221,8 @@ Sorry.
 
 Read also:
 
-- [DevOps Is Not a Pipeline](/karpov-blog/en/posts/devops-is-not-a-pipeline/)
-- [My Obsidian Vault Got a Small Research Department](/karpov-blog/en/posts/my-obsidian-vault-got-a-small-research-department/)
+- [DevOps Is Not a Pipeline](/en/posts/devops-is-not-a-pipeline/)
+- [My Obsidian Vault Got a Small Research Department](/en/posts/my-obsidian-vault-got-a-small-research-department/)
 
 ## Sources
 

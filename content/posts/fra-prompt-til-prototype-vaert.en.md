@@ -13,11 +13,11 @@ categories: ["AI", "Technology"]
 author: "Evgeny Karpov"
 ShowReadingTime: true
 cover:
-  image: "/karpov-blog/images/vaert-prototype-desktop.png"
+  image: "/images/vaert-prototype-desktop.png"
   alt: "Prototype of Vært, a private Danish concierge with dashboard, request flow and curated recommendations."
   caption: "First prototype of Vært. Not a finished company. But much better than another loose AI idea in a note."
 ---
-![Prototype of Vært, a private Danish concierge with dashboard, request flow and curated recommendations.](/karpov-blog/images/vaert-prototype-desktop.png)
+![Prototype of Vært, a private Danish concierge with dashboard, request flow and curated recommendations.](/images/vaert-prototype-desktop.png)
 
 I originally just wanted to find a good app idea.
 
@@ -409,5 +409,5 @@ Getting it to help you cut away until the idea becomes clear enough to test.
 
 Read also:
 
-- [My Obsidian Vault Got a Small Research Department](/karpov-blog/en/posts/my-obsidian-vault-got-a-small-research-department/)
-- [DevOps Is Not a Pipeline](/karpov-blog/en/posts/devops-is-not-a-pipeline/)
+- [My Obsidian Vault Got a Small Research Department](/en/posts/my-obsidian-vault-got-a-small-research-department/)
+- [DevOps Is Not a Pipeline](/en/posts/devops-is-not-a-pipeline/)

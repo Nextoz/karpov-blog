@@ -13,7 +13,7 @@ author: "Evgeny Karpov"
 ShowReadingTime: true
 ---
 
-![Infographic with key Claude Fable 5 numbers and the platform consequence.](/karpov-blog/images/claude-fable-5-platform-signal-en.svg)
+![Infographic with key Claude Fable 5 numbers and the platform consequence.](/images/claude-fable-5-platform-signal-en.svg)
 
 Anthropic launched Claude Fable 5 and Claude Mythos 5 on June 9, 2026.
 
@@ -81,7 +81,7 @@ That does not make platform work less important.
 It makes platform work the boundary for how much of the model's capability you can actually use without setting fire to your own systems.
 
 <figure>
-  <img src="/karpov-blog/images/ai-agent-adoption-gap-2026-en.svg" alt="Bar chart with statistics about AI adoption, agent performance and low agent deployment in 2026.">
+  <img src="/images/ai-agent-adoption-gap-2026-en.svg" alt="Bar chart with statistics about AI adoption, agent performance and low agent deployment in 2026.">
   <figcaption>AI adoption is moving fast. Agent-ready operations, governance and measurement do not appear automatically.</figcaption>
 </figure>
 
@@ -360,11 +360,11 @@ They become the difference between a good AI strategy and a very expensive chatb
 
 ## Read Also
 
-- [AI Agents Need APIs](/karpov-blog/en/posts/ai-agents-need-apis/)
-- [AI Agents Need Memory](/karpov-blog/en/posts/ai-agents-need-memory/)
-- [EU AI Act in Practice: Transparency Is Not Just a Pop-up](/karpov-blog/en/posts/eu-ai-act-in-practice-transparency-is-not-just-a-popup/)
-- [Project Glasswing - When AI Finds The Bugs Humans Miss](/karpov-blog/en/posts/project-glasswing/)
-- [DevOps Is Not a Pipeline](/karpov-blog/en/posts/devops-is-not-a-pipeline/)
+- [AI Agents Need APIs](/en/posts/ai-agents-need-apis/)
+- [AI Agents Need Memory](/en/posts/ai-agents-need-memory/)
+- [EU AI Act in Practice: Transparency Is Not Just a Pop-up](/en/posts/eu-ai-act-in-practice-transparency-is-not-just-a-popup/)
+- [Project Glasswing - When AI Finds The Bugs Humans Miss](/en/posts/project-glasswing/)
+- [DevOps Is Not a Pipeline](/en/posts/devops-is-not-a-pipeline/)
 
 ## Sources
 

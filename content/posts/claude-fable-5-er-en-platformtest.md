@@ -13,7 +13,7 @@ author: "Evgeny Karpov"
 ShowReadingTime: true
 ---
 
-![Infografik med centrale tal for Claude Fable 5 og platformkonsekvensen.](/karpov-blog/images/claude-fable-5-platform-signal.svg)
+![Infografik med centrale tal for Claude Fable 5 og platformkonsekvensen.](/images/claude-fable-5-platform-signal.svg)
 
 Anthropic lancerede den 9. juni 2026 Claude Fable 5 og Claude Mythos 5.
 
@@ -81,7 +81,7 @@ Det betyder ikke, at platformarbejde bliver mindre vigtigt.
 Det betyder, at platformarbejde bliver grænsen for, hvor meget af modellens capability man faktisk kan bruge uden at sætte ild til sit eget systemlandskab.
 
 <figure>
-  <img src="/karpov-blog/images/ai-agent-adoption-gap-2026.svg" alt="Søjlediagram med statistik om AI-adoption, agent-performance og lav agent-deployment i 2026.">
+  <img src="/images/ai-agent-adoption-gap-2026.svg" alt="Søjlediagram med statistik om AI-adoption, agent-performance og lav agent-deployment i 2026.">
   <figcaption>AI bliver hurtigt udbredt. Agent-ready drift, governance og måling følger ikke automatisk med.</figcaption>
 </figure>
 
@@ -360,11 +360,11 @@ De bliver selve forskellen på en god AI-strategi og en meget dyr chatbot med ad
 
 ## Læs også
 
-- [AI-agenter skal bruge API'er](/karpov-blog/posts/ai-agenter-skal-bruge-api-er/)
-- [AI-agenter skal bruge hukommelse](/karpov-blog/posts/ai-agenter-skal-bruge-hukommelse/)
-- [EU AI Act i praksis: transparens er ikke bare en pop-up](/karpov-blog/posts/eu-ai-act-transparens-er-ikke-bare-en-popup/)
-- [Project Glasswing - Når AI finder de fejl mennesker overser](/karpov-blog/posts/project-glasswing/)
-- [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/)
+- [AI-agenter skal bruge API'er](/posts/ai-agenter-skal-bruge-api-er/)
+- [AI-agenter skal bruge hukommelse](/posts/ai-agenter-skal-bruge-hukommelse/)
+- [EU AI Act i praksis: transparens er ikke bare en pop-up](/posts/eu-ai-act-transparens-er-ikke-bare-en-popup/)
+- [Project Glasswing - Når AI finder de fejl mennesker overser](/posts/project-glasswing/)
+- [DevOps er ikke en pipeline](/posts/devops-er-ikke-en-pipeline/)
 
 ## Kilder
 

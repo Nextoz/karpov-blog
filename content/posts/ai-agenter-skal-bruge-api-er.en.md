@@ -141,9 +141,9 @@ And software has, to be fair, plenty of experience with that already.
 
 Read also:
 
-- [AI Is No Longer a Chatbot](/karpov-blog/en/posts/ai-is-no-longer-a-chatbot/)
-- [DevOps Is Not a Pipeline](/karpov-blog/en/posts/devops-is-not-a-pipeline/)
-- [EU AI Act in Practice: Transparency Is Not Just a Pop-up](/karpov-blog/en/posts/eu-ai-act-in-practice-transparency-is-not-just-a-popup/)
+- [AI Is No Longer a Chatbot](/en/posts/ai-is-no-longer-a-chatbot/)
+- [DevOps Is Not a Pipeline](/en/posts/devops-is-not-a-pipeline/)
+- [EU AI Act in Practice: Transparency Is Not Just a Pop-up](/en/posts/eu-ai-act-in-practice-transparency-is-not-just-a-popup/)
 
 ## Sources
 

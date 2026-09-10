@@ -191,6 +191,6 @@ The question is whether you have control over it.
 
 Read also:
 
-- [DevOps Is Not a Pipeline](/karpov-blog/en/posts/devops-is-not-a-pipeline/)
-- [EU AI Act in Practice: Transparency Is Not Just a Pop-up](/karpov-blog/en/posts/eu-ai-act-in-practice-transparency-is-not-just-a-popup/)
-- [Portfolio: DevOps, Platform Engineering and .NET](/karpov-blog/en/projects/)
+- [DevOps Is Not a Pipeline](/en/posts/devops-is-not-a-pipeline/)
+- [EU AI Act in Practice: Transparency Is Not Just a Pop-up](/en/posts/eu-ai-act-in-practice-transparency-is-not-just-a-popup/)
+- [Portfolio: DevOps, Platform Engineering and .NET](/en/projects/)

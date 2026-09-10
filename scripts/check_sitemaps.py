@@ -9,8 +9,9 @@ import xml.etree.ElementTree as ET
 from urllib.parse import urljoin, urlparse
 
 
-BASE = "https://nextoz.github.io/karpov-blog"
-BASE_PATH = "/karpov-blog"
+BASE = "https://karpov.dk"
+BASE_PATH = ""
+BASE_HOST = urlparse(BASE).netloc
 NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 
 
@@ -97,7 +98,7 @@ def check_internal_links(public: Path) -> None:
                 continue
             absolute = urljoin(page_url, raw)
             parsed = urlparse(absolute)
-            if parsed.netloc != "nextoz.github.io":
+            if parsed.netloc != BASE_HOST:
                 continue
             key = f"{parsed.path}|{attr}"
             if key in checked:
@@ -192,7 +193,7 @@ def main() -> int:
     require_text(en_home, "From a good idea to stable production", "English home")
     require_text(home, "images/profile.png", "Danish home portrait")
     require_text(home, "class=language-links", "Danish home language switch")
-    require_text(home, "/karpov-blog/en/", "Danish home English target")
+    require_text(home, f"{BASE_PATH}/en/", "Danish home English target")
     if "Redaktørens valg" in home or "Editor's picks" in en_home:
         raise AssertionError("The retired editor-picks framing must not appear on either homepage")
     require_one_h1(home, "Danish home")

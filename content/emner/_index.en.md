@@ -14,4 +14,4 @@ ShowWordCount: false
 
 The English topic overview is available here:
 
-[Go to topics](/karpov-blog/en/tags/)
+[Go to topics](/en/tags/)

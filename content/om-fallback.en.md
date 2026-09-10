@@ -14,4 +14,4 @@ ShowWordCount: false
 
 The English About page is available here:
 
-[Go to About](/karpov-blog/en/about/)
+[Go to About](/en/about/)

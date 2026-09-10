@@ -15,11 +15,11 @@ categories: ["AI", "DevOps", "Technology"]
 author: "Evgeny Karpov"
 ShowReadingTime: true
 cover:
-  image: "/karpov-blog/images/obsidian-vault-knowledge-graph.svg"
+  image: "/images/obsidian-vault-knowledge-graph.svg"
   alt: "An Obsidian-like knowledge graph across notes, research, job search and blog work."
   caption: "My vault as a graph. It looks a bit like an afterparty for notes, but there is a real idea behind it."
 ---
-![An Obsidian-like knowledge graph across notes, research, job search and blog work.](/karpov-blog/images/obsidian-vault-knowledge-graph.svg)
+![An Obsidian-like knowledge graph across notes, research, job search and blog work.](/images/obsidian-vault-knowledge-graph.svg)
 
 I have done something that sounds slightly dangerous on paper:
 
@@ -373,5 +373,5 @@ The most important thing is not the tool. The most important thing is that resea
 
 Read also:
 
-- [DevOps Is Not a Pipeline](/karpov-blog/en/posts/devops-is-not-a-pipeline/)
-- [Job Search Is Also a System](/karpov-blog/en/posts/job-search-is-also-a-system/)
+- [DevOps Is Not a Pipeline](/en/posts/devops-is-not-a-pipeline/)
+- [Job Search Is Also a System](/en/posts/job-search-is-also-a-system/)

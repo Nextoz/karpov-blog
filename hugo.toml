@@ -1,5 +1,5 @@
 defaultContentLanguageInSubdir = false
-baseURL = "https://nextoz.github.io/karpov-blog/"
+baseURL = "https://karpov.dk/"
 locale = "da-DK"
 defaultContentLanguage = "da"
 title = "Evgeny Karpov"

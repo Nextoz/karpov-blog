@@ -222,8 +222,8 @@ Beklager.
 
 Læs også:
 
-- [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/)
-- [Obsidian som selvforbedrende graf](/karpov-blog/posts/obsidian-vault-selvforbedrende-graf/)
+- [DevOps er ikke en pipeline](/posts/devops-er-ikke-en-pipeline/)
+- [Obsidian som selvforbedrende graf](/posts/obsidian-vault-selvforbedrende-graf/)
 
 ## Kilder
 

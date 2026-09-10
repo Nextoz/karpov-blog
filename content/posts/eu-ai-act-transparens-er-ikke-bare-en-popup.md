@@ -317,10 +317,10 @@ Men i produktion slår tillidsinfrastruktur næsten altid demo-magi.
 
 ## Læs også
 
-- [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/)
-- [AI er ikke længere en chatbot - det er det nye produktionsapparat](/karpov-blog/posts/ai-er-ikke-laengere-en-chatbot/)
-- [Project Glasswing - Når AI finder de fejl mennesker overser](/karpov-blog/posts/project-glasswing/)
-- [Portfolio: DevOps, Platform Engineering og .NET](/karpov-blog/projekter/)
+- [DevOps er ikke en pipeline](/posts/devops-er-ikke-en-pipeline/)
+- [AI er ikke længere en chatbot - det er det nye produktionsapparat](/posts/ai-er-ikke-laengere-en-chatbot/)
+- [Project Glasswing - Når AI finder de fejl mennesker overser](/posts/project-glasswing/)
+- [Portfolio: DevOps, Platform Engineering og .NET](/projekter/)
 
 ## Kilder
 

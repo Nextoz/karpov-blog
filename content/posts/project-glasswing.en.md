@@ -88,8 +88,8 @@ It is a race, and we should make sure they win it.
 
 Read also:
 
-- [DevOps Is Not a Pipeline](/karpov-blog/en/posts/devops-is-not-a-pipeline/)
-- [AI Is No Longer a Chatbot](/karpov-blog/en/posts/ai-is-no-longer-a-chatbot/)
+- [DevOps Is Not a Pipeline](/en/posts/devops-is-not-a-pipeline/)
+- [AI Is No Longer a Chatbot](/en/posts/ai-is-no-longer-a-chatbot/)
 
 ---
 

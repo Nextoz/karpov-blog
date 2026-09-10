@@ -114,8 +114,8 @@ Bare hurtigere, pænere og med en bedre demo.
 
 Læs også:
 
-- [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/)
-- [Jobsøgning er også et system](/karpov-blog/posts/jobsoegning-er-ogsaa-et-system/)
+- [DevOps er ikke en pipeline](/posts/devops-er-ikke-en-pipeline/)
+- [Jobsøgning er også et system](/posts/jobsoegning-er-ogsaa-et-system/)
 
 ## Kilder
 

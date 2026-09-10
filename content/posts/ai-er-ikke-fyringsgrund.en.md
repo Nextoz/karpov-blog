@@ -64,9 +64,9 @@ That is the difference between freedom and passing the blame to a tool.
 
 ## Read Also
 
-- [AI Is No Longer a Chatbot](/karpov-blog/en/posts/ai-is-no-longer-a-chatbot/)
-- [EU AI Act in Practice: Transparency Is Not Just a Pop-up](/karpov-blog/en/posts/eu-ai-act-in-practice-transparency-is-not-just-a-popup/)
-- [DevOps Is Not a Pipeline](/karpov-blog/en/posts/devops-is-not-a-pipeline/)
+- [AI Is No Longer a Chatbot](/en/posts/ai-is-no-longer-a-chatbot/)
+- [EU AI Act in Practice: Transparency Is Not Just a Pop-up](/en/posts/eu-ai-act-in-practice-transparency-is-not-just-a-popup/)
+- [DevOps Is Not a Pipeline](/en/posts/devops-is-not-a-pipeline/)
 
 ---
 
