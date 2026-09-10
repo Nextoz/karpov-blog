@@ -8,7 +8,7 @@
     {{- if eq .Lang "da" -}}
       {{- if eq $authorship "legacy-ai-drafted" -}}
       <strong>Redaktionel note om AI</strong>
-      <p>AI skrev størstedelen af dette ældre indlæg ud fra mine prompts, noter og redaktionelle valg. Jeg beholder det foreløbigt som en del af bloggens historie, mens jeg omlægger bloggen til tekster, jeg selv skriver.</p>
+      <p>AI skrev størstedelen af dette indlæg ud fra mine prompts, noter og redaktionelle valg.</p>
       {{- else if eq $authorship "human-written" -}}
       <strong>Skrevet af Evgeny Karpov</strong>
       <p>Selve teksten er skrevet af mig. Jeg har kun brugt AI som assistent til spørgsmål, research, faktatjek og feedback — ikke til artikelprosa.</p>
@@ -19,7 +19,7 @@
     {{- else -}}
       {{- if eq $authorship "legacy-ai-drafted" -}}
       <strong>Editorial note about AI</strong>
-      <p>AI wrote most of this older post from my prompts, notes and editorial choices. I am keeping it for now as part of the blog's history while I rebuild the blog around writing I do myself.</p>
+      <p>AI wrote most of this post from my prompts, notes and editorial choices.</p>
       {{- else if eq $authorship "human-written" -}}
       <strong>Written by Evgeny Karpov</strong>
       <p>I wrote the text itself. I only used AI as an assistant for questions, research, fact-checking and feedback — not for article prose.</p>

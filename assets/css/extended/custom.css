@@ -210,13 +210,13 @@ summary:focus-visible {
 }
 
 .home-hero h1 {
-  max-width: 850px;
+  max-width: 720px;
   margin: 0;
   color: var(--primary);
-  font-size: clamp(3rem, 7vw, 6.2rem);
-  font-weight: 900;
-  letter-spacing: -0.065em;
-  line-height: 0.98;
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
 }
 
 .home-lead {
@@ -324,32 +324,6 @@ summary:focus-visible {
 
 .home-section {
   margin: 0 0 8rem;
-}
-
-.home-process {
-  max-width: 860px;
-  margin: 0 0 8rem;
-  padding: clamp(2rem, 5vw, 4rem);
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-left: 4px solid var(--accent);
-  border-radius: 16px;
-}
-
-.home-process h2 {
-  margin: 0 0 1.5rem;
-  color: var(--primary);
-  font-size: clamp(2rem, 4vw, 3.45rem);
-  letter-spacing: -0.045em;
-  line-height: 1.08;
-}
-
-.home-process p:not(.eyebrow) {
-  max-width: 760px;
-  margin: 0.8rem 0 0;
-  color: var(--secondary);
-  font-size: 1.05rem;
-  line-height: 1.75;
 }
 
 .section-heading {
@@ -717,7 +691,7 @@ summary:focus-visible {
   }
 
   .home-hero h1 {
-    font-size: clamp(2.8rem, 15vw, 4.2rem);
+    font-size: clamp(2rem, 9vw, 2.75rem);
   }
 
   .proof-strip {
@@ -726,10 +700,6 @@ summary:focus-visible {
   }
 
   .home-section {
-    margin-bottom: 5.5rem;
-  }
-
-  .home-process {
     margin-bottom: 5.5rem;
   }
 
