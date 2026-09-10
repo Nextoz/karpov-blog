@@ -188,10 +188,8 @@ def main() -> int:
     en_post = read_html(public, "en/posts/my-obsidian-vault-got-a-small-research-department")
     unpaired_post = read_html(public, "posts/ai-tokens-er-billige-regningen-er-det-ikke")
 
-    require_text(home, "Noter fra det, jeg bygger, lærer og prøver at forstå.", "Danish home")
-    require_text(en_home, "Notes from what I build, learn and try to understand.", "English home")
-    require_text(home, "Jeg vil selv tilbage i teksten.", "Danish editorial reset")
-    require_text(en_home, "I want to return to the writing myself.", "English editorial reset")
+    require_text(home, "Fra god idé til stabil drift", "Danish home")
+    require_text(en_home, "From a good idea to stable production", "English home")
     require_text(home, "images/profile.png", "Danish home portrait")
     require_text(home, "class=language-links", "Danish home language switch")
     require_text(home, "/karpov-blog/en/", "Danish home English target")
@@ -207,9 +205,9 @@ def main() -> int:
     require_text(en_post, "class=language-links", "English paired-post language switch")
     require_text(da_post, "author-note", "Danish author note")
     require_text(en_post, "author-note", "English author note")
-    require_text(da_post, "AI skrev størstedelen af dette ældre indlæg", "Danish legacy disclosure")
-    require_text(en_post, "AI wrote most of this older post", "English legacy disclosure")
-    require_text(unpaired_post, "AI skrev størstedelen af dette ældre indlæg", "Unpaired legacy disclosure")
+    require_text(da_post, "AI skrev størstedelen af dette indlæg", "Danish legacy disclosure")
+    require_text(en_post, "AI wrote most of this post", "English legacy disclosure")
+    require_text(unpaired_post, "AI skrev størstedelen af dette indlæg", "Unpaired legacy disclosure")
     if "class=language-links" in unpaired_post or "/en/posts/ai-tokens-er-billige-regningen-er-det-ikke/" in unpaired_post:
         raise AssertionError("Unpaired Danish post must not advertise a missing English translation")
 

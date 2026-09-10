@@ -5,13 +5,13 @@
 <div class="home-shell">
 <section class="home-hero" aria-labelledby="home-title">
   <div class="home-hero-copy">
-    <p class="eyebrow">{{ if $isDA }}Bloggen er under forandring{{ else }}The blog is changing{{ end }}</p>
-    <h1 id="home-title">{{ if $isDA }}Noter fra det, jeg bygger, lærer og prøver at forstå.{{ else }}Notes from what I build, learn and try to understand.{{ end }}</h1>
+    <p class="eyebrow">{{ if $isDA }}Engineering notes fra København{{ else }}Engineering notes from Copenhagen{{ end }}</p>
+    <h1 id="home-title">{{ if $isDA }}Fra god idé til stabil drift{{ else }}From a good idea to stable production{{ end }}</h1>
     <p class="home-lead">
-      {{ if $isDA }}Jeg har tidligere ladet AI skrive størstedelen af mine blogindlæg ud fra mine prompts og noter. Nu vil jeg selv tilbage i teksten og bruge bloggen til at følge det, jeg lærer undervejs.{{ else }}I previously let AI write most of my blog posts from my prompts and notes. Now I want to return to the writing myself and use this blog to follow what I learn along the way.{{ end }}
+      {{ if $isDA }}Jeg er Evgeny Karpov, software- og platform engineer i København. Her skriver jeg om DevOps, .NET, cloud og AI-systemer — og om hvad der skal til for at få dem til at virke i drift.{{ else }}I'm Evgeny Karpov, a software and platform engineer in Copenhagen. Here I write about DevOps, .NET, cloud and AI systems — and what it takes to make them work in production.{{ end }}
     </p>
     <div class="hero-actions">
-      <a class="button button-primary" href="#posts">{{ if $isDA }}Se de beholdte indlæg{{ else }}See the retained posts{{ end }}</a>
+      <a class="button button-primary" href="#posts">{{ if $isDA }}Se indlæg{{ else }}Browse posts{{ end }}</a>
       {{- with site.GetPage "/projekter" }}
       <a class="button button-secondary" href="{{ .RelPermalink }}">{{ if $isDA }}Se portfolio{{ else }}View portfolio{{ end }}</a>
       {{- end }}
@@ -23,23 +23,10 @@
   </div>
 </section>
 
-<section class="home-process" aria-labelledby="process-title">
-  <p class="eyebrow">{{ if $isDA }}En mere ærlig skriveproces{{ else }}A more honest writing process{{ end }}</p>
-  <h2 id="process-title">{{ if $isDA }}Jeg vil selv tilbage i teksten.{{ else }}I want to return to the writing myself.{{ end }}</h2>
-  {{- if $isDA }}
-  <p>De ældre indlæg, som jeg foreløbig beholder, er tydeligt mærket. Jeg gennemgår dem ét ad gangen og afgør, om de skal blive, omskrives eller fjernes.</p>
-  <p>Fremover vil jeg selv skrive første udkast og de endelige formuleringer. AI må gerne hjælpe mig med spørgsmål, research, faktatjek og feedback, men ikke overtage min stemme. Teksterne må gerne blive mere personlige og vise, at jeg stadig lærer.</p>
-  {{- else }}
-  <p>The older posts I am retaining for now are clearly labelled. I will review them one by one and decide whether they should stay, be rewritten or be removed.</p>
-  <p>From now on I want to write the first draft and the final wording myself. AI may help with questions, research, fact-checking and feedback, but it should not replace my voice. The writing can be more personal and show that I am still learning.</p>
-  {{- end }}
-</section>
-
 <section class="home-section" id="posts" aria-labelledby="posts-title">
   <div class="section-heading section-heading-row">
     <div>
-      <p class="eyebrow">{{ if $isDA }}Arkivet lige nu{{ else }}The archive right now{{ end }}</p>
-      <h2 id="posts-title">{{ if $isDA }}Ældre indlæg under gennemgang{{ else }}Older posts under review{{ end }}</h2>
+      <h2 id="posts-title">{{ if $isDA }}Seneste indlæg{{ else }}Latest posts{{ end }}</h2>
     </div>
     <a class="text-link" href="{{ "posts/" | relLangURL }}">{{ if $isDA }}Alle indlæg →{{ else }}All posts →{{ end }}</a>
   </div>
@@ -59,7 +46,7 @@
 <section class="home-cta" aria-labelledby="follow-title">
   <div>
     <p class="eyebrow">{{ if $isDA }}Følg med{{ else }}Follow along{{ end }}</p>
-    <h2 id="follow-title">{{ if $isDA }}Nye tekster, når jeg selv har noget at sige.{{ else }}New writing when I have something of my own to say.{{ end }}</h2>
+    <h2 id="follow-title">{{ if $isDA }}Ingen growth hacks. Bare nye tekniske noter.{{ else }}No growth hacks. Just new engineering notes.{{ end }}</h2>
     <p>{{ if $isDA }}Brug RSS, eller følg med på LinkedIn.{{ else }}Subscribe with RSS, or follow along on LinkedIn.{{ end }}</p>
   </div>
   <div class="hero-actions">

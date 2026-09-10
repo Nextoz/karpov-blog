@@ -1,7 +1,7 @@
 ---
 title: "Evgeny Karpov"
-description: "Evgeny Karpovs personlige noter om software, DevOps, AI og det, han bygger og lærer undervejs."
-summary: "Personlige noter om software, DevOps, AI og en skriveproces under forandring."
+description: "Evgeny Karpovs blog om software engineering, DevOps, .NET, cloud og AI-systemer, der skal fungere i produktion."
+summary: "Noter om software engineering, DevOps, .NET, cloud og AI-systemer i produktion."
 translationKey: "home"
 hidemeta: true
 ShowReadingTime: false
