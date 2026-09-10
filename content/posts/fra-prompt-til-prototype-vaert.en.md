@@ -4,6 +4,7 @@ date: 2026-05-30
 lastmod: 2026-06-07
 slug: "from-prompt-to-prototype-vaert"
 draft: false
+authorship: "legacy-ai-drafted"
 translationKey: "fra-prompt-til-prototype-vaert"
 description: "A practical look at how an app idea was sharpened with AI: from too many prompts and broad ideas to a concrete prototype for Vært, a private Danish concierge."
 summary: "I used AI as a product partner to test, reject and sharpen app ideas. The result was not another chatbot, but a prototype for Vært: a discreet Danish concierge for hosting, dining, culture and trusted services."
@@ -409,5 +410,4 @@ Getting it to help you cut away until the idea becomes clear enough to test.
 Read also:
 
 - [My Obsidian Vault Got a Small Research Department](/karpov-blog/en/posts/my-obsidian-vault-got-a-small-research-department/)
-- [AI Is No Longer a Chatbot](/karpov-blog/en/posts/ai-is-no-longer-a-chatbot/)
 - [DevOps Is Not a Pipeline](/karpov-blog/en/posts/devops-is-not-a-pipeline/)

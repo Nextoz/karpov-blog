@@ -3,6 +3,7 @@ title: "Mit Obsidian-vault fik en lille forskningsafdeling"
 date: 2026-05-26
 lastmod: 2026-05-27
 draft: false
+authorship: "legacy-ai-drafted"
 translationKey: "obsidian-vault-selvforbedrende-graf"
 description: "Jeg har bygget et Obsidian-setup med graph memory, daglig research scout og blogkladder. Ikke som magi, men som et praktisk AI-arbejdsbord."
 summary: "Et kig ind i mit Obsidian-vault: graph memory, daglig research scout, kandidatnoter og blogkladder. AI som arbejdsbord, ikke som tryllestav."
@@ -382,7 +383,6 @@ Det vigtigste er ikke værktøjet. Det vigtigste er, at research, noter, job sea
 
 Læs også:
 
-- [AI er ikke længere en chatbot - det er det nye produktionsapparat](/karpov-blog/posts/ai-er-ikke-laengere-en-chatbot/)
 - [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/)
-- [EU AI Act i praksis: transparens er ikke bare en pop-up](/karpov-blog/posts/eu-ai-act-transparens-er-ikke-bare-en-popup/)
+- [Jobsøgning er også et system](/karpov-blog/posts/jobsoegning-er-ogsaa-et-system/)
 

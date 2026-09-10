@@ -4,7 +4,7 @@ date: 2026-06-29
 lastmod: 2026-06-29
 slug: "ai-agenter-holder-ikke-sommerferie"
 translationKey: "ai-agenter-holder-ikke-sommerferie"
-draft: false
+draft: true
 description: "AI-agenter kan arbejde parallelt og længe. Sommerens egentlige platformtest er, om de kan stoppes, kontrolleres og reviewes, mens halvdelen af teamet er på ferie."
 summary: "60 agenttimer på en dag er ikke det samme som 60 timers værdi. Når agenter arbejder videre, flytter flaskehalsen til overlevering, isolation, review og stopkriterier."
 tags: ["AI", "AI Agents", "DevOps", "Platform Engineering", "GitHub Copilot", "AGENTS.md"]

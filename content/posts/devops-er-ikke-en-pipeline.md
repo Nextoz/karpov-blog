@@ -3,6 +3,7 @@ title: "DevOps er ikke en pipeline"
 date: 2026-05-22
 lastmod: 2026-05-22
 draft: false
+authorship: "legacy-ai-drafted"
 translationKey: "devops-er-ikke-en-pipeline"
 description: "En kort praktisk note om DevOps, CI/CD, observability, rollback og dokumentation. DevOps er ikke bare YAML med selvtillid."
 summary: "DevOps er ikke bare en pipeline. Det er evnen til at få software sikkert fra ide til drift, opdage problemer hurtigt og rette dem uden panik."
@@ -138,9 +139,7 @@ DevOps er evnen til at ændre software uden at hele rummet instinktivt begynder 
 
 Læs også:
 
-- [AI er ikke længere en chatbot - det er det nye produktionsapparat](/karpov-blog/posts/ai-er-ikke-laengere-en-chatbot/)
-- [EU AI Act i praksis: transparens er ikke bare en pop-up](/karpov-blog/posts/eu-ai-act-transparens-er-ikke-bare-en-popup/)
-- [Project Glasswing - Når AI finder de fejl mennesker overser](/karpov-blog/posts/project-glasswing/)
+- [Mit Obsidian-vault fik en lille forskningsafdeling](/karpov-blog/posts/obsidian-vault-selvforbedrende-graf/)
 - [Portfolio: DevOps, Platform Engineering og .NET](/karpov-blog/projekter/)
 
 ## Kilder

@@ -1,7 +1,7 @@
 ---
 title: "Evgeny Karpov"
-description: "Engineering notes from Copenhagen about DevOps, platform engineering, .NET, observability and AI systems that have to work in production."
-summary: "DevOps, platform engineering, .NET, observability and AI in production."
+description: "Evgeny Karpov's personal notes about software, DevOps, AI, and what he builds and learns along the way."
+summary: "Personal notes about software, DevOps, AI, and a writing process in transition."
 translationKey: "home"
 hidemeta: true
 ShowReadingTime: false

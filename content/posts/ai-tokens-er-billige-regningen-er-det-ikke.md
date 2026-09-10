@@ -5,6 +5,7 @@ lastmod: 2026-07-03
 slug: "ai-tokens-er-billige-regningen-er-det-ikke"
 translationKey: "ai-tokens-er-billige-regningen-er-det-ikke"
 draft: false
+authorship: "legacy-ai-drafted"
 description: "En praktisk forklaring på tokenpriser, caching og hvorfor coding agents typisk bruger flere tokens end andre AI-agenter."
 summary: "Coding agents læser filer, kører tests og sender en voksende arbejdshistorik gennem modellen. Derfor kan en billig tokenpris stadig blive til en dyr opgave."
 tags: ["AI", "AI Agents", "Tokens", "Prompt Caching", "LLM Inference", "DevOps", "Platform Engineering"]
@@ -227,10 +228,8 @@ Softwarebranchen har altid haft rigeligt af det.
 ## Læs også
 
 - [AI-agenter skal bruge hukommelse](/karpov-blog/posts/ai-agenter-skal-bruge-hukommelse/)
-- [AI-agenter skal bruge API'er](/karpov-blog/posts/ai-agenter-skal-bruge-api-er/)
-- [AI-agenter holder ikke sommerferie](/karpov-blog/posts/ai-agenter-holder-ikke-sommerferie/)
-- [Claude Fable 5 er ikke bare en ny model. Det er en platformtest.](/karpov-blog/posts/claude-fable-5-er-en-platformtest/)
 - [DevOps er ikke en pipeline](/karpov-blog/posts/devops-er-ikke-en-pipeline/)
+- [Mit Obsidian-vault fik en lille forskningsafdeling](/karpov-blog/posts/obsidian-vault-selvforbedrende-graf/)
 
 ## Kilder
 

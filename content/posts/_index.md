@@ -1,4 +1,4 @@
 ---
 title: "Blog"
-description: "Artikler om AI, DevOps, teknologipolitik og digitalisering i Danmark — af Evgeny Karpov."
+description: "Ældre AI-draftede indlæg under gennemgang og fremtidige noter skrevet af Evgeny Karpov om software, DevOps, AI og det, han lærer undervejs."
 ---

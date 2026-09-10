@@ -4,6 +4,7 @@ date: 2026-04-16
 lastmod: 2026-06-07
 slug: "project-glasswing"
 translationKey: "project-glasswing"
+draft: true
 description: "Anthropic's Project Glasswing shows that AI can help with defensive security. The hard part for teams becomes triage, patching, rollout, observability and operations."
 tags: ["AI", "Cybersecurity", "DevOps", "Platform Engineering", "Open Source"]
 categories: ["Technology", "DevOps"]

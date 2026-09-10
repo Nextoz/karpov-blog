@@ -4,6 +4,7 @@ date: 2026-05-06
 lastmod: 2026-06-07
 slug: "ai-is-not-grounds-for-dismissal"
 translationKey: "ai-er-ikke-fyringsgrund"
+draft: true
 description: "AI is not an excuse for bad management. A short comment on automation, responsibility, regulation and what it means for software teams."
 tags: ["AI", "Politics", "Regulation", "Denmark", "DevOps"]
 categories: ["Technology Policy"]

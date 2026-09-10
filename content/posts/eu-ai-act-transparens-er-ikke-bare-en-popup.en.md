@@ -3,7 +3,7 @@ title: "EU AI Act in Practice: Transparency Is Not Just a Pop-up"
 date: 2026-05-25
 lastmod: 2026-06-07
 slug: "eu-ai-act-in-practice-transparency-is-not-just-a-popup"
-draft: false
+draft: true
 translationKey: "eu-ai-act-transparens-er-ikke-bare-en-popup"
 description: "The EU AI Act turns transparency into a practical product, DevOps and architecture problem. Here is what teams should start preparing now."
 summary: "From 2 August 2026, Article 50 transparency rules in the EU AI Act begin to apply. That sounds legal, but in practice it is also about UI, metadata, logs, audit trails, tests and operations."

@@ -2,6 +2,7 @@
 title: "Start her"
 description: "Startside for Evgeny Karpovs tech blog og portfolio om DevOps, platform engineering, .NET, Azure DevOps, Kubernetes, AI og teknologipolitik."
 summary: "Start her, hvis du vil læse om DevOps, platform engineering, AI, .NET, Kubernetes og teknologipolitik."
+draft: true
 ---
 
 Jeg er **Evgeny Karpov**, DevOps & Platform Engineer i København.

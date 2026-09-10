@@ -1,17 +1,32 @@
 {{- if and .IsPage (eq .Section "posts") -}}
 {{- $portfolio := site.GetPage "/projekter" -}}
 {{- $about := site.GetPage "/om" -}}
-<aside class="author-note" aria-label="{{ if eq .Lang "da" }}Om forfatteren{{ else }}About the author{{ end }}">
+{{- $authorship := .Params.authorship | default "unspecified" -}}
+<aside class="author-note" aria-label="{{ if eq .Lang "da" }}Redaktionel note{{ else }}Editorial note{{ end }}">
   <img src="{{ "images/profile.png" | absURL }}" alt="Evgeny Karpov" width="72" height="72" loading="lazy">
   <div>
     {{- if eq .Lang "da" -}}
-    <strong>Skrevet af Evgeny Karpov</strong>
-    <p>Software engineer i København med fokus på DevOps, platform engineering, .NET, observability og AI i produktion.</p>
-    <p><a href="{{ site.Home.RelPermalink }}">Start her</a>{{ with $portfolio }}, <a href="{{ .RelPermalink }}">se portfolio</a>{{ end }}{{ with $about }} eller <a href="{{ .RelPermalink }}">læs mere om mig</a>{{ end }}.</p>
+      {{- if eq $authorship "legacy-ai-drafted" -}}
+      <strong>Redaktionel note om AI</strong>
+      <p>AI skrev størstedelen af dette ældre indlæg ud fra mine prompts, noter og redaktionelle valg. Jeg beholder det foreløbigt som en del af bloggens historie, mens jeg omlægger bloggen til tekster, jeg selv skriver.</p>
+      {{- else if eq $authorship "human-written" -}}
+      <strong>Skrevet af Evgeny Karpov</strong>
+      <p>Selve teksten er skrevet af mig. Jeg har kun brugt AI som assistent til spørgsmål, research, faktatjek og feedback — ikke til artikelprosa.</p>
+      {{- else -}}
+      <strong>Udgivet af Evgeny Karpov</strong>
+      {{- end }}
+    <p><a href="{{ site.Home.RelPermalink }}">Forside</a>{{ with $portfolio }}, <a href="{{ .RelPermalink }}">portfolio</a>{{ end }}{{ with $about }} eller <a href="{{ .RelPermalink }}">om mig</a>{{ end }}.</p>
     {{- else -}}
-    <strong>Written by Evgeny Karpov</strong>
-    <p>Copenhagen-based software engineer focused on DevOps, platform engineering, .NET, observability and AI in production.</p>
-    <p><a href="{{ site.Home.RelPermalink }}">Start here</a>{{ with $portfolio }}, <a href="{{ .RelPermalink }}">view the portfolio</a>{{ end }}{{ with $about }} or <a href="{{ .RelPermalink }}">read more about me</a>{{ end }}.</p>
+      {{- if eq $authorship "legacy-ai-drafted" -}}
+      <strong>Editorial note about AI</strong>
+      <p>AI wrote most of this older post from my prompts, notes and editorial choices. I am keeping it for now as part of the blog's history while I rebuild the blog around writing I do myself.</p>
+      {{- else if eq $authorship "human-written" -}}
+      <strong>Written by Evgeny Karpov</strong>
+      <p>I wrote the text itself. I only used AI as an assistant for questions, research, fact-checking and feedback — not for article prose.</p>
+      {{- else -}}
+      <strong>Published by Evgeny Karpov</strong>
+      {{- end }}
+    <p><a href="{{ site.Home.RelPermalink }}">Home</a>{{ with $portfolio }}, <a href="{{ .RelPermalink }}">portfolio</a>{{ end }}{{ with $about }} or <a href="{{ .RelPermalink }}">about me</a>{{ end }}.</p>
     {{- end -}}
   </div>
 </aside>

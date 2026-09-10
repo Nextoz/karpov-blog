@@ -4,7 +4,7 @@ date: 2026-06-11
 lastmod: 2026-06-11
 slug: "claude-fable-5-er-en-platformtest"
 translationKey: "claude-fable-5-er-en-platformtest"
-draft: false
+draft: true
 description: "Anthropics Claude Fable 5 viser, at frontier AI ikke længere kun handler om intelligens. Det handler om fallback, refusals, data retention, logging, governance og drift."
 summary: "Anthropic har lanceret Claude Fable 5 og Claude Mythos 5. Den vigtige nyhed er ikke kun, at modellen er stærkere. Det er, at en frontier-model nu kommer med safety classifiers, fallback, nye API-paths, 1M context og helt almindelige platformproblemer."
 tags: ["AI", "Anthropic", "Claude", "AI Agents", "DevOps", "Platform Engineering", "Governance", "Cybersecurity"]
