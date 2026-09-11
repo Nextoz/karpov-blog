@@ -19,7 +19,7 @@
   </div>
   <div class="home-portrait-wrap">
     <img class="home-portrait" src="{{ "images/profile.png" | absURL }}" alt="Evgeny Karpov" width="230" height="230">
-    <p><strong>Evgeny Karpov</strong><br>Software engineer · DevOps · Platform</p>
+    <p><strong>Evgeny Karpov</strong><br>{{ if $isDA }}Softwareudvikler i København{{ else }}Software engineer in Copenhagen{{ end }}</p>
   </div>
 </section>
 
@@ -28,7 +28,7 @@
     <div>
       <h2 id="posts-title">{{ if $isDA }}Seneste indlæg{{ else }}Latest posts{{ end }}</h2>
     </div>
-    <a class="text-link" href="{{ "posts/" | relLangURL }}">{{ if $isDA }}Alle indlæg →{{ else }}All posts →{{ end }}</a>
+    <a class="text-link" href="{{ "posts/" | relLangURL }}">{{ if $isDA }}Alle indlæg{{ else }}All posts{{ end }}</a>
   </div>
   <div class="latest-list">
     {{- range $posts.ByDate.Reverse }}

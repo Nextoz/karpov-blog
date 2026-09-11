@@ -10,7 +10,7 @@ description: "A short practical note about DevOps, CI/CD, observability, rollbac
 summary: "DevOps is not just a pipeline. It is the ability to move software safely from idea to operations, detect problems quickly and fix them without panic."
 featured: true
 featuredOrder: 1
-tags: ["DevOps", "Platform Engineering", "CI/CD", "Observability", "Azure DevOps", "Kubernetes"]
+tags: ["DevOps", "Platform Engineering", "CI-CD", "Observability", "Azure DevOps", "Kubernetes"]
 categories: ["DevOps", "Platform Engineering"]
 author: "Evgeny Karpov"
 ShowReadingTime: true

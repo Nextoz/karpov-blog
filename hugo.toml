@@ -23,7 +23,7 @@ author = "Evgeny Karpov"
 images = ["images/profile.png"]
 mainSections = ["posts"]
 DateFormat = "2. January 2006"
-defaultTheme = "dark"
+defaultTheme = "auto"
 disableThemeToggle = false
 ShowReadingTime = true
 ShowShareButtons = true
@@ -97,8 +97,14 @@ threshold = 0.4
 minMatchCharLength = 0
 keys = ["title", "permalink", "summary", "content"]
 
+[outputFormats.LLMS]
+mediaType = "text/plain"
+baseName = "llms"
+isPlainText = true
+notAlternative = true
+
 [outputs]
-home = ["HTML", "RSS", "JSON", "SITEMAP"]
+home = ["HTML", "RSS", "JSON", "SITEMAP", "LLMS"]
 
 [sitemap]
 changefreq = "daily"
