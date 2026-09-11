@@ -1,0 +1,21 @@
+{{- /* Site override of PaperMod's translation_list.html: render as its own
+     margin-apparatus item instead of a "&nbsp;|&nbsp;"-prefixed inline
+     fragment appended to post_meta.html's output. */ -}}
+{{- if .IsTranslated -}}
+{{- if (ne .Layout "search") }}
+<span class="meta-item meta-translations">
+  <span class="meta-label">{{ i18n "translations" | default "Translations" }}</span>
+  <span class="meta-translation-links">
+    {{- range .Translations }}
+    <a href="{{ .Permalink }}">
+      {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
+      {{- .Language.LanguageName | emojify -}}
+      {{- else }}
+      {{- .Lang | title -}}
+      {{- end -}}
+    </a>
+    {{- end }}
+  </span>
+</span>
+{{- end -}}
+{{- end -}}

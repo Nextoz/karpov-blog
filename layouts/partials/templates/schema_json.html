@@ -65,7 +65,39 @@
   ]
 }
 </script>
-{{- if .IsPage }}
+{{- if (and .IsPage .Params.profilePage) }}
+{{- /* About page: ProfilePage/Person instead of BlogPosting - it's a bio, not an article. */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "name": {{ .Title | plainify }},
+  "url": {{ .Permalink | safeHTML }},
+  "inLanguage": {{ .Language.Lang | default "en-us" }},
+  "dateModified": {{ if .Lastmod.IsZero }}{{ now.Format "2006-01-02" }}{{ else }}{{ .Lastmod }}{{ end }},
+  "mainEntity": {
+    "@type": "Person",
+    "name": {{ site.Params.author }},
+    "url": {{ .Permalink | safeHTML }},
+    "image": {{ "images/profile.png" | absURL }},
+    "jobTitle": "Software Engineer",
+    "description": {{ with .Description | plainify }}{{ . }}{{ else }}{{ .Summary | plainify }}{{ end -}},
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Copenhagen",
+      "addressCountry": "DK"
+    },
+    "sameAs": [
+      {{- if site.Params.schema.sameAs }}
+        {{ range $i, $e := site.Params.schema.sameAs }}{{ if $i }}, {{ end }}{{ trim $e " " }}{{ end }}
+      {{- else}}
+        {{ range $i, $e := site.Params.SocialIcons }}{{ if $i }}, {{ end }}{{ trim $e.url " " | safeURL }}{{ end }}
+      {{- end}}
+    ]
+  }
+}
+</script>
+{{- else if .IsPage }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

@@ -1,0 +1,33 @@
+{{- /* Site override of PaperMod's post_meta.html.
+     The stock partial joins date / reading time / author with "&nbsp;·&nbsp;"
+     into one string - a generic AI-blog tell. This version renders each item
+     as its own labelled block so custom.css can lay them out as a margin
+     note (desktop) or a plain stacked line (mobile) instead. */ -}}
+
+{{- if not .Date.IsZero }}
+<span class="meta-item meta-date">
+  <span class="meta-label">{{ if eq .Lang "da" }}Udgivet{{ else }}Published{{ end }}</span>
+  <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format (default ":date_long" site.Params.DateFormat) }}</time>
+</span>
+{{- end }}
+
+{{- if and (not .Lastmod.IsZero) (not .Date.IsZero) (.Lastmod.After (.Date.AddDate 0 0 1)) }}
+<span class="meta-item meta-updated">
+  <span class="meta-label">{{ if eq .Lang "da" }}Opdateret{{ else }}Updated{{ end }}</span>
+  <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod | time.Format (default ":date_long" site.Params.DateFormat) }}</time>
+</span>
+{{- end }}
+
+{{- if (.Param "ShowReadingTime") }}
+<span class="meta-item meta-readtime">
+  <span class="meta-label">{{ if eq .Lang "da" }}Læsetid{{ else }}Reading time{{ end }}</span>
+  <span>{{ i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime) }}</span>
+</span>
+{{- end }}
+
+{{- if (.Param "ShowWordCount") }}
+<span class="meta-item meta-wordcount">
+  <span class="meta-label">{{ if eq .Lang "da" }}Ord{{ else }}Words{{ end }}</span>
+  <span>{{ i18n "words" .WordCount | default (printf "%d words" .WordCount) }}</span>
+</span>
+{{- end }}

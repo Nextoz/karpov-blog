@@ -1,6 +1,10 @@
 ---
 title: "Om Evgeny Karpov"
 description: "Om Evgeny Karpov, Senior DevOps og Platform Engineer i København med erfaring i .NET, Azure DevOps, Kubernetes, CI/CD og AI-assisteret softwareudvikling."
+profilePage: true
+translationKey: "about"
+hidemeta: true
+ShowReadingTime: false
 ---
 
 <img class="about-portrait" src="/images/profile.png" alt="Evgeny Karpov" width="230" height="230">

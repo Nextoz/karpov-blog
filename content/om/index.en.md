@@ -4,6 +4,7 @@ description: "About Evgeny Karpov, software engineer working with .NET, DevOps, 
 summary: "Software engineer based in Copenhagen with experience across .NET, DevOps, Azure DevOps, infrastructure and platform engineering."
 translationKey: "about"
 url: "/en/about/"
+profilePage: true
 hidemeta: true
 ShowReadingTime: false
 ShowShareButtons: false
