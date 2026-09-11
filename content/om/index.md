@@ -57,5 +57,5 @@ Jeg arbejder bedst, når jeg kan kombinere teknisk fordybelse med konkret forbed
 
 - LinkedIn: [linkedin.com/in/evgenykarpov91](https://www.linkedin.com/in/evgenykarpov91/)
 - GitHub: [github.com/Nextoz](https://github.com/Nextoz)
-- E-mail: [evkar91@gmail.com](mailto:evkar91@gmail.com)
+- E-mail: [evgeny@karpov.dk](mailto:evgeny@karpov.dk)
 

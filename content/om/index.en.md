@@ -44,4 +44,4 @@ Outside software, I am interested in reading, swimming, salsa, photography, dron
 
 - LinkedIn: [linkedin.com/in/evgenykarpov91](https://www.linkedin.com/in/evgenykarpov91/)
 - GitHub: [github.com/Nextoz](https://github.com/Nextoz)
-- Email: [evkar91@gmail.com](mailto:evkar91@gmail.com)
+- Email: [evgeny@karpov.dk](mailto:evgeny@karpov.dk)

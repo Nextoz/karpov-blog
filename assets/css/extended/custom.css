@@ -495,6 +495,18 @@ summary:focus-visible {
   border-color: var(--accent) !important;
 }
 
+/* Blog/Portfolio list pages render post_meta.html inside .entry-footer
+   (single-post pages use .post-meta instead) - give it the same quiet
+   stacked treatment instead of falling back to unstyled inline spans. */
+.entry-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+}
+
 .post-tags a {
   color: var(--secondary);
   font-family: var(--font-sans);

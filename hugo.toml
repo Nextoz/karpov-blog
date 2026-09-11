@@ -50,7 +50,7 @@ url = "https://github.com/Nextoz"
 
 [[params.socialIcons]]
 name = "email"
-url = "mailto:evkar91@gmail.com"
+url = "mailto:evgeny@karpov.dk"
 
 [params.analytics]
 # google = "G-XXXXXXXXXX"
