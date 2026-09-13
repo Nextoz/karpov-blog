@@ -1,0 +1,70 @@
+{{- /*
+  Crypto tip block.
+
+  Renders each configured address as selectable text plus a QR code generated
+  at build time by Hugo's images.QR (Hugo >= 0.141). Text and QR both derive
+  from the same config value, so the two cannot drift apart.
+
+  Case handling differs per chain, and the difference matters:
+
+    Bitcoin  - bech32 is case-insensitive (BIP-173), so the payload is
+               uppercased to reach the QR alphanumeric encoding mode
+               (~5.5 bits/char instead of byte mode's 8). Fewer modules,
+               larger squares, more reliable scan.
+
+    Ethereum - EIP-55 encodes the address checksum in the capitalisation of
+               the hex letters. Uppercasing would destroy the only error
+               detection the address has, so the case is preserved verbatim
+               and the slightly denser QR is accepted as the cost.
+
+  Params (all optional):
+    note - short line of copy above the addresses
+    copy - label for the copy buttons
+*/ -}}
+{{- $coins := slice -}}
+{{- with site.Params.btcAddress -}}
+  {{- $coins = $coins | append (dict "name" "Bitcoin" "ticker" "BTC" "addr" . "uri" (upper (printf "bitcoin:%s" .))) -}}
+{{- end -}}
+{{- with site.Params.ethAddress -}}
+  {{- $coins = $coins | append (dict "name" "Ethereum" "ticker" "ETH" "addr" . "uri" (printf "ethereum:%s" .)) -}}
+{{- end -}}
+{{- if $coins -}}
+  {{- $copy := .Get "copy" | default "Copy" -}}
+<div class="crypto-tip">
+  {{- with .Get "note" }}
+  <p class="crypto-tip__note">{{ . }}</p>
+  {{- end }}
+  {{- range $coins }}
+  {{- $qr := images.QR .uri (dict "level" "medium" "scale" 4) }}
+  <div class="crypto-tip__row">
+    <img class="crypto-tip__qr"
+         src="{{ $qr.RelPermalink }}"
+         width="{{ $qr.Width }}" height="{{ $qr.Height }}"
+         alt="{{ printf "QR: %s (%s)" .name .ticker }}"
+         loading="lazy" decoding="async">
+    <div class="crypto-tip__body">
+      <p class="crypto-tip__label">{{ .name }} <span class="crypto-tip__ticker">{{ .ticker }}</span></p>
+      <code class="crypto-tip__addr">{{ .addr }}</code>
+      <button class="crypto-tip__copy" type="button" hidden
+              data-addr="{{ .addr }}" data-label="{{ $copy }}">{{ $copy }}</button>
+    </div>
+  </div>
+  {{- end }}
+</div>
+<script>
+(function () {
+  // Progressive enhancement: addresses are selectable text without JS, so the
+  // buttons stay hidden until the clipboard API is confirmed present.
+  if (!navigator.clipboard) return;
+  document.querySelectorAll('.crypto-tip__copy').forEach(function (btn) {
+    btn.hidden = false;
+    btn.addEventListener('click', function () {
+      navigator.clipboard.writeText(btn.dataset.addr).then(function () {
+        btn.textContent = '✓';
+        setTimeout(function () { btn.textContent = btn.dataset.label; }, 1500);
+      });
+    });
+  });
+})();
+</script>
+{{- end -}}
