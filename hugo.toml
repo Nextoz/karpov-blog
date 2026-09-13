@@ -40,10 +40,14 @@ hidemeta = false
 hideSummary = false
 showtoc = true
 
-# Bitcoin tip address (Native SegWit / P2WPKH, separate account from main funds).
-# Single source of truth: the `btctip` shortcode renders both the text and the
-# build-time QR code from this value, so the two cannot drift apart.
+# Tip addresses. Single source of truth: the `cryptotip` shortcode renders both
+# the visible text and the build-time QR code from these values, so the two
+# cannot drift apart and any change shows up as a reviewable diff.
+#
+# btcAddress: Native SegWit (P2WPKH), separate account from main funds.
+# ethAddress: keep the EIP-55 capitalisation exactly - it is the checksum.
 btcAddress = "bc1qm85t4nc0r20dguupqfp0w3gfhvekrsneh9z7rq"
+ethAddress = "0x2d6DfA2A84374E2996383a821cB6628E84444465"
 
 [[params.socialIcons]]
 name = "linkedin"

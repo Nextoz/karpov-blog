@@ -64,4 +64,4 @@ Jeg arbejder bedst, når jeg kan kombinere teknisk fordybelse med konkret forbed
 
 ## Støt bloggen
 
-{{< btctip note="Har noget her været brugbart, kan du sende en bitcoin-tip. Det er helt frivilligt, og alt indhold forbliver frit tilgængeligt." copy="Kopiér" alt="QR-kode til bitcoin-adresse" >}}
+{{< cryptotip note="Har noget her været brugbart, kan du sende en tip i Bitcoin eller Ethereum. Det er helt frivilligt, og alt indhold forbliver frit tilgængeligt." copy="Kopiér" >}}

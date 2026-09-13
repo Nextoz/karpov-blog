@@ -727,17 +727,13 @@ summary:focus-visible {
   }
 }
 
-/* -- Bitcoin tip block (btctip shortcode) -----------------------------------
+/* -- Crypto tip block (cryptotip shortcode) ---------------------------------
    Mirrors the .author-note card: same surface, radius, sans face and scale, so
    it reads as part of the existing system rather than a bolted-on widget.
-   The QR keeps a white plate and hard pixel edges in both themes - scanners
+   QR codes keep a white plate and hard pixel edges in both themes - scanners
    expect dark-on-light, and smooth upscaling blurs the modules. */
 
-.btc-tip {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  gap: 1.25rem;
-  align-items: center;
+.crypto-tip {
   margin: 2.5rem 0 1.5rem;
   padding: 1.1rem;
   font-family: var(--font-sans);
@@ -747,7 +743,25 @@ summary:focus-visible {
   border-radius: 8px;
 }
 
-.btc-tip__qr {
+.crypto-tip__note {
+  margin: 0 0 1.1rem;
+  color: var(--secondary);
+}
+
+.crypto-tip__row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.crypto-tip__row + .crypto-tip__row {
+  margin-top: 1.1rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--border);
+}
+
+.crypto-tip__qr {
   width: 132px;
   height: 132px;
   padding: 6px;
@@ -756,12 +770,21 @@ summary:focus-visible {
   image-rendering: pixelated;
 }
 
-.btc-tip__note {
-  margin: 0 0 0.75rem;
+.crypto-tip__label {
+  margin: 0 0 0.4rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.crypto-tip__ticker {
+  margin-left: 0.35rem;
+  font-weight: 400;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
   color: var(--secondary);
 }
 
-.btc-tip__addr {
+.crypto-tip__addr {
   display: block;
   overflow-wrap: anywhere;
   padding: 0.5rem 0.6rem;
@@ -775,7 +798,7 @@ summary:focus-visible {
   user-select: all;
 }
 
-.btc-tip__copy {
+.crypto-tip__copy {
   margin-top: 0.6rem;
   padding: 0.35rem 0.75rem;
   font-family: var(--font-sans);
@@ -787,13 +810,13 @@ summary:focus-visible {
   cursor: pointer;
 }
 
-.btc-tip__copy:hover,
-.btc-tip__copy:focus-visible {
+.crypto-tip__copy:hover,
+.crypto-tip__copy:focus-visible {
   border-color: var(--accent);
 }
 
 @media (max-width: 620px) {
-  .btc-tip {
+  .crypto-tip__row {
     grid-template-columns: 1fr;
     justify-items: start;
   }
