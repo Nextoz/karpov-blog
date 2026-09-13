@@ -45,3 +45,7 @@ Outside software, I am interested in reading, swimming, salsa, photography, dron
 - LinkedIn: [linkedin.com/in/evgenykarpov91](https://www.linkedin.com/in/evgenykarpov91/)
 - GitHub: [github.com/Nextoz](https://github.com/Nextoz)
 - Email: [evgeny@karpov.dk](mailto:evgeny@karpov.dk)
+
+## Support the blog
+
+{{< btctip note="If something here was useful, you can send a bitcoin tip. Entirely optional, and the content stays free either way." copy="Copy" alt="QR code for Bitcoin address" >}}
