@@ -59,3 +59,9 @@ Jeg arbejder bedst, når jeg kan kombinere teknisk fordybelse med konkret forbed
 - GitHub: [github.com/Nextoz](https://github.com/Nextoz)
 - E-mail: [evgeny@karpov.dk](mailto:evgeny@karpov.dk)
 
+
+---
+
+## Støt bloggen
+
+{{< btctip note="Har noget her været brugbart, kan du sende en bitcoin-tip. Det er helt frivilligt, og alt indhold forbliver frit tilgængeligt." copy="Kopiér" alt="QR-kode til bitcoin-adresse" >}}

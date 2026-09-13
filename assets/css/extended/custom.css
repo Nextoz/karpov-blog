@@ -726,3 +726,75 @@ summary:focus-visible {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* -- Bitcoin tip block (btctip shortcode) -----------------------------------
+   Mirrors the .author-note card: same surface, radius, sans face and scale, so
+   it reads as part of the existing system rather than a bolted-on widget.
+   The QR keeps a white plate and hard pixel edges in both themes - scanners
+   expect dark-on-light, and smooth upscaling blurs the modules. */
+
+.btc-tip {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: center;
+  margin: 2.5rem 0 1.5rem;
+  padding: 1.1rem;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  background: var(--entry);
+  border-radius: 8px;
+}
+
+.btc-tip__qr {
+  width: 132px;
+  height: 132px;
+  padding: 6px;
+  background: #fff;
+  border-radius: 4px;
+  image-rendering: pixelated;
+}
+
+.btc-tip__note {
+  margin: 0 0 0.75rem;
+  color: var(--secondary);
+}
+
+.btc-tip__addr {
+  display: block;
+  overflow-wrap: anywhere;
+  padding: 0.5rem 0.6rem;
+  font-family: var(--code-font);
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--primary);
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  user-select: all;
+}
+
+.btc-tip__copy {
+  margin-top: 0.6rem;
+  padding: 0.35rem 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--accent-strong);
+  background: var(--accent-soft);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btc-tip__copy:hover,
+.btc-tip__copy:focus-visible {
+  border-color: var(--accent);
+}
+
+@media (max-width: 620px) {
+  .btc-tip {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+}
