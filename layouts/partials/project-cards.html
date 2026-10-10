@@ -1,0 +1,26 @@
+{{- /* Renders project cards from data/projects.yaml.
+       Context: dict "projects" (slice) "lang" ("da"|"en") "headingLevel" ("h3"|"h2"). */ -}}
+{{- $isDA := eq .lang "da" -}}
+{{- $h := .headingLevel | default "h3" -}}
+<div class="project-grid">
+  {{- range .projects }}
+  {{- $t := cond $isDA .da .en -}}
+  {{- $href := "" -}}
+  {{- with .page }}{{ with site.GetPage . }}{{ $href = .RelPermalink }}{{ end }}{{ end -}}
+  {{- with .url }}{{ $href = . }}{{ end -}}
+  {{- with .anchor }}{{ $href = printf "#%s" . }}{{ end -}}
+  <article class="project-card project-card--{{ .status }}">
+    <p class="project-status">{{ $t.status }}</p>
+    {{ printf "<%s class=\"project-name\">" $h | safeHTML }}
+      {{- if $href }}<a href="{{ $href }}">{{ $t.name }}</a>{{ else }}{{ $t.name }}{{ end -}}
+    {{ printf "</%s>" $h | safeHTML }}
+    <p class="project-summary">{{ $t.summary }}</p>
+    {{- with .stack }}
+    <ul class="project-stack" aria-label="{{ if $isDA }}Teknologier{{ else }}Technologies{{ end }}">
+      {{ range . }}<li>{{ . }}</li>
+      {{ end }}
+    </ul>
+    {{- end }}
+  </article>
+  {{- end }}
+</div>

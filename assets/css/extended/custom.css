@@ -821,3 +821,102 @@ summary:focus-visible {
     justify-items: start;
   }
 }
+
+/* -- Project cards (data/projects.yaml) --------------------------------------
+   Same quiet surface as .author-note / .crypto-tip: entry background, 8px
+   radius, sans chrome, serif name. The status line carries the only colour,
+   so "coming" reads as a promise rather than a broken link. Selectors are
+   scoped under .project-grid so post-content list and heading styles on the
+   portfolio page cannot leak in. */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.project-grid .project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 1.15rem 1.2rem 1.2rem;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+/* PaperMod's .md-content p:not(:last-child) (0,2,1) would add a content gap
+   to these paragraphs on the portfolio page; match its specificity. */
+.project-grid .project-card > p {
+  margin: 0;
+}
+
+#building .project-grid {
+  margin-bottom: 0;
+}
+
+.project-grid .project-status {
+  margin: 0;
+  color: var(--accent-strong);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.project-grid .project-card--coming .project-status,
+.project-grid .project-card--client .project-status {
+  color: var(--secondary);
+}
+
+.project-grid .project-name {
+  margin: 0;
+  color: var(--primary);
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.project-grid .project-name a {
+  color: inherit;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.project-grid .project-name a:hover {
+  color: var(--accent);
+}
+
+.project-grid .project-summary {
+  margin: 0;
+  color: var(--secondary);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.project-grid .project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: auto 0 0;
+  padding: 0.4rem 0 0;
+  list-style: none;
+}
+
+.project-grid .project-stack li {
+  margin: 0;
+  padding: 0.15rem 0.5rem;
+  color: var(--secondary);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  background: var(--theme);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.project-grid .project-stack li::marker {
+  content: "";
+}

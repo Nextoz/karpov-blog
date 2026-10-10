@@ -1,0 +1,69 @@
+# Projects shown as cards on the homepage ("home: true") and on the portfolio page.
+# "page" links to a post when that post is published (drafts are not built, so no link
+# appears until then); "url" links externally; "anchor" links to a section with that id on the
+# portfolio page, for projects that also have a full write-up there. Status keys: in-use, coming, live, prototype, client.
+- id: vault-companion
+  home: true
+  status: in-use
+  page: /posts/vault-companion-min-egen-app
+  stack: [TypeScript, React PWA, Cloudflare Workers, GitHub, AI agents]
+  da:
+    name: Vault Companion
+    status: I daglig brug, privat
+    summary: Min private telefon-app oven på mit Obsidian-vault. Markdown og Git er den eneste sandhed. Bygget med et hold af AI-agenter, som jeg styrer, reviewer og deployer.
+  en:
+    name: Vault Companion
+    status: In daily use, private
+    summary: My private phone app on top of my Obsidian vault. Markdown and Git stay the only source of truth. Built with a team of AI agents that I direct, review and deploy.
+
+- id: copenhagen-live
+  home: true
+  status: coming
+  stack: [Cloudflare Workers, open data, scouts]
+  da:
+    name: København live
+    status: På vej
+    summary: Et offentligt live-dashboard for København — vejr og regn, elpris og CO₂, luftkvalitet, havnebade og byens events, samlet af mine scouts.
+  en:
+    name: Copenhagen live
+    status: Coming
+    summary: A public live dashboard for Copenhagen — weather and rain, power price and CO₂, air quality, harbour baths and city events, gathered by my scouts.
+
+- id: vaert
+  status: prototype
+  page: /posts/fra-prompt-til-prototype-vaert
+  stack: [Static prototype, AI-assisted product work]
+  da:
+    name: Vært
+    status: Prototype
+    summary: En prototype på en diskret dansk concierge — et forsøg på at bruge AI til at dræbe de dårlige idéer, før der bygges noget stort.
+  en:
+    name: Vært
+    status: Prototype
+    summary: A prototype of a discreet Danish concierge — an attempt to use AI to kill the bad ideas before building anything big.
+
+- id: karpov-blog
+  status: live
+  anchor: karpov-blog
+  stack: [Hugo, GitHub Pages, GitHub Actions]
+  da:
+    name: Karpov Blog
+    status: Live
+    summary: Denne side. Teknisk blog og portfolio med automatiske tjek af sitemap, oversættelser og interne links i hver build.
+  en:
+    name: Karpov Blog
+    status: Live
+    summary: This site. A technical blog and portfolio with automated checks of sitemaps, translations and internal links on every build.
+
+- id: vintonden
+  status: client
+  anchor: vintonden
+  stack: [WordPress, local SEO, AI-assisted research]
+  da:
+    name: Vintønden
+    status: Kundeprojekt
+    summary: Lokal SEO og websitestruktur for Vintønden på Frederiksberg — fra analyse til en konkret handlingsplan i WordPress.
+  en:
+    name: Vintønden
+    status: Client project
+    summary: Local SEO and site structure for Vintønden in Frederiksberg — from analysis to a concrete WordPress action plan.
