@@ -5,8 +5,8 @@
 <div class="home-shell">
 <section class="home-hero" aria-labelledby="home-title">
   <div class="home-hero-copy">
-    <p class="eyebrow">{{ if $isDA }}Engineering notes fra København{{ else }}Engineering notes from Copenhagen{{ end }}</p>
-    <h1 id="home-title">{{ if $isDA }}Fra god idé til stabil drift{{ else }}From a good idea to stable production{{ end }}</h1>
+    <p class="eyebrow"><span class="prompt-user">evgeny@kbh</span>:<span class="prompt-path">~</span><span class="prompt-dollar">$</span> cat {{ if $isDA }}noter-fra-koebenhavn.md{{ else }}notes-from-copenhagen.md{{ end }}</p>
+    <h1 id="home-title">{{ if $isDA }}Fra god idé til stabil drift{{ else }}From a good idea to stable production{{ end }}<span class="prompt-cursor" aria-hidden="true"></span></h1>
     <p class="home-lead">
       {{ if $isDA }}Jeg er Evgeny Karpov, software- og platform engineer i København. Her skriver jeg om DevOps, .NET, cloud og AI-systemer — og om hvad der skal til for at få dem til at virke i drift.{{ else }}I'm Evgeny Karpov, a software and platform engineer in Copenhagen. Here I write about DevOps, .NET, cloud and AI systems — and what it takes to make them work in production.{{ end }}
     </p>

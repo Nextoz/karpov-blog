@@ -39,10 +39,8 @@
 <meta name="naver-site-verification" content="{{ site.Params.analytics.naver.SiteVerificationTag }}">
 {{- end }}
 
-{{- /* Self-hosted variable webfont. Preload before the stylesheet so the
-     first paint already has the right font metrics (no swap flash on the
-     hero). font-display: swap is still set in the @font-face rule. */}}
-<link rel="preload" href="{{ "fonts/source-serif-4-variable.woff2" | absURL }}" as="font" type="font/woff2" crossorigin>
+{{- /* No webfont: the terminal theme uses the visitor's installed monospace
+     (Cascadia first) and system sans, so nothing is preloaded. */}}
 
 {{- /* Styles */}}
 
