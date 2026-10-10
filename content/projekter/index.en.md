@@ -14,6 +14,10 @@ I am a software engineer with a strong .NET/backend background and a growing foc
 
 My professional profile sits between software development and operations: I understand application code, pipelines, cloud infrastructure, deployments, environments and the practical problems that appear when systems need to work reliably in production.
 
+## Projects
+
+{{< project-cards >}}
+
 ## Short overview
 
 - **6+ years of professional software development experience**
@@ -104,7 +108,7 @@ At Visma Enterprise, I developed and maintained functionality for payroll system
 
 Payroll systems require precision, responsibility and understanding of business-critical software. This experience shows that I can work with legacy systems, complex rules and high-stakes production logic.
 
-### Karpov Blog — Technical writing and personal platform
+### Karpov Blog — Technical writing and personal platform {#karpov-blog}
 
 **Area:** Technical communication, portfolio, SEO, static site
 
@@ -123,7 +127,7 @@ This website is my personal technical blog and portfolio. I use it to write abou
 
 Clear technical communication is part of senior engineering work. This site shows that I can explain technology, document ideas and think beyond code.
 
-### Vintønden — Local SEO, WordPress and AI-assisted content structure
+### Vintønden — Local SEO, WordPress and AI-assisted content structure {#vintonden}
 
 **Area:** Local SEO, website structure, WordPress, AI-assisted research
 

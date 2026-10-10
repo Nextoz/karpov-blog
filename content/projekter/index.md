@@ -13,6 +13,10 @@ Jeg er software engineer med en stærk .NET/backend-baggrund og et nyere fokus p
 
 Min professionelle profil ligger i krydsfeltet mellem softwareudvikling og drift: jeg forstår både applikationskode, pipelines, cloud-infrastruktur, deployments, miljøer og de praktiske problemer, der opstår, når systemer skal fungere i produktion.
 
+## Projekter
+
+{{< project-cards >}}
+
 ## Kort overblik
 
 - **6+ års professionel erfaring med softwareudvikling**
@@ -107,7 +111,7 @@ Lønsystemer kræver præcision, ansvarlighed og forståelse for forretningskrit
 
 ---
 
-## Karpov Blog — Teknisk formidling og personlig platform
+## Karpov Blog — Teknisk formidling og personlig platform {#karpov-blog}
 
 **Område:** Teknisk formidling, portfolio, SEO, statisk website  
 **Teknologier:** Hugo, PaperMod, GitHub Pages, Markdown, GitHub Actions
@@ -127,7 +131,7 @@ Klar teknisk formidling er en del af senior engineering-arbejde. Siden viser, at
 
 ---
 
-## Vintønden — Lokal SEO, WordPress og AI-assisteret indholdsstruktur
+## Vintønden — Lokal SEO, WordPress og AI-assisteret indholdsstruktur {#vintonden}
 
 **Område:** Lokal SEO, website-struktur, WordPress, AI-assisteret research
 
