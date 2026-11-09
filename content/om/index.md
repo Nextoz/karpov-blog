@@ -1,7 +1,8 @@
 ---
 title: "Om Evgeny Karpov"
-description: "Om Evgeny Karpov, Senior DevOps og Platform Engineer i København med erfaring i .NET, Azure DevOps, Kubernetes, CI/CD og AI-assisteret softwareudvikling."
+description: "Om Evgeny Karpov, senior software engineer i København med erfaring i .NET, DevOps, Azure DevOps, Kubernetes, CI/CD og AI-assisteret softwareudvikling."
 profilePage: true
+lastmod: 2026-11-10
 translationKey: "about"
 hidemeta: true
 ShowReadingTime: false
@@ -9,7 +10,7 @@ ShowReadingTime: false
 
 <img class="about-portrait" src="/images/profile.png" alt="Evgeny Karpov" width="230" height="230">
 
-Jeg hedder **Evgeny Karpov** og arbejder med softwareudvikling, DevOps og platform engineering i København.
+Jeg hedder **Evgeny Karpov** og er senior software engineer i København. Jeg arbejder med softwareudvikling, DevOps og platform engineering.
 
 Min styrke ligger i krydsfeltet mellem backend-udvikling og driftbar software: jeg forstår både applikationskode, pipelines, cloud-infrastruktur, deployments og de praktiske problemer, der opstår, når systemer skal fungere i rigtige miljøer.
 
@@ -26,6 +27,7 @@ Jeg har erfaring med:
 - Observability, logs, metrics og tracing
 - Dokumentation, debugging og teknisk formidling
 - AI-assisteret softwareudvikling og automatisering
+- Sikkerhed som en del af leverancen: sårbarheder i afhængigheder, secrets og AI-agenter med klare grænser
 
 Jeg interesserer mig især for, hvordan teams kan levere software hurtigere og mere stabilt uden at miste kvalitet, sikkerhed eller forståelse for systemet.
 
@@ -33,7 +35,7 @@ Jeg interesserer mig især for, hvordan teams kan levere software hurtigere og m
 
 ## Hvad jeg gerne vil arbejde med
 
-Jeg søger især roller og opgaver inden for:
+Jeg er åben for fastansættelse og for freelance- og kontraktopgaver i Storkøbenhavn, især inden for:
 
 - DevOps Engineering
 - Platform Engineering
@@ -50,6 +52,12 @@ Jeg søger især roller og opgaver inden for:
 Jeg tror på klare systemer, god dokumentation og praktisk automatisering. DevOps handler for mig ikke kun om tools, men om at gøre det lettere for udviklere at bygge, teste, deploye og forstå deres software.
 
 Jeg arbejder bedst, når jeg kan kombinere teknisk fordybelse med konkret forbedring: færre manuelle processer, mere synlig drift, bedre pipelines og mere robuste leverancer.
+
+---
+
+## Det bygger jeg selv
+
+Ved siden af arbejdet bygger jeg mine egne systemer og bruger dem hver dag: en telefon-app oven på mit Obsidian-vault, planlagte scouts, der finder events og research, og en app til min smart ring, hvor data bliver hos mig selv. Du kan læse om dem i min [portfolio](/projekter/), hvor jeg også har skrevet om, [hvordan jeg arbejder med sikkerhed](/projekter/#sikkerhed).
 
 ---
 

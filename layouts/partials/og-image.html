@@ -1,0 +1,18 @@
+{{- /* Returns the absolute URL of the 1200x630 share image for this page.
+       Order: the post's own image, the shared digest image, the site default.
+       The PNGs are made by scripts/make_og_images.ps1 and live in static/images/og/. */ -}}
+{{- $img := "images/og/default.png" -}}
+{{- if ne .Lang "da" -}}
+  {{- $localized := printf "images/og/default.%s.png" .Lang -}}
+  {{- if fileExists (printf "static/%s" $localized) -}}{{- $img = $localized -}}{{- end -}}
+{{- end -}}
+{{- if and .IsPage .File (eq .Section "posts") -}}
+  {{- $own := printf "images/og/%s.png" .File.ContentBaseName -}}
+  {{- if ne .Lang "da" -}}{{- $own = printf "images/og/%s.%s.png" .File.ContentBaseName .Lang -}}{{- end -}}
+  {{- if fileExists (printf "static/%s" $own) -}}
+    {{- $img = $own -}}
+  {{- else if eq .Params.authorship "ai-assembled-digest" -}}
+    {{- $img = "images/og/digest.png" -}}
+  {{- end -}}
+{{- end -}}
+{{- return (absURL $img) -}}

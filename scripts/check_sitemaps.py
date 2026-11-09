@@ -215,11 +215,53 @@ def main() -> int:
     for asset in (
         "images/profile.png",
         "images/karpov-mark.svg",
+        "images/og/default.png",
+        "images/og/default.en.png",
+        "images/og/digest.png",
     ):
         if not (public / asset).exists():
             raise AssertionError(f"Missing generated asset: {asset}")
 
+    portfolio = read_html(public, "projekter")
+    en_portfolio = read_html(public, "en/projects")
+    about = read_html(public, "om")
+    llms = (public / "llms.txt").read_text(encoding="utf-8")
+
+    # Share images: a real 1200x630 card per page, never the bare profile photo.
+    require_text(home, f"{BASE}/images/og/default.png", "Danish home share image")
+    require_text(en_home, f"{BASE}/images/og/default.en.png", "English home share image")
+    require_text(unpaired_post, f"{BASE}/images/og/ai-tokens-er-billige-regningen-er-det-ikke.png", "Post share image")
+    for label, html in (("Danish home", home), ("Unpaired Danish post", unpaired_post), ("Portfolio", portfolio)):
+        if "og:image content=https://karpov.dk/images/profile.png" in html.replace(chr(34), ""):
+            raise AssertionError(f"{label} still uses the profile photo as its share image")
+
+    # Structured data: one job title everywhere, the right type per page.
+    for label, html in (("Danish home", home), ("English home", en_home), ("About", about), ("Portfolio", portfolio)):
+        require_text(html, "Senior Software Engineer", f"{label} job title")
+    require_text(portfolio, "CollectionPage", "Portfolio structured data")
+    require_text(en_portfolio, "CollectionPage", "English portfolio structured data")
+    require_text(about, "ProfilePage", "About structured data")
+    if "BlogPosting" in portfolio or "BlogPosting" in about:
+        raise AssertionError("Portfolio and about pages must not be marked up as blog posts")
+    require_text(en_home, "Engineering notes from Copenhagen", "English home structured data description")
+
+    # The weekly digest has its own section and does not lead the home page.
+    require_text(home, "id=research", "Danish home research section")
+    if home.index("id=posts") > home.index("id=research"):
+        raise AssertionError("The owner's posts must come before the research digest on the home page")
+
+    # Portfolio content and llms.txt.
+    for anchor in ("id=scouts", "id=ring-app", "id=sikkerhed", "id=vintonden"):
+        require_text(portfolio, anchor, "Portfolio section")
+    require_text(llms, "## Posts (Danish)", "llms.txt")
+    require_text(llms, "## Weekly AI research digest", "llms.txt")
+    require_text(llms, f"{BASE}/projekter/", "llms.txt")
+
     check_json_ld(home, "Danish home")
+    check_json_ld(en_home, "English home")
+    check_json_ld(portfolio, "Portfolio")
+    check_json_ld(en_portfolio, "English portfolio")
+    check_json_ld(about, "About")
     check_json_ld(unpaired_post, "Unpaired Danish post")
     check_internal_links(public)
 

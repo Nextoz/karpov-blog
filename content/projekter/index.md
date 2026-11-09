@@ -3,6 +3,8 @@ title: "DevOps, Platform Engineering og .NET Portfolio"
 description: "Portfolio for Evgeny Karpov: Azure DevOps, .NET, Kubernetes, CI/CD, observability, platform engineering, offentlig IT og AI-assisteret softwareudvikling."
 summary: "Udvalgte projekter og erfaringer inden for DevOps, platform engineering, .NET backend, cloud, CI/CD, observability og AI-assisteret softwareudvikling."
 translationKey: "portfolio"
+schemaType: "portfolio"
+lastmod: 2026-11-10
 hidemeta: true
 ShowReadingTime: false
 ShowShareButtons: false
@@ -111,6 +113,51 @@ Lønsystemer kræver præcision, ansvarlighed og forståelse for forretningskrit
 
 ---
 
+## Scouts — planlagte agenter, der finder det relevante {#scouts}
+
+**Område:** AI-agenter, automatisering, drift af planlagte jobs  
+**Teknologier:** Python, PowerShell, Windows Task Scheduler, LLM API'er, Markdown, Git
+
+Scouts er et sæt planlagte jobs, der hver morgen samler københavnske events, dagligvaretilbud, ny AI-research og jobopslag og skriver resultatet som Markdown i mit vault. Event-scoutsene ender som ti kort om dagen i min app Vault Companion, hvor jeg swiper ja eller nej.
+
+### Sådan virker det
+
+- En billig model læser alle daterede events. En stærkere model vurderer kun shortlisten.
+- Kilderne bliver målt: nye kilder prøves i 14 dage, stille kilder markeres, og døde kilder tages ud.
+- Mine swipes ændrer, hvor stærk en interesse er, hvilke kilder der bliver, og hvad der søges efter næste gang.
+- En ugentlig rapport sammenligner scoutsenes fund med en uafhængig websøgning, så jeg kan se, hvad de overså.
+- Hvert job skriver en statusfil. Et job tæller først som kørt, når exit code og et friskt output siger det. At det står i Task Scheduler, er ikke nok.
+
+### Hvorfor det er relevant
+
+Det er et lille system i drift med de samme problemer som et stort: jobs, der fejler stille, kilder, der ændrer sig, og omkostninger, der skal holdes nede. Den dyre model bruges kun dér, hvor den gør en forskel.
+
+---
+
+## Ring-app — egne sundhedsdata uden leverandørens cloud {#ring-app}
+
+**Område:** iOS, Bluetooth, dataejerskab  
+**Teknologier:** Swift, iOS, Bluetooth LE, Shortcuts, GitHub Actions
+
+**Kode:** [github.com/Nextoz/PulseLoopiOS](https://github.com/Nextoz/PulseLoopiOS)
+
+Jeg bruger en billig smart ring og ville eje mine egne data. Derfor har jeg forket open source-appen PulseLoop. Appen taler direkte med ringen over Bluetooth, uden konto og uden netværkskald til leverandøren, og data bliver på telefonen, indtil jeg selv eksporterer dem.
+
+### Det har jeg tilføjet i min fork
+
+- Syv dages historik og skridt pr. 15 minutter
+- En rå log over ringens Bluetooth-frames i 30 dage, så jeg kan fejlsøge protokollen
+- Søvnvinduer, der kan rettes i hånden
+- En Shortcuts-handling, der sender ringens data videre til mit vault
+
+Ændringerne er bygget med AI-agenter, som jeg styrer og reviewer. Hver release går gennem CI på GitHub og installeres på min egen telefon.
+
+### Hvorfor det er relevant
+
+Projektet viser, at jeg kan sætte mig ind i en fremmed kodebase på en platform, jeg ikke arbejder med til daglig, og levere ændringer, der er i brug hver dag. Det viser også, hvordan jeg tænker om data: de skal ligge et sted, jeg selv kontrollerer.
+
+---
+
 ## Karpov Blog — Teknisk formidling og personlig platform {#karpov-blog}
 
 **Område:** Teknisk formidling, portfolio, SEO, statisk website  
@@ -131,19 +178,38 @@ Klar teknisk formidling er en del af senior engineering-arbejde. Siden viser, at
 
 ---
 
-## Vintønden — Lokal SEO, WordPress og AI-assisteret indholdsstruktur {#vintonden}
+## Vintønden — teknisk SEO, GEO og WordPress for en lokal bar {#vintonden}
 
-**Område:** Lokal SEO, website-struktur, WordPress, AI-assisteret research
+**Område:** Teknisk SEO, GEO (synlighed i AI-assistenter), WordPress  
+**Teknologier:** WordPress, PHP, WP-CLI, SSH, schema.org/JSON-LD, hreflang, Playwright
 
 **Link:** [vintonden.dk](https://vintonden.dk/)
 
-For Vintønden på Frederiksberg har jeg arbejdet med en praktisk SEO- og websiteforbedring, hvor lokal søgeintention, informationsarkitektur og konkret WordPress-eksekvering blev samlet i en handlingsplan.
+Vintønden er en bar på Frederiksberg, som jeg løbende løser opgaver for. Jeg arbejder direkte i deres WordPress-site og tager backup før hver ændring.
 
-Arbejdet omfattede teknisk og indholdsmæssig SEO-gennemgang, forbedring af metadata, forslag til landingssider for events og selskabslokaler, multilingual content guidance samt genbrugelige AI-assisterede workflows til research, copy og implementeringsnoter.
+### Mit bidrag
+
+- Structured data til baren, events og ofte stillede spørgsmål
+- Sider på dansk, engelsk og spansk med korrekt hreflang
+- Oprydning i metadata og sitemap, verificeret mod det offentlige site
+- Egne små WordPress-plugins i PHP
+- En GEO-plan: hvilke kilder AI-assistenter bruger om baren, hvor fakta modsiger hinanden på tværs af platforme, og en fast test af synligheden
 
 ### Hvorfor det er relevant
 
-Projektet viser, at jeg kan omsætte teknisk analyse, AI-værktøjer og forretningsforståelse til konkrete forbedringer for en rigtig lokal virksomhed, uden at gøre løsningen unødigt akademisk.
+Projektet viser, at jeg kan omsætte teknisk analyse til konkrete ændringer i produktion for en rigtig lokal virksomhed, og at jeg kan arbejde direkte med en kunde uden et team omkring mig.
+
+---
+
+## Sikkerhed i praksis {#sikkerhed}
+
+Jeg er ikke sikkerhedsspecialist, men jeg arbejder med sikkerhed som en del af leverancen:
+
+- **Sårbarheder i afhængigheder:** På MyPaperFlow fulgte jeg løbende op på CVE'er i pakker og afhængigheder via Microsoft Defender for Cloud.
+- **Ingen langlivede secrets:** Jeg har brugt OIDC workload identity federation og Key Vault i stedet for nøgler, der ligger i pipelines.
+- **Review med sikkerhedsbriller:** I et review af en infrastruktur-PR fandt jeg et personal access token, der var lækket gennem deployment-historikken.
+- **AI-agenter:** I mine egne agentsystemer er websider og tool-output data, aldrig instruktioner. Eksterne skrivninger, secrets, destruktive Git-kommandoer og deployments til produktion kræver min udtrykkelige godkendelse.
+- **Fællesskab:** Jeg har deltaget i OWASP Copenhagen i 2025 og 2026.
 
 ---
 
@@ -160,3 +226,11 @@ Jeg kan bidrage som:
 - .NET Engineer tæt på infrastruktur og delivery
 
 Min værdi er, at jeg både forstår applikationskode og de systemer, der skal bygge, deploye, monitorere og drifte den.
+
+<div class="contact-cta">
+
+**Skal vi tale sammen?** Jeg er åben for fastansættelse og for freelance- og kontraktopgaver i Storkøbenhavn.
+
+Skriv til [evgeny@karpov.dk](mailto:evgeny@karpov.dk) eller på [LinkedIn](https://www.linkedin.com/in/evgenykarpov91/).
+
+</div>

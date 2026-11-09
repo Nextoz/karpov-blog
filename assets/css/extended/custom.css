@@ -947,3 +947,75 @@ summary:focus-visible {
 .project-grid .project-stack li::marker {
   content: "";
 }
+
+/* Home: weekly research digest section (smaller than the owner's posts). */
+.section-note {
+  max-width: 62ch;
+  margin: 0.5rem 0 0;
+  color: var(--secondary);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.latest-list-compact .latest-item {
+  padding: 1rem 0;
+}
+
+.latest-list-compact .latest-item h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+/* Post footer: related posts. */
+.related-posts {
+  margin: 0 0 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  font-family: var(--font-sans);
+}
+
+.related-posts h2 {
+  margin: 0 0 0.6rem;
+  color: var(--secondary);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.related-posts ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.related-posts li {
+  margin: 0.35rem 0;
+  line-height: 1.45;
+}
+
+.related-posts a {
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+
+.related-posts a:hover {
+  text-decoration: underline;
+}
+
+/* Portfolio and about: contact call-to-action. */
+.contact-cta {
+  margin: 2rem 0;
+  padding: 1.25rem 1.4rem;
+  background: var(--entry);
+  border-left: 2px solid var(--accent);
+  border-radius: 8px;
+}
+
+.post-content .contact-cta p {
+  margin: 0;
+}
+
+.post-content .contact-cta p + p {
+  margin-top: 0.5rem;
+}

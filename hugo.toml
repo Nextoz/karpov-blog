@@ -19,8 +19,9 @@ ShowLanguageSwitcher = true
 env = "production"
 title = "Evgeny Karpov"
 description = "Engineering notes fra København om DevOps, platform engineering, .NET, observability og AI-systemer, der skal fungere i produktion."
+tagline = "DevOps, platform engineering og AI-systemer"
 author = "Evgeny Karpov"
-images = ["images/profile.png"]
+images = ["images/og/default.png"]
 mainSections = ["posts"]
 DateFormat = "2. January 2006"
 defaultTheme = "auto"
@@ -69,6 +70,10 @@ url = "mailto:evgeny@karpov.dk"
 # Example: SiteVerificationTag = "abc123"
 SiteVerificationTag = ""
 
+[params.analytics.bing]
+# Paste the Bing Webmaster Tools "msvalidate.01" content value here.
+SiteVerificationTag = ""
+
 [params.label]
 text = "Evgeny Karpov"
 icon = "images/profile.png"
@@ -87,6 +92,23 @@ safari_pinned_tab = "images/karpov-mark.svg"
 
 [params.schema]
 publisherType = "Person"
+# One job title for every page's structured data. Keep it equal to the CV and LinkedIn headline.
+jobTitle = "Senior Software Engineer"
+knowsAbout = [
+  "DevOps",
+  "Platform engineering",
+  "Azure DevOps",
+  "CI/CD",
+  ".NET",
+  "C#",
+  "Kubernetes",
+  "Infrastructure as code",
+  "Bicep",
+  "Terraform",
+  "Observability",
+  "AI agents",
+  "Application security"
+]
 sameAs = [
   "https://www.linkedin.com/in/evgenykarpov91/",
   "https://github.com/Nextoz"
@@ -119,6 +141,20 @@ home = ["HTML", "RSS", "JSON", "SITEMAP", "LLMS"]
 changefreq = "daily"
 filename = "sitemap.xml"
 priority = 0.7
+
+# "Relaterede indlæg" under each post (layouts/partials/extend_post_content.html).
+[related]
+includeNewer = true
+threshold = 40
+toLower = true
+
+[[related.indices]]
+name = "tags"
+weight = 100
+
+[[related.indices]]
+name = "categories"
+weight = 40
 
 [markup]
 
@@ -177,6 +213,11 @@ languageName = "English"
 languageCode = "en-GB"
 weight = 2
 title = "Evgeny Karpov"
+
+[languages.en.params]
+tagline = "DevOps, platform engineering and AI systems"
+description = "Engineering notes from Copenhagen about DevOps, platform engineering, .NET, observability and AI systems that have to work in production."
+images = ["images/og/default.en.png"]
 
 [[languages.en.menu.main]]
 identifier = "home"

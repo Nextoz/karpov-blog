@@ -1,0 +1,19 @@
+{{- /* Returns the schema.org Person for the site owner as a dict.
+       One definition, used by the home page, the about page, the portfolio and every post,
+       so name, job title and profiles are identical everywhere. */ -}}
+{{- $url := site.Home.Permalink -}}
+{{- with site.GetPage "/om" -}}{{- $url = .Permalink -}}{{- end -}}
+{{- $person := dict
+  "@type" "Person"
+  "@id" (printf "%s#person" (absURL "/"))
+  "name" site.Params.author
+  "url" $url
+  "image" (absURL "images/profile.png")
+  "jobTitle" site.Params.schema.jobTitle
+  "description" site.Params.description
+  "knowsAbout" site.Params.schema.knowsAbout
+  "knowsLanguage" (slice "da" "en" "ru")
+  "address" (dict "@type" "PostalAddress" "addressLocality" "Copenhagen" "addressCountry" "DK")
+  "sameAs" site.Params.schema.sameAs
+-}}
+{{- return $person -}}

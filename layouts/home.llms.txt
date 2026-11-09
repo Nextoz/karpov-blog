@@ -1,0 +1,61 @@
+{{- /* llms.txt: a short, plain-text map of the site for AI assistants and crawlers.
+       Overrides PaperMod's link-only version: adds who the author is, what each page
+       covers, and keeps the AI-assembled weekly digest apart from the author's own posts. */ -}}
+{{- $da := site -}}
+{{- $en := site -}}
+{{- range site.Sites -}}
+  {{- if eq .Language.Lang "da" -}}{{- $da = . -}}{{- end -}}
+  {{- if eq .Language.Lang "en" -}}{{- $en = . -}}{{- end -}}
+{{- end -}}
+{{- $daPosts := where $da.RegularPages "Section" "posts" -}}
+{{- $digests := where $daPosts "Params.authorship" "ai-assembled-digest" -}}
+{{- $ownPosts := $daPosts | complement $digests -}}
+# Evgeny Karpov
+
+> Evgeny Karpov is a senior software engineer in Copenhagen, Denmark, working with .NET, DevOps, platform engineering and AI agent systems. This is his personal site: a portfolio and a blog about getting software and AI systems to work in production. The site is in Danish, with English versions of the main pages and some posts.
+
+Facts:
+
+- Name: Evgeny Karpov
+- Role: {{ site.Params.schema.jobTitle }} (DevOps, platform engineering, .NET backend, AI-assisted engineering)
+- Location: Copenhagen, Denmark
+- Experience: 6+ years of professional software development; Azure DevOps, CI/CD, Kubernetes, Bicep, Terraform, observability
+- Languages: Danish, English, Russian
+- Contact: evgeny@karpov.dk
+- Profiles: {{ delimit site.Params.schema.sameAs ", " }}
+
+## Main pages
+{{ with $da.GetPage "/projekter" }}
+- [Portfolio (Danish)]({{ .Permalink }}): {{ .Description }}
+{{- end }}
+{{- with $en.GetPage "/projekter" }}
+- [Portfolio (English)]({{ .Permalink }}): {{ .Description }}
+{{- end }}
+{{- with $da.GetPage "/om" }}
+- [About (Danish)]({{ .Permalink }}): {{ .Description }}
+{{- end }}
+{{- with $en.GetPage "/om" }}
+- [About (English)]({{ .Permalink }}): {{ .Description }}
+{{- end }}
+
+## Posts (Danish)
+{{ range $ownPosts.ByDate.Reverse }}
+- [{{ .Title }}]({{ .Permalink }}) ({{ .Date.Format "2006-01-02" }}): {{ .Description | default .Summary | plainify | htmlUnescape }}
+{{- end }}
+
+## Posts (English)
+{{ range (where $en.RegularPages "Section" "posts").ByDate.Reverse }}
+- [{{ .Title }}]({{ .Permalink }}) ({{ .Date.Format "2006-01-02" }}): {{ .Description | default .Summary | plainify | htmlUnescape }}
+{{- end }}
+
+## Weekly AI research digest (Danish, AI-assembled)
+
+These weekly overviews of new preprints about AI agents are assembled and written by AI from sources the author selected. They are not the author's own testing or peer review.
+{{ range $digests.ByDate.Reverse }}
+- [{{ .Title }}]({{ .Permalink }}) ({{ .Date.Format "2006-01-02" }})
+{{- end }}
+
+## Optional
+
+- [RSS feed]({{ "index.xml" | absURL }})
+- [Sitemap]({{ "sitemap.xml" | absURL }})
