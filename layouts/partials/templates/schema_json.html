@@ -73,11 +73,9 @@
 {{- $items := slice -}}
 {{- range $i, $p := site.Data.projects -}}
   {{- $t := cond $isDA $p.da $p.en -}}
-  {{- $items = $items | append (dict
-    "@type" "ListItem"
-    "position" (add $i 1)
-    "item" (dict "@type" "CreativeWork" "name" $t.name "description" $t.summary "keywords" (delimit $p.stack ", "))
-  ) -}}
+  {{- $work := dict "@type" "CreativeWork" "name" $t.name "description" $t.summary "keywords" (delimit $p.stack ", ") -}}
+  {{- with $p.anchor }}{{ $work = merge $work (dict "url" (printf "%s#%s" $.Permalink .)) }}{{ end -}}
+  {{- $items = $items | append (dict "@type" "ListItem" "position" (add $i 1) "item" $work) -}}
 {{- end -}}
 {{- $collection := dict
   "@context" "https://schema.org"

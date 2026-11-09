@@ -72,4 +72,4 @@ Ved siden af arbejdet bygger jeg mine egne systemer og bruger dem hver dag: en t
 
 ## Støt bloggen
 
-{{< cryptotip note="Har noget her været brugbart, kan du sende en tip i Bitcoin eller Ethereum. Det er helt frivilligt, og alt indhold forbliver frit tilgængeligt." copy="Kopiér" >}}
+{{< cryptotip note="Har noget her været brugbart, kan du sende et tip i Bitcoin eller Ethereum. Det er helt frivilligt, og alt indhold forbliver frit tilgængeligt." copy="Kopiér" >}}

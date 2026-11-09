@@ -118,14 +118,14 @@ Lønsystemer kræver præcision, ansvarlighed og forståelse for forretningskrit
 **Område:** AI-agenter, automatisering, drift af planlagte jobs  
 **Teknologier:** Python, PowerShell, Windows Task Scheduler, LLM API'er, Markdown, Git
 
-Scouts er et sæt planlagte jobs, der hver morgen samler københavnske events, dagligvaretilbud, ny AI-research og jobopslag og skriver resultatet som Markdown i mit vault. Event-scoutsene ender som ti kort om dagen i min app Vault Companion, hvor jeg swiper ja eller nej.
+Scouts er et sæt planlagte jobs, der hver morgen samler københavnske events, dagligvaretilbud, ny AI-research og jobopslag og skriver resultatet som Markdown i mit vault. Event-scouterne ender som ti kort om dagen i min app Vault Companion, hvor jeg swiper ja eller nej.
 
 ### Sådan virker det
 
 - En billig model læser alle daterede events. En stærkere model vurderer kun shortlisten.
 - Kilderne bliver målt: nye kilder prøves i 14 dage, stille kilder markeres, og døde kilder tages ud.
 - Mine swipes ændrer, hvor stærk en interesse er, hvilke kilder der bliver, og hvad der søges efter næste gang.
-- En ugentlig rapport sammenligner scoutsenes fund med en uafhængig websøgning, så jeg kan se, hvad de overså.
+- En ugentlig rapport sammenligner scouternes fund med en uafhængig websøgning, så jeg kan se, hvad de overså.
 - Hvert job skriver en statusfil. Et job tæller først som kørt, når exit code og et friskt output siger det. At det står i Task Scheduler, er ikke nok.
 
 ### Hvorfor det er relevant
