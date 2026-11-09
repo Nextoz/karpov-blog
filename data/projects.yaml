@@ -24,7 +24,7 @@
   da:
     name: Scouts
     status: Kører dagligt, privat
-    summary: Planlagte agenter, der hver morgen samler københavnske events, tilbud, research og jobopslag. En billig model læser alt, en stærkere model vurderer shortlisten, og mine swipes retter, hvad der søges efter næste gang.
+    summary: Planlagte agenter, der hver morgen samler københavnske events, tilbud, research og jobopslag. En billig model læser alt, en stærkere model vurderer shortlisten, og mine swipes justerer, hvad der søges efter næste gang.
   en:
     name: Scouts
     status: Runs daily, private
@@ -84,12 +84,12 @@
 - id: vintonden
   status: client
   anchor: vintonden
-  stack: [WordPress, local SEO, AI-assisted research]
+  stack: [WordPress, PHP, JSON-LD, hreflang, GEO]
   da:
     name: Vintønden
     status: Kundeprojekt
-    summary: Lokal SEO og websitestruktur for Vintønden på Frederiksberg — fra analyse til en konkret handlingsplan i WordPress.
+    summary: Teknisk SEO, GEO og WordPress for en bar på Frederiksberg. Structured data, sider på tre sprog og egne små plugins, lavet direkte i produktion.
   en:
     name: Vintønden
     status: Client project
-    summary: Local SEO and site structure for Vintønden in Frederiksberg — from analysis to a concrete WordPress action plan.
+    summary: Technical SEO, GEO and WordPress for a bar in Frederiksberg. Structured data, pages in three languages and my own small plugins, done directly in production.

@@ -1019,3 +1019,14 @@ summary:focus-visible {
 .post-content .contact-cta p + p {
   margin-top: 0.5rem;
 }
+
+/* Anchor targets clear the sticky header. */
+[id] {
+  scroll-margin-top: 5rem;
+}
+
+@media (max-width: 620px) {
+  .post-title {
+    font-size: 1.7rem;
+  }
+}

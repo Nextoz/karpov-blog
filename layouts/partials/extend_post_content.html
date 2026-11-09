@@ -4,6 +4,8 @@
 {{- $authorship := .Params.authorship | default "unspecified" -}}
 {{- /* Related posts by shared tags. The weekly digests are left out so they do not crowd the list. */ -}}
 {{- $related := first 3 (where (site.RegularPages.Related .) "Params.authorship" "ne" "ai-assembled-digest") -}}
+{{- /* Posts that already end with their own hand-picked "Læs også" list do not get a second one. */ -}}
+{{- if findRE `(?i)(læs også|read also)` .RawContent 1 }}{{ $related = slice }}{{ end -}}
 {{- with $related }}
 <nav class="related-posts" aria-label="{{ if eq $.Lang "da" }}Relaterede indlæg{{ else }}Related posts{{ end }}">
   <h2>{{ if eq $.Lang "da" }}Relaterede indlæg{{ else }}Related posts{{ end }}</h2>
