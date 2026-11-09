@@ -2,7 +2,7 @@
 title: "Om Evgeny Karpov"
 description: "Om Evgeny Karpov, senior software engineer i København med erfaring i .NET, DevOps, Azure DevOps, Kubernetes, CI/CD og AI-assisteret softwareudvikling."
 profilePage: true
-lastmod: 2026-11-10
+lastmod: 2026-11-09
 translationKey: "about"
 hidemeta: true
 ShowReadingTime: false

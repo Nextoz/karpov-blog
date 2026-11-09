@@ -1,7 +1,7 @@
 ---
 title: "About Evgeny Karpov"
 description: "About Evgeny Karpov, senior software engineer in Copenhagen working with .NET, DevOps, Azure DevOps, Kubernetes, CI/CD and AI-assisted software development."
-lastmod: 2026-11-10
+lastmod: 2026-11-09
 summary: "Senior software engineer based in Copenhagen with experience across .NET, DevOps, Azure DevOps, infrastructure and platform engineering."
 translationKey: "about"
 url: "/en/about/"

@@ -4,7 +4,7 @@ description: "Portfolio for Evgeny Karpov: Azure DevOps, .NET, Kubernetes, CI/CD
 summary: "Selected experience across DevOps, platform engineering, .NET backend, cloud, CI/CD, observability and AI-assisted software development."
 translationKey: "portfolio"
 schemaType: "portfolio"
-lastmod: 2026-11-10
+lastmod: 2026-11-09
 url: "/en/projects/"
 hidemeta: true
 ShowReadingTime: false
