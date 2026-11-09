@@ -1,7 +1,8 @@
 ---
-title: "About"
-description: "About Evgeny Karpov, software engineer working with .NET, DevOps, Azure DevOps, CI/CD, infrastructure and platform engineering."
-summary: "Software engineer based in Copenhagen with experience across .NET, DevOps, Azure DevOps, infrastructure and platform engineering."
+title: "About Evgeny Karpov"
+description: "About Evgeny Karpov, senior software engineer in Copenhagen working with .NET, DevOps, Azure DevOps, Kubernetes, CI/CD and AI-assisted software development."
+lastmod: 2026-11-09
+summary: "Senior software engineer based in Copenhagen with experience across .NET, DevOps, Azure DevOps, infrastructure and platform engineering."
 translationKey: "about"
 url: "/en/about/"
 profilePage: true
@@ -13,7 +14,7 @@ ShowWordCount: false
 
 <img class="about-portrait" src="/images/profile.png" alt="Evgeny Karpov" width="230" height="230">
 
-I am a software engineer based in Copenhagen, working across .NET backend development, DevOps, CI/CD, infrastructure and platform engineering.
+I am **Evgeny Karpov**, a senior software engineer based in Copenhagen, working across .NET backend development, DevOps, CI/CD, infrastructure and platform engineering.
 
 My background is in software development, but over time I have moved closer to the full delivery chain: how systems are built, deployed, configured, monitored and kept stable in real environments.
 
@@ -29,12 +30,22 @@ I like work where I can combine structured engineering with practical troublesho
 - SQL databases and data-heavy systems
 - Observability, logging and production troubleshooting
 - Public-sector and business-critical systems
+- Security as part of delivery: vulnerable dependencies, secrets and AI agents with clear limits
+- AI-assisted software development and automation
 
 ## How I work
 
 I try to be pragmatic, reliable and clear. I care about understanding the system before changing it, documenting what matters, and making delivery smoother for the whole team.
 
 I also write about technology, AI, DevOps and digitalization on this blog. Partly to share ideas, partly to force myself to think more clearly.
+
+## What I am looking for
+
+I am open to permanent roles and to freelance and contract work in Greater Copenhagen, especially in DevOps, platform engineering, site reliability and .NET backend work close to infrastructure.
+
+## What I build myself
+
+Alongside work I build my own systems and use them every day: a phone app on top of my Obsidian vault, scheduled scouts that find events and research, and an app for my smart ring where the data stays with me. You can read about them in my [portfolio](/en/projects/), where I also describe [how I work with security](/en/projects/#security).
 
 ## Outside work
 

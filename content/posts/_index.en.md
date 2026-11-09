@@ -1,6 +1,6 @@
 ---
 title: "Blog"
-description: "Older AI-drafted posts under review and future notes written by Evgeny Karpov about software, DevOps, AI and what he learns along the way."
+description: "Evgeny Karpov's blog about DevOps, platform engineering, .NET and AI agents in production."
 summary: "Older posts under review and future personal notes about software, DevOps and AI."
 translationKey: "blog"
 hidemeta: true

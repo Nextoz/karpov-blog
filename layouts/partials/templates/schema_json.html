@@ -1,31 +1,18 @@
+{{- /* Structured data. The Person comes from partials/schema-person.html everywhere.
+       New blocks are built as dicts and printed with jsonify, so they are always valid JSON. */ -}}
+{{- $person := partial "schema-person.html" . -}}
+{{- $personRef := dict "@id" (index $person "@id") -}}
 {{ if .IsHome }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "{{- ( site.Params.schema.publisherType | default "Organization") | title -}}",
-  "name": {{ site.Title }},
-  "url": {{ site.Home.Permalink }},
-  "description": {{ site.Params.description | plainify | truncate 180 | safeHTML }},
-  {{- if (eq site.Params.schema.publisherType "Person") }}
-  "image": {{ "images/profile.png" | absURL }},
-  "jobTitle": "Software Engineer",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Copenhagen",
-    "addressCountry": "DK"
-  },
-  {{- else }}
-  "logo": {{ site.Params.assets.favicon | default "favicon.ico" | absURL }},
-  {{- end }}
-  "sameAs": [
-    {{- if site.Params.schema.sameAs }}
-      {{ range $i, $e := site.Params.schema.sameAs }}{{ if $i }}, {{ end }}{{ trim $e " " }}{{ end }}
-    {{- else}}
-      {{ range $i, $e := site.Params.SocialIcons }}{{ if $i }}, {{ end }}{{ trim $e.url " " | safeURL }}{{ end }}
-    {{- end}}
-  ]
-}
-</script>
+{{- $website := dict
+  "@type" "WebSite"
+  "@id" (printf "%s#website" (absURL "/"))
+  "name" site.Title
+  "url" site.Home.Permalink
+  "description" site.Params.description
+  "inLanguage" site.Language.LanguageCode
+  "publisher" $personRef
+-}}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" (slice $person $website) | jsonify | safeJS }}</script>
 {{- else if (or .IsPage .IsSection) }}
 {{/* BreadcrumbList */}}
 {{- $url := replace .Parent.Permalink ( printf "%s" site.Home.Permalink) "" }}
@@ -65,39 +52,46 @@
   ]
 }
 </script>
+{{- $modified := now.Format "2006-01-02" -}}
+{{- if not .Lastmod.IsZero }}{{ $modified = .Lastmod.Format "2006-01-02" }}{{ end -}}
+{{- $pageDescription := .Description | default .Summary | plainify -}}
 {{- if (and .IsPage .Params.profilePage) }}
-{{- /* About page: ProfilePage/Person instead of BlogPosting - it's a bio, not an article. */}}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfilePage",
-  "name": {{ .Title | plainify }},
-  "url": {{ .Permalink | safeHTML }},
-  "inLanguage": {{ .Language.Lang | default "en-us" }},
-  "dateModified": {{ if .Lastmod.IsZero }}{{ now.Format "2006-01-02" }}{{ else }}{{ .Lastmod }}{{ end }},
-  "mainEntity": {
-    "@type": "Person",
-    "name": {{ site.Params.author }},
-    "url": {{ .Permalink | safeHTML }},
-    "image": {{ "images/profile.png" | absURL }},
-    "jobTitle": "Software Engineer",
-    "description": {{ with .Description | plainify }}{{ . }}{{ else }}{{ .Summary | plainify }}{{ end -}},
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Copenhagen",
-      "addressCountry": "DK"
-    },
-    "sameAs": [
-      {{- if site.Params.schema.sameAs }}
-        {{ range $i, $e := site.Params.schema.sameAs }}{{ if $i }}, {{ end }}{{ trim $e " " }}{{ end }}
-      {{- else}}
-        {{ range $i, $e := site.Params.SocialIcons }}{{ if $i }}, {{ end }}{{ trim $e.url " " | safeURL }}{{ end }}
-      {{- end}}
-    ]
-  }
-}
-</script>
-{{- else if .IsPage }}
+{{- /* About page: ProfilePage/Person - it's a bio, not an article. */}}
+{{- $profile := dict
+  "@context" "https://schema.org"
+  "@type" "ProfilePage"
+  "name" (.Title | plainify)
+  "url" .Permalink
+  "inLanguage" .Language.Lang
+  "dateModified" $modified
+  "mainEntity" (merge $person (dict "description" $pageDescription))
+-}}
+<script type="application/ld+json">{{ $profile | jsonify | safeJS }}</script>
+{{- else if (and .IsPage (eq .Params.schemaType "portfolio")) }}
+{{- /* Portfolio: a CollectionPage that lists the projects from data/projects.yaml. */}}
+{{- $isDA := eq .Lang "da" -}}
+{{- $items := slice -}}
+{{- range $i, $p := site.Data.projects -}}
+  {{- $t := cond $isDA $p.da $p.en -}}
+  {{- $items = $items | append (dict
+    "@type" "ListItem"
+    "position" (add $i 1)
+    "item" (dict "@type" "CreativeWork" "name" $t.name "description" $t.summary "keywords" (delimit $p.stack ", "))
+  ) -}}
+{{- end -}}
+{{- $collection := dict
+  "@context" "https://schema.org"
+  "@type" "CollectionPage"
+  "name" (.Title | plainify)
+  "url" .Permalink
+  "description" $pageDescription
+  "inLanguage" .Language.Lang
+  "dateModified" $modified
+  "about" $person
+  "mainEntity" (dict "@type" "ItemList" "itemListElement" $items)
+-}}
+<script type="application/ld+json">{{ $collection | jsonify | safeJS }}</script>
+{{- else if (and .IsPage (eq .Section "posts")) }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -115,53 +109,15 @@
   "articleBody": {{ .Content | safeJS | htmlUnescape | plainify }},
   "wordCount" : "{{ .WordCount }}",
   "inLanguage": {{ .Language.Lang | default "en-us" }},
-  {{ if .Params.cover.image -}}
-  "image":
-    {{- if (ne .Params.cover.relative true) -}}
-    {{ .Params.cover.image | absURL }},
-    {{- else -}}
-    {{ (path.Join .RelPermalink .Params.cover.image ) | absURL }},
-    {{- end}}
-  {{- else }}
-    {{- $images := partial "templates/_funcs/get-page-images" . -}}
-    {{- with index $images 0 -}}
-  "image": {{ .Permalink }},
-    {{- end }}
-  {{- end -}}
+  "image": {{ partial "og-image.html" . }},
   "datePublished": {{ .PublishDate }},
   "dateModified": {{ .Lastmod }},
-  {{- with (.Params.author | default site.Params.author) }}
-  "author":
-    {{- if (or (eq (printf "%T" .) "[]string") (eq (printf "%T" .) "[]interface {}")) -}}
-  [{{- range $i, $v := . -}}
-  {{- if $i }}, {{end -}}
-  {
-    "@type": "Person",
-    "name": {{ $v }}
-  }
-  {{- end }}],
-    {{- else -}}
-  {
-    "@type": "Person",
-    "name": {{ . }},
-    "url": {{ with site.GetPage "/om" }}{{ .Permalink }}{{ else }}{{ site.Home.Permalink }}{{ end }},
-    "sameAs": [
-      "https://www.linkedin.com/in/evgenykarpov91/",
-      "https://github.com/Nextoz"
-    ]
-  },
-    {{- end -}}
-  {{- end }}
+  "author": {{ $person | jsonify | safeJS }},
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": {{ .Permalink | safeHTML }}
   },
-  "publisher": {
-    "@type": "Person",
-    "name": {{ site.Title }},
-    "url": {{ site.Home.Permalink }},
-    "image": {{ "images/profile.png" | absURL }}
-  }
+  "publisher": {{ $person | jsonify | safeJS }}
 }
 </script>
 {{- end }}{{/* .IsPage end */}}

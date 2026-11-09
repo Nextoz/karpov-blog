@@ -1,7 +1,7 @@
 # Projects shown as cards on the homepage ("home: true") and on the portfolio page.
 # "page" links to a post when that post is published (drafts are not built, so no link
 # appears until then); "url" links externally; "anchor" links to a section with that id on the
-# portfolio page, for projects that also have a full write-up there. Status keys: in-use, coming, live, prototype, client.
+# portfolio page (also from the homepage), for projects that have a full write-up there. Status keys: in-use, coming, live, prototype, client.
 - id: vault-companion
   home: true
   status: in-use
@@ -16,8 +16,34 @@
     status: In daily use, private
     summary: My private phone app on top of my Obsidian vault. Markdown and Git stay the only source of truth. Built with a team of AI agents that I direct, review and deploy.
 
-- id: copenhagen-live
+- id: scouts
   home: true
+  status: in-use
+  anchor: scouts
+  stack: [Python, PowerShell, Task Scheduler, LLM APIs, Markdown + Git]
+  da:
+    name: Scouts
+    status: Kører dagligt, privat
+    summary: Planlagte agenter, der hver morgen samler københavnske events, tilbud, research og jobopslag. En billig model læser alt, en stærkere model vurderer shortlisten, og mine swipes retter, hvad der søges efter næste gang.
+  en:
+    name: Scouts
+    status: Runs daily, private
+    summary: Scheduled agents that gather Copenhagen events, grocery offers, research and job postings every morning. A cheap model reads everything, a stronger model judges the shortlist, and my swipes change what gets searched for next.
+
+- id: ring-app
+  status: in-use
+  anchor: ring-app
+  stack: [Swift, iOS, Bluetooth LE, Shortcuts, GitHub Actions]
+  da:
+    name: Ring-app
+    status: I daglig brug, privat
+    summary: Min fork af open source-appen PulseLoop til en billig smart ring. Appen taler direkte med ringen over Bluetooth, uden konto og uden leverandørens cloud, og sender data videre til mit eget vault.
+  en:
+    name: Ring app
+    status: In daily use, private
+    summary: My fork of the open-source app PulseLoop for an inexpensive smart ring. The app talks to the ring directly over Bluetooth, with no account and no vendor cloud, and passes the data on to my own vault.
+
+- id: copenhagen-live
   status: coming
   stack: [Cloudflare Workers, open data, scouts]
   da:

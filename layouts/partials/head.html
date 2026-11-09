@@ -10,8 +10,8 @@
 {{- /* Title. Site override: PaperMod skips .Title on the homepage, which left
      the tab/SERP title as the bare site name. Give the homepage a real,
      descriptive title while leaving every other page's logic untouched. */}}
-{{- $isDA := eq .Lang "da" }}
-<title>{{ if .IsHome }}{{ site.Title }} — {{ if $isDA }}DevOps, platform engineering og AI-systemer{{ else }}DevOps, platform engineering and AI systems{{ end }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ site.Title }}{{ end }}</title>
+{{- /* The descriptive part comes from partials/page-title.html (tagline per language in hugo.toml). */}}
+<title>{{ if .IsHome }}{{ partial "page-title.html" . }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ site.Title }}{{ end }}</title>
 
 {{- /* Meta */}}
 {{- if .IsHome }}

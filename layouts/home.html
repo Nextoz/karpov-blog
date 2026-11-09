@@ -1,6 +1,9 @@
 {{- define "main" -}}
 {{- $isDA := eq .Lang "da" -}}
-{{- $posts := where site.RegularPages "Section" "posts" -}}
+{{- $allPosts := where site.RegularPages "Section" "posts" -}}
+{{- /* The AI-assembled weekly digest gets its own short section, so the owner's posts lead the page. */ -}}
+{{- $digests := where $allPosts "Params.authorship" "ai-assembled-digest" -}}
+{{- $posts := $allPosts | complement $digests -}}
 
 <div class="home-shell">
 <section class="home-hero" aria-labelledby="home-title">
@@ -57,6 +60,30 @@
     {{- end }}
   </div>
 </section>
+
+{{- with $digests }}
+<section class="home-section" id="research" aria-labelledby="research-title">
+  <div class="section-heading section-heading-row">
+    <div>
+      <h2 id="research-title">{{ if $isDA }}Ugens AI-forskning{{ else }}Weekly AI research{{ end }}</h2>
+      <p class="section-note">{{ if $isDA }}Et ugentligt overblik over nye preprints om AI-agenter. Samlet og skrevet af AI ud fra kilder, jeg har udvalgt.{{ else }}A weekly overview of new preprints about AI agents. Assembled and written by AI from sources I have selected.{{ end }}</p>
+    </div>
+    {{- with site.GetPage "/tags/research" }}
+    <a class="text-link" href="{{ .RelPermalink }}">{{ if $isDA }}Alle overblik{{ else }}All digests{{ end }}</a>
+    {{- end }}
+  </div>
+  <div class="latest-list latest-list-compact">
+    {{- range first 3 .ByDate.Reverse }}
+    <article class="latest-item">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format "2006-01-02" }}</time>
+      <div>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      </div>
+    </article>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
 
 <section class="home-cta" aria-labelledby="follow-title">
   <div>

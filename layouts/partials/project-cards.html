@@ -2,13 +2,16 @@
        Context: dict "projects" (slice) "lang" ("da"|"en") "headingLevel" ("h3"|"h2"). */ -}}
 {{- $isDA := eq .lang "da" -}}
 {{- $h := .headingLevel | default "h3" -}}
+{{- /* Anchors point at the portfolio page, so the same card works on the homepage too. */ -}}
+{{- $portfolio := "" -}}
+{{- with site.GetPage "/projekter" }}{{ $portfolio = .RelPermalink }}{{ end -}}
 <div class="project-grid">
   {{- range .projects }}
   {{- $t := cond $isDA .da .en -}}
   {{- $href := "" -}}
   {{- with .page }}{{ with site.GetPage . }}{{ $href = .RelPermalink }}{{ end }}{{ end -}}
   {{- with .url }}{{ $href = . }}{{ end -}}
-  {{- with .anchor }}{{ $href = printf "#%s" . }}{{ end -}}
+  {{- with .anchor }}{{ $href = printf "%s#%s" $portfolio . }}{{ end -}}
   <article class="project-card project-card--{{ .status }}">
     <p class="project-status">{{ $t.status }}</p>
     {{ printf "<%s class=\"project-name\">" $h | safeHTML }}
