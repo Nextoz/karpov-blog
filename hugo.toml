@@ -72,7 +72,7 @@ SiteVerificationTag = ""
 
 [params.analytics.bing]
 # Paste the Bing Webmaster Tools "msvalidate.01" content value here.
-SiteVerificationTag = ""
+SiteVerificationTag = "688E517FE855BCF111B0BC45755954F5"
 
 [params.label]
 text = "Evgeny Karpov"
