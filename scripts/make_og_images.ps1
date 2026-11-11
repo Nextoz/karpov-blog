@@ -3,6 +3,7 @@ Generates the 1200x630 social share images in static/images/og/.
 
   default.png / default.en.png   site-wide fallback (home, portfolio, about, lists)
   digest.png                     shared by every weekly research digest
+  ai-raadgivning.png             the AI-rådgivning page (front matter: ogImage)
   <post-file-name>.png           one per published, non-digest post
   <post-file-name>.en.png        one per published English translation
 
@@ -111,7 +112,10 @@ New-OgImage -Path (Join-Path $outDir 'default.en.png') -Command 'cat notes-from-
     -Title 'From a good idea to stable production' -Footer 'Evgeny Karpov · DevOps, .NET and AI systems'
 New-OgImage -Path (Join-Path $outDir 'digest.png') -Command 'tail -f ugens-ai-forskning.log' `
     -Title 'Ugens AI-forskning' -Footer 'Ugentligt researchoverblik · samlet af AI'
-$made += 'default.png', 'default.en.png', 'digest.png'
+# Standalone pages opt in with "ogImage: images/og/<name>.png" in their front matter.
+New-OgImage -Path (Join-Path $outDir 'ai-raadgivning.png') -Command 'cat ai-raadgivning.md' `
+    -Title 'AI-rådgivning til mindre virksomheder' -Footer 'Evgeny Karpov · faste priser'
+$made += 'default.png', 'default.en.png', 'digest.png', 'ai-raadgivning.png'
 
 Get-ChildItem (Join-Path $Root 'content/posts') -Filter '*.md' -File | Where-Object Name -notlike '_index*' | ForEach-Object {
     $text = Get-Content $_.FullName -Raw -Encoding utf8
