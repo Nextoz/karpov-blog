@@ -6,7 +6,7 @@ translationKey: "ai-consulting"
 lastmod: 2026-11-11
 hidemeta: true
 ShowReadingTime: false
-ShowShareButtons: false
+disableShare: true
 ShowWordCount: false
 showtoc: false
 ---
@@ -25,11 +25,15 @@ Mange virksomheder har prøvet en chatbot og er ikke kommet længere. Jeg hjælp
 
 Jeg er ny som AI-rådgiver, og derfor er priserne lavere, end de bliver senere. Introduktionspriserne gælder for aftaler, der indgås inden 31. marts 2027.
 
+<div class="price-table">
+
 | Ydelse | Det får I | Pris |
 |---|---|---|
-| **AI-afklaring** | Et møde på 2-3 timer hos jer eller online og en skriftlig anbefaling: de tre bedste muligheder, hvad de koster at bygge, og hvad de koster i drift | 4.500 kr. |
-| **Første automatisering** | Én arbejdsgang bygget, testet og sat i drift, med dokumentation og overdragelse. Typisk 2-4 uger | 15.000-25.000 kr. fast pris, aftalt før start |
+| **AI-afklaring** | Et møde på 2–3 timer hos jer eller online og en skriftlig anbefaling: de tre bedste muligheder, hvad de koster at bygge, og hvad de koster i drift | 4.500 kr. |
+| **Første automatisering** | Én arbejdsgang bygget, testet og sat i drift, med dokumentation og overdragelse. Fast pris, som vi aftaler før start. Typisk 2–4 uger | 15.000–25.000 kr. |
 | **Løbende hjælp** | Videreudvikling, fejlretning og sparring efter behov | 700 kr. pr. time |
+
+</div>
 
 Alle priser er ekskl. moms. Går I videre med en automatisering, trækker jeg prisen for afklaringen fra.
 
