@@ -31,6 +31,9 @@ Facts:
 {{- with $en.GetPage "/projekter" }}
 - [Portfolio (English)]({{ .Permalink }}): {{ .Description }}
 {{- end }}
+{{- with $da.GetPage "/ai-raadgivning" }}
+- [AI consulting for small businesses, with prices (Danish)]({{ .Permalink }}): {{ .Description }}
+{{- end }}
 {{- with $da.GetPage "/om" }}
 - [About (Danish)]({{ .Permalink }}): {{ .Description }}
 {{- end }}
