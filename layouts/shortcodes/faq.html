@@ -1,0 +1,6 @@
+{{- /* Renders the page's "faq" front matter. The same list feeds the FAQPage
+       structured data in partials/templates/schema_json.html, so the two cannot drift. */ -}}
+{{- range .Page.Params.faq }}
+<h3>{{ .q }}</h3>
+<p>{{ .a | markdownify }}</p>
+{{- end }}

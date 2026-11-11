@@ -3,6 +3,33 @@ title: "AI consulting for small businesses"
 description: "Practical help getting AI into use in a small business: an assessment, a first automation and ongoing help at fixed prices in DKK. Copenhagen and remote."
 summary: "Practical help getting AI into use in a small business, at fixed prices."
 translationKey: "ai-consulting"
+schemaType: "service"
+serviceType: "AI consulting"
+offers:
+  - name: "AI assessment"
+    description: "A 2–3 hour meeting and a written recommendation with the three best opportunities, what they cost to build, and what they cost to run."
+    price: 4500
+  - name: "First automation"
+    description: "One workflow built, tested and put into operation, with documentation and handover. Fixed price, agreed before we start."
+    minPrice: 15000
+    maxPrice: 25000
+  - name: "Ongoing help"
+    description: "Further development, fixes and advice as needed, per hour."
+    price: 700
+    unitCode: "HUR"
+faq:
+  - q: "What does AI consulting cost?"
+    a: "An AI assessment costs DKK 4,500. A first automation costs DKK 15,000–25,000 at a fixed price, and ongoing help costs DKK 700 per hour. All prices exclude Danish VAT and apply to agreements made before 31 March 2027."
+  - q: "Who is it for?"
+    a: "Small businesses that want to use AI in their daily work but have no developers of their own, or no time to work out where to start. You do not need technical knowledge."
+  - q: "Can our data stay in the EU?"
+    a: "Yes, that is possible. I can build the solution on European models and European hosting, so the data does not leave the EU. What fits you best is part of the assessment."
+  - q: "How long does it take?"
+    a: "The assessment is a 2–3 hour meeting and a written recommendation. A first automation typically takes 2–4 weeks."
+  - q: "Do you only work in Copenhagen?"
+    a: "I am based in Copenhagen and am happy to visit businesses in the Greater Copenhagen area. Everything else we do online. I work in English and Danish."
+  - q: "What if AI is not the answer to our problem?"
+    a: "Then I will say so. The first call is free, and you can use the recommendation from the assessment whether or not you continue with me."
 url: "/en/ai-consulting/"
 ogImage: "images/og/ai-raadgivning.en.png"
 lastmod: 2026-11-11
@@ -13,7 +40,7 @@ ShowWordCount: false
 showtoc: false
 ---
 
-Many companies have tried a chatbot and got no further. I help small businesses find the tasks where AI actually saves time, and I build the solution so it still works three months from now.
+Many companies have tried a chatbot and got no further. I am a freelance AI consultant in Copenhagen, and I help small businesses find the tasks where AI actually saves time, and I build the solution so it still works three months from now.
 
 I work in English and Danish, in Copenhagen or remote.
 
@@ -55,6 +82,10 @@ All prices are in Danish kroner (DKK) and exclude Danish VAT. If you go on to an
 - **I am not tied to one vendor.** I have run the same tasks on American, Chinese and European models, including with a European cloud provider, and I choose by the task, the price and where the data ends up.
 - **Security is there from the start.** Read [how I work with security](/en/projects/#security) in my own agent systems.
 - **I already work directly with a local business.** See [Vintønden](/en/projects/#vintonden) in my portfolio.
+
+## Frequently asked questions
+
+{{< faq >}}
 
 <div class="contact-cta">
 
