@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+  <title id="title">Én besked fra ringen, skilt ad</title>
+  <desc id="desc">En Bluetooth-besked på 20 bytes: første byte er kommandoen 0x10, de næste fire er et tidsstempel, og de sidste femten er skridt pr. minut. Summen af alle minutter på dagen er 1459, det samme som ringens egen dagstotal.</desc>
+  <style>
+    text { font-family: "Cascadia Code", "Cascadia Mono", "JetBrains Mono", "SF Mono", ui-monospace, Menlo, Consolas, "Liberation Mono", monospace; }
+    .dim { fill: #94a3b8; }
+    .hex { font-size: 22px; font-weight: 700; text-anchor: middle; }
+    .idx { font-size: 13px; fill: #64748b; text-anchor: middle; }
+    .lab { font-size: 16px; text-anchor: middle; }
+    .val { font-size: 13px; fill: #86efac; text-anchor: middle; }
+  </style>
+
+  <rect width="1200" height="660" rx="10" fill="#0b1020"/>
+  <rect x="0.5" y="0.5" width="1199" height="659" rx="10" fill="none" stroke="#26324a"/>
+
+  <!-- prompt -->
+  <text x="43" y="58" font-size="20"><tspan fill="#86efac">evgeny@kbh</tspan><tspan fill="#94a3b8">:</tspan><tspan fill="#38bdf8">~/ring-lab</tspan><tspan fill="#94a3b8">$ </tspan><tspan fill="#f1f5f9">python decode.py --frame</tspan></text>
+  <text x="43" y="92" font-size="15" class="dim">20 bytes · ingen checksum · ingen kryptering</text>
+
+  <!-- byte index -->
+  <g class="idx">
+    <text x="68" y="136">[0]</text>
+    <text x="124" y="136">[1]</text>
+    <text x="292" y="136">[4]</text>
+    <text x="348" y="136">[5]</text>
+    <text x="1132" y="136">[19]</text>
+  </g>
+
+  <!-- opcode -->
+  <rect x="43" y="148" width="50" height="56" rx="6" fill="#facc15" fill-opacity="0.14" stroke="#facc15"/>
+  <text x="68" y="184" class="hex" fill="#facc15">10</text>
+
+  <!-- timestamp -->
+  <g fill="#38bdf8" fill-opacity="0.14" stroke="#38bdf8">
+    <rect x="99" y="148" width="50" height="56" rx="6"/>
+    <rect x="155" y="148" width="50" height="56" rx="6"/>
+    <rect x="211" y="148" width="50" height="56" rx="6"/>
+    <rect x="267" y="148" width="50" height="56" rx="6"/>
+  </g>
+  <g class="hex" fill="#38bdf8">
+    <text x="124" y="184">74</text>
+    <text x="180" y="184">6e</text>
+    <text x="236" y="184">df</text>
+    <text x="292" y="184">6a</text>
+  </g>
+
+  <!-- steps -->
+  <g fill="#86efac" fill-opacity="0.12" stroke="#86efac">
+    <rect x="323" y="148" width="50" height="56" rx="6"/>
+    <rect x="379" y="148" width="50" height="56" rx="6"/>
+    <rect x="435" y="148" width="50" height="56" rx="6"/>
+    <rect x="491" y="148" width="50" height="56" rx="6"/>
+    <rect x="547" y="148" width="50" height="56" rx="6"/>
+    <rect x="603" y="148" width="50" height="56" rx="6"/>
+    <rect x="659" y="148" width="50" height="56" rx="6"/>
+    <rect x="715" y="148" width="50" height="56" rx="6"/>
+    <rect x="771" y="148" width="50" height="56" rx="6"/>
+    <rect x="827" y="148" width="50" height="56" rx="6"/>
+    <rect x="883" y="148" width="50" height="56" rx="6"/>
+    <rect x="939" y="148" width="50" height="56" rx="6"/>
+    <rect x="995" y="148" width="50" height="56" rx="6"/>
+    <rect x="1051" y="148" width="50" height="56" rx="6"/>
+    <rect x="1107" y="148" width="50" height="56" rx="6"/>
+  </g>
+  <g class="hex" fill="#86efac">
+    <text x="348" y="184">00</text>
+    <text x="404" y="184">00</text>
+    <text x="460" y="184">0c</text>
+    <text x="516" y="184">3a</text>
+    <text x="572" y="184">60</text>
+    <text x="628" y="184">68</text>
+    <text x="684" y="184">65</text>
+    <text x="740" y="184">62</text>
+    <text x="796" y="184">6b</text>
+    <text x="852" y="184">5f</text>
+    <text x="908" y="184">3c</text>
+    <text x="964" y="184">16</text>
+    <text x="1020" y="184">00</text>
+    <text x="1076" y="184">00</text>
+    <text x="1132" y="184">00</text>
+  </g>
+
+  <!-- brackets -->
+  <g fill="none" stroke-width="1.5">
+    <path d="M43 216 v8 h50 v-8" stroke="#facc15"/>
+    <path d="M99 216 v8 h218 v-8" stroke="#38bdf8"/>
+    <path d="M323 216 v8 h834 v-8" stroke="#86efac"/>
+  </g>
+
+  <!-- labels -->
+  <text x="68" y="250" class="lab" fill="#facc15">0x10</text>
+  <text x="68" y="272" font-size="13" text-anchor="middle" class="dim">kommando</text>
+
+  <text x="208" y="250" class="lab" fill="#38bdf8">tidsstempel</text>
+  <text x="208" y="272" font-size="13" text-anchor="middle" class="dim">u32, little-endian</text>
+  <text x="208" y="294" font-size="13" text-anchor="middle" fill="#f1f5f9">26.10.2026 kl. 15.15</text>
+
+  <text x="740" y="250" class="lab" fill="#86efac">skridt pr. minut · 15 × u8</text>
+
+  <!-- bars: 1 px per step, baseline 420 -->
+  <line x1="323" y1="420.5" x2="1157" y2="420.5" stroke="#26324a"/>
+  <g fill="#86efac">
+    <rect x="455" y="408" width="10" height="12" rx="2"/>
+    <rect x="511" y="362" width="10" height="58" rx="2"/>
+    <rect x="567" y="324" width="10" height="96" rx="2"/>
+    <rect x="623" y="316" width="10" height="104" rx="2"/>
+    <rect x="679" y="319" width="10" height="101" rx="2"/>
+    <rect x="735" y="322" width="10" height="98" rx="2"/>
+    <rect x="791" y="313" width="10" height="107" rx="2"/>
+    <rect x="847" y="325" width="10" height="95" rx="2"/>
+    <rect x="903" y="360" width="10" height="60" rx="2"/>
+    <rect x="959" y="398" width="10" height="22" rx="2"/>
+  </g>
+  <g class="val">
+    <text x="348" y="412" fill="#64748b">0</text>
+    <text x="404" y="412" fill="#64748b">0</text>
+    <text x="460" y="400">12</text>
+    <text x="516" y="354">58</text>
+    <text x="572" y="316">96</text>
+    <text x="628" y="308">104</text>
+    <text x="684" y="311">101</text>
+    <text x="740" y="314">98</text>
+    <text x="796" y="305">107</text>
+    <text x="852" y="317">95</text>
+    <text x="908" y="352">60</text>
+    <text x="964" y="390">22</text>
+    <text x="1020" y="412" fill="#64748b">0</text>
+    <text x="1076" y="412" fill="#64748b">0</text>
+    <text x="1132" y="412" fill="#64748b">0</text>
+  </g>
+  <g class="idx">
+    <text x="348" y="442">15.15</text>
+    <text x="740" y="442">15.22</text>
+    <text x="1132" y="442">15.29</text>
+  </g>
+
+  <!-- the proof -->
+  <rect x="43" y="478" width="1114" height="120" rx="8" fill="#111827" stroke="#26324a"/>
+  <text x="71" y="524" font-size="20" fill="#f1f5f9">sum af alle minutter den dag</text>
+  <text x="71" y="566" font-size="20" fill="#f1f5f9">ringens egen dagstotal <tspan class="dim">(kommando 0x03)</tspan></text>
+  <text x="820" y="524" font-size="24" font-weight="700" fill="#86efac" text-anchor="end">1459</text>
+  <text x="820" y="566" font-size="24" font-weight="700" fill="#86efac" text-anchor="end">1459</text>
+  <path d="M846 516 h60 M846 558 h60 M906 516 v42" fill="none" stroke="#475569" stroke-width="1.5"/>
+  <path d="M906 537 h28" fill="none" stroke="#475569" stroke-width="1.5"/>
+  <text x="948" y="545" font-size="22" font-weight="700" fill="#facc15">stemmer ✓</text>
+
+  <text x="43" y="632" font-size="13" class="dim">Bytes og minutværdier er et eksempel. Opdelingen og summen 1459 er verificeret på ringen (firmware V138).</text>
+</svg>
