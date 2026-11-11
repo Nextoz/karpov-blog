@@ -357,6 +357,19 @@ summary:focus-visible {
   color: var(--accent);
 }
 
+/* Wide artwork between the hero and the first section. */
+.home-art {
+  margin: 0 0 4rem;
+}
+
+.home-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
 .home-section {
   margin: 0 0 5rem;
   padding-top: 3rem;
