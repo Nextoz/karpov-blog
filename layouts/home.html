@@ -18,6 +18,9 @@
       {{- with site.GetPage "/projekter" }}
       <a class="button button-secondary" href="{{ .RelPermalink }}">{{ if $isDA }}Se portfolio{{ else }}View portfolio{{ end }}</a>
       {{- end }}
+      {{- with site.GetPage "/ai-raadgivning" }}
+      <a class="button button-secondary" href="{{ .RelPermalink }}">{{ if $isDA }}AI-rådgivning{{ else }}AI consulting{{ end }}</a>
+      {{- end }}
     </div>
   </div>
   <div class="home-portrait-wrap">

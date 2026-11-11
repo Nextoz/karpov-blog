@@ -12,7 +12,7 @@
 {{- $ownPosts := $daPosts | complement $digests -}}
 # Evgeny Karpov
 
-> Evgeny Karpov is a senior software engineer in Copenhagen, Denmark, working with .NET, DevOps, platform engineering and AI agent systems. This is his personal site: a portfolio and a blog about getting software and AI systems to work in production. The site is in Danish, with English versions of the main pages and some posts.
+> Evgeny Karpov is a senior software engineer in Copenhagen, Denmark, working with .NET, DevOps, platform engineering and AI agent systems. He also works as a freelance AI consultant for small businesses. This is his personal site: a portfolio, his AI consulting offer with prices, and a blog about getting software and AI systems to work in production. The site is in Danish, with English versions of the main pages and some posts.
 
 Facts:
 
@@ -20,6 +20,7 @@ Facts:
 - Role: {{ site.Params.schema.jobTitle }} (DevOps, platform engineering, .NET backend, AI-assisted engineering)
 - Location: Copenhagen, Denmark
 - Experience: 6+ years of professional software development; Azure DevOps, CI/CD, Kubernetes, Bicep, Terraform, observability
+- Services: freelance AI consulting for small businesses in Denmark at fixed prices in DKK (AI assessment, a first automation, ongoing help), in Danish or English, in Copenhagen or remote; also freelance .NET and Azure DevOps work
 - Languages: Danish, English, Russian
 - Contact: evgeny@karpov.dk
 - Profiles: {{ delimit site.Params.schema.sameAs ", " }}

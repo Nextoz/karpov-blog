@@ -89,6 +89,40 @@
   "mainEntity" (dict "@type" "ItemList" "itemListElement" $items)
 -}}
 <script type="application/ld+json">{{ $collection | jsonify | safeJS }}</script>
+{{- else if (and .IsPage (eq .Params.schemaType "service")) }}
+{{- /* Service page: the service, its offers in DKK and the FAQ, all from front matter. */}}
+{{- $offers := slice -}}
+{{- range .Params.offers -}}
+  {{- $spec := dict "@type" "UnitPriceSpecification" "priceCurrency" "DKK" "valueAddedTaxIncluded" false -}}
+  {{- with .price }}{{ $spec = merge $spec (dict "price" .) }}{{ end -}}
+  {{- with .minPrice }}{{ $spec = merge $spec (dict "minPrice" .) }}{{ end -}}
+  {{- with .maxPrice }}{{ $spec = merge $spec (dict "maxPrice" .) }}{{ end -}}
+  {{- with .unitCode }}{{ $spec = merge $spec (dict "unitCode" .) }}{{ end -}}
+  {{- $offers = $offers | append (dict "@type" "Offer" "name" .name "description" .description "priceCurrency" "DKK" "priceSpecification" $spec "url" $.Permalink) -}}
+{{- end -}}
+{{- $service := dict
+  "@type" "Service"
+  "@id" (printf "%s#service" .Permalink)
+  "name" (.Title | plainify)
+  "serviceType" (.Params.serviceType | default "AI consulting")
+  "description" $pageDescription
+  "url" .Permalink
+  "inLanguage" .Language.Lang
+  "dateModified" $modified
+  "provider" $person
+  "areaServed" (slice (dict "@type" "City" "name" "Copenhagen") (dict "@type" "Country" "name" "Denmark"))
+  "audience" (dict "@type" "BusinessAudience" "name" "Small businesses")
+  "offers" $offers
+-}}
+{{- $graph := slice $service -}}
+{{- with .Params.faq -}}
+  {{- $questions := slice -}}
+  {{- range . -}}
+    {{- $questions = $questions | append (dict "@type" "Question" "name" .q "acceptedAnswer" (dict "@type" "Answer" "text" (.a | markdownify | plainify | htmlUnescape))) -}}
+  {{- end -}}
+  {{- $graph = $graph | append (dict "@type" "FAQPage" "@id" (printf "%s#faq" $.Permalink) "inLanguage" $.Language.Lang "mainEntity" $questions) -}}
+{{- end }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}</script>
 {{- else if (and .IsPage (eq .Section "posts")) }}
 <script type="application/ld+json">
 {

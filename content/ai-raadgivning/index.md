@@ -3,6 +3,33 @@ title: "AI-rådgivning til mindre virksomheder"
 description: "Praktisk hjælp til at få AI i brug i en mindre virksomhed: afklaring, en første automatisering og løbende hjælp til faste priser. København og remote."
 summary: "Praktisk hjælp til at få AI i brug i en mindre virksomhed, til faste priser."
 translationKey: "ai-consulting"
+schemaType: "service"
+serviceType: "AI-rådgivning"
+offers:
+  - name: "AI-afklaring"
+    description: "Et møde på 2–3 timer og en skriftlig anbefaling med de tre bedste muligheder, hvad de koster at bygge, og hvad de koster i drift."
+    price: 4500
+  - name: "Første automatisering"
+    description: "Én arbejdsgang bygget, testet og sat i drift, med dokumentation og overdragelse. Fast pris, aftalt før start."
+    minPrice: 15000
+    maxPrice: 25000
+  - name: "Løbende hjælp"
+    description: "Videreudvikling, fejlretning og sparring efter behov, pr. time."
+    price: 700
+    unitCode: "HUR"
+faq:
+  - q: "Hvad koster AI-rådgivning?"
+    a: "En AI-afklaring koster 4.500 kr. En første automatisering koster 15.000–25.000 kr. til fast pris, og løbende hjælp koster 700 kr. pr. time. Alle priser er ekskl. moms og gælder for aftaler, der indgås inden 31. marts 2027."
+  - q: "Hvem er det for?"
+    a: "Mindre virksomheder, som vil bruge AI i det daglige arbejde, men ikke har egne udviklere eller tid til at finde ud af, hvor de skal starte. I behøver ikke teknisk viden."
+  - q: "Kan vores data blive i EU?"
+    a: "Ja, det kan lade sig gøre. Jeg kan bygge løsningen på europæiske modeller og europæisk hosting, så data ikke forlader EU. Hvad der passer bedst til jer, indgår i afklaringen."
+  - q: "Hvor lang tid tager det?"
+    a: "Afklaringen er et møde på 2–3 timer og en skriftlig anbefaling. En første automatisering tager typisk 2–4 uger."
+  - q: "Arbejder du kun i København?"
+    a: "Jeg holder til i København og kommer gerne ud til virksomheder i Storkøbenhavn. Resten af landet klarer vi online. Jeg arbejder på dansk og engelsk."
+  - q: "Hvad hvis AI ikke er svaret på vores problem?"
+    a: "Så siger jeg det. Den første samtale er gratis, og anbefalingen fra afklaringen kan I bruge, uanset om I går videre med mig."
 ogImage: "images/og/ai-raadgivning.png"
 lastmod: 2026-11-11
 hidemeta: true
@@ -12,7 +39,7 @@ ShowWordCount: false
 showtoc: false
 ---
 
-Mange virksomheder har prøvet en chatbot og er ikke kommet længere. Jeg hjælper mindre virksomheder med at finde de opgaver, hvor AI faktisk sparer tid, og med at bygge løsningen, så den også virker om tre måneder.
+Mange virksomheder har prøvet en chatbot og er ikke kommet længere. Jeg er freelance AI-konsulent i København og hjælper mindre virksomheder med at finde de opgaver, hvor AI faktisk sparer tid, og med at bygge løsningen, så den også virker om tre måneder.
 
 ## Det kan jeg hjælpe med
 
@@ -52,6 +79,10 @@ Alle priser er ekskl. moms. Går I videre med en automatisering, trækker jeg pr
 - **Jeg er ikke bundet til én leverandør.** Jeg har kørt de samme opgaver på amerikanske, kinesiske og europæiske modeller, også hos en europæisk cloududbyder, og vælger efter opgaven, prisen og hvor data ender.
 - **Sikkerhed er med fra start.** Læs, [hvordan jeg arbejder med sikkerhed](/projekter/#sikkerhed) i mine egne agentsystemer.
 - **Jeg arbejder allerede direkte med en lokal virksomhed.** Se [Vintønden](/projekter/#vintonden) i min portfolio.
+
+## Ofte stillede spørgsmål
+
+{{< faq >}}
 
 <div class="contact-cta">
 

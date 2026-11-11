@@ -229,7 +229,7 @@ Min værdi er, at jeg både forstår applikationskode og de systemer, der skal b
 
 <div class="contact-cta">
 
-**Skal vi tale sammen?** Jeg er åben for fastansættelse og for freelance- og kontraktopgaver i Storkøbenhavn.
+**Skal vi tale sammen?** Jeg er åben for fastansættelse og for freelance- og kontraktopgaver i Storkøbenhavn. Jeg hjælper også mindre virksomheder med at få AI i brug: se [AI-rådgivning og priser](/ai-raadgivning/).
 
 Skriv til [evgeny@karpov.dk](mailto:evgeny@karpov.dk) eller på [LinkedIn](https://www.linkedin.com/in/evgenykarpov91/).
 

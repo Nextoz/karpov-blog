@@ -219,7 +219,7 @@ My value is that I understand both application code and the systems that build, 
 
 <div class="contact-cta">
 
-**Want to talk?** I am open to permanent roles and to freelance and contract work in Greater Copenhagen.
+**Want to talk?** I am open to permanent roles and to freelance and contract work in Greater Copenhagen. I also help small businesses get AI into use: see [AI consulting and prices](/en/ai-consulting/).
 
 Write to [evgeny@karpov.dk](mailto:evgeny@karpov.dk) or on [LinkedIn](https://www.linkedin.com/in/evgenykarpov91/).
 

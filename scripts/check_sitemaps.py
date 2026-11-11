@@ -257,6 +257,23 @@ def main() -> int:
     require_text(llms, "## Weekly AI research digest", "llms.txt")
     require_text(llms, f"{BASE}/projekter/", "llms.txt")
 
+    # AI consulting offer: both languages, in the sitemaps, with Service and FAQ structured data.
+    require(da, f"{BASE}/ai-raadgivning/", "Danish sitemap")
+    require(en, f"{BASE}/en/ai-consulting/", "English sitemap")
+    service = read_html(public, "ai-raadgivning")
+    en_service = read_html(public, "en/ai-consulting")
+    for label, html in (("AI-raadgivning", service), ("AI consulting", en_service)):
+        require_text(html, '"@type":"Service"', f"{label} structured data")
+        require_text(html, '"@type":"FAQPage"', f"{label} FAQ structured data")
+        require_text(html, '"priceCurrency":"DKK"', f"{label} offer currency")
+        require_one_h1(html, label)
+        check_json_ld(html, label)
+    require_text(service, f"{BASE}/images/og/ai-raadgivning.png", "AI-raadgivning share image")
+    require_text(en_service, f"{BASE}/images/og/ai-raadgivning.en.png", "AI consulting share image")
+    require_text(llms, f"{BASE}/ai-raadgivning/", "llms.txt")
+    require_text(llms, f"{BASE}/en/ai-consulting/", "llms.txt")
+    require_text(home, "/ai-raadgivning/", "Danish home link to AI-raadgivning")
+
     check_json_ld(home, "Danish home")
     check_json_ld(en_home, "English home")
     check_json_ld(portfolio, "Portfolio")
