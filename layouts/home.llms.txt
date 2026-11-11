@@ -34,6 +34,9 @@ Facts:
 {{- with $da.GetPage "/ai-raadgivning" }}
 - [AI consulting for small businesses, with prices (Danish)]({{ .Permalink }}): {{ .Description }}
 {{- end }}
+{{- with $en.GetPage "/ai-raadgivning" }}
+- [AI consulting for small businesses, with prices in DKK (English)]({{ .Permalink }}): {{ .Description }}
+{{- end }}
 {{- with $da.GetPage "/om" }}
 - [About (Danish)]({{ .Permalink }}): {{ .Description }}
 {{- end }}

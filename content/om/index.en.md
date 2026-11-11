@@ -43,6 +43,8 @@ I also write about technology, AI, DevOps and digitalization on this blog. Partl
 
 I am open to permanent roles and to freelance and contract work in Greater Copenhagen, especially in DevOps, platform engineering, site reliability and .NET backend work close to infrastructure.
 
+I also help small businesses get AI into use. See [AI consulting and prices](/en/ai-consulting/).
+
 ## What I build myself
 
 Alongside work I build my own systems and use them every day: a phone app on top of my Obsidian vault, scheduled scouts that find events and research, and an app for my smart ring where the data stays with me. You can read about them in my [portfolio](/en/projects/), where I also describe [how I work with security](/en/projects/#security).

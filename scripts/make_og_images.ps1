@@ -115,7 +115,9 @@ New-OgImage -Path (Join-Path $outDir 'digest.png') -Command 'tail -f ugens-ai-fo
 # Standalone pages opt in with "ogImage: images/og/<name>.png" in their front matter.
 New-OgImage -Path (Join-Path $outDir 'ai-raadgivning.png') -Command 'cat ai-raadgivning.md' `
     -Title 'AI-rådgivning til mindre virksomheder' -Footer 'Evgeny Karpov · faste priser'
-$made += 'default.png', 'default.en.png', 'digest.png', 'ai-raadgivning.png'
+New-OgImage -Path (Join-Path $outDir 'ai-raadgivning.en.png') -Command 'cat ai-consulting.md' `
+    -Title 'AI consulting for small businesses' -Footer 'Evgeny Karpov · fixed prices'
+$made += 'default.png', 'default.en.png', 'digest.png', 'ai-raadgivning.png', 'ai-raadgivning.en.png'
 
 Get-ChildItem (Join-Path $Root 'content/posts') -Filter '*.md' -File | Where-Object Name -notlike '_index*' | ForEach-Object {
     $text = Get-Content $_.FullName -Raw -Encoding utf8
