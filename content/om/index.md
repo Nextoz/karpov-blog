@@ -45,6 +45,8 @@ Jeg er åben for fastansættelse og for freelance- og kontraktopgaver i Storkøb
 - Observability og driftbarhed
 - AI-understøttede engineering workflows
 
+Jeg hjælper også mindre virksomheder med at få AI i brug. Se [AI-rådgivning og priser](/ai-raadgivning/).
+
 ---
 
 ## Min tilgang

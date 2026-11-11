@@ -191,6 +191,12 @@ pageRef = "/projekter"
 weight = 30
 
 [[languages.da.menu.main]]
+identifier = "ai-consulting"
+name = "AI-rådgivning"
+pageRef = "/ai-raadgivning"
+weight = 35
+
+[[languages.da.menu.main]]
 identifier = "about"
 name = "Om mig"
 pageRef = "/om"
