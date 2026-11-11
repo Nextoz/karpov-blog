@@ -3,6 +3,7 @@ title: "AI-rådgivning til mindre virksomheder"
 description: "Praktisk hjælp til at få AI i brug i en mindre virksomhed: afklaring, en første automatisering og løbende hjælp til faste priser. København og remote."
 summary: "Praktisk hjælp til at få AI i brug i en mindre virksomhed, til faste priser."
 translationKey: "ai-consulting"
+ogImage: "images/og/ai-raadgivning.png"
 lastmod: 2026-11-11
 hidemeta: true
 ShowReadingTime: false

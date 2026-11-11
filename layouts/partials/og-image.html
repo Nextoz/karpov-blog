@@ -15,4 +15,8 @@
     {{- $img = "images/og/digest.png" -}}
   {{- end -}}
 {{- end -}}
+{{- /* A page can name its own image with "ogImage" in front matter. */ -}}
+{{- with .Params.ogImage -}}
+  {{- if fileExists (printf "static/%s" .) -}}{{- $img = . -}}{{- end -}}
+{{- end -}}
 {{- return (absURL $img) -}}
