@@ -1,0 +1,14 @@
+/* Scoped to the Vault Companion case study; source screenshots remain unaltered. */
+.vc-intro{padding:28px;border:1px solid var(--border);border-radius:18px;background:var(--entry);margin:28px 0}
+.vc-intro .vc-eyebrow{font:700 12px/1.5 system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--secondary);margin:0 0 12px}
+.vc-intro p:last-child{margin-bottom:0}
+.vc-shot{margin:32px auto;max-width:430px}
+.vc-screen{position:relative;overflow:hidden;aspect-ratio:554/1200;background:#000;border:1px solid #343842;border-radius:18px;box-shadow:0 16px 40px #0002}
+.vc-screen img{position:absolute;top:0;left:0;width:133.214%;max-width:none!important;margin:0!important;border-radius:0!important}
+.vc-screen--character{aspect-ratio:573/1200}
+.vc-screen--character img{width:133.333%}
+.vc-shot figcaption,.vc-diagram figcaption{font:14px/1.6 system-ui,sans-serif;color:var(--secondary);margin-top:14px}
+.vc-diagram{margin:32px 0}
+.vc-diagram img{width:100%;border-radius:16px}
+.vc-takeaway{border-left:4px solid #5086ff;padding:6px 0 6px 22px;margin:30px 0;font-size:1.12em}
+@media print{.vc-screen{box-shadow:none}.vc-shot,.vc-diagram{break-inside:avoid}}
