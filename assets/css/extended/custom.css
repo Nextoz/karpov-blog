@@ -372,6 +372,7 @@ summary:focus-visible {
 
 .post-content figure > a {
   display: block;
+  cursor: zoom-in;
 }
 
 .home-art img {

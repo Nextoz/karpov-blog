@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="660" viewBox="0 0 1600 660" role="img" aria-labelledby="t d">
-<title id="t">Karpov: terminal på en mur i København</title>
-<desc id="d">Et terminalvindue malet på en mørk murstensvæg. Navnet KARPOV er sprayet som graffiti i mint og blå med gule konturer og maling, der løber. Under vinduet er Københavns skyline lavet som stencil.</desc>
+<title id="t">Karpov: a terminal on a wall in Copenhagen</title>
+<desc id="d">A terminal window painted on a dark brick wall. The name KARPOV is sprayed as graffiti in mint and blue with yellow outlines and dripping paint. Below the window, the Copenhagen skyline as a stencil.</desc>
 <defs>
 <style>
 text { font-family: "Cascadia Code","Cascadia Mono","JetBrains Mono","SF Mono",ui-monospace,Menlo,Consolas,"Liberation Mono",monospace; }
@@ -793,30 +793,30 @@ text { font-family: "Cascadia Code","Cascadia Mono","JetBrains Mono","SF Mono",u
 <use xlink:href="#LV" href="#LV" transform="translate(1095.0 224.5) rotate(5.7 50 70) scale(1.35)"/>
 </g>
 <g stroke-linecap="round" fill="none">
-<path d="M387 402v119" stroke="#060a16" stroke-width="13"/>
-<path d="M387 402v119" stroke="#38bdf8" stroke-width="7"/>
-<circle cx="387" cy="522" r="6.0" fill="#38bdf8" stroke="#060a16" stroke-width="3"/>
+<path d="M387 402v46" stroke="#060a16" stroke-width="13"/>
+<path d="M387 402v46" stroke="#38bdf8" stroke-width="7"/>
+<circle cx="387" cy="448" r="6.0" fill="#38bdf8" stroke="#060a16" stroke-width="3"/>
 <path d="M491 402v44" stroke="#060a16" stroke-width="17"/>
 <path d="M491 402v44" stroke="#f472b6" stroke-width="11"/>
 <circle cx="491" cy="446" r="9.3" fill="#f472b6" stroke="#060a16" stroke-width="3"/>
-<path d="M523 437v110" stroke="#060a16" stroke-width="13"/>
-<path d="M523 437v110" stroke="#38bdf8" stroke-width="7"/>
-<circle cx="523" cy="547" r="6.0" fill="#38bdf8" stroke="#060a16" stroke-width="3"/>
-<path d="M649 437v88" stroke="#060a16" stroke-width="13"/>
-<path d="M649 437v88" stroke="#f472b6" stroke-width="7"/>
-<circle cx="649" cy="525" r="6.0" fill="#f472b6" stroke="#060a16" stroke-width="3"/>
-<path d="M667 417v73" stroke="#060a16" stroke-width="17"/>
-<path d="M667 417v73" stroke="#38bdf8" stroke-width="11"/>
-<circle cx="667" cy="491" r="9.3" fill="#38bdf8" stroke="#060a16" stroke-width="3"/>
-<path d="M791 417v83" stroke="#060a16" stroke-width="15"/>
-<path d="M791 417v83" stroke="#f472b6" stroke-width="9"/>
-<circle cx="791" cy="500" r="7.6" fill="#f472b6" stroke="#060a16" stroke-width="3"/>
-<path d="M817 434v71" stroke="#060a16" stroke-width="13"/>
-<path d="M817 434v71" stroke="#f472b6" stroke-width="7"/>
-<circle cx="817" cy="505" r="6.0" fill="#f472b6" stroke="#060a16" stroke-width="3"/>
-<path d="M887 348v118" stroke="#060a16" stroke-width="13"/>
-<path d="M887 348v118" stroke="#38bdf8" stroke-width="7"/>
-<circle cx="887" cy="466" r="6.0" fill="#38bdf8" stroke="#060a16" stroke-width="3"/>
+<path d="M523 437v14" stroke="#060a16" stroke-width="13"/>
+<path d="M523 437v14" stroke="#38bdf8" stroke-width="7"/>
+<circle cx="523" cy="451" r="6.0" fill="#38bdf8" stroke="#060a16" stroke-width="3"/>
+<path d="M649 437v14" stroke="#060a16" stroke-width="13"/>
+<path d="M649 437v14" stroke="#f472b6" stroke-width="7"/>
+<circle cx="649" cy="451" r="6.0" fill="#f472b6" stroke="#060a16" stroke-width="3"/>
+<path d="M667 417v31" stroke="#060a16" stroke-width="17"/>
+<path d="M667 417v31" stroke="#38bdf8" stroke-width="11"/>
+<circle cx="667" cy="448" r="9.3" fill="#38bdf8" stroke="#060a16" stroke-width="3"/>
+<path d="M791 417v31" stroke="#060a16" stroke-width="15"/>
+<path d="M791 417v31" stroke="#f472b6" stroke-width="9"/>
+<circle cx="791" cy="448" r="7.6" fill="#f472b6" stroke="#060a16" stroke-width="3"/>
+<path d="M817 434v14" stroke="#060a16" stroke-width="13"/>
+<path d="M817 434v14" stroke="#f472b6" stroke-width="7"/>
+<circle cx="817" cy="448" r="6.0" fill="#f472b6" stroke="#060a16" stroke-width="3"/>
+<path d="M887 348v100" stroke="#060a16" stroke-width="13"/>
+<path d="M887 348v100" stroke="#38bdf8" stroke-width="7"/>
+<circle cx="887" cy="448" r="6.0" fill="#38bdf8" stroke="#060a16" stroke-width="3"/>
 <path d="M1015 420v111" stroke="#060a16" stroke-width="15"/>
 <path d="M1015 420v111" stroke="#38bdf8" stroke-width="9"/>
 <circle cx="1015" cy="532" r="7.6" fill="#38bdf8" stroke="#060a16" stroke-width="3"/>
