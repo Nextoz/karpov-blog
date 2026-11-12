@@ -359,7 +359,19 @@ summary:focus-visible {
 
 /* Wide artwork between the hero and the first section. */
 .home-art {
-  margin: 0 0 4rem;
+  margin: 0 0 2.5rem;
+}
+
+/* Captions under post figures: quieter than the theme default. */
+.post-content figure > figcaption {
+  margin-top: 0.5rem;
+  color: var(--secondary);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.post-content figure > a {
+  display: block;
 }
 
 .home-art img {

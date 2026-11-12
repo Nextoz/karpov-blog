@@ -81,8 +81,10 @@ På min ring svarede den med noget andet: én besked pr. kvarter, hver med 15 sm
 Testen var enkel. Vi lagde alle minutværdierne for dagen sammen. Summen blev 1459. Ringens egen totaltæller for dagen, som hentes med en helt anden kommando, sagde også 1459.
 
 <figure>
-  <img src="/images/ring-frame-decoded.svg" alt="En Bluetooth-besked på 20 bytes skilt ad: første byte er kommandoen 0x10, de næste fire er et tidsstempel, og de sidste femten er skridt pr. minut. Summen for dagen er 1459, det samme som ringens egen total." width="1200" height="660" style="height: auto;" loading="lazy">
-  <figcaption>Én besked fra ringen. Bytes og minutværdier er et eksempel; opdelingen og summen er fra min egen ring.</figcaption>
+  <a href="/images/ring-frame-decoded.svg">
+    <img src="/images/ring-frame-decoded.svg" alt="En Bluetooth-besked på 20 bytes skilt ad: første byte er kommandoen 0x10, de næste fire er et tidsstempel, og de sidste femten er skridt pr. minut. Summen for dagen er 1459, det samme som ringens egen total." width="760" height="650" style="height: auto;" loading="lazy">
+  </a>
+  <figcaption>Én besked fra ringen. Bytes og minutværdier er et eksempel; opdelingen og summen er fra min egen ring. Tryk på billedet for at se det i fuld størrelse.</figcaption>
 </figure>
 
 Først dér var det viden og ikke et gæt. Og det var data, som open source-appen ikke afkodede.
