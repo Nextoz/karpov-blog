@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="650" viewBox="0 0 760 650" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="594" viewBox="0 0 760 594" role="img" aria-labelledby="title desc">
 <title id="title">Én besked fra ringen, skilt ad</title>
 <desc id="desc">En Bluetooth-besked på 20 bytes: første byte er kommandoen 0x10, de næste fire er et tidsstempel, og de sidste femten er skridt pr. minut. Summen af alle minutter på dagen er 1459, det samme som ringens egen dagstotal.</desc>
 <style>
@@ -7,8 +7,8 @@ text { font-family: "Cascadia Code", "Cascadia Mono", "JetBrains Mono", "SF Mono
 .hex { font-size: 20px; font-weight: 700; text-anchor: middle; }
 .mid { text-anchor: middle; }
 </style>
-<rect width="760" height="650" rx="10" fill="#0b1020"/>
-<rect x="0.5" y="0.5" width="759" height="649" rx="10" fill="none" stroke="#26324a"/>
+<rect width="760" height="594" rx="10" fill="#0b1020"/>
+<rect x="0.5" y="0.5" width="759" height="593" rx="10" fill="none" stroke="#26324a"/>
 <text x="28" y="46" style="font-size:18px"><tspan fill="#86efac">evgeny@kbh</tspan><tspan fill="#94a3b8">:</tspan><tspan fill="#38bdf8">~/ring-lab</tspan><tspan fill="#94a3b8">$ </tspan><tspan fill="#f1f5f9">python decode.py --frame</tspan></text>
 <text x="28" y="74" class="dim">20 bytes · ingen checksum · ingen kryptering</text>
 <text x="56.0" y="100" class="mid dim">[0]</text>
@@ -93,6 +93,4 @@ text { font-family: "Cascadia Code", "Cascadia Mono", "JetBrains Mono", "SF Mono
 <text x="524" y="542" style="font-size:22px" font-weight="700" fill="#86efac" text-anchor="end">1459</text>
 <path d="M536 497 h22 M536 535 h22 M558 497 v38 M558 516 h16" fill="none" stroke="#475569" stroke-width="1.5"/>
 <text x="584" y="523" style="font-size:20px" font-weight="700" fill="#facc15">stemmer ✓</text>
-<text x="28" y="596" class="dim">Bytes og minutværdier er et eksempel. Opdelingen og summen</text>
-<text x="28" y="618" class="dim">1459 er verificeret på ringen (firmware V138).</text>
 </svg>
