@@ -4,7 +4,7 @@ description: "Portfolio for Evgeny Karpov: Azure DevOps, .NET, Kubernetes, CI/CD
 summary: "Udvalgte projekter og erfaringer inden for DevOps, platform engineering, .NET backend, cloud, CI/CD, observability og AI-assisteret softwareudvikling."
 translationKey: "portfolio"
 schemaType: "portfolio"
-lastmod: 2026-11-09
+lastmod: 2026-11-15
 hidemeta: true
 ShowReadingTime: false
 ShowShareButtons: false
@@ -139,7 +139,8 @@ Det er et lille system i drift med de samme problemer som et stort: jobs, der fe
 **Område:** iOS, Bluetooth, dataejerskab  
 **Teknologier:** Swift, iOS, Bluetooth LE, Shortcuts, GitHub Actions
 
-**Kode:** [github.com/Nextoz/PulseLoopiOS](https://github.com/Nextoz/PulseLoopiOS)
+**Kode:** [github.com/Nextoz/PulseLoopiOS](https://github.com/Nextoz/PulseLoopiOS)  
+**Indlæg:** [Reverse engineering med AI: ringen til 191 kroner](/posts/reverse-engineering-med-ai/)
 
 Jeg bruger en billig smart ring og ville eje mine egne data. Derfor har jeg forket open source-appen PulseLoop. Appen taler direkte med ringen over Bluetooth, uden konto og uden netværkskald til leverandøren, og data bliver på telefonen, indtil jeg selv eksporterer dem.
 

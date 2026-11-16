@@ -1,5 +1,6 @@
 ---
 title: "AI-rådgivning til mindre virksomheder"
+seoTitle: "AI-konsulent i København: AI-rådgivning til faste priser"
 description: "Praktisk hjælp til at få AI i brug i en mindre virksomhed: afklaring, en første automatisering og løbende hjælp til faste priser. København og remote."
 summary: "Praktisk hjælp til at få AI i brug i en mindre virksomhed, til faste priser."
 translationKey: "ai-consulting"
@@ -31,7 +32,7 @@ faq:
   - q: "Hvad hvis AI ikke er svaret på vores problem?"
     a: "Så siger jeg det. Den første samtale er gratis, og anbefalingen fra afklaringen kan I bruge, uanset om I går videre med mig."
 ogImage: "images/og/ai-raadgivning.png"
-lastmod: 2026-11-11
+lastmod: 2026-11-15
 hidemeta: true
 ShowReadingTime: false
 disableShare: true

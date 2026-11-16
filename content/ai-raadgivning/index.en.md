@@ -1,5 +1,6 @@
 ---
 title: "AI consulting for small businesses"
+seoTitle: "AI consultant in Copenhagen: fixed-price AI consulting"
 description: "Practical help getting AI into use in a small business: an assessment, a first automation and ongoing help at fixed prices in DKK. Copenhagen and remote."
 summary: "Practical help getting AI into use in a small business, at fixed prices."
 translationKey: "ai-consulting"
@@ -32,7 +33,7 @@ faq:
     a: "Then I will say so. The first call is free, and you can use the recommendation from the assessment whether or not you continue with me."
 url: "/en/ai-consulting/"
 ogImage: "images/og/ai-raadgivning.en.png"
-lastmod: 2026-11-11
+lastmod: 2026-11-15
 hidemeta: true
 ShowReadingTime: false
 disableShare: true

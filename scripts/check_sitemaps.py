@@ -273,6 +273,22 @@ def main() -> int:
     require_text(llms, f"{BASE}/ai-raadgivning/", "llms.txt")
     require_text(llms, f"{BASE}/en/ai-consulting/", "llms.txt")
     require_text(home, "/ai-raadgivning/", "Danish home link to AI-raadgivning")
+    require_text(service, "<title>AI-konsulent i København", "AI-raadgivning search title")
+    require_text(en_service, "<title>AI consultant in Copenhagen", "AI consulting search title")
+
+    # Project cards link to their write-ups.
+    require_text(home, "/posts/vault-companion/", "Danish home Vault Companion card link")
+    require_text(portfolio, "/posts/reverse-engineering-med-ai/", "Portfolio link to the ring post")
+    require_text(portfolio, "https://github.com/Nextoz/repo-radar", "Portfolio Repo Radar card")
+    require_text(en_portfolio, "https://github.com/Nextoz/repo-radar", "English portfolio Repo Radar card")
+
+    # Tag and category lists stay out of the index and the sitemaps.
+    for sitemap, locs, prefix in (("da/sitemap.xml", da, BASE), ("en/sitemap.xml", en, f"{BASE}/en")):
+        for path in ("tags/", "tags/ai/", "categories/"):
+            reject(locs, f"{prefix}/{path}", sitemap)
+    for relative in ("tags", "tags/ai", "en/tags"):
+        require_text(read_html(public, relative).replace(chr(34), ""), "name=robots content=noindex", f"{relative} robots")
+    require_text(home.replace(chr(34), ""), "name=robots content=index", "Danish home robots")
 
     check_json_ld(home, "Danish home")
     check_json_ld(en_home, "English home")

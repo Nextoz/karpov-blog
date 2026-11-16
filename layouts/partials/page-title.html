@@ -1,6 +1,7 @@
 {{- /* Returns the page's descriptive title without the site-name suffix.
        Shared by <title>, og:title and twitter:title so they cannot drift apart. */ -}}
-{{- $title := .Title | default site.Title -}}
+{{- /* seoTitle (front matter) replaces the title in <title> and share tags only; the page's H1 stays .Title. */ -}}
+{{- $title := .Params.seoTitle | default .Title | default site.Title -}}
 {{- if .IsHome -}}
   {{- $title = printf "%s — %s" site.Title (site.Params.tagline | default "") -}}
 {{- end -}}
