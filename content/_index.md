@@ -1,6 +1,6 @@
 ---
 title: "Evgeny Karpov"
-description: "Evgeny Karpovs blog om software engineering, DevOps, .NET, cloud og AI-systemer, der skal fungere i produktion."
+description: "Evgeny Karpov, senior software engineer i København: blog og portfolio om DevOps, .NET, cloud og AI-systemer i drift, og AI-rådgivning til mindre virksomheder."
 summary: "Noter om software engineering, DevOps, .NET, cloud og AI-systemer i produktion."
 translationKey: "home"
 hidemeta: true

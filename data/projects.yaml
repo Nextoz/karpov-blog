@@ -5,7 +5,7 @@
 - id: vault-companion
   home: true
   status: in-use
-  page: /posts/vault-companion-min-egen-app
+  page: /posts/vault-companion
   stack: [TypeScript, React PWA, Cloudflare Workers, GitHub, AI agents]
   da:
     name: Vault Companion
@@ -42,6 +42,19 @@
     name: Ring app
     status: In daily use, private
     summary: My fork of the open-source app PulseLoop for an inexpensive smart ring. The app talks to the ring directly over Bluetooth, with no account and no vendor cloud, and passes the data on to my own vault.
+
+- id: repo-radar
+  status: coming
+  url: https://github.com/Nextoz/repo-radar
+  stack: [Python, GitHub Actions, GitHub API, AI agents]
+  da:
+    name: Repo Radar
+    status: Under opbygning, åben kode
+    summary: Et tidligt varsel for open source. Den følger tusindvis af nye repositories, gemmer deres stjernetal hver tredje time og skal vise dem, der begynder at vokse, flere dage før de når GitHub Trending. Indsamlingen kører; dashboardet er næste skridt.
+  en:
+    name: Repo Radar
+    status: In progress, open source
+    summary: An early warning for open source. It watches thousands of new repositories, records their star counts every three hours and is meant to show the ones that start to grow, days before they reach GitHub Trending. The collector runs; the dashboard is next.
 
 - id: copenhagen-live
   status: coming
