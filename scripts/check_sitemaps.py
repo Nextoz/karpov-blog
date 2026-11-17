@@ -334,9 +334,10 @@ def main() -> int:
         if "Powered by" in footer.group(1):
             raise AssertionError(f"{label} footer still shows the theme credit instead of contact details")
         require_text(footer.group(1).replace(chr(34), ""), "href=mailto:evgeny@karpov.dk", f"{label} footer email")
-        # The footer override keeps the theme's scripts: scroll-to-top link, menu scroll memory, theme toggle.
+        # The footer override keeps the theme's scripts (menu scroll memory, theme toggle); scroll-to-top is switched off.
         flat = html.replace(chr(34), "")
-        require_text(flat, "id=top-link", f"{label} scroll-to-top link")
+        if "id=top-link" in flat:
+            raise AssertionError(f"{label} should not show the scroll-to-top button")
         require_text(html, "menu-scroll-position", f"{label} footer menu script")
         if not re.search(r"setItem\([\"'`]pref-theme", html):
             raise AssertionError(f"{label} is missing the theme toggle script")
@@ -353,6 +354,51 @@ def main() -> int:
         if not vintonden_heading or not twoday_heading or vintonden_heading.start() > twoday_heading.start():
             raise AssertionError(f"{label}: Vintønden must come before the employer write-ups")
     require_text(llms, f"{BASE}/kontakt/", "llms.txt contact page")
+
+    # Quick fixes after the 17 Nov re-review.
+    require_text(home, "<title>Evgeny Karpov — freelance AI- og DevOps-konsulent i København</title>", "Danish home title says freelance")
+    require_text(en_home, "<title>Evgeny Karpov — freelance AI and DevOps consultant, Copenhagen</title>", "English home title says freelance")
+    for label, html in (("Unpaired Danish post", unpaired_post), ("Danish post", da_post), ("English post", en_post)):
+        require_text(html.replace(chr(34), ""), "post-cta", f"{label} contact block")
+        require_text(html.replace(chr(34), ""), "href=mailto:evgeny@karpov.dk?subject=", f"{label} contact button")
+    require_text(da_post, "Har du en opgave?", "Danish post contact copy")
+    require_text(en_post, "Got a project?", "English post contact copy")
+    require_text(da_post, "/projekter/#kontraktopgaver", "Danish post contract-work button")
+    require_text(en_post, "/en/projects/#contract-work", "English post contract-work button")
+    digest = read_html(public, "posts/ugens-ai-research-2026-11-15")
+    if "post-cta" in digest:
+        raise AssertionError("AI-assembled digests should not get the contact block")
+    if not re.search(r">\s*English\s*</a>", da_post):
+        raise AssertionError("Danish post translation link should read 'English'")
+    if not re.search(r">\s*Dansk\s*</a>", en_post):
+        raise AssertionError("English post translation link should read 'Dansk'")
+    for label, html in (("Danish home", home), ("English home", en_home), ("Portfolio", portfolio), ("English portfolio", en_portfolio)):
+        for phrase in ("jobopslag", "job postings"):
+            if phrase in html:
+                raise AssertionError(f"{label} still mentions {phrase!r}")
+    require_text(about, "Det kan du hyre mig til", "About hire heading")
+    if "Site Reliability Engineering" in about:
+        raise AssertionError("About should list tasks under the hire heading, not job titles")
+    # Breadcrumbs: structured data starts at the home page; no lone "Start ›" crumb on top-level pages.
+    def breadcrumb_names(html: str) -> list[str]:
+        for block in re.findall(r'<script\s+type=["\']?application/ld\+json["\']?[^>]*>(.*?)</script>', html, flags=re.DOTALL):
+            data = json.loads(block)
+            if data.get("@type") == "BreadcrumbList":
+                items = sorted(data["itemListElement"], key=lambda item: item["position"])
+                if [item["position"] for item in items] != list(range(1, len(items) + 1)):
+                    raise AssertionError("Breadcrumb positions must run 1..n")
+                return [item["name"] for item in items]
+        raise AssertionError("No BreadcrumbList found")
+    if breadcrumb_names(service) != ["Start", "AI-rådgivning til mindre virksomheder"]:
+        raise AssertionError(f"AI-raadgivning breadcrumb is {breadcrumb_names(service)}")
+    post_crumbs = breadcrumb_names(unpaired_post)
+    if post_crumbs[:2] != ["Start", "Blog"] or len(post_crumbs) != 3:
+        raise AssertionError(f"Post breadcrumb should be Start, Blog, title; got {post_crumbs}")
+    if breadcrumb_names(en_post)[0] != "Home":
+        raise AssertionError("English breadcrumbs should start with Home")
+    if "class=breadcrumbs" in service.replace(chr(34), ""):
+        raise AssertionError("Top-level pages should not show a breadcrumb")
+    require_text(unpaired_post.replace(chr(34), ""), "class=breadcrumbs", "Post breadcrumb")
 
     check_json_ld(home, "Danish home")
     check_json_ld(en_home, "English home")

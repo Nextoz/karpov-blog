@@ -34,17 +34,17 @@ Jeg interesserer mig især for, hvordan teams kan levere software hurtigere og m
 
 ---
 
-## Hvad jeg gerne vil arbejde med
+## Det kan du hyre mig til
 
-Jeg tager freelance- og kontraktopgaver i Storkøbenhavn, hybrid eller remote, især inden for:
+Jeg tager freelance- og kontraktopgaver i Storkøbenhavn, hybrid eller remote. Typiske opgaver:
 
-- DevOps Engineering
-- Platform Engineering
-- Site Reliability Engineering
-- .NET backend og cloud-native systemer
-- Azure DevOps og CI/CD-modernisering
-- Observability og driftbarhed
-- AI-understøttede engineering workflows
+- Bygge og forbedre CI/CD-pipelines og release-flows i Azure DevOps
+- Infrastructure as code med Bicep eller Terraform, så miljøer kan genskabes
+- Deployments, autoskalering og fejlsøgning med Docker, Kubernetes og Helm
+- .NET-backend: nye features, opgraderinger og legacy, der skal holdes kørende
+- Logs, metrics og tracing, så fejl bliver opdaget, før brugerne opdager dem
+- Sikkerhed i leverancen: sårbare afhængigheder, secrets og adgang uden langlivede nøgler
+- AI i udviklingsarbejdet, med klare grænser for, hvad agenterne må
 
 Jeg hjælper også mindre virksomheder med at få AI i brug. Se [AI-rådgivning og priser](/ai-raadgivning/).
 

@@ -1,0 +1,21 @@
+{{- /* Site override of PaperMod's breadcrumbs: only shown when there is a level between the
+       home page and this page (e.g. Start › Blog on a post), and without a trailing chevron,
+       so top-level pages no longer show a lone "Start ›". */ -}}
+{{- if (.Param "ShowBreadCrumbs") -}}
+{{- $ancestors := .Ancestors.Reverse -}}
+{{- if gt (len $ancestors) 1 }}
+<nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    {{- range $i, $bc := $ancestors }}
+        {{- if eq $i 0 }}
+            <a href="{{ $bc.RelPermalink }}">{{ i18n "home" | default "Home" }}</a>
+        {{- else }}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="{{ $bc.RelPermalink }}">{{ $bc.Title }}</a>
+        {{- end }}
+    {{- end }}
+</nav>
+{{- end }}
+{{- end -}}

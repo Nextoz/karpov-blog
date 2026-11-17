@@ -40,9 +40,17 @@ I try to be pragmatic, reliable and clear. I care about understanding the system
 
 I also write about technology, AI, DevOps and digitalization on this blog. Partly to share ideas, partly to force myself to think more clearly.
 
-## What I am looking for
+## What you can hire me for
 
-I take freelance and contract work in Greater Copenhagen, hybrid or remote, especially in DevOps, platform engineering, site reliability and .NET backend work close to infrastructure.
+I take freelance and contract work in Greater Copenhagen, hybrid or remote. Typical tasks:
+
+- Building and improving CI/CD pipelines and release flows in Azure DevOps
+- Infrastructure as code with Bicep or Terraform, so environments can be recreated
+- Deployments, autoscaling and troubleshooting with Docker, Kubernetes and Helm
+- .NET backend: new features, upgrades and legacy code that has to keep running
+- Logs, metrics and tracing, so problems are caught before users notice them
+- Security in delivery: vulnerable dependencies, secrets and access without long-lived keys
+- AI in development work, with clear limits on what the agents may do
 
 I also help small businesses get AI into use. See [AI consulting and prices](/en/ai-consulting/).
 
