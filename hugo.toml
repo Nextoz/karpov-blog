@@ -16,10 +16,12 @@ unsafe = true
 [params]
 
 ShowLanguageSwitcher = true
+# Translation links on posts read "English" / "Dansk" instead of "En" / "Da".
+displayFullLangName = true
 env = "production"
 title = "Evgeny Karpov"
 description = "Engineering notes fra København om DevOps, platform engineering, .NET, observability og AI-systemer, der skal fungere i produktion."
-tagline = "DevOps, platform engineering og AI-systemer"
+tagline = "freelance AI-konsulent og .NET/DevOps i København"
 author = "Evgeny Karpov"
 # Contact address used by the contact buttons (shortcode contact-button, home page) and the footer.
 contactEmail = "evgeny@karpov.dk"
@@ -42,7 +44,7 @@ ShowWordCount = false
 ShowRssButtonInSectionTermList = true
 UseHugoToc = true
 disableSpecial1stPost = false
-disableScrollToTop = false
+disableScrollToTop = true
 hidemeta = false
 hideSummary = false
 showtoc = true
@@ -229,7 +231,7 @@ weight = 2
 title = "Evgeny Karpov"
 
 [languages.en.params]
-tagline = "DevOps, platform engineering and AI systems"
+tagline = "freelance AI consultant and .NET/DevOps engineer in Copenhagen"
 description = "Engineering notes from Copenhagen about DevOps, platform engineering, .NET, observability and AI systems that have to work in production."
 bio = "Senior software engineer and freelance consultant in Copenhagen. Helps small businesses put AI to work at fixed prices and takes contract work in .NET, Azure DevOps and platform engineering."
 images = ["images/og/default.en.png"]

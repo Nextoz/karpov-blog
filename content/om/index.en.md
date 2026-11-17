@@ -40,7 +40,7 @@ I try to be pragmatic, reliable and clear. I care about understanding the system
 
 I also write about technology, AI, DevOps and digitalization on this blog. Partly to share ideas, partly to force myself to think more clearly.
 
-## What I am looking for
+## What you can hire me for
 
 I take freelance and contract work in Greater Copenhagen, hybrid or remote, especially in DevOps, platform engineering, site reliability and .NET backend work close to infrastructure.
 

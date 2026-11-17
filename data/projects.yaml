@@ -38,11 +38,11 @@
   da:
     name: Scouts
     status: Kører dagligt, privat
-    summary: Planlagte agenter, der hver morgen samler københavnske events, tilbud, research og jobopslag. En billig model læser alt, en stærkere model vurderer shortlisten, og mine swipes justerer, hvad der søges efter næste gang.
+    summary: Planlagte agenter, der hver morgen samler københavnske events, tilbud og ny research. En billig model læser alt, en stærkere model vurderer shortlisten, og mine swipes justerer, hvad der søges efter næste gang.
   en:
     name: Scouts
     status: Runs daily, private
-    summary: Scheduled agents that gather Copenhagen events, grocery offers, research and job postings every morning. A cheap model reads everything, a stronger model judges the shortlist, and my swipes change what gets searched for next.
+    summary: Scheduled agents that gather Copenhagen events, grocery offers and new research every morning. A cheap model reads everything, a stronger model judges the shortlist, and my swipes change what gets searched for next.
 
 - id: ring-app
   status: in-use

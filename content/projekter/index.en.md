@@ -138,7 +138,7 @@ Payroll systems require precision, responsibility and understanding of business-
 
 **Technologies:** Python, PowerShell, Windows Task Scheduler, LLM APIs, Markdown, Git
 
-Scouts are a set of scheduled jobs that gather Copenhagen events, grocery offers, new AI research and job postings every morning and write the result as Markdown in my vault. The event scouts end up as ten cards a day in my app Vault Companion, where I swipe yes or no.
+Scouts are a set of scheduled jobs that gather Copenhagen events, grocery offers and new AI research every morning and write the result as Markdown in my vault. The event scouts end up as ten cards a day in my app Vault Companion, where I swipe yes or no.
 
 #### How it works
 

@@ -141,7 +141,7 @@ Lønsystemer kræver præcision, ansvarlighed og forståelse for forretningskrit
 **Område:** AI-agenter, automatisering, drift af planlagte jobs  
 **Teknologier:** Python, PowerShell, Windows Task Scheduler, LLM API'er, Markdown, Git
 
-Scouts er et sæt planlagte jobs, der hver morgen samler københavnske events, dagligvaretilbud, ny AI-research og jobopslag og skriver resultatet som Markdown i mit vault. Event-scouterne ender som ti kort om dagen i min app Vault Companion, hvor jeg swiper ja eller nej.
+Scouts er et sæt planlagte jobs, der hver morgen samler københavnske events, dagligvaretilbud og ny AI-research og skriver resultatet som Markdown i mit vault. Event-scouterne ender som ti kort om dagen i min app Vault Companion, hvor jeg swiper ja eller nej.
 
 ### Sådan virker det
 

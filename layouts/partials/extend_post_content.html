@@ -44,4 +44,16 @@
     {{- end -}}
   </div>
 </aside>
+{{- /* Contact call-to-action at the end of every post. */ -}}
+{{- $isDA := eq .Lang "da" -}}
+{{- $subject := cond $isDA "Gratis samtale" "Free call" -}}
+<aside class="contact-cta post-cta" aria-label="{{ if $isDA }}Kontakt{{ else }}Contact{{ end }}">
+  <p>{{ if $isDA }}<strong>Har du en opgave?</strong> Jeg hjælper mindre virksomheder med at få AI i brug til faste priser og tager kontraktopgaver inden for .NET, Azure DevOps og platform engineering. Den første samtale er gratis.{{ else }}<strong>Do you have a project?</strong> I help small businesses put AI to work at fixed prices, and I take contract work in .NET, Azure DevOps and platform engineering. The first call is free.{{ end }}</p>
+  <p class="cta-buttons">
+    <a class="button button-primary" href="{{ printf "mailto:%s?subject=%s" site.Params.contactEmail (replace (urlquery $subject) "+" "%20") | safeURL }}">{{ if $isDA }}Aftal en gratis samtale{{ else }}Arrange a free call{{ end }}</a>
+    {{- with site.GetPage "/ai-raadgivning" }}
+    <a class="button button-secondary" href="{{ .RelPermalink }}">{{ if $isDA }}AI-rådgivning og priser{{ else }}AI consulting and prices{{ end }}</a>
+    {{- end }}
+  </p>
+</aside>
 {{- end -}}

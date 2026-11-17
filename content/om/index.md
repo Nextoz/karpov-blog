@@ -34,7 +34,7 @@ Jeg interesserer mig især for, hvordan teams kan levere software hurtigere og m
 
 ---
 
-## Hvad jeg gerne vil arbejde med
+## Det kan du hyre mig til
 
 Jeg tager freelance- og kontraktopgaver i Storkøbenhavn, hybrid eller remote, især inden for:
 
