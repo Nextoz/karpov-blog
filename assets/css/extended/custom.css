@@ -1094,6 +1094,11 @@ summary:focus-visible {
   color: var(--primary);
 }
 
+.post-cta p:not(.cta-buttons) a {
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+
 .post-cta .cta-buttons {
   display: flex;
   flex-wrap: wrap;

@@ -17,7 +17,7 @@
 <script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" (slice $person $business $website) | jsonify | safeJS }}</script>
 {{- else if (or .IsPage .IsSection) }}
 {{- /* BreadcrumbList: the home page first, then any section between it and this page, then the page itself. */}}
-{{- $crumbs := slice (dict "@type" "ListItem" "position" 1 "name" (cond (eq .Lang "da") "Start" "Home") "item" site.Home.Permalink) -}}
+{{- $crumbs := slice (dict "@type" "ListItem" "position" 1 "name" (i18n "home" | default "Home") "item" site.Home.Permalink) -}}
 {{- range .Ancestors.Reverse -}}
   {{- if not .IsHome -}}
     {{- $crumbs = $crumbs | append (dict "@type" "ListItem" "position" (add (len $crumbs) 1) "name" (.Title | plainify) "item" .Permalink) -}}

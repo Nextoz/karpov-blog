@@ -21,7 +21,7 @@ displayFullLangName = true
 env = "production"
 title = "Evgeny Karpov"
 description = "Engineering notes fra København om DevOps, platform engineering, .NET, observability og AI-systemer, der skal fungere i produktion."
-tagline = "freelance AI-konsulent og .NET/DevOps i København"
+tagline = "freelance AI- og DevOps-konsulent i København"
 author = "Evgeny Karpov"
 # Contact address used by the contact buttons (shortcode contact-button, home page) and the footer.
 contactEmail = "evgeny@karpov.dk"
@@ -231,7 +231,7 @@ weight = 2
 title = "Evgeny Karpov"
 
 [languages.en.params]
-tagline = "freelance AI consultant and .NET/DevOps engineer in Copenhagen"
+tagline = "freelance AI and DevOps consultant, Copenhagen"
 description = "Engineering notes from Copenhagen about DevOps, platform engineering, .NET, observability and AI systems that have to work in production."
 bio = "Senior software engineer and freelance consultant in Copenhagen. Helps small businesses put AI to work at fixed prices and takes contract work in .NET, Azure DevOps and platform engineering."
 images = ["images/og/default.en.png"]
