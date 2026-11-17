@@ -1,0 +1,24 @@
+{{- /* Returns the schema.org ProfessionalService for the owner's freelance business as a dict.
+       Used on the home page, as the provider on service pages and on the contact page.
+       The CVR number is added as taxID once params.cvr is set in hugo.toml. */ -}}
+{{- $person := partial "schema-person.html" . -}}
+{{- $isDA := eq .Lang "da" -}}
+{{- $url := site.Home.Permalink -}}
+{{- with site.GetPage "/kontakt" -}}{{- $url = .Permalink -}}{{- end -}}
+{{- $business := dict
+  "@type" "ProfessionalService"
+  "@id" (printf "%s#business" (absURL "/"))
+  "name" site.Params.author
+  "url" $url
+  "description" (site.Params.bio | default site.Params.description)
+  "image" (absURL "images/og/default.png")
+  "email" site.Params.contactEmail
+  "founder" (dict "@id" (index $person "@id"))
+  "address" (dict "@type" "PostalAddress" "addressLocality" "Copenhagen" "addressCountry" "DK")
+  "areaServed" (slice (dict "@type" "City" "name" "Copenhagen") (dict "@type" "Country" "name" "Denmark"))
+  "knowsLanguage" (slice "da" "en")
+  "priceRange" (cond $isDA "700–25.000 kr." "DKK 700–25,000")
+  "sameAs" site.Params.schema.sameAs
+-}}
+{{- with site.Params.cvr -}}{{- $business = merge $business (dict "taxID" .) -}}{{- end -}}
+{{- return $business -}}

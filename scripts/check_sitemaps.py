@@ -290,6 +290,51 @@ def main() -> int:
         require_text(read_html(public, relative).replace(chr(34), ""), "name=robots content=noindex", f"{relative} robots")
     require_text(home.replace(chr(34), ""), "name=robots content=index", "Danish home robots")
 
+    # Client conversion: a contact page, contact buttons where people decide, no job-seeking or
+    # "new consultant" signals, a footer with contact details instead of the theme credit.
+    require(da, f"{BASE}/kontakt/", "Danish sitemap")
+    require(en, f"{BASE}/en/contact/", "English sitemap")
+    contact = read_html(public, "kontakt")
+    en_contact = read_html(public, "en/contact")
+    en_about = read_html(public, "en/about")
+    for label, html in (("Contact", contact), ("English contact", en_contact)):
+        require_text(html, '"@type":"ContactPage"', f"{label} structured data")
+        require_one_h1(html, label)
+        check_json_ld(html, label)
+    for label, html in (
+        ("Danish home", home), ("English home", en_home), ("AI-raadgivning", service),
+        ("AI consulting", en_service), ("Portfolio", portfolio), ("English portfolio", en_portfolio),
+        ("Contact", contact), ("English contact", en_contact),
+    ):
+        flat = html.replace(chr(34), "")
+        require_text(flat, "href=mailto:evgeny@karpov.dk?subject=", f"{label} contact button")
+    for label, html, vintonden in (("Danish home", home, "/projekter/#vintonden"), ("English home", en_home, "/en/projects/#vintonden")):
+        require_text(html.replace(chr(34), ""), "id=contact", f"{label} contact section")
+        require_text(html, '"@type":"ProfessionalService"', f"{label} business structured data")
+        require_text(html, vintonden, f"{label} Vintønden card")
+    for label, html in (("AI-raadgivning", service), ("AI consulting", en_service)):
+        require_text(html, '"provider":{"@id":"https://karpov.dk/#business"}', f"{label} service provider")
+    for phrase in ("fastansættelse", "permanent roles", "ny som AI-rådgiver", "new as an AI consultant", "Det recruiters skal forstå", "What recruiters should understand"):
+        for label, html in (("About", about), ("English about", en_about), ("Portfolio", portfolio),
+                            ("English portfolio", en_portfolio), ("AI-raadgivning", service), ("AI consulting", en_service)):
+            if phrase in html:
+                raise AssertionError(f"{label} still contains {phrase!r}")
+    for label, html in (("Danish home", home), ("About", about)):
+        footer = re.search(r"<footer class=\"?footer\"?>(.*?)</footer>", html, flags=re.DOTALL)
+        if not footer:
+            raise AssertionError(f"{label} has no footer")
+        if "Powered by" in footer.group(1):
+            raise AssertionError(f"{label} footer still shows the theme credit instead of contact details")
+        require_text(footer.group(1).replace(chr(34), ""), "href=mailto:evgeny@karpov.dk", f"{label} footer email")
+    require_text(about, "<title>Om Evgeny Karpov</title>", "About title without the doubled name")
+    require_text(portfolio.replace(chr(34), ""), "id=kontraktopgaver", "Portfolio contract section")
+    require_text(en_portfolio.replace(chr(34), ""), "id=contract-work", "English portfolio contract section")
+    vintonden_heading = re.search(r"<h2[^>]*id=\"?vintonden", portfolio)
+    twoday_heading = re.search(r"<h2[^>]*>\s*twoday", portfolio)
+    if not vintonden_heading or not twoday_heading or vintonden_heading.start() > twoday_heading.start():
+        raise AssertionError("Vintønden must come before the employer write-ups on the portfolio")
+    require_text(llms, f"{BASE}/kontakt/", "llms.txt contact page")
+
     check_json_ld(home, "Danish home")
     check_json_ld(en_home, "English home")
     check_json_ld(portfolio, "Portfolio")

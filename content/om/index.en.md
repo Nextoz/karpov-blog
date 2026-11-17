@@ -1,7 +1,8 @@
 ---
 title: "About Evgeny Karpov"
 description: "About Evgeny Karpov, senior software engineer in Copenhagen working with .NET, DevOps, Azure DevOps, Kubernetes, CI/CD and AI-assisted software development."
-lastmod: 2026-11-09
+lastmod: 2026-11-16
+showtoc: false
 summary: "Senior software engineer based in Copenhagen with experience across .NET, DevOps, Azure DevOps, infrastructure and platform engineering."
 translationKey: "about"
 url: "/en/about/"
@@ -14,7 +15,7 @@ ShowWordCount: false
 
 <img class="about-portrait" src="/images/profile.png" alt="Evgeny Karpov" width="230" height="230">
 
-I am **Evgeny Karpov**, a senior software engineer based in Copenhagen, working across .NET backend development, DevOps, CI/CD, infrastructure and platform engineering.
+I am **Evgeny Karpov**, a senior software engineer and freelance consultant based in Copenhagen, working across .NET backend development, DevOps, CI/CD, infrastructure and platform engineering.
 
 My background is in software development, but over time I have moved closer to the full delivery chain: how systems are built, deployed, configured, monitored and kept stable in real environments.
 
@@ -41,7 +42,7 @@ I also write about technology, AI, DevOps and digitalization on this blog. Partl
 
 ## What I am looking for
 
-I am open to permanent roles and to freelance and contract work in Greater Copenhagen, especially in DevOps, platform engineering, site reliability and .NET backend work close to infrastructure.
+I take freelance and contract work in Greater Copenhagen, hybrid or remote, especially in DevOps, platform engineering, site reliability and .NET backend work close to infrastructure.
 
 I also help small businesses get AI into use. See [AI consulting and prices](/en/ai-consulting/).
 

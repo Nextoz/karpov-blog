@@ -33,7 +33,7 @@ faq:
     a: "Then I will say so. The first call is free, and you can use the recommendation from the assessment whether or not you continue with me."
 url: "/en/ai-consulting/"
 ogImage: "images/og/ai-raadgivning.en.png"
-lastmod: 2026-11-15
+lastmod: 2026-11-16
 hidemeta: true
 ShowReadingTime: false
 disableShare: true
@@ -45,6 +45,8 @@ Many companies have tried a chatbot and got no further. I am a freelance AI cons
 
 I work in English and Danish, in Copenhagen or remote.
 
+{{< contact-button >}}
+
 ## What I can help with
 
 - Finding the two or three workflows where AI gives the most for the money
@@ -53,9 +55,19 @@ I work in English and Danish, in Copenhagen or remote.
 - Setting clear limits for what the AI may do on its own and what a person has to approve
 - Teaching your team to use the solution and maintain it without me
 
+## Everyday examples
+
+It does not have to be big. Typical first tasks in a shop, a café or a small office:
+
+- **Bookings and enquiries.** The AI reads emails about table bookings, private parties and events, sorts them and drafts a reply that you approve before it is sent.
+- **Reviews.** Draft replies to Google reviews in your own tone, in English and Danish.
+- **Menus and allergens.** Translating the menu, the allergen list and opening hours, so your website and Google show the same thing.
+- **Invoices and receipts.** Amount, date and supplier are pulled out of PDFs and photos and put into a spreadsheet or your accounting software.
+- **The week at a glance.** A short summary every Monday morning of bookings, sales or enquiries, so you do not have to gather the numbers yourself.
+
 ## Prices
 
-I am new as an AI consultant, so the prices are lower than they will be later. The introductory prices apply to agreements made before 31 March 2027.
+These are introductory prices and apply to agreements made before 31 March 2027.
 
 <div class="price-table">
 
@@ -68,6 +80,8 @@ I am new as an AI consultant, so the prices are lower than they will be later. T
 </div>
 
 All prices are in Danish kroner (DKK) and exclude Danish VAT. If you go on to an automation, I deduct the price of the assessment.
+
+{{< contact-button >}}
 
 ## How it works
 
@@ -82,7 +96,7 @@ All prices are in Danish kroner (DKK) and exclude Danish VAT. If you go on to an
 - **I know the difference between a demo and operations.** I have more than six years of experience with software development, DevOps and systems that have to run every day. An automation that fails silently is worse than no automation.
 - **I am not tied to one vendor.** I have run the same tasks on American, Chinese and European models, including with a European cloud provider, and I choose by the task, the price and where the data ends up.
 - **Security is there from the start.** Read [how I work with security](/en/projects/#security) in my own agent systems.
-- **I already work directly with a local business.** See [Vintønden](/en/projects/#vintonden) in my portfolio.
+- **I already work for a local business.** For the bar [Vintønden](/en/projects/#vintonden) in Frederiksberg, I handle pages in three languages, structured data and visibility in Google and AI assistants, directly in their WordPress site.
 
 ## Frequently asked questions
 
@@ -90,8 +104,8 @@ All prices are in Danish kroner (DKK) and exclude Danish VAT. If you go on to an
 
 <div class="contact-cta">
 
-**Shall we talk?** The first call is free and without obligation.
+**Shall we talk?** The first call is free and without obligation. Write to [evgeny@karpov.dk](mailto:evgeny@karpov.dk) or on LinkedIn.
 
-Write to [evgeny@karpov.dk](mailto:evgeny@karpov.dk) or on [LinkedIn](https://www.linkedin.com/in/evgenykarpov91/).
+{{< contact-button >}}
 
 </div>

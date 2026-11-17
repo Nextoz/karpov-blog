@@ -1,7 +1,21 @@
 # Projects shown as cards on the homepage ("home: true") and on the portfolio page.
 # "page" links to a post when that post is published (drafts are not built, so no link
 # appears until then); "url" links externally; "anchor" links to a section with that id on the
-# portfolio page (also from the homepage), for projects that have a full write-up there. Status keys: in-use, coming, live, prototype, client.
+# portfolio page (also from the homepage), for projects that have a full write-up there. Order here is display order: client work first. Status keys: in-use, coming, live, prototype, client.
+- id: vintonden
+  home: true
+  status: client
+  anchor: vintonden
+  stack: [WordPress, PHP, JSON-LD, hreflang, GEO]
+  da:
+    name: Vintønden
+    status: Kundeprojekt
+    summary: Teknisk SEO, GEO og WordPress for en bar på Frederiksberg. Structured data, sider på tre sprog og egne små plugins, lavet direkte i produktion.
+  en:
+    name: Vintønden
+    status: Client project
+    summary: Technical SEO, GEO and WordPress for a bar in Frederiksberg. Structured data, pages in three languages and my own small plugins, done directly in production.
+
 - id: vault-companion
   home: true
   status: in-use
@@ -93,16 +107,3 @@
     name: Karpov Blog
     status: Live
     summary: This site. A technical blog and portfolio with automated checks of sitemaps, translations and internal links on every build.
-
-- id: vintonden
-  status: client
-  anchor: vintonden
-  stack: [WordPress, PHP, JSON-LD, hreflang, GEO]
-  da:
-    name: Vintønden
-    status: Kundeprojekt
-    summary: Teknisk SEO, GEO og WordPress for en bar på Frederiksberg. Structured data, sider på tre sprog og egne små plugins, lavet direkte i produktion.
-  en:
-    name: Vintønden
-    status: Client project
-    summary: Technical SEO, GEO and WordPress for a bar in Frederiksberg. Structured data, pages in three languages and my own small plugins, done directly in production.

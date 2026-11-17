@@ -4,14 +4,14 @@ description: "Portfolio for Evgeny Karpov: Azure DevOps, .NET, Kubernetes, CI/CD
 summary: "Udvalgte projekter og erfaringer inden for DevOps, platform engineering, .NET backend, cloud, CI/CD, observability og AI-assisteret softwareudvikling."
 translationKey: "portfolio"
 schemaType: "portfolio"
-lastmod: 2026-11-15
+lastmod: 2026-11-16
 hidemeta: true
 ShowReadingTime: false
 ShowShareButtons: false
 ShowWordCount: false
 ---
 
-Jeg er software engineer med en stærk .NET/backend-baggrund og et nyere fokus på DevOps, platform engineering, CI/CD, infrastruktur, observability og produktionstroubleshooting.
+Jeg er senior software engineer og freelance-konsulent med en stærk .NET/backend-baggrund og et nyere fokus på DevOps, platform engineering, CI/CD, infrastruktur, observability og produktionstroubleshooting.
 
 Min professionelle profil ligger i krydsfeltet mellem softwareudvikling og drift: jeg forstår både applikationskode, pipelines, cloud-infrastruktur, deployments, miljøer og de praktiske problemer, der opstår, når systemer skal fungere i produktion.
 
@@ -26,6 +26,29 @@ Min professionelle profil ligger i krydsfeltet mellem softwareudvikling og drift
 - **DevOps/platform:** CI/CD, Docker, Kubernetes, Helm, KEDA, Bicep, Terraform
 - **Drift:** deployments, fejlsøgning, monitoring, logs, tracing, OpenTelemetry, OpenSearch
 - **Domæner:** offentlig IT, lønsystemer, dokumentautomatisering, SAP-integration
+
+---
+
+## Vintønden — teknisk SEO, GEO og WordPress for en lokal bar {#vintonden}
+
+**Område:** Teknisk SEO, GEO (synlighed i AI-assistenter), WordPress  
+**Teknologier:** WordPress, PHP, WP-CLI, SSH, schema.org/JSON-LD, hreflang, Playwright
+
+**Link:** [vintonden.dk](https://vintonden.dk/)
+
+Vintønden er en bar på Frederiksberg, som jeg løbende løser opgaver for. Jeg arbejder direkte i deres WordPress-site og tager backup før hver ændring.
+
+### Mit bidrag
+
+- Structured data til baren, events og ofte stillede spørgsmål
+- Sider på dansk, engelsk og spansk med korrekt hreflang
+- Oprydning i metadata og sitemap, verificeret mod det offentlige site
+- Egne små WordPress-plugins i PHP
+- En GEO-plan: hvilke kilder AI-assistenter bruger om baren, hvor fakta modsiger hinanden på tværs af platforme, og en fast test af synligheden
+
+### Hvorfor det er relevant
+
+Projektet viser, at jeg kan omsætte teknisk analyse til konkrete ændringer i produktion for en rigtig lokal virksomhed, og at jeg kan arbejde direkte med en kunde uden et team omkring mig.
 
 ---
 
@@ -162,7 +185,7 @@ Projektet viser, at jeg kan sætte mig ind i en fremmed kodebase på en platform
 ## Karpov Blog — Teknisk formidling og personlig platform {#karpov-blog}
 
 **Område:** Teknisk formidling, portfolio, SEO, statisk website  
-**Teknologier:** Hugo, PaperMod, GitHub Pages, Markdown, GitHub Actions
+**Teknologier:** Hugo, [PaperMod](https://github.com/adityatelange/hugo-PaperMod/), GitHub Pages, Markdown, GitHub Actions
 
 Denne hjemmeside er min personlige tekniske blog og portfolio. Jeg bruger den til at skrive om software engineering, DevOps, AI, digitalisering og teknologipolitik.
 
@@ -179,29 +202,6 @@ Klar teknisk formidling er en del af senior engineering-arbejde. Siden viser, at
 
 ---
 
-## Vintønden — teknisk SEO, GEO og WordPress for en lokal bar {#vintonden}
-
-**Område:** Teknisk SEO, GEO (synlighed i AI-assistenter), WordPress  
-**Teknologier:** WordPress, PHP, WP-CLI, SSH, schema.org/JSON-LD, hreflang, Playwright
-
-**Link:** [vintonden.dk](https://vintonden.dk/)
-
-Vintønden er en bar på Frederiksberg, som jeg løbende løser opgaver for. Jeg arbejder direkte i deres WordPress-site og tager backup før hver ændring.
-
-### Mit bidrag
-
-- Structured data til baren, events og ofte stillede spørgsmål
-- Sider på dansk, engelsk og spansk med korrekt hreflang
-- Oprydning i metadata og sitemap, verificeret mod det offentlige site
-- Egne små WordPress-plugins i PHP
-- En GEO-plan: hvilke kilder AI-assistenter bruger om baren, hvor fakta modsiger hinanden på tværs af platforme, og en fast test af synligheden
-
-### Hvorfor det er relevant
-
-Projektet viser, at jeg kan omsætte teknisk analyse til konkrete ændringer i produktion for en rigtig lokal virksomhed, og at jeg kan arbejde direkte med en kunde uden et team omkring mig.
-
----
-
 ## Sikkerhed i praksis {#sikkerhed}
 
 Jeg er ikke sikkerhedsspecialist, men jeg arbejder med sikkerhed som en del af leverancen:
@@ -214,9 +214,9 @@ Jeg er ikke sikkerhedsspecialist, men jeg arbejder med sikkerhed som en del af l
 
 ---
 
-## Det recruiters skal forstå
+## Kontraktopgaver {#kontraktopgaver}
 
-Jeg er stærkest i roller, hvor backendudvikling, DevOps og platformarbejde mødes.
+Jeg tager freelance- og kontraktopgaver i Storkøbenhavn, hybrid eller remote. Jeg er stærkest, hvor backendudvikling, DevOps og platformarbejde mødes.
 
 Jeg kan bidrage som:
 
@@ -230,8 +230,8 @@ Min værdi er, at jeg både forstår applikationskode og de systemer, der skal b
 
 <div class="contact-cta">
 
-**Skal vi tale sammen?** Jeg er åben for fastansættelse og for freelance- og kontraktopgaver i Storkøbenhavn. Jeg hjælper også mindre virksomheder med at få AI i brug: se [AI-rådgivning og priser](/ai-raadgivning/).
+**Har du en opgave?** Skriv til [evgeny@karpov.dk](mailto:evgeny@karpov.dk) eller på LinkedIn. Jeg hjælper også mindre virksomheder med at få AI i brug: se [AI-rådgivning og priser](/ai-raadgivning/).
 
-Skriv til [evgeny@karpov.dk](mailto:evgeny@karpov.dk) eller på [LinkedIn](https://www.linkedin.com/in/evgenykarpov91/).
+{{< contact-button subject="Kontraktopgave" label="Skriv om en opgave" >}}
 
 </div>

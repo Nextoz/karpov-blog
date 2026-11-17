@@ -2,15 +2,16 @@
 title: "Om Evgeny Karpov"
 description: "Om Evgeny Karpov, senior software engineer i København med erfaring i .NET, DevOps, Azure DevOps, Kubernetes, CI/CD og AI-assisteret softwareudvikling."
 profilePage: true
-lastmod: 2026-11-09
+lastmod: 2026-11-16
 translationKey: "about"
 hidemeta: true
 ShowReadingTime: false
+showtoc: false
 ---
 
 <img class="about-portrait" src="/images/profile.png" alt="Evgeny Karpov" width="230" height="230">
 
-Jeg hedder **Evgeny Karpov** og er senior software engineer i København. Jeg arbejder med softwareudvikling, DevOps og platform engineering.
+Jeg hedder **Evgeny Karpov** og er senior software engineer og freelance-konsulent i København. Jeg arbejder med softwareudvikling, DevOps og platform engineering.
 
 Min styrke ligger i krydsfeltet mellem backend-udvikling og driftbar software: jeg forstår både applikationskode, pipelines, cloud-infrastruktur, deployments og de praktiske problemer, der opstår, når systemer skal fungere i rigtige miljøer.
 
@@ -35,7 +36,7 @@ Jeg interesserer mig især for, hvordan teams kan levere software hurtigere og m
 
 ## Hvad jeg gerne vil arbejde med
 
-Jeg er åben for fastansættelse og for freelance- og kontraktopgaver i Storkøbenhavn, især inden for:
+Jeg tager freelance- og kontraktopgaver i Storkøbenhavn, hybrid eller remote, især inden for:
 
 - DevOps Engineering
 - Platform Engineering

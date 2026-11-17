@@ -12,7 +12,7 @@
 {{- $ownPosts := $daPosts | complement $digests -}}
 # Evgeny Karpov
 
-> Evgeny Karpov is a senior software engineer in Copenhagen, Denmark, working with .NET, DevOps, platform engineering and AI agent systems. He also works as a freelance AI consultant for small businesses. This is his personal site: a portfolio, his AI consulting offer with prices, and a blog about getting software and AI systems to work in production. The site is in Danish, with English versions of the main pages and some posts.
+> Evgeny Karpov is a senior software engineer in Copenhagen, Denmark, working with .NET, DevOps, platform engineering and AI agent systems. He works freelance: fixed-price AI consulting for small businesses, and contract work in .NET, Azure DevOps and platform engineering. His client work includes technical SEO and visibility in AI assistants for the bar Vintønden in Frederiksberg. This is his site: a portfolio, his AI consulting offer with prices, a contact page, and a blog about getting software and AI systems to work in production. The site is in Danish, with English versions of the main pages and some posts.
 
 Facts:
 
@@ -20,9 +20,9 @@ Facts:
 - Role: {{ site.Params.schema.jobTitle }} (DevOps, platform engineering, .NET backend, AI-assisted engineering)
 - Location: Copenhagen, Denmark
 - Experience: 6+ years of professional software development; Azure DevOps, CI/CD, Kubernetes, Bicep, Terraform, observability
-- Services: freelance AI consulting for small businesses in Denmark at fixed prices in DKK (AI assessment, a first automation, ongoing help), in Danish or English, in Copenhagen or remote; also freelance .NET and Azure DevOps work
+- Services: freelance AI consulting for small businesses in Denmark at fixed prices in DKK (AI assessment, a first automation, ongoing help), in Danish or English, in Copenhagen or remote; contract work in .NET, Azure DevOps, CI/CD, infrastructure as code and platform engineering in Greater Copenhagen, hybrid or remote
 - Languages: Danish, English, Russian
-- Contact: evgeny@karpov.dk
+- Contact: {{ site.Params.contactEmail }}{{ with $da.GetPage "/kontakt" }} ({{ .Permalink }}){{ end }}
 - Profiles: {{ delimit site.Params.schema.sameAs ", " }}
 
 ## Main pages
@@ -37,6 +37,12 @@ Facts:
 {{- end }}
 {{- with $en.GetPage "/ai-raadgivning" }}
 - [AI consulting for small businesses, with prices in DKK (English)]({{ .Permalink }}): {{ .Description }}
+{{- end }}
+{{- with $da.GetPage "/kontakt" }}
+- [Contact (Danish)]({{ .Permalink }}): {{ .Description }}
+{{- end }}
+{{- with $en.GetPage "/kontakt" }}
+- [Contact (English)]({{ .Permalink }}): {{ .Description }}
 {{- end }}
 {{- with $da.GetPage "/om" }}
 - [About (Danish)]({{ .Permalink }}): {{ .Description }}

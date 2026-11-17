@@ -32,7 +32,7 @@ faq:
   - q: "Hvad hvis AI ikke er svaret på vores problem?"
     a: "Så siger jeg det. Den første samtale er gratis, og anbefalingen fra afklaringen kan I bruge, uanset om I går videre med mig."
 ogImage: "images/og/ai-raadgivning.png"
-lastmod: 2026-11-15
+lastmod: 2026-11-16
 hidemeta: true
 ShowReadingTime: false
 disableShare: true
@@ -42,6 +42,8 @@ showtoc: false
 
 Mange virksomheder har prøvet en chatbot og er ikke kommet længere. Jeg er freelance AI-konsulent i København og hjælper mindre virksomheder med at finde de opgaver, hvor AI faktisk sparer tid, og med at bygge løsningen, så den også virker om tre måneder.
 
+{{< contact-button >}}
+
 ## Det kan jeg hjælpe med
 
 - Finde de to eller tre arbejdsgange, hvor AI giver mest for pengene
@@ -50,9 +52,19 @@ Mange virksomheder har prøvet en chatbot og er ikke kommet længere. Jeg er fre
 - Sætte klare grænser for, hvad AI'en må gøre selv, og hvad et menneske skal godkende
 - Lære jer at bruge løsningen og holde den ved lige uden mig
 
+## Eksempler fra en almindelig hverdag
+
+Det behøver ikke være stort. Typiske første opgaver i en butik, en café eller et mindre kontor:
+
+- **Bookinger og forespørgsler.** AI'en læser mails om bordbestilling, selskaber og events, sorterer dem og skriver et udkast til svar, som I godkender, før det bliver sendt.
+- **Anmeldelser.** Udkast til svar på Google-anmeldelser i jeres egen tone, på dansk og engelsk.
+- **Menukort og allergener.** Oversættelse af menu, allergenliste og åbningstider, så hjemmeside og Google viser det samme.
+- **Fakturaer og bilag.** Beløb, dato og leverandør hentes ud af PDF'er og billeder og lagt i et regneark eller jeres bogføringsprogram.
+- **Ugens overblik.** En kort opsummering hver mandag morgen af bookinger, salg eller henvendelser, så I ikke selv skal samle tallene.
+
 ## Priser
 
-Jeg er ny som AI-rådgiver, og derfor er priserne lavere, end de bliver senere. Introduktionspriserne gælder for aftaler, der indgås inden 31. marts 2027.
+Priserne er introduktionspriser og gælder for aftaler, der indgås inden 31. marts 2027.
 
 <div class="price-table">
 
@@ -65,6 +77,8 @@ Jeg er ny som AI-rådgiver, og derfor er priserne lavere, end de bliver senere. 
 </div>
 
 Alle priser er ekskl. moms. Går I videre med en automatisering, trækker jeg prisen for afklaringen fra.
+
+{{< contact-button >}}
 
 ## Sådan foregår det
 
@@ -79,7 +93,7 @@ Alle priser er ekskl. moms. Går I videre med en automatisering, trækker jeg pr
 - **Jeg kender forskel på en demo og drift.** Jeg har mere end seks års erfaring med softwareudvikling, DevOps og systemer, der skal køre hver dag. En automatisering, der fejler stille, er værre end ingen automatisering.
 - **Jeg er ikke bundet til én leverandør.** Jeg har kørt de samme opgaver på amerikanske, kinesiske og europæiske modeller, også hos en europæisk cloududbyder, og vælger efter opgaven, prisen og hvor data ender.
 - **Sikkerhed er med fra start.** Læs, [hvordan jeg arbejder med sikkerhed](/projekter/#sikkerhed) i mine egne agentsystemer.
-- **Jeg arbejder allerede direkte med en lokal virksomhed.** Se [Vintønden](/projekter/#vintonden) i min portfolio.
+- **Jeg arbejder allerede for en lokal virksomhed.** For baren [Vintønden](/projekter/#vintonden) på Frederiksberg står jeg for sider på tre sprog, structured data og synlighed i Google og AI-assistenter, direkte i deres WordPress-site.
 
 ## Ofte stillede spørgsmål
 
@@ -87,8 +101,8 @@ Alle priser er ekskl. moms. Går I videre med en automatisering, trækker jeg pr
 
 <div class="contact-cta">
 
-**Skal vi tage en snak?** Den første samtale er gratis og uforpligtende.
+**Skal vi tage en snak?** Den første samtale er gratis og uforpligtende. Skriv til [evgeny@karpov.dk](mailto:evgeny@karpov.dk) eller på LinkedIn.
 
-Skriv til [evgeny@karpov.dk](mailto:evgeny@karpov.dk) eller på [LinkedIn](https://www.linkedin.com/in/evgenykarpov91/).
+{{< contact-button >}}
 
 </div>

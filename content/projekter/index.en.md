@@ -4,7 +4,7 @@ description: "Portfolio for Evgeny Karpov: Azure DevOps, .NET, Kubernetes, CI/CD
 summary: "Selected experience across DevOps, platform engineering, .NET backend, cloud, CI/CD, observability and AI-assisted software development."
 translationKey: "portfolio"
 schemaType: "portfolio"
-lastmod: 2026-11-15
+lastmod: 2026-11-16
 url: "/en/projects/"
 hidemeta: true
 ShowReadingTime: false
@@ -12,7 +12,7 @@ ShowShareButtons: false
 ShowWordCount: false
 ---
 
-I am a software engineer with a strong .NET/backend background and a growing focus on DevOps, platform engineering, CI/CD, infrastructure, observability and production troubleshooting.
+I am a senior software engineer and freelance consultant with a strong .NET/backend background and a growing focus on DevOps, platform engineering, CI/CD, infrastructure, observability and production troubleshooting.
 
 My professional profile sits between software development and operations: I understand application code, pipelines, cloud infrastructure, deployments, environments and the practical problems that appear when systems need to work reliably in production.
 
@@ -29,6 +29,28 @@ My professional profile sits between software development and operations: I unde
 - **Domains:** public-sector IT, payroll systems, document automation, SAP integration
 
 ## Selected experience and projects
+
+### Vintønden — technical SEO, GEO and WordPress for a local bar {#vintonden}
+
+**Area:** Technical SEO, GEO (visibility in AI assistants), WordPress
+
+**Technologies:** WordPress, PHP, WP-CLI, SSH, schema.org/JSON-LD, hreflang, Playwright
+
+**Link:** [vintonden.dk](https://vintonden.dk/)
+
+Vintønden is a bar in Frederiksberg that I do ongoing work for. I work directly in their WordPress site and take a backup before every change.
+
+#### My contribution
+
+- Structured data for the bar, its events and frequently asked questions
+- Pages in Danish, English and Spanish with correct hreflang
+- Metadata and sitemap clean-up, verified against the public site
+- My own small WordPress plugins in PHP
+- A GEO plan: which sources AI assistants use about the bar, where facts contradict each other across platforms, and a fixed visibility test
+
+#### Why it matters
+
+The project shows that I can turn technical analysis into concrete changes in production for a real local business, and that I can work directly with a client without a team around me.
 
 ### twoday / Arbejdstilsynet — DevOps and Infrastructure
 
@@ -157,7 +179,7 @@ The project shows that I can get into an unfamiliar codebase on a platform I do 
 
 **Area:** Technical communication, portfolio, SEO, static site
 
-**Technologies:** Hugo, PaperMod, GitHub Pages, Markdown, GitHub Actions
+**Technologies:** Hugo, [PaperMod](https://github.com/adityatelange/hugo-PaperMod/), GitHub Pages, Markdown, GitHub Actions
 
 This website is my personal technical blog and portfolio. I use it to write about software engineering, DevOps, AI, digitalization and technology policy.
 
@@ -172,28 +194,6 @@ This website is my personal technical blog and portfolio. I use it to write abou
 
 Clear technical communication is part of senior engineering work. This site shows that I can explain technology, document ideas and think beyond code.
 
-### Vintønden — technical SEO, GEO and WordPress for a local bar {#vintonden}
-
-**Area:** Technical SEO, GEO (visibility in AI assistants), WordPress
-
-**Technologies:** WordPress, PHP, WP-CLI, SSH, schema.org/JSON-LD, hreflang, Playwright
-
-**Link:** [vintonden.dk](https://vintonden.dk/)
-
-Vintønden is a bar in Frederiksberg that I do ongoing work for. I work directly in their WordPress site and take a backup before every change.
-
-#### My contribution
-
-- Structured data for the bar, its events and frequently asked questions
-- Pages in Danish, English and Spanish with correct hreflang
-- Metadata and sitemap clean-up, verified against the public site
-- My own small WordPress plugins in PHP
-- A GEO plan: which sources AI assistants use about the bar, where facts contradict each other across platforms, and a fixed visibility test
-
-#### Why it matters
-
-The project shows that I can turn technical analysis into concrete changes in production for a real local business, and that I can work directly with a client without a team around me.
-
 ## Security in practice {#security}
 
 I am not a security specialist, but I treat security as part of the delivery:
@@ -203,9 +203,10 @@ I am not a security specialist, but I treat security as part of the delivery:
 - **Reviewing with security in mind:** In a review of an infrastructure pull request, I found a personal access token that had leaked through the deployment history.
 - **AI agents:** In my own agent systems, web pages and tool output are data, never instructions. External writes, secrets, destructive Git commands and production deployments need my explicit approval.
 - **Community:** I attended OWASP Copenhagen in 2025 and 2026.
-## What recruiters should understand
 
-I am strongest in roles where backend development, DevOps and platform work meet.
+## Contract work {#contract-work}
+
+I take freelance and contract work in Greater Copenhagen, hybrid or remote. I am strongest where backend development, DevOps and platform work meet.
 
 I can contribute as:
 
@@ -219,8 +220,8 @@ My value is that I understand both application code and the systems that build, 
 
 <div class="contact-cta">
 
-**Want to talk?** I am open to permanent roles and to freelance and contract work in Greater Copenhagen. I also help small businesses get AI into use: see [AI consulting and prices](/en/ai-consulting/).
+**Do you have a project?** Write to [evgeny@karpov.dk](mailto:evgeny@karpov.dk) or on LinkedIn. I also help small businesses put AI to work: see [AI consulting and prices](/en/ai-consulting/).
 
-Write to [evgeny@karpov.dk](mailto:evgeny@karpov.dk) or on [LinkedIn](https://www.linkedin.com/in/evgenykarpov91/).
+{{< contact-button subject="Contract work" label="Write about a project" >}}
 
 </div>

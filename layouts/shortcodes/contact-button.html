@@ -1,0 +1,10 @@
+{{- /* Contact buttons: a mailto with a prefilled subject plus LinkedIn.
+       Optional params: subject, label. Used on the AI consulting, portfolio and contact pages. */ -}}
+{{- $isDA := eq .Page.Lang "da" -}}
+{{- $subject := .Get "subject" | default (cond $isDA "Gratis samtale" "Free call") -}}
+{{- $label := .Get "label" | default (cond $isDA "Aftal en gratis samtale" "Arrange a free call") -}}
+{{- $mailto := printf "mailto:%s?subject=%s" site.Params.contactEmail (replace (urlquery $subject) "+" "%20") -}}
+<p class="cta-buttons">
+  <a class="button button-primary" href="{{ $mailto | safeURL }}">{{ $label }}</a>
+  <a class="button button-secondary" href="https://www.linkedin.com/in/evgenykarpov91/" rel="me">LinkedIn</a>
+</p>

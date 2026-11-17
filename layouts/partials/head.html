@@ -14,7 +14,9 @@
      the tab/SERP title as the bare site name. Give the homepage a real,
      descriptive title while leaving every other page's logic untouched. */}}
 {{- /* The descriptive part comes from partials/page-title.html (tagline per language in hugo.toml). */}}
-<title>{{ if .IsHome }}{{ partial "page-title.html" . }}{{ else }}{{ if .Title }}{{ partial "page-title.html" . }} | {{ end }}{{ site.Title }}{{ end }}</title>
+{{- /* The " | Evgeny Karpov" suffix is skipped when the title already contains the name (e.g. "Om Evgeny Karpov"). */}}
+{{- $pageTitle := partial "page-title.html" . }}
+<title>{{ if .IsHome }}{{ $pageTitle }}{{ else if not .Title }}{{ site.Title }}{{ else if in $pageTitle site.Title }}{{ $pageTitle }}{{ else }}{{ $pageTitle }} | {{ site.Title }}{{ end }}</title>
 
 {{- /* Meta */}}
 {{- if .IsHome }}
