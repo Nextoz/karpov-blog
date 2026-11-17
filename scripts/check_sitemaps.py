@@ -312,11 +312,19 @@ def main() -> int:
         require_text(html.replace(chr(34), ""), "id=contact", f"{label} contact section")
         require_text(html, '"@type":"ProfessionalService"', f"{label} business structured data")
         require_text(html, vintonden, f"{label} Vintønden card")
+        # Vintønden is the first project card: its link comes before the Vault Companion card's.
+        if html.index(vintonden) > html.index("/posts/vault-companion/"):
+            raise AssertionError(f"{label}: the Vintønden card must come first")
+    # Person.description is the bio, per language, not the blog tagline.
+    require_text(home, '"description":"Senior software engineer og freelance-konsulent', "Danish Person bio")
+    require_text(en_home, '"description":"Senior software engineer and freelance consultant', "English Person bio")
     for label, html in (("AI-raadgivning", service), ("AI consulting", en_service)):
         require_text(html, '"provider":{"@id":"https://karpov.dk/#business"}', f"{label} service provider")
+        require_text(html, '"@type":"ProfessionalService"', f"{label} business node in the graph")
     for phrase in ("fastansættelse", "permanent roles", "ny som AI-rådgiver", "new as an AI consultant", "Det recruiters skal forstå", "What recruiters should understand"):
         for label, html in (("About", about), ("English about", en_about), ("Portfolio", portfolio),
-                            ("English portfolio", en_portfolio), ("AI-raadgivning", service), ("AI consulting", en_service)):
+                            ("English portfolio", en_portfolio), ("AI-raadgivning", service), ("AI consulting", en_service),
+                            ("Danish home", home), ("English home", en_home), ("Contact", contact), ("English contact", en_contact)):
             if phrase in html:
                 raise AssertionError(f"{label} still contains {phrase!r}")
     for label, html in (("Danish home", home), ("About", about)):
@@ -326,13 +334,24 @@ def main() -> int:
         if "Powered by" in footer.group(1):
             raise AssertionError(f"{label} footer still shows the theme credit instead of contact details")
         require_text(footer.group(1).replace(chr(34), ""), "href=mailto:evgeny@karpov.dk", f"{label} footer email")
+        # The footer override keeps the theme's scripts: scroll-to-top link, menu scroll memory, theme toggle.
+        flat = html.replace(chr(34), "")
+        require_text(flat, "id=top-link", f"{label} scroll-to-top link")
+        require_text(html, "menu-scroll-position", f"{label} footer menu script")
+        if not re.search(r"setItem\([\"'`]pref-theme", html):
+            raise AssertionError(f"{label} is missing the theme toggle script")
     require_text(about, "<title>Om Evgeny Karpov</title>", "About title without the doubled name")
+    require_text(en_about, "<title>About Evgeny Karpov</title>", "English about title without the doubled name")
+    for label, html in (("About", about), ("English about", en_about)):
+        if "class=toc" in html.replace(chr(34), ""):
+            raise AssertionError(f"{label} should not show a table of contents")
     require_text(portfolio.replace(chr(34), ""), "id=kontraktopgaver", "Portfolio contract section")
     require_text(en_portfolio.replace(chr(34), ""), "id=contract-work", "English portfolio contract section")
-    vintonden_heading = re.search(r"<h2[^>]*id=\"?vintonden", portfolio)
-    twoday_heading = re.search(r"<h2[^>]*>\s*twoday", portfolio)
-    if not vintonden_heading or not twoday_heading or vintonden_heading.start() > twoday_heading.start():
-        raise AssertionError("Vintønden must come before the employer write-ups on the portfolio")
+    for label, html in (("Portfolio", portfolio), ("English portfolio", en_portfolio)):
+        vintonden_heading = re.search(r"<h[23][^>]*id=\"?vintonden", html)
+        twoday_heading = re.search(r"<h[23][^>]*>[^<]*twoday", html)
+        if not vintonden_heading or not twoday_heading or vintonden_heading.start() > twoday_heading.start():
+            raise AssertionError(f"{label}: Vintønden must come before the employer write-ups")
     require_text(llms, f"{BASE}/kontakt/", "llms.txt contact page")
 
     check_json_ld(home, "Danish home")
