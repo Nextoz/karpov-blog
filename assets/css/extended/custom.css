@@ -1049,6 +1049,35 @@ summary:focus-visible {
   margin-top: 0.5rem;
 }
 
+/* Contact buttons inside page content (shortcode contact-button). */
+.post-content .cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: 1.5rem 0;
+}
+
+.post-content .contact-cta .cta-buttons {
+  margin: 1rem 0 0;
+}
+
+.post-content .cta-buttons a.button {
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.post-content .cta-buttons a.button-primary {
+  color: var(--theme);
+}
+
+.post-content .cta-buttons a.button-secondary {
+  color: var(--primary);
+}
+
+.post-content .cta-buttons a.button-secondary:hover {
+  color: var(--accent);
+}
+
 /* Anchor targets clear the sticky header. */
 [id] {
   scroll-margin-top: 5rem;

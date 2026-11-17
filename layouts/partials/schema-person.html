@@ -10,7 +10,7 @@
   "url" $url
   "image" (absURL "images/profile.png")
   "jobTitle" site.Params.schema.jobTitle
-  "description" site.Params.description
+  "description" (site.Params.bio | default site.Params.description)
   "knowsAbout" site.Params.schema.knowsAbout
   "knowsLanguage" (slice "da" "en" "ru")
   "address" (dict "@type" "PostalAddress" "addressLocality" "Copenhagen" "addressCountry" "DK")

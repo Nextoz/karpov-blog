@@ -2,6 +2,8 @@
        New blocks are built as dicts and printed with jsonify, so they are always valid JSON. */ -}}
 {{- $person := partial "schema-person.html" . -}}
 {{- $personRef := dict "@id" (index $person "@id") -}}
+{{- $business := partial "schema-business.html" . -}}
+{{- $businessRef := dict "@id" (index $business "@id") -}}
 {{ if .IsHome }}
 {{- $website := dict
   "@type" "WebSite"
@@ -12,7 +14,7 @@
   "inLanguage" site.Language.LanguageCode
   "publisher" $personRef
 -}}
-<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" (slice $person $website) | jsonify | safeJS }}</script>
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" (slice $person $business $website) | jsonify | safeJS }}</script>
 {{- else if (or .IsPage .IsSection) }}
 {{/* BreadcrumbList */}}
 {{- $url := replace .Parent.Permalink ( printf "%s" site.Home.Permalink) "" }}
@@ -109,12 +111,12 @@
   "url" .Permalink
   "inLanguage" .Language.Lang
   "dateModified" $modified
-  "provider" $person
+  "provider" $businessRef
   "areaServed" (slice (dict "@type" "City" "name" "Copenhagen") (dict "@type" "Country" "name" "Denmark"))
   "audience" (dict "@type" "BusinessAudience" "name" "Small businesses")
   "offers" $offers
 -}}
-{{- $graph := slice $service -}}
+{{- $graph := slice $service $business $person -}}
 {{- with .Params.faq -}}
   {{- $questions := slice -}}
   {{- range . -}}
@@ -123,6 +125,19 @@
   {{- $graph = $graph | append (dict "@type" "FAQPage" "@id" (printf "%s#faq" $.Permalink) "inLanguage" $.Language.Lang "mainEntity" $questions) -}}
 {{- end }}
 <script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}</script>
+{{- else if (and .IsPage (eq .Params.schemaType "contact")) }}
+{{- /* Contact page: ContactPage about the freelance business. */}}
+{{- $contact := dict
+  "@type" "ContactPage"
+  "@id" (printf "%s#contact" .Permalink)
+  "name" (.Title | plainify)
+  "url" .Permalink
+  "description" $pageDescription
+  "inLanguage" .Language.Lang
+  "dateModified" $modified
+  "mainEntity" $businessRef
+-}}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" (slice $contact $business $person) | jsonify | safeJS }}</script>
 {{- else if (and .IsPage (eq .Section "posts")) }}
 <script type="application/ld+json">
 {

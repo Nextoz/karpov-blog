@@ -21,6 +21,12 @@ title = "Evgeny Karpov"
 description = "Engineering notes fra København om DevOps, platform engineering, .NET, observability og AI-systemer, der skal fungere i produktion."
 tagline = "DevOps, platform engineering og AI-systemer"
 author = "Evgeny Karpov"
+# Contact address used by the contact buttons (shortcode contact-button, home page) and the footer.
+contactEmail = "evgeny@karpov.dk"
+# Bio for the Person in structured data. The site description above stays the blog's description.
+bio = "Senior software engineer og freelance-konsulent i København. Hjælper mindre virksomheder med at få AI i brug til faste priser og tager kontraktopgaver inden for .NET, Azure DevOps og platform engineering."
+# CVR number for the footer. Empty until the company is registered; the footer shows it when set.
+cvr = ""
 images = ["images/og/default.png"]
 mainSections = ["posts"]
 DateFormat = "2. January 2006"
@@ -205,9 +211,9 @@ pageRef = "/om"
 weight = 40
 
 [[languages.da.menu.main]]
-identifier = "tags"
-name = "Emner"
-pageRef = "/tags"
+identifier = "contact"
+name = "Kontakt"
+pageRef = "/kontakt"
 weight = 50
 
 [[languages.da.menu.main]]
@@ -225,6 +231,7 @@ title = "Evgeny Karpov"
 [languages.en.params]
 tagline = "DevOps, platform engineering and AI systems"
 description = "Engineering notes from Copenhagen about DevOps, platform engineering, .NET, observability and AI systems that have to work in production."
+bio = "Senior software engineer and freelance consultant in Copenhagen. Helps small businesses put AI to work at fixed prices and takes contract work in .NET, Azure DevOps and platform engineering."
 images = ["images/og/default.en.png"]
 
 [[languages.en.menu.main]]
@@ -258,9 +265,9 @@ pageRef = "/om"
 weight = 40
 
 [[languages.en.menu.main]]
-identifier = "tags"
-name = "Topics"
-pageRef = "/tags"
+identifier = "contact"
+name = "Contact"
+pageRef = "/kontakt"
 weight = 50
 
 [[languages.en.menu.main]]
