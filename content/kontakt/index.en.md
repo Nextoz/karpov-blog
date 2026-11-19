@@ -6,7 +6,7 @@ summary: "Get in touch about AI consulting or contract work."
 translationKey: "contact"
 schemaType: "contact"
 url: "/en/contact/"
-lastmod: 2026-11-16
+lastmod: 2026-11-19
 hidemeta: true
 ShowReadingTime: false
 disableShare: true
@@ -30,3 +30,10 @@ The first call is free and takes 20 minutes. Write a few lines about what you ne
 - GitHub: [github.com/Nextoz](https://github.com/Nextoz)
 
 I work in English and Danish.
+
+## Business details
+
+- **Karpov Consulting**, sole proprietorship owned by Evgeny Karpov
+- Danish CVR number: [44583445](https://datacvr.virk.dk/enhed/virksomhed/44583445)
+- Copenhagen, Denmark
+- Email: [evgeny@karpov.dk](mailto:evgeny@karpov.dk)
