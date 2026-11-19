@@ -8,7 +8,7 @@
 {{- $business := dict
   "@type" "ProfessionalService"
   "@id" (printf "%s#business" (absURL "/"))
-  "name" site.Params.author
+  "name" (site.Params.businessName | default site.Params.author)
   "url" $url
   "description" (site.Params.bio | default site.Params.description)
   "image" (absURL "images/og/default.png")
@@ -20,5 +20,6 @@
   "priceRange" (cond $isDA "700–25.000 kr." "DKK 700–25,000")
   "sameAs" site.Params.schema.sameAs
 -}}
+{{- with site.Params.businessName -}}{{- $business = merge $business (dict "legalName" .) -}}{{- end -}}
 {{- with site.Params.cvr -}}{{- $business = merge $business (dict "taxID" .) -}}{{- end -}}
 {{- return $business -}}

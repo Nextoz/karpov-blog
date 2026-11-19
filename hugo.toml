@@ -27,8 +27,11 @@ author = "Evgeny Karpov"
 contactEmail = "evgeny@karpov.dk"
 # Bio for the Person in structured data. The site description above stays the blog's description.
 bio = "Senior software engineer og freelance-konsulent i København. Hjælper mindre virksomheder med at få AI i brug til faste priser og tager kontraktopgaver inden for .NET, Azure DevOps og platform engineering."
-# CVR number for the footer. Empty until the company is registered; the footer shows it when set.
-cvr = ""
+# CVR number for the footer and structured data (taxID). Registered 19 Nov 2026.
+cvr = "44583445"
+# Registered business name (enkeltmandsvirksomhed, same as in CVR). Shown in the footer and as the
+# name of the ProfessionalService in structured data; the Person keeps params.author.
+businessName = "Karpov Consulting"
 images = ["images/og/default.png"]
 mainSections = ["posts"]
 DateFormat = "2. January 2006"

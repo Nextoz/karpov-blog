@@ -5,7 +5,7 @@ description: "Kontakt Evgeny Karpov om AI-rådgivning til mindre virksomheder el
 summary: "Kontakt om AI-rådgivning eller kontraktopgaver."
 translationKey: "contact"
 schemaType: "contact"
-lastmod: 2026-11-16
+lastmod: 2026-11-19
 hidemeta: true
 ShowReadingTime: false
 disableShare: true
@@ -29,3 +29,10 @@ Den første samtale er gratis og tager 20 minutter. Skriv kort, hvad du gerne vi
 - GitHub: [github.com/Nextoz](https://github.com/Nextoz)
 
 Jeg arbejder på dansk og engelsk.
+
+## Virksomhedsoplysninger
+
+- **Karpov Consulting** v/ Evgeny Karpov (enkeltmandsvirksomhed)
+- CVR: [44583445](https://datacvr.virk.dk/enhed/virksomhed/44583445)
+- København
+- E-mail: [evgeny@karpov.dk](mailto:evgeny@karpov.dk)

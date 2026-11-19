@@ -1,17 +1,21 @@
-{{- /* Site override of PaperMod's footer: copyright, contact and (once registered) the CVR number
+{{- /* Site override of PaperMod's footer: copyright (business name when set), contact and the CVR number
        instead of the "Powered by" line. PaperMod is credited on the portfolio's Karpov Blog section.
        Everything after the <footer> element is copied unchanged from the theme. */ -}}
 {{- $isDA := eq .Lang "da" -}}
 {{- if not (.Param "hideFooter") }}
 <footer class="footer">
+    {{- with site.Params.businessName }}
+    <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ . }}</a>{{ if $isDA }} v/ {{ else }}, {{ end }}{{ site.Params.author }}</span>
+    {{- else }}
     <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
+    {{- end }}
     {{- print " · " }}
     <span><a href="mailto:{{ site.Params.contactEmail }}">{{ site.Params.contactEmail }}</a></span>
     {{- print " · " }}
     <span><a href="https://www.linkedin.com/in/evgenykarpov91/" rel="me">LinkedIn</a></span>
     {{- with site.Params.cvr }}
     {{- print " · " }}
-    <span>CVR {{ . }}</span>
+    <span>CVR <a href="https://datacvr.virk.dk/enhed/virksomhed/{{ . }}" rel="noopener">{{ . }}</a></span>
     {{- end }}
     {{- with site.GetPage "/kontakt" }}
     {{- print " · " }}
