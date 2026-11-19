@@ -1,7 +1,7 @@
 ---
 title: "Contact"
 seoTitle: "Contact Evgeny Karpov: AI consulting and freelance work in Copenhagen"
-description: "Contact Evgeny Karpov about AI consulting for small businesses or contract work in .NET, Azure DevOps and platform engineering. Copenhagen and remote."
+description: "Write to me about AI consulting for a small business or contract work in .NET, Azure DevOps and platform engineering. I reply in English or Danish."
 summary: "Get in touch about AI consulting or contract work."
 translationKey: "contact"
 schemaType: "contact"
@@ -20,7 +20,7 @@ The first call is free and takes 20 minutes. Write a few lines about what you ne
 
 ## What you can contact me about
 
-- **AI consulting for small businesses.** An assessment, a first automation and ongoing help at fixed prices. See [AI consulting and prices](/en/ai-consulting/).
+- **AI consulting for small businesses.** Fixed-price AI assessments and first automations, with ongoing help billed hourly. See [AI consulting and prices](/en/ai-consulting/).
 - **Contract work.** .NET and C#, Azure DevOps, CI/CD, infrastructure as code and platform engineering, in Greater Copenhagen, hybrid or remote. See [my experience](/en/projects/#contract-work).
 
 ## How to reach me

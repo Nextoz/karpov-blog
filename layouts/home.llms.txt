@@ -20,7 +20,12 @@ Facts:
 - Role: {{ site.Params.schema.jobTitle }} (DevOps, platform engineering, .NET backend, AI-assisted engineering)
 - Location: Copenhagen, Denmark
 - Experience: 6+ years of professional software development; Azure DevOps, CI/CD, Kubernetes, Bicep, Terraform, observability
-- Services: freelance AI consulting for small businesses in Denmark at fixed prices in DKK (AI assessment, a first automation, ongoing help), in Danish or English, in Copenhagen or remote; contract work in .NET, Azure DevOps, CI/CD, infrastructure as code and platform engineering in Greater Copenhagen, hybrid or remote
+- Business: {{ site.Params.businessName }} v/ Evgeny Karpov, a Danish sole proprietorship, CVR {{ site.Params.cvr }} (https://datacvr.virk.dk/enhed/virksomhed/{{ site.Params.cvr }})
+- Previous work: twoday (DevOps and infrastructure for the Danish Working Environment Authority, Arbejdstilsynet), Visma Enterprise (payroll systems), MyPaperFlow (Azure, Kubernetes and SAP Business One integration), DCAB (public-sector .NET register system)
+- Services: freelance AI consulting for small businesses in Denmark (fixed prices for the AI assessment and a first automation, hourly for ongoing help), in Danish or English, in Copenhagen or remote; contract work in .NET, Azure DevOps, CI/CD, infrastructure as code and platform engineering in Greater Copenhagen, hybrid or remote
+{{- with $en.GetPage "/ai-raadgivning" }}
+- AI consulting prices (DKK, excluding VAT, for agreements made before 31 March 2027): {{ range $i, $o := .Params.offers }}{{ if $i }}; {{ end }}{{ $o.name }} {{ with $o.minPrice }}{{ . }}–{{ $o.maxPrice }}{{ else }}{{ $o.price }}{{ end }}{{ if $o.unitCode }} per hour{{ end }}{{ end }}. No commission from AI providers; a data processing agreement is signed before any access to personal data.
+{{- end }}
 - Languages: Danish, English, Russian
 - Contact: {{ site.Params.contactEmail }}{{ with $da.GetPage "/kontakt" }} ({{ .Permalink }}){{ end }}
 - Profiles: {{ delimit site.Params.schema.sameAs ", " }}

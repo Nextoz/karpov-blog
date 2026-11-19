@@ -1,10 +1,11 @@
 ---
-title: "DevOps, Platform Engineering and .NET Portfolio"
-description: "Portfolio for Evgeny Karpov: Azure DevOps, .NET, Kubernetes, CI/CD, observability, platform engineering, public-sector IT and AI-assisted software development."
+title: "Projects and experience"
+seoTitle: "DevOps, platform engineering and .NET: projects and experience | Evgeny Karpov"
+description: "Client projects, contract work and the systems I build and use myself: .NET, Azure DevOps, Kubernetes, observability and AI agents."
 summary: "Selected experience across DevOps, platform engineering, .NET backend, cloud, CI/CD, observability and AI-assisted software development."
 translationKey: "portfolio"
 schemaType: "portfolio"
-lastmod: 2026-11-16
+lastmod: 2026-11-19
 url: "/en/projects/"
 hidemeta: true
 ShowReadingTime: false
@@ -12,9 +13,9 @@ ShowShareButtons: false
 ShowWordCount: false
 ---
 
-I am a senior software engineer and freelance consultant with a strong .NET/backend background and a growing focus on DevOps, platform engineering, CI/CD, infrastructure, observability and production troubleshooting.
+I take on .NET, Azure DevOps and cloud infrastructure contracts. For the Danish Working Environment Authority (through twoday), I helped set up a new test environment and improved CI/CD pipelines. At MyPaperFlow, I improved autoscaling with KEDA and Azure Service Bus. [See the contract work I take on](#contract-work).
 
-My professional profile sits between software development and operations: I understand application code, pipelines, cloud infrastructure, deployments, environments and the practical problems that appear when systems need to work reliably in production.
+I work where software development and operations meet: application code, pipelines, cloud infrastructure, deployments and the problems that only show up once a system runs in production.
 
 ## Projects
 

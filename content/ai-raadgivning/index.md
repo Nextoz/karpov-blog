@@ -1,11 +1,12 @@
 ---
 title: "AI-rådgivning til mindre virksomheder"
 seoTitle: "AI-konsulent i København: AI-rådgivning til faste priser"
-description: "Praktisk hjælp til at få AI i brug i en mindre virksomhed: afklaring, en første automatisering og løbende hjælp til faste priser. København og remote."
-summary: "Praktisk hjælp til at få AI i brug i en mindre virksomhed, til faste priser."
+description: "Praktisk hjælp til at få AI i brug i en mindre virksomhed: en afklaring og en første automatisering til fast pris og løbende hjælp pr. time. København og remote."
+summary: "Praktisk hjælp til at få AI i brug i en mindre virksomhed, med faste priser på afklaring og første automatisering."
 translationKey: "ai-consulting"
 schemaType: "service"
 serviceType: "AI-rådgivning"
+priceValidUntil: "2027-03-30"
 offers:
   - name: "AI-afklaring"
     description: "Et møde på 2–3 timer og en skriftlig anbefaling med de tre bedste muligheder, hvad de koster at bygge, og hvad de koster i drift."
@@ -15,7 +16,7 @@ offers:
     minPrice: 15000
     maxPrice: 25000
   - name: "Løbende hjælp"
-    description: "Videreudvikling, fejlretning og sparring efter behov, pr. time."
+    description: "Videreudvikling, fejlretning og sparring efter behov."
     price: 700
     unitCode: "HUR"
 faq:
@@ -24,7 +25,11 @@ faq:
   - q: "Hvem er det for?"
     a: "Mindre virksomheder, som vil bruge AI i det daglige arbejde, men ikke har egne udviklere eller tid til at finde ud af, hvor de skal starte. I behøver ikke teknisk viden."
   - q: "Kan vores data blive i EU?"
-    a: "Ja, det kan lade sig gøre. Jeg kan bygge løsningen på europæiske modeller og europæisk hosting, så data ikke forlader EU. Hvad der passer bedst til jer, indgår i afklaringen."
+    a: "Det kan ofte lade sig gøre med europæiske modeller og europæisk hosting. I afklaringen gennemgår vi, hvor jeres data bliver behandlet og gemt, også hos underleverandører, og jeg vurderer, om den konkrete løsning lever op til kravet."
+  - q: "Skal vi have en databehandleraftale?"
+    a: "Ja, når løsningen behandler persondata, fx mails om bordbestillinger. Vi underskriver databehandleraftalen, før jeg får adgang til jeres data, og data sendes kun til leverandører, I har godkendt."
+  - q: "Får du provision fra de leverandører, du anbefaler?"
+    a: "Nej. Jeg får ingen provision, henvisningsgebyr eller avance fra AI-leverandører og sælger ikke licenser. Anbefalingen fra afklaringen kan I bruge, uanset hvem der bygger løsningen."
   - q: "Hvor lang tid tager det?"
     a: "Afklaringen er et møde på 2–3 timer og en skriftlig anbefaling. En første automatisering tager typisk 2–4 uger."
   - q: "Arbejder du kun i København?"
@@ -32,7 +37,7 @@ faq:
   - q: "Hvad hvis AI ikke er svaret på vores problem?"
     a: "Så siger jeg det. Den første samtale er gratis, og anbefalingen fra afklaringen kan I bruge, uanset om I går videre med mig."
 ogImage: "images/og/ai-raadgivning.png"
-lastmod: 2026-11-16
+lastmod: 2026-11-19
 hidemeta: true
 ShowReadingTime: false
 disableShare: true
@@ -40,7 +45,9 @@ ShowWordCount: false
 showtoc: false
 ---
 
-Mange virksomheder har prøvet en chatbot og er ikke kommet længere. Jeg er freelance AI-konsulent i København og hjælper mindre virksomheder med at finde de opgaver, hvor AI faktisk sparer tid, og med at bygge løsningen, så den også virker om tre måneder.
+Bruger I tid på de samme mails, bilag eller bookinger hver uge? Jeg er freelance AI-konsulent i København og hjælper mindre virksomheder med at finde de opgaver, hvor AI faktisk sparer tid, og med at bygge løsningen, så den også virker om tre måneder.
+
+Det starter med en gratis samtale på 20 minutter. Giver det mening at gå videre, koster en AI-afklaring 4.500 kr. ekskl. moms: et møde på 2–3 timer og en skriftlig anbefaling med priser for at bygge og drive løsningen. [Se alle priser](#priser).
 
 {{< contact-button >}}
 
@@ -59,7 +66,7 @@ Det behøver ikke være stort. Typiske første opgaver i en butik, en café elle
 - **Bookinger og forespørgsler.** AI'en læser mails om bordbestilling, selskaber og events, sorterer dem og skriver et udkast til svar, som I godkender, før det bliver sendt.
 - **Anmeldelser.** Udkast til svar på Google-anmeldelser i jeres egen tone, på dansk og engelsk.
 - **Menukort og allergener.** Oversættelse af menu, allergenliste og åbningstider, så hjemmeside og Google viser det samme.
-- **Fakturaer og bilag.** Beløb, dato og leverandør hentes ud af PDF'er og billeder og lagt i et regneark eller jeres bogføringsprogram.
+- **Fakturaer og bilag.** Beløb, dato og leverandør hentes ud af PDF'er og billeder og lægges i et regneark eller jeres bogføringsprogram.
 - **Ugens overblik.** En kort opsummering hver mandag morgen af bookinger, salg eller henvendelser, så I ikke selv skal samle tallene.
 
 ## Priser
@@ -91,9 +98,9 @@ Alle priser er ekskl. moms. Går I videre med en automatisering, trækker jeg pr
 
 - **Jeg bruger selv det, jeg bygger.** Mine [planlagte agenter](/projekter/#scouts) kører hver morgen, og jeg har bygget min egen telefon-app med et hold af AI-agenter, som jeg styrer og reviewer.
 - **Jeg kender forskel på en demo og drift.** Jeg har mere end seks års erfaring med softwareudvikling, DevOps og systemer, der skal køre hver dag. En automatisering, der fejler stille, er værre end ingen automatisering.
-- **Jeg er ikke bundet til én leverandør.** Jeg har kørt de samme opgaver på amerikanske, kinesiske og europæiske modeller, også hos en europæisk cloududbyder, og vælger efter opgaven, prisen og hvor data ender.
+- **Jeg er ikke bundet til én leverandør.** Jeg har kørt de samme opgaver på amerikanske, kinesiske og europæiske modeller, også hos en europæisk cloududbyder, og vælger efter opgaven, prisen og hvor data ender. Jeg får ingen provision fra de leverandører, jeg anbefaler.
 - **Sikkerhed er med fra start.** Læs, [hvordan jeg arbejder med sikkerhed](/projekter/#sikkerhed) i mine egne agentsystemer.
-- **Jeg arbejder allerede for en lokal virksomhed.** For baren [Vintønden](/projekter/#vintonden) på Frederiksberg står jeg for sider på tre sprog, structured data og synlighed i Google og AI-assistenter, direkte i deres WordPress-site.
+- **Jeg arbejder allerede for en lokal virksomhed.** For baren [Vintønden](/projekter/#vintonden) på Frederiksberg har jeg siden maj 2026 lavet sider på dansk, engelsk og spansk, rettet bookingflowet og tilføjet strukturerede oplysninger om baren og dens arrangementer i deres WordPress-site.
 
 ## Ofte stillede spørgsmål
 

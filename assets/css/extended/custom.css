@@ -383,6 +383,77 @@ summary:focus-visible {
   border-radius: 8px;
 }
 
+/* Skip link: off-screen until it gets keyboard focus. */
+.skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 1000;
+  padding: 0.6rem 1rem;
+  color: var(--theme);
+  background: var(--accent);
+  border-radius: 6px;
+  font-weight: 600;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
+.main:focus {
+  outline: none;
+}
+
+/* Offer block under the hero: three services with prices from the AI page. */
+.offer-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.offer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.1rem 1.2rem;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.offer-name {
+  margin: 0;
+  color: var(--primary);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.offer-price {
+  margin: 0;
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.offer-desc {
+  margin: 0;
+  color: var(--secondary);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 760px) {
+  .offer-list {
+    grid-template-columns: 1fr;
+  }
+}
+
 .home-section {
   margin: 0 0 5rem;
   padding-top: 3rem;
@@ -500,8 +571,20 @@ summary:focus-visible {
 .post-content h2,
 .post-content h3 {
   margin-top: 2.4rem;
+  font-family: var(--font-display);
   font-weight: 600;
   letter-spacing: 0;
+}
+
+/* Same display font as the page titles and homepage headings, sized for the wider mono glyphs. */
+.post-content h2 {
+  font-size: clamp(1.3rem, 2.2vw, 1.5rem);
+  line-height: 1.25;
+}
+
+.post-content h3 {
+  font-size: 1.12rem;
+  line-height: 1.3;
 }
 
 .post-content a {
@@ -703,20 +786,25 @@ summary:focus-visible {
     justify-content: space-between;
   }
 
-  .menu-toggle {
+  .has-menu-js .menu-toggle {
     display: inline-flex;
   }
 
   #menu {
-    display: none;
+    flex-wrap: wrap;
     width: 100%;
+  }
+
+  .has-menu-js #menu {
+    display: none;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-items: stretch;
     gap: 0.15rem;
     padding: 0.5rem 0 1rem;
   }
 
-  #menu.is-open {
+  .has-menu-js #menu.is-open {
     display: flex;
     max-height: calc(100dvh - 60px);
     overflow-y: auto;
@@ -919,7 +1007,8 @@ summary:focus-visible {
 }
 
 .project-grid .project-card--in-use .project-status,
-.project-grid .project-card--live .project-status {
+.project-grid .project-card--live .project-status,
+.project-grid .project-card--client .project-status {
   color: var(--ok);
 }
 
@@ -1161,7 +1250,10 @@ summary:focus-visible {
     display: none;
   }
 
+  /* Card per service on phones: name, then price, then what you get. */
   .post-content .price-table tr {
+    display: flex !important;
+    flex-direction: column;
     margin-bottom: 0.9rem;
     padding: 0.9rem 1rem;
     background: var(--entry);
@@ -1176,7 +1268,12 @@ summary:focus-visible {
   }
 
   .post-content .price-table td:last-child {
-    margin-top: 0.4rem;
+    order: -1;
+    margin: 0.1rem 0 0.35rem;
     white-space: normal;
+  }
+
+  .post-content .price-table td:first-child {
+    order: -2;
   }
 }

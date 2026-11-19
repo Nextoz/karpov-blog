@@ -1,19 +1,20 @@
 ---
-title: "DevOps, Platform Engineering og .NET Portfolio"
-description: "Portfolio for Evgeny Karpov: Azure DevOps, .NET, Kubernetes, CI/CD, observability, platform engineering, offentlig IT og AI-assisteret softwareudvikling."
+title: "Projekter og erfaring"
+seoTitle: "DevOps, platform engineering og .NET: projekter og erfaring | Evgeny Karpov"
+description: "Kundeprojekter, kontraktopgaver og de systemer, jeg selv bygger og bruger: .NET, Azure DevOps, Kubernetes, observability og AI-agenter."
 summary: "Udvalgte projekter og erfaringer inden for DevOps, platform engineering, .NET backend, cloud, CI/CD, observability og AI-assisteret softwareudvikling."
 translationKey: "portfolio"
 schemaType: "portfolio"
-lastmod: 2026-11-16
+lastmod: 2026-11-19
 hidemeta: true
 ShowReadingTime: false
 ShowShareButtons: false
 ShowWordCount: false
 ---
 
-Jeg er senior software engineer og freelance-konsulent med en stærk .NET/backend-baggrund og et nyere fokus på DevOps, platform engineering, CI/CD, infrastruktur, observability og produktionstroubleshooting.
+Jeg tager kontraktopgaver inden for .NET, Azure DevOps og cloud-infrastruktur. For Arbejdstilsynet (via twoday) var jeg med til at etablere et nyt testmiljø og forbedrede CI/CD-pipelines. På MyPaperFlow forbedrede jeg autoskaleringen med KEDA og Azure Service Bus. [Se, hvilke kontraktopgaver jeg tager](#kontraktopgaver).
 
-Min professionelle profil ligger i krydsfeltet mellem softwareudvikling og drift: jeg forstår både applikationskode, pipelines, cloud-infrastruktur, deployments, miljøer og de praktiske problemer, der opstår, når systemer skal fungere i produktion.
+Jeg arbejder, hvor softwareudvikling og drift mødes: applikationskode, pipelines, cloud-infrastruktur, deployments og de problemer, der først viser sig, når systemet kører i produktion.
 
 ## Projekter
 
@@ -90,7 +91,7 @@ MyPaperFlow var en cloud-baseret dokument- og fakturaplatform med integration ti
 
 ### Hvorfor det er relevant
 
-Projektet viser praktisk DevOps-erfaring med rigtige cloud-systemer. Ikke kun YAML, men arbejdet med at bygge, deploye, skalere og drifte services i rigtige miljøer.
+Projektet viser praktisk DevOps-erfaring med rigtige cloud-systemer: mere end YAML, nemlig arbejdet med at bygge, deploye, skalere og drifte services i rigtige miljøer.
 
 ---
 

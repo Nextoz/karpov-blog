@@ -71,7 +71,9 @@
   {{- with .minPrice }}{{ $spec = merge $spec (dict "minPrice" .) }}{{ end -}}
   {{- with .maxPrice }}{{ $spec = merge $spec (dict "maxPrice" .) }}{{ end -}}
   {{- with .unitCode }}{{ $spec = merge $spec (dict "unitCode" .) }}{{ end -}}
-  {{- $offers = $offers | append (dict "@type" "Offer" "name" .name "description" .description "priceCurrency" "DKK" "priceSpecification" $spec "url" $.Permalink) -}}
+  {{- $offer := dict "@type" "Offer" "name" .name "description" .description "priceCurrency" "DKK" "priceSpecification" $spec "url" $.Permalink -}}
+  {{- with $.Params.priceValidUntil }}{{ $offer = merge $offer (dict "priceValidUntil" .) }}{{ end -}}
+  {{- $offers = $offers | append $offer -}}
 {{- end -}}
 {{- $service := dict
   "@type" "Service"

@@ -187,7 +187,7 @@ title = "Evgeny Karpov"
 
 [[languages.da.menu.main]]
 identifier = "home"
-name = "Start her"
+name = "Forside"
 url = "/"
 weight = 10
 
@@ -199,7 +199,7 @@ weight = 20
 
 [[languages.da.menu.main]]
 identifier = "portfolio"
-name = "Portfolio"
+name = "Projekter"
 pageRef = "/projekter"
 weight = 30
 
@@ -253,7 +253,7 @@ weight = 20
 
 [[languages.en.menu.main]]
 identifier = "portfolio"
-name = "Portfolio"
+name = "Projects"
 pageRef = "/projekter"
 weight = 30
 

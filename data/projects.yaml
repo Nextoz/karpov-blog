@@ -10,11 +10,11 @@
   da:
     name: Vintønden
     status: Kundeprojekt
-    summary: Teknisk SEO, GEO og WordPress for en bar på Frederiksberg. Structured data, sider på tre sprog og egne små plugins, lavet direkte i produktion.
+    summary: Teknisk SEO, GEO og WordPress for en bar på Frederiksberg siden maj 2026. Sider på dansk, engelsk og spansk, et rettet bookingflow, structured data og små egne plugins. Backup før hver ændring.
   en:
     name: Vintønden
     status: Client project
-    summary: Technical SEO, GEO and WordPress for a bar in Frederiksberg. Structured data, pages in three languages and my own small plugins, done directly in production.
+    summary: Technical SEO, GEO and WordPress for a bar in Frederiksberg since May 2026. Danish, English and Spanish pages, a fixed booking flow, structured data and small custom plugins. A backup before every change.
 
 - id: vault-companion
   home: true
