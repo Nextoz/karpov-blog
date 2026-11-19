@@ -10,7 +10,7 @@ priceValidUntil: "2027-03-31"
 offers:
   - name: "AI assessment"
     description: "A 2–3 hour meeting and a written recommendation with the three best opportunities, what they cost to build, and what they cost to run."
-    details: "A 2–3 hour meeting at your office or online and a written recommendation: the three best opportunities, what they cost to build, and what they cost to run. The recommendation is yours, even if someone else builds the solution."
+    details: "A 2–3 hour meeting at your office or online and a written recommendation within 5 working days: the three best opportunities, what they cost to build, and what they cost to run. The recommendation is yours, even if someone else builds the solution."
     price: 4500
   - name: "First automation"
     description: "One workflow built, tested and put into operation, with documentation and handover. Fixed price, agreed before we start."
@@ -33,9 +33,9 @@ faq:
   - q: "Do you get commission from the providers you recommend?"
     a: "No. I receive no commission, referral fee or reseller margin from AI providers, and I do not sell licences. You can use the recommendation from the assessment whoever builds the solution."
   - q: "How long does it take?"
-    a: "The assessment is a 2–3 hour meeting and a written recommendation. A first automation typically takes 2–4 weeks."
+    a: "The assessment starts with a 2–3 hour meeting. You receive the written recommendation within 5 working days of the meeting. A first automation typically takes 2–4 weeks."
   - q: "Do you only work in Copenhagen?"
-    a: "I am based in Copenhagen and am happy to visit businesses in the Greater Copenhagen area. Everything else we do online. I work in English and Danish."
+    a: "I am based in Copenhagen and am happy to visit businesses in the Greater Copenhagen area. Elsewhere, we work online. I work in English and Danish."
   - q: "What if AI is not the answer to our problem?"
     a: "Then I will say so. The first call is free, and you can use the recommendation from the assessment whether or not you continue with me."
 url: "/en/ai-consulting/"
@@ -50,7 +50,7 @@ showtoc: false
 
 Do the same emails, receipts or bookings take up your time every week? I am a freelance AI consultant in Copenhagen. I help small businesses find tasks where AI can save time and build a solution their team can use every day.
 
-It starts with a free 20-minute call. If it makes sense to go further, an AI assessment costs DKK 4,500 excluding VAT: a 2–3 hour meeting and a written recommendation with what it costs to build and run the solution. You can use the recommendation yourself or take it to another provider, and if you hire me to build the automation, I deduct the DKK 4,500 assessment fee from the agreed build price. [See all prices](#prices).
+It starts with a free 20-minute call. If it makes sense to go further, an AI assessment costs DKK 4,500 excluding VAT: a 2–3 hour meeting and a written recommendation with what it costs to build and run the solution. You can use the recommendation yourself or take it to another provider, and if you hire me to build the automation, I deduct the DKK 4,500 assessment fee from the agreed build price. [See prices and terms](#prices).
 
 I work in English and Danish, in Copenhagen or remote.
 
@@ -80,7 +80,7 @@ These are introductory prices and apply to agreements made on or before 31 March
 
 {{< offers >}}
 
-All prices are in Danish kroner (DKK) and exclude Danish VAT. If you hire me to build the automation, I deduct the DKK 4,500 assessment fee from the agreed build price.
+All prices are in Danish kroner (DKK) and exclude Danish VAT. For standard self-funded projects, I deduct the DKK 4,500 assessment fee from the agreed price if you hire me to build the solution. For engagements that require impartial advice, such as subsidised ones, the assessment fee is the same whichever provider you choose to build the solution.
 
 {{< contact-button >}}
 
@@ -94,7 +94,7 @@ All prices are in Danish kroner (DKK) and exclude Danish VAT. If you hire me to 
 ## Why me
 
 - **I already work for a local business.** Since May 2026, I have built Danish, English and Spanish pages for the bar [Vintønden](/en/projects/#vintonden) in Frederiksberg, fixed its booking flow and added structured information about the bar and its events to its WordPress site.
-- **I've built automations that use AI.** In previous roles, I added AI steps to DevOps pipelines. Every morning, my own [agents](/en/projects/#scouts) sort new events, offers and research and show me a shortlist. The same approach can sort booking emails before a member of staff replies.
+- **I have built automations that use AI.** In previous roles, I added AI steps to DevOps pipelines. Every morning, my own [agents](/en/projects/#scouts) sort new events, offers and research and show me a shortlist. The same approach can sort booking emails before a member of staff replies.
 - **I know the difference between a demo and operations.** I have more than six years of experience with software development, DevOps and systems that have to run every day. An automation that fails silently is worse than no automation.
 - **I am not tied to one vendor.** I have run the same tasks on American, Chinese and European models, including with a European cloud provider, and I choose by the task, the price and where the data ends up. I receive no commission from the providers I recommend.
 - **Security is there from the start.** Read [how I work with security](/en/projects/#security) in my own agent systems.

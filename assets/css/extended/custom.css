@@ -271,6 +271,12 @@ summary:focus-visible {
   font-weight: 500;
 }
 
+/* List and section headings (Blog, tags) use the same display font as page titles. */
+.page-header h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
 .home-hero h1 {
   max-width: 20ch;
   margin: 0;
@@ -646,10 +652,11 @@ summary:focus-visible {
 /* Blog/Portfolio list pages render post_meta.html inside .entry-footer
    (single-post pages use .post-meta instead) - give it the same quiet
    stacked treatment instead of falling back to unstyled inline spans. */
+/* List cards: date and reading time side by side (each label still above its value). */
 .entry-footer {
   display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.5rem;
   margin-top: 0.75rem;
   font-family: var(--font-display);
   font-size: 0.8rem;
@@ -800,7 +807,8 @@ summary:focus-visible {
 /* Stacked buttons on phones share one width instead of hugging their labels. */
 @media (max-width: 480px) {
   .hero-actions .button,
-  .post-content .cta-buttons a.button {
+  .post-content .cta-buttons a.button,
+  .post-cta .cta-buttons a.button {
     width: 100%;
   }
 }

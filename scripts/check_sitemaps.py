@@ -189,8 +189,19 @@ def main() -> int:
     en_post = read_html(public, "en/posts/my-obsidian-vault-got-a-small-research-department")
     unpaired_post = read_html(public, "posts/ai-tokens-er-billige-regningen-er-det-ikke")
 
-    require_text(home, "Fra god idé til stabil drift", "Danish home")
-    require_text(en_home, "From a good idea to stable production", "English home")
+    require_text(home, "AI-rådgivning, .NET og DevOps i København", "Danish home")
+    require_text(en_home, "AI consulting, .NET and DevOps in Copenhagen", "English home")
+    # Review rounds 19 Nov 2026: business line, offer prices from the AI page, skip link, no digests on /posts/.
+    require_text(home, "Karpov Consulting · CVR 44583445", "Danish home business line")
+    require_text(home.replace(chr(34), ""), "class=offer-list", "Danish home offer block")
+    require_text(home, "4.500 kr.", "Danish home assessment price")
+    require_text(en_home, "DKK 4,500", "English home assessment price")
+    for label, html in (("Danish home", home), ("English home", en_home)):
+        require_text(html.replace(chr(34), ""), "class=skip-link href=#main-content", f"{label} skip link")
+        require_text(html.replace(chr(34), ""), "id=main-content", f"{label} skip-link target")
+    blog_list = read_html(public, "posts")
+    if "Ugens AI-forskning:" in blog_list:
+        raise AssertionError("The /posts/ list should leave out the AI-assembled digest")
     require_text(home, "images/profile.png", "Danish home portrait")
     require_text(home, "class=language-links", "Danish home language switch")
     require_text(home, f"{BASE_PATH}/en/", "Danish home English target")
@@ -243,7 +254,7 @@ def main() -> int:
     require_text(about, "ProfilePage", "About structured data")
     if "BlogPosting" in portfolio or "BlogPosting" in about:
         raise AssertionError("Portfolio and about pages must not be marked up as blog posts")
-    require_text(en_home, "Engineering notes from Copenhagen", "English home structured data description")
+    require_text(en_home, "Freelance AI and DevOps consultant in Copenhagen", "English home structured data description")
 
     # The weekly digest has its own section and does not lead the home page.
     require_text(home, "id=research", "Danish home research section")
@@ -277,7 +288,7 @@ def main() -> int:
     require_text(en_service, "<title>AI consultant in Copenhagen", "AI consulting search title")
 
     # Project cards link to their write-ups.
-    require_text(home, "/posts/vault-companion/", "Danish home Vault Companion card link")
+    require_text(portfolio, "/posts/vault-companion/", "Portfolio Vault Companion card link")
     require_text(portfolio, "/posts/reverse-engineering-med-ai/", "Portfolio link to the ring post")
     require_text(portfolio, "https://github.com/Nextoz/repo-radar", "Portfolio Repo Radar card")
     require_text(en_portfolio, "https://github.com/Nextoz/repo-radar", "English portfolio Repo Radar card")
@@ -308,12 +319,13 @@ def main() -> int:
     ):
         flat = html.replace(chr(34), "")
         require_text(flat, "href=mailto:evgeny@karpov.dk?subject=", f"{label} contact button")
-    for label, html, vintonden in (("Danish home", home, "/projekter/#vintonden"), ("English home", en_home, "/en/projects/#vintonden")):
+    for label, html, vintonden, contract in (("Danish home", home, "/projekter/#vintonden", "/projekter/#mypaperflow"), ("English home", en_home, "/en/projects/#vintonden", "/en/projects/#mypaperflow")):
         require_text(html.replace(chr(34), ""), "id=contact", f"{label} contact section")
         require_text(html, '"@type":"ProfessionalService"', f"{label} business structured data")
         require_text(html, vintonden, f"{label} Vintønden card")
-        # Vintønden is the first project card: its link comes before the Vault Companion card's.
-        if html.index(vintonden) > html.index("/posts/vault-companion/"):
+        require_text(html, contract, f"{label} MyPaperFlow card")
+        # Vintønden is the first project card: its link comes before the MyPaperFlow card's.
+        if html.index(vintonden) > html.index(contract):
             raise AssertionError(f"{label}: the Vintønden card must come first")
     # Person.description is the bio, per language, not the blog tagline.
     require_text(home, '"description":"Senior software engineer og freelance-konsulent', "Danish Person bio")
@@ -341,8 +353,8 @@ def main() -> int:
         require_text(html, "menu-scroll-position", f"{label} footer menu script")
         if not re.search(r"setItem\([\"'`]pref-theme", html):
             raise AssertionError(f"{label} is missing the theme toggle script")
-    require_text(about, "<title>Om Evgeny Karpov</title>", "About title without the doubled name")
-    require_text(en_about, "<title>About Evgeny Karpov</title>", "English about title without the doubled name")
+    require_text(about, "<title>Om Evgeny Karpov: freelance .NET-, DevOps- og AI-konsulent i København</title>", "About title without the doubled name")
+    require_text(en_about, "<title>About Evgeny Karpov: freelance .NET, DevOps and AI consultant in Copenhagen</title>", "English about title without the doubled name")
     for label, html in (("About", about), ("English about", en_about)):
         if "class=toc" in html.replace(chr(34), ""):
             raise AssertionError(f"{label} should not show a table of contents")
@@ -389,10 +401,10 @@ def main() -> int:
                     raise AssertionError("Breadcrumb positions must run 1..n")
                 return [item["name"] for item in items]
         raise AssertionError("No BreadcrumbList found")
-    if breadcrumb_names(service) != ["Start", "AI-rådgivning til mindre virksomheder"]:
+    if breadcrumb_names(service) != ["Forside", "AI-rådgivning til mindre virksomheder"]:
         raise AssertionError(f"AI-raadgivning breadcrumb is {breadcrumb_names(service)}")
     post_crumbs = breadcrumb_names(unpaired_post)
-    if post_crumbs[:2] != ["Start", "Blog"] or len(post_crumbs) != 3:
+    if post_crumbs[:2] != ["Forside", "Blog"] or len(post_crumbs) != 3:
         raise AssertionError(f"Post breadcrumb should be Start, Blog, title; got {post_crumbs}")
     if breadcrumb_names(en_post)[0] != "Home":
         raise AssertionError("English breadcrumbs should start with Home")
