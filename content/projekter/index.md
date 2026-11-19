@@ -12,23 +12,20 @@ ShowShareButtons: false
 ShowWordCount: false
 ---
 
-Jeg tager kontraktopgaver inden for .NET, Azure DevOps og cloud-infrastruktur. For [Arbejdstilsynet](#arbejdstilsynet) (via twoday) var jeg med til at etablere et nyt testmiljø og forbedrede CI/CD-pipelines. På [MyPaperFlow](#mypaperflow) forbedrede jeg autoskaleringen med KEDA og Azure Service Bus.
-
-Jeg arbejder, hvor softwareudvikling og drift mødes: applikationskode, pipelines, cloud-infrastruktur, deployments og de problemer, der først viser sig, når systemet kører i produktion.
+Jeg hjælper teams med .NET, Azure DevOps og cloud-infrastruktur, og mindre virksomheder med AI.
 
 ## Kontraktopgaver {#kontraktopgaver}
 
-Jeg tager freelance- og kontraktopgaver i Storkøbenhavn, hybrid eller remote. Jeg er stærkest, hvor backendudvikling, DevOps og platformarbejde mødes.
+Jeg tager freelance- og kontraktopgaver i Storkøbenhavn, hybrid eller remote. For [Arbejdstilsynet](#arbejdstilsynet) (via twoday) var jeg med til at etablere et nyt testmiljø og forbedrede CI/CD-pipelines. På [MyPaperFlow](#mypaperflow) forbedrede jeg autoskaleringen med KEDA og Azure Service Bus.
 
-Jeg kan bidrage som:
+Typiske opgaver:
 
-- DevOps Engineer
-- Platform Engineer
-- Site Reliability Engineer
-- Backend Developer med DevOps/platform-ansvar
-- .NET Engineer tæt på infrastruktur og delivery
-
-Min værdi er, at jeg både forstår applikationskode og de systemer, der skal bygge, deploye, monitorere og drifte den.
+- Bygge og forbedre CI/CD-pipelines og release-flows i Azure DevOps
+- Infrastructure as code med Bicep eller Terraform, så miljøer kan genskabes
+- Deployments, autoskalering og fejlsøgning med Docker, Kubernetes og Helm
+- .NET-backend: nye features, opgraderinger og legacy, der skal holdes kørende
+- Logs, metrics og tracing, så fejl bliver opdaget, før brugerne opdager dem
+- Sikkerhed i leverancen: sårbare afhængigheder, secrets og adgang uden langlivede nøgler
 
 <div class="contact-cta">
 
@@ -65,6 +62,7 @@ Vintønden er en bar på Frederiksberg, som jeg løbende løser opgaver for. Jeg
 
 ### Mit bidrag
 
+- Rettede bordbookingen på hjemmesiden
 - Structured data til baren, events og ofte stillede spørgsmål
 - Sider på dansk, engelsk og spansk med korrekt hreflang
 - Oprydning i metadata og sitemap, verificeret mod det offentlige site

@@ -14,7 +14,7 @@ ShowWordCount: false
 showtoc: false
 ---
 
-The first call is free and takes 20 minutes. Write a few lines about what you need help with, and I will suggest a couple of times.
+The first call is free and takes 20 minutes. Write a few lines about what you need help with, and I will suggest a couple of times. I reply within one working day.
 
 {{< contact-button >}}
 

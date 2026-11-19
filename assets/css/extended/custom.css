@@ -797,6 +797,14 @@ summary:focus-visible {
   }
 }
 
+/* Stacked buttons on phones share one width instead of hugging their labels. */
+@media (max-width: 480px) {
+  .hero-actions .button,
+  .post-content .cta-buttons a.button {
+    width: 100%;
+  }
+}
+
 @media (max-width: 900px) {
   .header-nav {
     min-height: 60px;

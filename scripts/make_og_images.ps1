@@ -106,10 +106,10 @@ function Get-FrontMatterValue([string]$text, [string]$key) {
 
 $made = @()
 
-New-OgImage -Path (Join-Path $outDir 'default.png') -Command 'cat noter-fra-koebenhavn.md' `
-    -Title 'Fra god idé til stabil drift' -Footer 'Evgeny Karpov · freelance AI- og DevOps-konsulent'
-New-OgImage -Path (Join-Path $outDir 'default.en.png') -Command 'cat notes-from-copenhagen.md' `
-    -Title 'From a good idea to stable production' -Footer 'Evgeny Karpov · freelance AI and DevOps consultant'
+New-OgImage -Path (Join-Path $outDir 'default.png') -Command 'cat karpov-consulting.md' `
+    -Title 'AI-rådgivning, .NET og DevOps i København' -Footer 'Karpov Consulting · CVR 44583445'
+New-OgImage -Path (Join-Path $outDir 'default.en.png') -Command 'cat karpov-consulting.md' `
+    -Title 'AI consulting, .NET and DevOps in Copenhagen' -Footer 'Karpov Consulting · CVR 44583445'
 New-OgImage -Path (Join-Path $outDir 'digest.png') -Command 'tail -f ugens-ai-forskning.log' `
     -Title 'Ugens AI-forskning' -Footer 'Ugentligt researchoverblik · samlet af AI'
 # Standalone pages opt in with "ogImage: images/og/<name>.png" in their front matter.

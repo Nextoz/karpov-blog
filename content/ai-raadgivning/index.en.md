@@ -50,7 +50,7 @@ showtoc: false
 
 Do the same emails, receipts or bookings take up your time every week? I am a freelance AI consultant in Copenhagen. I help small businesses find tasks where AI can save time and build a solution their team can use every day.
 
-It starts with a free 20-minute call. If it makes sense to go further, an AI assessment costs DKK 4,500 excluding VAT: a 2–3 hour meeting and a written recommendation with what it costs to build and run the solution. You can use the recommendation yourself or take it to another provider, and if you ask me to build the automation, I deduct the DKK 4,500. [See all prices](#prices).
+It starts with a free 20-minute call. If it makes sense to go further, an AI assessment costs DKK 4,500 excluding VAT: a 2–3 hour meeting and a written recommendation with what it costs to build and run the solution. You can use the recommendation yourself or take it to another provider, and if you hire me to build the automation, I deduct the DKK 4,500 assessment fee from the agreed build price. [See all prices](#prices).
 
 I work in English and Danish, in Copenhagen or remote.
 
@@ -70,7 +70,7 @@ It does not have to be big. Typical first tasks in a shop, a café or a small of
 
 - **Bookings and enquiries.** The AI reads emails about table bookings, private parties and events, sorts them and drafts a reply that you approve before it is sent.
 - **Reviews.** Draft replies to Google reviews in your own tone, in English and Danish.
-- **Menus and allergens.** Translating the menu, the allergen list and opening hours, so your website and Google show the same thing.
+- **Menus and opening hours.** Draft translations of menu copy and updates about changed opening hours. You approve the wording before it goes live.
 - **Invoices and receipts.** Amount, date and supplier are pulled out of PDFs and photos and put into a spreadsheet or your accounting software.
 - **The week at a glance.** A short summary every Monday morning of bookings, sales or enquiries, so you do not have to gather the numbers yourself.
 
@@ -80,7 +80,7 @@ These are introductory prices and apply to agreements made on or before 31 March
 
 {{< offers >}}
 
-All prices are in Danish kroner (DKK) and exclude Danish VAT. If you go on to an automation, I deduct the price of the assessment.
+All prices are in Danish kroner (DKK) and exclude Danish VAT. If you hire me to build the automation, I deduct the DKK 4,500 assessment fee from the agreed build price.
 
 {{< contact-button >}}
 
@@ -94,7 +94,7 @@ All prices are in Danish kroner (DKK) and exclude Danish VAT. If you go on to an
 ## Why me
 
 - **I already work for a local business.** Since May 2026, I have built Danish, English and Spanish pages for the bar [Vintønden](/en/projects/#vintonden) in Frederiksberg, fixed its booking flow and added structured information about the bar and its events to its WordPress site.
-- **I have worked with AI automation for a long time.** In my previous jobs I built many DevOps pipelines, including AI automation inside the pipelines themselves. Every morning my own [scheduled agents](/en/projects/#scouts) read new events, offers and research, sort them and put a short selection in front of me. It is the same pattern as sorting booking emails and drafting replies.
+- **I've built automations that use AI.** In previous roles, I added AI steps to DevOps pipelines. Every morning, my own [agents](/en/projects/#scouts) sort new events, offers and research and show me a shortlist. The same approach can sort booking emails before a member of staff replies.
 - **I know the difference between a demo and operations.** I have more than six years of experience with software development, DevOps and systems that have to run every day. An automation that fails silently is worse than no automation.
 - **I am not tied to one vendor.** I have run the same tasks on American, Chinese and European models, including with a European cloud provider, and I choose by the task, the price and where the data ends up. I receive no commission from the providers I recommend.
 - **Security is there from the start.** Read [how I work with security](/en/projects/#security) in my own agent systems.

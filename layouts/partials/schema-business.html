@@ -4,7 +4,6 @@
 {{- $person := partial "schema-person.html" . -}}
 {{- $isDA := eq .Lang "da" -}}
 {{- $url := site.Home.Permalink -}}
-{{- with site.GetPage "/kontakt" -}}{{- $url = .Permalink -}}{{- end -}}
 {{- $business := dict
   "@type" "ProfessionalService"
   "@id" (printf "%s#business" (absURL "/"))

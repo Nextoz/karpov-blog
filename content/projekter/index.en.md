@@ -13,23 +13,20 @@ ShowShareButtons: false
 ShowWordCount: false
 ---
 
-I take on .NET, Azure DevOps and cloud infrastructure contracts. For [the Danish Working Environment Authority](#arbejdstilsynet) (through twoday), I helped set up a new test environment and improved CI/CD pipelines. At [MyPaperFlow](#mypaperflow), I improved autoscaling with KEDA and Azure Service Bus.
-
-I work where software development and operations meet: application code, pipelines, cloud infrastructure, deployments and the problems that only show up once a system runs in production.
+I help teams with .NET, Azure DevOps and cloud infrastructure, and small businesses with AI.
 
 ## Contract work {#contract-work}
 
-I take freelance and contract work in Greater Copenhagen, hybrid or remote. I am strongest where backend development, DevOps and platform work meet.
+I take freelance and contract work in Greater Copenhagen, hybrid or remote. For [the Danish Working Environment Authority](#arbejdstilsynet) (through twoday), I helped set up a new test environment and improved CI/CD pipelines. At [MyPaperFlow](#mypaperflow), I improved autoscaling with KEDA and Azure Service Bus.
 
-I can contribute as:
+Typical tasks:
 
-- DevOps Engineer
-- Platform Engineer
-- Site Reliability Engineer
-- Backend Developer with DevOps/platform responsibility
-- .NET Engineer close to infrastructure and delivery
-
-My value is that I understand both application code and the systems that build, deploy, monitor and operate it.
+- Building and improving CI/CD pipelines and release flows in Azure DevOps
+- Infrastructure as code with Bicep or Terraform, so environments can be recreated
+- Deployments, autoscaling and troubleshooting with Docker, Kubernetes and Helm
+- .NET backend: new features, upgrades and legacy code that has to keep running
+- Logs, metrics and tracing, so problems are caught before users notice them
+- Security in delivery: vulnerable dependencies, secrets and access without long-lived keys
 
 <div class="contact-cta">
 
@@ -67,6 +64,7 @@ Vintønden is a bar in Frederiksberg that I do ongoing work for. I work directly
 
 #### My contribution
 
+- Fixed the website's table-booking flow
 - Structured data for the bar, its events and frequently asked questions
 - Pages in Danish, English and Spanish with correct hreflang
 - Metadata and sitemap clean-up, verified against the public site

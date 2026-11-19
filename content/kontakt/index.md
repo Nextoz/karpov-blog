@@ -13,7 +13,7 @@ ShowWordCount: false
 showtoc: false
 ---
 
-Den første samtale er gratis og tager 20 minutter. Skriv kort, hvad du gerne vil have hjælp til, så foreslår jeg et par tidspunkter.
+Den første samtale er gratis og tager 20 minutter. Skriv kort, hvad du gerne vil have hjælp til, så foreslår jeg et par tidspunkter. Jeg svarer inden for én arbejdsdag.
 
 {{< contact-button >}}
 

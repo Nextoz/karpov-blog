@@ -49,7 +49,7 @@ showtoc: false
 
 Bruger I tid på de samme mails, bilag eller bookinger hver uge? Jeg er freelance AI-konsulent i København og hjælper mindre virksomheder med at finde de opgaver, hvor AI kan spare tid, og bygger en løsning, I kan bruge i hverdagen.
 
-Det starter med en gratis samtale på 20 minutter. Giver det mening at gå videre, koster en AI-afklaring 4.500 kr. ekskl. moms: et møde på 2–3 timer og en skriftlig anbefaling med priser for at bygge og drive løsningen. Anbefalingen kan I bruge selv eller tage med til en anden leverandør, og går I videre med en automatisering hos mig, trækker jeg de 4.500 kr. fra. [Se alle priser](#priser).
+Det starter med en gratis samtale på 20 minutter. Giver det mening at gå videre, koster en AI-afklaring 4.500 kr. ekskl. moms: et møde på 2–3 timer og en skriftlig anbefaling med priser for at bygge og drive løsningen. Anbefalingen kan I bruge selv eller tage med til en anden leverandør, og vælger I at få mig til at bygge automatiseringen, trækker jeg de 4.500 kr. fra den aftalte pris for automatiseringen. [Se alle priser](#priser).
 
 {{< contact-button >}}
 
@@ -67,7 +67,7 @@ Det behøver ikke være stort. Typiske første opgaver i en butik, en café elle
 
 - **Bookinger og forespørgsler.** AI'en læser mails om bordbestilling, selskaber og events, sorterer dem og skriver et udkast til svar, som I godkender, før det bliver sendt.
 - **Anmeldelser.** Udkast til svar på Google-anmeldelser i jeres egen tone, på dansk og engelsk.
-- **Menukort og allergener.** Oversættelse af menu, allergenliste og åbningstider, så hjemmeside og Google viser det samme.
+- **Menukort og åbningstider.** Udkast til oversættelser af menutekster og opslag om ændrede åbningstider. I godkender teksten, før den bliver lagt ud.
 - **Fakturaer og bilag.** Beløb, dato og leverandør hentes ud af PDF'er og billeder og lægges i et regneark eller jeres bogføringsprogram.
 - **Ugens overblik.** En kort opsummering hver mandag morgen af bookinger, salg eller henvendelser, så I ikke selv skal samle tallene.
 
@@ -77,7 +77,7 @@ Priserne er introduktionspriser og gælder for aftaler, der indgås til og med 3
 
 {{< offers >}}
 
-Alle priser er ekskl. moms. Går I videre med en automatisering, trækker jeg prisen for afklaringen fra.
+Alle priser er ekskl. moms. Vælger I at få mig til at bygge automatiseringen, trækker jeg de 4.500 kr. for afklaringen fra den aftalte pris for automatiseringen.
 
 {{< contact-button >}}
 
@@ -91,7 +91,7 @@ Alle priser er ekskl. moms. Går I videre med en automatisering, trækker jeg pr
 ## Hvorfor mig
 
 - **Jeg arbejder allerede for en lokal virksomhed.** For baren [Vintønden](/projekter/#vintonden) på Frederiksberg har jeg siden maj 2026 lavet sider på dansk, engelsk og spansk, rettet bookingflowet og tilføjet strukturerede oplysninger om baren og dens arrangementer i deres WordPress-site.
-- **Jeg har arbejdet med AI-automatisering i lang tid.** I mit tidligere arbejde har jeg bygget mange DevOps-pipelines, også med AI-automatisering i selve pipelinen. Mine egne [planlagte agenter](/projekter/#scouts) læser hver morgen nye events, tilbud og research, sorterer dem og lægger et kort udvalg frem til mig. Det er samme mønster som at sortere bookingmails og skrive udkast til svar.
+- **Jeg har bygget automatiseringer med AI.** I tidligere job har jeg lagt AI-trin ind i DevOps-pipelines. Mine egne [agenter](/projekter/#scouts) gennemgår hver morgen nye arrangementer, tilbud og artikler og viser mig et kort udvalg. Det samme princip kan bruges til at sortere bookingmails, før en medarbejder svarer.
 - **Jeg kender forskel på en demo og drift.** Jeg har mere end seks års erfaring med softwareudvikling, DevOps og systemer, der skal køre hver dag. En automatisering, der fejler stille, er værre end ingen automatisering.
 - **Jeg er ikke bundet til én leverandør.** Jeg har kørt de samme opgaver på amerikanske, kinesiske og europæiske modeller, også hos en europæisk cloududbyder, og vælger efter opgaven, prisen og hvor data ender. Jeg får ingen provision fra de leverandører, jeg anbefaler.
 - **Sikkerhed er med fra start.** Læs, [hvordan jeg arbejder med sikkerhed](/projekter/#sikkerhed) i mine egne agentsystemer.

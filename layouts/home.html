@@ -38,7 +38,7 @@
   <div class="section-heading section-heading-row">
     <div>
       <h2 id="offer-title">{{ if $isDA }}AI-rådgivning til mindre virksomheder{{ else }}AI consulting for small businesses{{ end }}</h2>
-      <p class="section-note">{{ if $isDA }}Fx udkast til svar på bordbestillinger og anmeldelser eller bilag, der havner direkte i bogføringen. Introduktionspriser for aftaler indgået til og med 31. marts 2027, ekskl. moms.{{ else }}For example draft replies to booking requests and reviews, or receipts that go straight into your accounts. Introductory prices for agreements made on or before 31 March 2027, excluding VAT.{{ end }}</p>
+      <p class="section-note">{{ if $isDA }}Typiske første opgaver: udkast til svar på bordbestillinger og anmeldelser, og bilag, der lægges direkte ind i bogføringen. Introduktionspriser for aftaler indgået til og med 31. marts 2027. Alle priser er ekskl. moms.{{ else }}Typical first tasks: draft replies to booking requests and reviews, and receipts that go straight into your bookkeeping. Introductory prices for agreements made on or before 31 March 2027. All prices exclude VAT.{{ end }}</p>
     </div>
     <a class="text-link" href="{{ $aiPage.RelPermalink }}">{{ if $isDA }}Se priser og eksempler{{ else }}See prices and examples{{ end }}</a>
   </div>
@@ -84,7 +84,7 @@
   <div class="latest-list">
     {{- range first 5 $posts.ByDate.Reverse }}
     <article class="latest-item">
-      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format "2006-01-02" }}</time>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
       <div>
         <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
         <p>{{ .Summary | plainify }}</p>
@@ -108,7 +108,7 @@
   <div class="latest-list latest-list-compact">
     {{- range first 3 .ByDate.Reverse }}
     <article class="latest-item">
-      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format "2006-01-02" }}</time>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
       <div>
         <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
       </div>

@@ -6,8 +6,8 @@ slug: "ugens-ai-research-2026-11-01"
 translationKey: "ugens-ai-research-2026-11-01"
 draft: false
 authorship: "ai-assembled-digest"
-description: "Tre nye preprints samler sig om agentdrift: RCA-harnesses bør bevare modelens adgang til evidens, agentarbejde skal kunne dokumentere afslutning, og context-reduktion skal måles på reel pris og adfærd frem for tokenforbrug alene."
-summary: "Tre nye preprints samler sig om agentdrift: RCA-harnesses bør bevare modelens adgang til evidens, agentarbejde skal kunne dokumentere afslutning, og context-reduktion skal måles på reel pris og adfærd frem for tokenforbrug alene."
+description: "Tre nye preprints samler sig om agentdrift: RCA-harnesses bør bevare modellens adgang til evidens, agentarbejde skal kunne dokumentere afslutning, og context-reduktion skal måles på reel pris og adfærd frem for tokenforbrug alene."
+summary: "Tre nye preprints samler sig om agentdrift: RCA-harnesses bør bevare modellens adgang til evidens, agentarbejde skal kunne dokumentere afslutning, og context-reduktion skal måles på reel pris og adfærd frem for tokenforbrug alene."
 tags: ["AI", "Research", "AI Agents", "Platform Engineering"]
 categories: ["AI", "Research"]
 author: "Evgeny Karpov"

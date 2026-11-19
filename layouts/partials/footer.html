@@ -50,7 +50,8 @@
         }
     }
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    /* The skip link keeps the browser's own jump, which also moves keyboard focus to <main>. */
+    document.querySelectorAll('a[href^="#"]:not(.skip-link)').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
