@@ -50,7 +50,7 @@ showtoc: false
 
 Do the same emails, receipts or bookings take up your time every week? I am a freelance AI consultant in Copenhagen. I help small businesses find tasks where AI can save time and build a solution their team can use every day.
 
-It starts with a free 20-minute call. If it makes sense to go further, an AI assessment costs DKK 4,500 excluding VAT: a 2–3 hour meeting and a written recommendation with what it costs to build and run the solution. You can use the recommendation yourself or take it to another provider, and if you hire me to build the automation, I deduct the DKK 4,500 assessment fee from the agreed build price. [See prices and terms](#prices).
+It starts with a free 20-minute call. If it makes sense to go further, an AI assessment costs DKK 4,500 excluding VAT: a 2–3 hour meeting and a written recommendation with what it costs to build and run the solution. You can use the recommendation yourself or take it to another provider, and on self-funded projects, I deduct the DKK 4,500 assessment fee from the agreed build price if you hire me to build the automation. [See prices and terms](#prices).
 
 I work in English and Danish, in Copenhagen or remote.
 

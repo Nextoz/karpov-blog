@@ -49,7 +49,7 @@ showtoc: false
 
 Bruger I tid på de samme mails, bilag eller bookinger hver uge? Jeg er freelance AI-konsulent i København og hjælper mindre virksomheder med at finde de opgaver, hvor AI kan spare tid, og bygger en løsning, I kan bruge i hverdagen.
 
-Det starter med en gratis samtale på 20 minutter. Giver det mening at gå videre, koster en AI-afklaring 4.500 kr. ekskl. moms: et møde på 2–3 timer og en skriftlig anbefaling med priser for at bygge og drive løsningen. Anbefalingen kan I bruge selv eller tage med til en anden leverandør, og vælger I at få mig til at bygge automatiseringen, trækker jeg de 4.500 kr. fra den aftalte pris. [Se priser og vilkår](#priser).
+Det starter med en gratis samtale på 20 minutter. Giver det mening at gå videre, koster en AI-afklaring 4.500 kr. ekskl. moms: et møde på 2–3 timer og en skriftlig anbefaling med priser for at bygge og drive løsningen. Anbefalingen kan I bruge selv eller tage med til en anden leverandør, og ved selvbetalte opgaver trækker jeg de 4.500 kr. fra den aftalte pris, hvis I vælger mig til at bygge automatiseringen. [Se priser og vilkår](#priser).
 
 {{< contact-button >}}
 
