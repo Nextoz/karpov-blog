@@ -12,13 +12,15 @@ showtoc: false
 
 <img class="about-portrait" src="/images/profile.png" alt="Evgeny Karpov" width="230" height="230">
 
-Jeg hedder **Evgeny Karpov** og er senior software engineer og freelance-konsulent i København. Jeg arbejder med softwareudvikling, DevOps og platform engineering.
+Jeg hedder **Evgeny Karpov** og arbejder med softwareudvikling, DevOps, platform engineering og AI-automatisering.
 
 Jeg er stærkest, hvor backend-kode og drift mødes: applikationskode, pipelines, cloud-infrastruktur og de problemer, der først viser sig, når systemet kører.
 
 ## Erfaring
 
 Jeg har arbejdet med .NET, DevOps og drift hos twoday (for Arbejdstilsynet), Visma Enterprise (lønsystemer), MyPaperFlow (cloud og Kubernetes) og på det offentlige registersystem DCAB. Siden november 2026 driver jeg mit eget firma, Karpov Consulting (CVR 44583445). Se [projekter og erfaring](/projekter/).
+
+Som rådgiver er jeg uafhængig: Jeg får ingen provision, henvisningsgebyr eller avance fra AI-leverandører og sælger ikke licenser.
 
 ---
 

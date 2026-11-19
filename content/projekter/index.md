@@ -12,9 +12,33 @@ ShowShareButtons: false
 ShowWordCount: false
 ---
 
-Jeg tager kontraktopgaver inden for .NET, Azure DevOps og cloud-infrastruktur. For Arbejdstilsynet (via twoday) var jeg med til at etablere et nyt testmiljø og forbedrede CI/CD-pipelines. På MyPaperFlow forbedrede jeg autoskaleringen med KEDA og Azure Service Bus. [Se, hvilke kontraktopgaver jeg tager](#kontraktopgaver).
+Jeg tager kontraktopgaver inden for .NET, Azure DevOps og cloud-infrastruktur. For [Arbejdstilsynet](#arbejdstilsynet) (via twoday) var jeg med til at etablere et nyt testmiljø og forbedrede CI/CD-pipelines. På [MyPaperFlow](#mypaperflow) forbedrede jeg autoskaleringen med KEDA og Azure Service Bus.
 
 Jeg arbejder, hvor softwareudvikling og drift mødes: applikationskode, pipelines, cloud-infrastruktur, deployments og de problemer, der først viser sig, når systemet kører i produktion.
+
+## Kontraktopgaver {#kontraktopgaver}
+
+Jeg tager freelance- og kontraktopgaver i Storkøbenhavn, hybrid eller remote. Jeg er stærkest, hvor backendudvikling, DevOps og platformarbejde mødes.
+
+Jeg kan bidrage som:
+
+- DevOps Engineer
+- Platform Engineer
+- Site Reliability Engineer
+- Backend Developer med DevOps/platform-ansvar
+- .NET Engineer tæt på infrastruktur og delivery
+
+Min værdi er, at jeg både forstår applikationskode og de systemer, der skal bygge, deploye, monitorere og drifte den.
+
+<div class="contact-cta">
+
+**Har du en opgave?** Skriv til [evgeny@karpov.dk](mailto:evgeny@karpov.dk) eller på LinkedIn. Jeg hjælper også mindre virksomheder med at få AI i brug: se [AI-rådgivning og priser](/ai-raadgivning/).
+
+{{< contact-button subject="Kontraktopgave" label="Skriv om en opgave" >}}
+
+</div>
+
+---
 
 ## Projekter
 
@@ -53,7 +77,7 @@ Projektet viser, at jeg kan omsætte teknisk analyse til konkrete ændringer i p
 
 ---
 
-## twoday / Arbejdstilsynet — DevOps og Infrastruktur
+## twoday / Arbejdstilsynet — DevOps og Infrastruktur {#arbejdstilsynet}
 
 **Område:** DevOps, infrastruktur, CI/CD, observability, offentlig IT  
 **Teknologier:** Azure DevOps, Azure, Bicep, PowerShell DSC, IIS, OpenTelemetry, OpenSearch, C#/.NET
@@ -74,7 +98,7 @@ Erfaringen viser, at jeg kan arbejde i enterprise- og offentlig IT, hvor stabili
 
 ---
 
-## MyPaperFlow — Cloud DevOps, Kubernetes og SAP-integration
+## MyPaperFlow — Cloud DevOps, Kubernetes og SAP-integration {#mypaperflow}
 
 **Område:** DevOps, cloud-infrastruktur, dokumentautomatisering, SAP-integration  
 **Teknologier:** Azure DevOps, Docker, Kubernetes, Helm, KEDA, Azure Service Bus, Azure, Bicep, Terraform, PostgreSQL, .NET
@@ -212,27 +236,3 @@ Jeg er ikke sikkerhedsspecialist, men jeg arbejder med sikkerhed som en del af l
 - **Review med sikkerhedsbriller:** I et review af en infrastruktur-PR fandt jeg et personal access token, der var lækket gennem deployment-historikken.
 - **AI-agenter:** I mine egne agentsystemer er websider og tool-output data, aldrig instruktioner. Eksterne skrivninger, secrets, destruktive Git-kommandoer og deployments til produktion kræver min udtrykkelige godkendelse.
 - **Fællesskab:** Jeg har deltaget i OWASP Copenhagen i 2025 og 2026.
-
----
-
-## Kontraktopgaver {#kontraktopgaver}
-
-Jeg tager freelance- og kontraktopgaver i Storkøbenhavn, hybrid eller remote. Jeg er stærkest, hvor backendudvikling, DevOps og platformarbejde mødes.
-
-Jeg kan bidrage som:
-
-- DevOps Engineer
-- Platform Engineer
-- Site Reliability Engineer
-- Backend Developer med DevOps/platform-ansvar
-- .NET Engineer tæt på infrastruktur og delivery
-
-Min værdi er, at jeg både forstår applikationskode og de systemer, der skal bygge, deploye, monitorere og drifte den.
-
-<div class="contact-cta">
-
-**Har du en opgave?** Skriv til [evgeny@karpov.dk](mailto:evgeny@karpov.dk) eller på LinkedIn. Jeg hjælper også mindre virksomheder med at få AI i brug: se [AI-rådgivning og priser](/ai-raadgivning/).
-
-{{< contact-button subject="Kontraktopgave" label="Skriv om en opgave" >}}
-
-</div>

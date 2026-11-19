@@ -1,18 +1,20 @@
 ---
 title: "AI-rådgivning til mindre virksomheder"
 seoTitle: "AI-konsulent i København: AI-rådgivning til faste priser"
-description: "Praktisk hjælp til at få AI i brug i en mindre virksomhed: en afklaring og en første automatisering til fast pris og løbende hjælp pr. time. København og remote."
+description: "Praktisk hjælp til at få AI i brug i en mindre virksomhed: en afklaring og en første automatisering til fast pris og løbende hjælp pr. time. I København eller online."
 summary: "Praktisk hjælp til at få AI i brug i en mindre virksomhed, med faste priser på afklaring og første automatisering."
 translationKey: "ai-consulting"
 schemaType: "service"
 serviceType: "AI-rådgivning"
-priceValidUntil: "2027-03-30"
+priceValidUntil: "2027-03-31"
 offers:
   - name: "AI-afklaring"
     description: "Et møde på 2–3 timer og en skriftlig anbefaling med de tre bedste muligheder, hvad de koster at bygge, og hvad de koster i drift."
+    details: "Et møde på 2–3 timer hos jer eller online og en skriftlig anbefaling: de tre bedste muligheder, hvad de koster at bygge, og hvad de koster i drift. Anbefalingen er jeres, også hvis en anden bygger løsningen."
     price: 4500
   - name: "Første automatisering"
     description: "Én arbejdsgang bygget, testet og sat i drift, med dokumentation og overdragelse. Fast pris, aftalt før start."
+    details: "Én arbejdsgang bygget, testet og sat i drift, med dokumentation og overdragelse. Fast pris, som vi aftaler før start. Typisk 2–4 uger."
     minPrice: 15000
     maxPrice: 25000
   - name: "Løbende hjælp"
@@ -21,7 +23,7 @@ offers:
     unitCode: "HUR"
 faq:
   - q: "Hvad koster AI-rådgivning?"
-    a: "En AI-afklaring koster 4.500 kr. En første automatisering koster 15.000–25.000 kr. til fast pris, og løbende hjælp koster 700 kr. pr. time. Alle priser er ekskl. moms og gælder for aftaler, der indgås inden 31. marts 2027."
+    a: "En AI-afklaring koster 4.500 kr. En første automatisering koster 15.000–25.000 kr. til fast pris, og løbende hjælp koster 700 kr. pr. time. Alle priser er ekskl. moms og gælder for aftaler, der indgås til og med 31. marts 2027."
   - q: "Hvem er det for?"
     a: "Mindre virksomheder, som vil bruge AI i det daglige arbejde, men ikke har egne udviklere eller tid til at finde ud af, hvor de skal starte. I behøver ikke teknisk viden."
   - q: "Kan vores data blive i EU?"
@@ -45,9 +47,9 @@ ShowWordCount: false
 showtoc: false
 ---
 
-Bruger I tid på de samme mails, bilag eller bookinger hver uge? Jeg er freelance AI-konsulent i København og hjælper mindre virksomheder med at finde de opgaver, hvor AI faktisk sparer tid, og med at bygge løsningen, så den også virker om tre måneder.
+Bruger I tid på de samme mails, bilag eller bookinger hver uge? Jeg er freelance AI-konsulent i København og hjælper mindre virksomheder med at finde de opgaver, hvor AI kan spare tid, og bygger en løsning, I kan bruge i hverdagen.
 
-Det starter med en gratis samtale på 20 minutter. Giver det mening at gå videre, koster en AI-afklaring 4.500 kr. ekskl. moms: et møde på 2–3 timer og en skriftlig anbefaling med priser for at bygge og drive løsningen. [Se alle priser](#priser).
+Det starter med en gratis samtale på 20 minutter. Giver det mening at gå videre, koster en AI-afklaring 4.500 kr. ekskl. moms: et møde på 2–3 timer og en skriftlig anbefaling med priser for at bygge og drive løsningen. Anbefalingen kan I bruge selv eller tage med til en anden leverandør, og går I videre med en automatisering hos mig, trækker jeg de 4.500 kr. fra. [Se alle priser](#priser).
 
 {{< contact-button >}}
 
@@ -71,17 +73,9 @@ Det behøver ikke være stort. Typiske første opgaver i en butik, en café elle
 
 ## Priser
 
-Priserne er introduktionspriser og gælder for aftaler, der indgås inden 31. marts 2027.
+Priserne er introduktionspriser og gælder for aftaler, der indgås til og med 31. marts 2027.
 
-<div class="price-table">
-
-| Ydelse | Det får I | Pris |
-|---|---|---|
-| **AI-afklaring** | Et møde på 2–3 timer hos jer eller online og en skriftlig anbefaling: de tre bedste muligheder, hvad de koster at bygge, og hvad de koster i drift | 4.500 kr. |
-| **Første automatisering** | Én arbejdsgang bygget, testet og sat i drift, med dokumentation og overdragelse. Fast pris, som vi aftaler før start. Typisk 2–4 uger | 15.000–25.000 kr. |
-| **Løbende hjælp** | Videreudvikling, fejlretning og sparring efter behov | 700 kr. pr. time |
-
-</div>
+{{< offers >}}
 
 Alle priser er ekskl. moms. Går I videre med en automatisering, trækker jeg prisen for afklaringen fra.
 
@@ -91,16 +85,16 @@ Alle priser er ekskl. moms. Går I videre med en automatisering, trækker jeg pr
 
 1. **En gratis samtale på 20 minutter.** I fortæller, hvad der tager tid hos jer, og jeg siger ærligt, om AI er svaret.
 2. **Afklaring.** Jeg ser på jeres arbejdsgange og data og skriver en anbefaling, I kan bruge, uanset om I går videre med mig.
-3. **Byg.** Jeg bygger én ting ad gangen og viser den frem undervejs.
+3. **Første automatisering.** Jeg bygger én arbejdsgang, som I kan prøve undervejs.
 4. **Overdragelse.** I får dokumentation og en gennemgang, så løsningen ikke afhænger af mig.
 
 ## Hvorfor mig
 
-- **Jeg bruger selv det, jeg bygger.** Mine [planlagte agenter](/projekter/#scouts) kører hver morgen, og jeg har bygget min egen telefon-app med et hold af AI-agenter, som jeg styrer og reviewer.
+- **Jeg arbejder allerede for en lokal virksomhed.** For baren [Vintønden](/projekter/#vintonden) på Frederiksberg har jeg siden maj 2026 lavet sider på dansk, engelsk og spansk, rettet bookingflowet og tilføjet strukturerede oplysninger om baren og dens arrangementer i deres WordPress-site.
+- **Jeg har arbejdet med AI-automatisering i lang tid.** I mit tidligere arbejde har jeg bygget mange DevOps-pipelines, også med AI-automatisering i selve pipelinen. Mine egne [planlagte agenter](/projekter/#scouts) læser hver morgen nye events, tilbud og research, sorterer dem og lægger et kort udvalg frem til mig. Det er samme mønster som at sortere bookingmails og skrive udkast til svar.
 - **Jeg kender forskel på en demo og drift.** Jeg har mere end seks års erfaring med softwareudvikling, DevOps og systemer, der skal køre hver dag. En automatisering, der fejler stille, er værre end ingen automatisering.
 - **Jeg er ikke bundet til én leverandør.** Jeg har kørt de samme opgaver på amerikanske, kinesiske og europæiske modeller, også hos en europæisk cloududbyder, og vælger efter opgaven, prisen og hvor data ender. Jeg får ingen provision fra de leverandører, jeg anbefaler.
 - **Sikkerhed er med fra start.** Læs, [hvordan jeg arbejder med sikkerhed](/projekter/#sikkerhed) i mine egne agentsystemer.
-- **Jeg arbejder allerede for en lokal virksomhed.** For baren [Vintønden](/projekter/#vintonden) på Frederiksberg har jeg siden maj 2026 lavet sider på dansk, engelsk og spansk, rettet bookingflowet og tilføjet strukturerede oplysninger om baren og dens arrangementer i deres WordPress-site.
 
 ## Ofte stillede spørgsmål
 

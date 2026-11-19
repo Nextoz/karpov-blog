@@ -112,13 +112,16 @@
 -}}
 <script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" (slice $contact $business $person) | jsonify | safeJS }}</script>
 {{- else if (and .IsPage (eq .Section "posts")) }}
+{{- /* AI-drafted posts carry their disclosure in the description too, so citing systems see it. */}}
+{{- $postDesc := .Description | default .Summary | plainify -}}
+{{- if eq .Params.authorship "legacy-ai-drafted" }}{{ $postDesc = printf "%s %s" $postDesc (cond (eq .Lang "da") "(AI skrev størstedelen af indlægget ud fra Evgeny Karpovs prompts, noter og redaktionelle valg.)" "(AI wrote most of the post from Evgeny Karpov's prompts, notes and editorial choices.)") }}{{ end }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": {{ .Title | plainify}},
   "name": "{{ .Title | plainify }}",
-  "description": {{ with .Description | plainify }}{{ . }}{{ else }}{{ .Summary | plainify  }}{{ end -}},
+  "description": {{ $postDesc }},
   "keywords": [
     {{- if .Params.keywords }}
     {{ range $i, $e := .Params.keywords }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}

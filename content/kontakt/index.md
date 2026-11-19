@@ -28,8 +28,6 @@ Den første samtale er gratis og tager 20 minutter. Skriv kort, hvad du gerne vi
 - LinkedIn: [linkedin.com/in/evgenykarpov91](https://www.linkedin.com/in/evgenykarpov91/)
 - GitHub: [github.com/Nextoz](https://github.com/Nextoz)
 
-Jeg arbejder på dansk og engelsk.
-
 ## Virksomhedsoplysninger
 
 - **Karpov Consulting** v/ Evgeny Karpov (enkeltmandsvirksomhed)

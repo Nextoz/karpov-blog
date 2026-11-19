@@ -388,7 +388,7 @@ summary:focus-visible {
   position: absolute;
   top: 0.5rem;
   left: 0.5rem;
-  z-index: 1000;
+  z-index: 1100;
   padding: 0.6rem 1rem;
   color: var(--theme);
   background: var(--accent);
@@ -452,6 +452,22 @@ summary:focus-visible {
   .offer-list {
     grid-template-columns: 1fr;
   }
+}
+
+/* The same cards inside an article column: stacked, without list bullets or heading margins. */
+.post-content .offer-list--page {
+  grid-template-columns: 1fr;
+  margin: 1.2rem 0;
+  padding: 0;
+}
+
+.post-content .offer-list--page .offer-item {
+  margin: 0;
+}
+
+.post-content .offer-list--page .offer-name {
+  margin: 0;
+  font-size: 1.1rem;
 }
 
 .home-section {
@@ -771,6 +787,13 @@ summary:focus-visible {
   .home-portrait {
     width: 96px;
     height: 96px;
+  }
+}
+
+/* On phones the header logo already shows the face; give the first screen to the offer. */
+@media (max-width: 600px) {
+  .home-portrait-wrap {
+    display: none;
   }
 }
 

@@ -9,10 +9,10 @@
 <div class="home-shell">
 <section class="home-hero" aria-labelledby="home-title">
   <div class="home-hero-copy">
-    <p class="eyebrow"><span class="prompt-user">evgeny@kbh</span>:<span class="prompt-path">~</span><span class="prompt-dollar">$</span> cat {{ if $isDA }}noter-fra-koebenhavn.md{{ else }}notes-from-copenhagen.md{{ end }}</p>
-    <h1 id="home-title">{{ if $isDA }}AI-rådgivning, .NET og DevOps i København{{ else }}AI consulting, .NET and DevOps in Copenhagen{{ end }}<span class="prompt-cursor" aria-hidden="true"></span></h1>
+    <p class="eyebrow">{{ site.Params.businessName }}{{ with site.Params.cvr }} · CVR {{ . }}{{ end }} · {{ if $isDA }}København{{ else }}Copenhagen{{ end }}</p>
+    <h1 id="home-title">{{ if $isDA }}AI-rådgivning, .NET og DevOps i København{{ else }}AI consulting, .NET and DevOps in Copenhagen{{ end }}</h1>
     <p class="home-lead">
-      {{ if $isDA }}Jeg er Evgeny Karpov og hjælper caféer, butikker og andre mindre virksomheder med at automatisere gentagne opgaver med AI. Jeg tager også kontraktopgaver inden for .NET, Azure DevOps og platform engineering.{{ else }}I'm Evgeny Karpov. I help cafés, shops and other small businesses automate repetitive work with AI, and I take on .NET, Azure DevOps and platform engineering contracts.{{ end }}
+      {{ if $isDA }}Jeg er Evgeny Karpov og hjælper caféer, butikker og andre mindre virksomheder med at automatisere gentagne opgaver med AI. Jeg tager også kontraktopgaver inden for .NET, Azure DevOps og platform engineering. Den første samtale er gratis, og en AI-afklaring koster 4.500 kr. ekskl. moms.{{ else }}I'm Evgeny Karpov. I help cafés, shops and other small businesses automate repetitive work with AI, and I take on .NET, Azure DevOps and platform engineering contracts. The first call is free, and an AI assessment costs DKK 4,500 excluding VAT.{{ end }}
     </p>
     {{- $subject := cond $isDA "Gratis samtale" "Free call" }}
     <div class="hero-actions">
@@ -38,7 +38,7 @@
   <div class="section-heading section-heading-row">
     <div>
       <h2 id="offer-title">{{ if $isDA }}AI-rådgivning til mindre virksomheder{{ else }}AI consulting for small businesses{{ end }}</h2>
-      <p class="section-note">{{ if $isDA }}Fx udkast til svar på bordbestillinger og anmeldelser eller bilag, der havner direkte i bogføringen. Alle priser er ekskl. moms.{{ else }}For example draft replies to booking requests and reviews, or receipts that go straight into your accounts. All prices exclude VAT.{{ end }}</p>
+      <p class="section-note">{{ if $isDA }}Fx udkast til svar på bordbestillinger og anmeldelser eller bilag, der havner direkte i bogføringen. Introduktionspriser for aftaler indgået til og med 31. marts 2027, ekskl. moms.{{ else }}For example draft replies to booking requests and reviews, or receipts that go straight into your accounts. Introductory prices for agreements made on or before 31 March 2027, excluding VAT.{{ end }}</p>
     </div>
     <a class="text-link" href="{{ $aiPage.RelPermalink }}">{{ if $isDA }}Se priser og eksempler{{ else }}See prices and examples{{ end }}</a>
   </div>

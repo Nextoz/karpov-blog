@@ -1,0 +1,15 @@
+{{- /* Price list for service pages, from the page's front matter "offers" (the same data as the
+       Offer structured data and the homepage offer block). Each item reads name, price, details in
+       that order, on screen and for screen readers. "details" falls back to "description". */ -}}
+{{- $isDA := eq .Page.Lang "da" -}}
+<ul class="offer-list offer-list--page">
+  {{- range .Page.Params.offers }}
+  {{- $amount := "" }}
+  {{- if .minPrice }}{{ $amount = printf "%s–%s" (lang.FormatNumber 0 .minPrice) (lang.FormatNumber 0 .maxPrice) }}{{ else }}{{ $amount = lang.FormatNumber 0 .price }}{{ end }}
+  <li class="offer-item">
+    <h3 class="offer-name">{{ .name }}</h3>
+    <p class="offer-price">{{ if $isDA }}{{ $amount }} kr.{{ if .unitCode }} pr. time{{ end }}{{ else }}DKK {{ $amount }}{{ if .unitCode }} per hour{{ end }}{{ end }}</p>
+    <p class="offer-desc">{{ .details | default .description }}</p>
+  </li>
+  {{- end }}
+</ul>

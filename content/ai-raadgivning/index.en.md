@@ -1,18 +1,20 @@
 ---
 title: "AI consulting for small businesses"
 seoTitle: "AI consultant in Copenhagen: fixed-price AI consulting"
-description: "Practical help getting AI into use in a small business: a fixed-price assessment and first automation, with ongoing help billed hourly in DKK. Copenhagen and remote."
+description: "Practical help getting AI into use in a small business: a fixed-price assessment and first automation, with ongoing help billed hourly in DKK. In Copenhagen or online."
 summary: "Practical help getting AI into use in a small business, with fixed prices for the assessment and first automation."
 translationKey: "ai-consulting"
 schemaType: "service"
 serviceType: "AI consulting"
-priceValidUntil: "2027-03-30"
+priceValidUntil: "2027-03-31"
 offers:
   - name: "AI assessment"
     description: "A 2–3 hour meeting and a written recommendation with the three best opportunities, what they cost to build, and what they cost to run."
+    details: "A 2–3 hour meeting at your office or online and a written recommendation: the three best opportunities, what they cost to build, and what they cost to run. The recommendation is yours, even if someone else builds the solution."
     price: 4500
   - name: "First automation"
     description: "One workflow built, tested and put into operation, with documentation and handover. Fixed price, agreed before we start."
+    details: "One workflow built, tested and put into operation, with documentation and handover. Fixed price, agreed before we start. Typically 2–4 weeks."
     minPrice: 15000
     maxPrice: 25000
   - name: "Ongoing help"
@@ -21,7 +23,7 @@ offers:
     unitCode: "HUR"
 faq:
   - q: "What does AI consulting cost?"
-    a: "An AI assessment costs DKK 4,500. A first automation costs DKK 15,000–25,000 at a fixed price, and ongoing help costs DKK 700 per hour. All prices exclude Danish VAT and apply to agreements made before 31 March 2027."
+    a: "An AI assessment costs DKK 4,500. A first automation costs DKK 15,000–25,000 at a fixed price, and ongoing help costs DKK 700 per hour. All prices exclude Danish VAT and apply to agreements made on or before 31 March 2027."
   - q: "Who is it for?"
     a: "Small businesses that want to use AI in their daily work but have no developers of their own, or no time to work out where to start. You do not need technical knowledge."
   - q: "Can our data stay in the EU?"
@@ -46,9 +48,9 @@ ShowWordCount: false
 showtoc: false
 ---
 
-Do the same emails, receipts or bookings take up your time every week? I am a freelance AI consultant in Copenhagen. I help small businesses find the tasks where AI actually saves time, and I build the solution so it still works three months from now.
+Do the same emails, receipts or bookings take up your time every week? I am a freelance AI consultant in Copenhagen. I help small businesses find tasks where AI can save time and build a solution their team can use every day.
 
-It starts with a free 20-minute call. If it makes sense to go further, an AI assessment costs DKK 4,500 excluding VAT: a 2–3 hour meeting and a written recommendation with what it costs to build and run the solution. [See all prices](#prices).
+It starts with a free 20-minute call. If it makes sense to go further, an AI assessment costs DKK 4,500 excluding VAT: a 2–3 hour meeting and a written recommendation with what it costs to build and run the solution. You can use the recommendation yourself or take it to another provider, and if you ask me to build the automation, I deduct the DKK 4,500. [See all prices](#prices).
 
 I work in English and Danish, in Copenhagen or remote.
 
@@ -74,17 +76,9 @@ It does not have to be big. Typical first tasks in a shop, a café or a small of
 
 ## Prices
 
-These are introductory prices and apply to agreements made before 31 March 2027.
+These are introductory prices and apply to agreements made on or before 31 March 2027.
 
-<div class="price-table">
-
-| Service | What you get | Price |
-|---|---|---|
-| **AI assessment** | A 2–3 hour meeting at your office or online and a written recommendation: the three best opportunities, what they cost to build, and what they cost to run | DKK 4,500 |
-| **First automation** | One workflow built, tested and put into operation, with documentation and handover. Fixed price, agreed before we start. Typically 2–4 weeks | DKK 15,000–25,000 |
-| **Ongoing help** | Further development, fixes and advice as needed | DKK 700 per hour |
-
-</div>
+{{< offers >}}
 
 All prices are in Danish kroner (DKK) and exclude Danish VAT. If you go on to an automation, I deduct the price of the assessment.
 
@@ -94,16 +88,16 @@ All prices are in Danish kroner (DKK) and exclude Danish VAT. If you go on to an
 
 1. **A free 20-minute call.** You tell me what takes time in your business, and I tell you honestly whether AI is the answer.
 2. **Assessment.** I look at your workflows and data and write a recommendation you can use whether or not you continue with me.
-3. **Build.** I build one thing at a time and show it to you along the way.
+3. **First automation.** I build one workflow and give you a chance to try it as I go.
 4. **Handover.** You get documentation and a walkthrough, so the solution does not depend on me.
 
 ## Why me
 
-- **I use what I build.** My [scheduled agents](/en/projects/#scouts) run every morning, and I built my own phone app with a team of AI agents that I direct and review.
+- **I already work for a local business.** Since May 2026, I have built Danish, English and Spanish pages for the bar [Vintønden](/en/projects/#vintonden) in Frederiksberg, fixed its booking flow and added structured information about the bar and its events to its WordPress site.
+- **I have worked with AI automation for a long time.** In my previous jobs I built many DevOps pipelines, including AI automation inside the pipelines themselves. Every morning my own [scheduled agents](/en/projects/#scouts) read new events, offers and research, sort them and put a short selection in front of me. It is the same pattern as sorting booking emails and drafting replies.
 - **I know the difference between a demo and operations.** I have more than six years of experience with software development, DevOps and systems that have to run every day. An automation that fails silently is worse than no automation.
 - **I am not tied to one vendor.** I have run the same tasks on American, Chinese and European models, including with a European cloud provider, and I choose by the task, the price and where the data ends up. I receive no commission from the providers I recommend.
 - **Security is there from the start.** Read [how I work with security](/en/projects/#security) in my own agent systems.
-- **I already work for a local business.** Since May 2026, I have built Danish, English and Spanish pages for the bar [Vintønden](/en/projects/#vintonden) in Frederiksberg, fixed its booking flow and added structured information about the bar and its events to its WordPress site.
 
 ## Frequently asked questions
 

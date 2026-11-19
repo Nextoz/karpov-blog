@@ -29,8 +29,6 @@ The first call is free and takes 20 minutes. Write a few lines about what you ne
 - LinkedIn: [linkedin.com/in/evgenykarpov91](https://www.linkedin.com/in/evgenykarpov91/)
 - GitHub: [github.com/Nextoz](https://github.com/Nextoz)
 
-I work in English and Danish.
-
 ## Business details
 
 - **Karpov Consulting**, sole proprietorship owned by Evgeny Karpov

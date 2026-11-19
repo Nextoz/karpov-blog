@@ -10,14 +10,28 @@
   da:
     name: Vintønden
     status: Kundeprojekt
-    summary: Teknisk SEO, GEO og WordPress for en bar på Frederiksberg siden maj 2026. Sider på dansk, engelsk og spansk, et rettet bookingflow, structured data og små egne plugins. Backup før hver ændring.
+    summary: Fast hjælp til hjemmesiden for en bar på Frederiksberg siden maj 2026. Sider på dansk, engelsk og spansk, et bookingflow, der virker, og bedre synlighed på Google og i AI-assistenter. Backup før hver ændring.
   en:
     name: Vintønden
     status: Client project
-    summary: Technical SEO, GEO and WordPress for a bar in Frederiksberg since May 2026. Danish, English and Spanish pages, a fixed booking flow, structured data and small custom plugins. A backup before every change.
+    summary: Ongoing help with the website of a bar in Frederiksberg since May 2026. Pages in Danish, English and Spanish, a booking flow that works, and better visibility in Google and AI assistants. A backup before every change.
+
+- id: mypaperflow
+  home: true
+  status: client
+  anchor: mypaperflow
+  stack: [Azure DevOps, Kubernetes, Helm, KEDA, Bicep, Terraform]
+  da:
+    name: MyPaperFlow (Boyum IT)
+    status: Kontraktopgave
+    summary: CI/CD i Azure DevOps, Kubernetes-deployments med Helm og autoskalering med KEDA på Azure Service Bus for en cloud-platform til dokumenter og fakturaer med SAP-integration.
+  en:
+    name: MyPaperFlow (Boyum IT)
+    status: Contract work
+    summary: CI/CD in Azure DevOps, Kubernetes deployments with Helm and autoscaling with KEDA on Azure Service Bus for a cloud document and invoice platform with SAP integration.
 
 - id: vault-companion
-  home: true
+  home: false
   status: in-use
   page: /posts/vault-companion
   stack: [TypeScript, React PWA, Cloudflare Workers, GitHub, AI agents]

@@ -13,9 +13,33 @@ ShowShareButtons: false
 ShowWordCount: false
 ---
 
-I take on .NET, Azure DevOps and cloud infrastructure contracts. For the Danish Working Environment Authority (through twoday), I helped set up a new test environment and improved CI/CD pipelines. At MyPaperFlow, I improved autoscaling with KEDA and Azure Service Bus. [See the contract work I take on](#contract-work).
+I take on .NET, Azure DevOps and cloud infrastructure contracts. For [the Danish Working Environment Authority](#arbejdstilsynet) (through twoday), I helped set up a new test environment and improved CI/CD pipelines. At [MyPaperFlow](#mypaperflow), I improved autoscaling with KEDA and Azure Service Bus.
 
 I work where software development and operations meet: application code, pipelines, cloud infrastructure, deployments and the problems that only show up once a system runs in production.
+
+## Contract work {#contract-work}
+
+I take freelance and contract work in Greater Copenhagen, hybrid or remote. I am strongest where backend development, DevOps and platform work meet.
+
+I can contribute as:
+
+- DevOps Engineer
+- Platform Engineer
+- Site Reliability Engineer
+- Backend Developer with DevOps/platform responsibility
+- .NET Engineer close to infrastructure and delivery
+
+My value is that I understand both application code and the systems that build, deploy, monitor and operate it.
+
+<div class="contact-cta">
+
+**Do you have a project?** Write to [evgeny@karpov.dk](mailto:evgeny@karpov.dk) or on LinkedIn. I also help small businesses put AI to work: see [AI consulting and prices](/en/ai-consulting/).
+
+{{< contact-button subject="Contract work" label="Write about a project" >}}
+
+</div>
+
+---
 
 ## Projects
 
@@ -53,7 +77,7 @@ Vintønden is a bar in Frederiksberg that I do ongoing work for. I work directly
 
 The project shows that I can turn technical analysis into concrete changes in production for a real local business, and that I can work directly with a client without a team around me.
 
-### twoday / Arbejdstilsynet — DevOps and Infrastructure
+### twoday / Arbejdstilsynet — DevOps and Infrastructure {#arbejdstilsynet}
 
 **Area:** DevOps, infrastructure, CI/CD, observability, public-sector IT
 
@@ -73,7 +97,7 @@ At twoday, I worked as a DevOps and infrastructure consultant for Arbejdstilsyne
 
 This experience shows my ability to work in an enterprise/public-sector environment where stability, documentation, controlled deployments and operational understanding matter.
 
-### MyPaperFlow — Cloud DevOps, Kubernetes and SAP integration
+### MyPaperFlow — Cloud DevOps, Kubernetes and SAP integration {#mypaperflow}
 
 **Area:** DevOps, cloud infrastructure, document automation, SAP integration
 
@@ -204,25 +228,3 @@ I am not a security specialist, but I treat security as part of the delivery:
 - **Reviewing with security in mind:** In a review of an infrastructure pull request, I found a personal access token that had leaked through the deployment history.
 - **AI agents:** In my own agent systems, web pages and tool output are data, never instructions. External writes, secrets, destructive Git commands and production deployments need my explicit approval.
 - **Community:** I attended OWASP Copenhagen in 2025 and 2026.
-
-## Contract work {#contract-work}
-
-I take freelance and contract work in Greater Copenhagen, hybrid or remote. I am strongest where backend development, DevOps and platform work meet.
-
-I can contribute as:
-
-- DevOps Engineer
-- Platform Engineer
-- Site Reliability Engineer
-- Backend Developer with DevOps/platform responsibility
-- .NET Engineer close to infrastructure and delivery
-
-My value is that I understand both application code and the systems that build, deploy, monitor and operate it.
-
-<div class="contact-cta">
-
-**Do you have a project?** Write to [evgeny@karpov.dk](mailto:evgeny@karpov.dk) or on LinkedIn. I also help small businesses put AI to work: see [AI consulting and prices](/en/ai-consulting/).
-
-{{< contact-button subject="Contract work" label="Write about a project" >}}
-
-</div>
