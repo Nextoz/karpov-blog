@@ -20,7 +20,7 @@ ShowLanguageSwitcher = true
 displayFullLangName = true
 env = "production"
 title = "Evgeny Karpov"
-description = "Engineering notes fra København om DevOps, platform engineering, .NET, observability og AI-systemer, der skal fungere i produktion."
+description = "Freelance AI- og DevOps-konsulent i København: AI-rådgivning til mindre virksomheder, kontraktopgaver i .NET og Azure DevOps og en blog om software og AI i drift."
 tagline = "freelance AI- og DevOps-konsulent i København"
 author = "Evgeny Karpov"
 # Contact address used by the contact buttons (shortcode contact-button, home page) and the footer.
@@ -187,7 +187,7 @@ title = "Evgeny Karpov"
 
 [[languages.da.menu.main]]
 identifier = "home"
-name = "Start her"
+name = "Forside"
 url = "/"
 weight = 10
 
@@ -199,7 +199,7 @@ weight = 20
 
 [[languages.da.menu.main]]
 identifier = "portfolio"
-name = "Portfolio"
+name = "Projekter"
 pageRef = "/projekter"
 weight = 30
 
@@ -207,7 +207,7 @@ weight = 30
 identifier = "ai-consulting"
 name = "AI-rådgivning"
 pageRef = "/ai-raadgivning"
-weight = 35
+weight = 15
 
 [[languages.da.menu.main]]
 identifier = "about"
@@ -235,7 +235,7 @@ title = "Evgeny Karpov"
 
 [languages.en.params]
 tagline = "freelance AI and DevOps consultant, Copenhagen"
-description = "Engineering notes from Copenhagen about DevOps, platform engineering, .NET, observability and AI systems that have to work in production."
+description = "Freelance AI and DevOps consultant in Copenhagen: AI consulting for small businesses, .NET and Azure DevOps contracts, and a blog about software and AI in production."
 bio = "Senior software engineer and freelance consultant in Copenhagen. Helps small businesses put AI to work at fixed prices and takes contract work in .NET, Azure DevOps and platform engineering."
 images = ["images/og/default.en.png"]
 
@@ -253,7 +253,7 @@ weight = 20
 
 [[languages.en.menu.main]]
 identifier = "portfolio"
-name = "Portfolio"
+name = "Projects"
 pageRef = "/projekter"
 weight = 30
 
@@ -261,7 +261,7 @@ weight = 30
 identifier = "ai-consulting"
 name = "AI consulting"
 pageRef = "/ai-raadgivning"
-weight = 35
+weight = 15
 
 [[languages.en.menu.main]]
 identifier = "about"

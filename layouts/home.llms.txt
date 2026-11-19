@@ -9,7 +9,8 @@
 {{- end -}}
 {{- $daPosts := where $da.RegularPages "Section" "posts" -}}
 {{- $digests := where $daPosts "Params.authorship" "ai-assembled-digest" -}}
-{{- $ownPosts := $daPosts | complement $digests -}}
+{{- /* Posts hidden from the homepage (hideFromHome) are left out here too. */ -}}
+{{- $ownPosts := where ($daPosts | complement $digests) "Params.hideFromHome" "!=" true -}}
 # Evgeny Karpov
 
 > Evgeny Karpov is a senior software engineer in Copenhagen, Denmark, working with .NET, DevOps, platform engineering and AI agent systems. He works freelance: fixed-price AI consulting for small businesses, and contract work in .NET, Azure DevOps and platform engineering. His client work includes technical SEO and visibility in AI assistants for the bar Vintønden in Frederiksberg. This is his site: a portfolio, his AI consulting offer with prices, a contact page, and a blog about getting software and AI systems to work in production. The site is in Danish, with English versions of the main pages and some posts.
@@ -20,7 +21,12 @@ Facts:
 - Role: {{ site.Params.schema.jobTitle }} (DevOps, platform engineering, .NET backend, AI-assisted engineering)
 - Location: Copenhagen, Denmark
 - Experience: 6+ years of professional software development; Azure DevOps, CI/CD, Kubernetes, Bicep, Terraform, observability
-- Services: freelance AI consulting for small businesses in Denmark at fixed prices in DKK (AI assessment, a first automation, ongoing help), in Danish or English, in Copenhagen or remote; contract work in .NET, Azure DevOps, CI/CD, infrastructure as code and platform engineering in Greater Copenhagen, hybrid or remote
+- Business: {{ site.Params.businessName }} v/ Evgeny Karpov, a Danish sole proprietorship, CVR {{ site.Params.cvr }} (https://datacvr.virk.dk/enhed/virksomhed/{{ site.Params.cvr }})
+- Previous work: twoday (DevOps and infrastructure for the Danish Working Environment Authority, Arbejdstilsynet), Visma Enterprise (payroll systems), MyPaperFlow (Azure, Kubernetes and SAP Business One integration), DCAB (public-sector .NET register system)
+- Services: freelance AI consulting for small businesses in Denmark (fixed prices for the AI assessment and a first automation, hourly for ongoing help), in Danish or English, in Copenhagen or remote; contract work in .NET, Azure DevOps, CI/CD, infrastructure as code and platform engineering in Greater Copenhagen, hybrid or remote
+{{- with $en.GetPage "/ai-raadgivning" }}
+- AI consulting prices (DKK, excluding VAT, for agreements made on or before 31 March 2027): {{ range $i, $o := .Params.offers }}{{ if $i }}; {{ end }}{{ $o.name }} {{ with $o.minPrice }}{{ . }}–{{ $o.maxPrice }}{{ else }}{{ $o.price }}{{ end }}{{ if $o.unitCode }} per hour{{ end }}{{ end }}. No commission from AI providers; a data processing agreement is signed before any access to personal data.
+{{- end }}
 - Languages: Danish, English, Russian
 - Contact: {{ site.Params.contactEmail }}{{ with $da.GetPage "/kontakt" }} ({{ .Permalink }}){{ end }}
 - Profiles: {{ delimit site.Params.schema.sameAs ", " }}
@@ -53,12 +59,12 @@ Facts:
 
 ## Posts (Danish)
 {{ range $ownPosts.ByDate.Reverse }}
-- [{{ .Title }}]({{ .Permalink }}) ({{ .Date.Format "2006-01-02" }}): {{ .Description | default .Summary | plainify | htmlUnescape }}
+- [{{ .Title }}]({{ .Permalink }}) ({{ .Date.Format "2006-01-02" }}): {{ .Description | default .Summary | plainify | htmlUnescape }}{{ if eq .Params.authorship "legacy-ai-drafted" }} (AI-drafted from the author's prompts and notes){{ end }}
 {{- end }}
 
 ## Posts (English)
-{{ range (where $en.RegularPages "Section" "posts").ByDate.Reverse }}
-- [{{ .Title }}]({{ .Permalink }}) ({{ .Date.Format "2006-01-02" }}): {{ .Description | default .Summary | plainify | htmlUnescape }}
+{{ range (where (where $en.RegularPages "Section" "posts") "Params.hideFromHome" "!=" true).ByDate.Reverse }}
+- [{{ .Title }}]({{ .Permalink }}) ({{ .Date.Format "2006-01-02" }}): {{ .Description | default .Summary | plainify | htmlUnescape }}{{ if eq .Params.authorship "legacy-ai-drafted" }} (AI-drafted from the author's prompts and notes){{ end }}
 {{- end }}
 
 ## Weekly AI research digest (Danish, AI-assembled)

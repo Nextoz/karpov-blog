@@ -1,19 +1,41 @@
 ---
-title: "DevOps, Platform Engineering og .NET Portfolio"
-description: "Portfolio for Evgeny Karpov: Azure DevOps, .NET, Kubernetes, CI/CD, observability, platform engineering, offentlig IT og AI-assisteret softwareudvikling."
+title: "Projekter og erfaring"
+seoTitle: "DevOps, platform engineering og .NET: projekter og erfaring | Evgeny Karpov"
+description: "Kundeprojekter, kontraktopgaver og de systemer, jeg selv bygger og bruger: .NET, Azure DevOps, Kubernetes, observability og AI-agenter."
 summary: "Udvalgte projekter og erfaringer inden for DevOps, platform engineering, .NET backend, cloud, CI/CD, observability og AI-assisteret softwareudvikling."
 translationKey: "portfolio"
 schemaType: "portfolio"
-lastmod: 2026-11-16
+lastmod: 2026-11-19
 hidemeta: true
 ShowReadingTime: false
 ShowShareButtons: false
 ShowWordCount: false
 ---
 
-Jeg er senior software engineer og freelance-konsulent med en stærk .NET/backend-baggrund og et nyere fokus på DevOps, platform engineering, CI/CD, infrastruktur, observability og produktionstroubleshooting.
+Jeg hjælper teams med .NET, Azure DevOps og cloud-infrastruktur, og mindre virksomheder med AI.
 
-Min professionelle profil ligger i krydsfeltet mellem softwareudvikling og drift: jeg forstår både applikationskode, pipelines, cloud-infrastruktur, deployments, miljøer og de praktiske problemer, der opstår, når systemer skal fungere i produktion.
+## Kontraktopgaver {#kontraktopgaver}
+
+Jeg tager freelance- og kontraktopgaver i Storkøbenhavn, hybrid eller remote. For [Arbejdstilsynet](#arbejdstilsynet) (via twoday) var jeg med til at etablere et nyt testmiljø og forbedrede CI/CD-pipelines. På [MyPaperFlow](#mypaperflow) forbedrede jeg autoskaleringen med KEDA og Azure Service Bus.
+
+Typiske opgaver:
+
+- Bygge og forbedre CI/CD-pipelines og release-flows i Azure DevOps
+- Infrastructure as code med Bicep eller Terraform, så miljøer kan genskabes
+- Deployments, autoskalering og fejlsøgning med Docker, Kubernetes og Helm
+- .NET-backend: nye features, opgraderinger og legacy, der skal holdes kørende
+- Logs, metrics og tracing, så fejl bliver opdaget, før brugerne opdager dem
+- Sikkerhed i leverancen: sårbare afhængigheder, secrets og adgang uden langlivede nøgler
+
+<div class="contact-cta">
+
+**Har du en opgave?** Skriv til [evgeny@karpov.dk](mailto:evgeny@karpov.dk) eller på LinkedIn. Jeg hjælper også mindre virksomheder med at få AI i brug: se [AI-rådgivning og priser](/ai-raadgivning/).
+
+{{< contact-button subject="Kontraktopgave" label="Skriv om en opgave" >}}
+
+</div>
+
+---
 
 ## Projekter
 
@@ -40,6 +62,7 @@ Vintønden er en bar på Frederiksberg, som jeg løbende løser opgaver for. Jeg
 
 ### Mit bidrag
 
+- Rettede bordbookingen på hjemmesiden
 - Structured data til baren, events og ofte stillede spørgsmål
 - Sider på dansk, engelsk og spansk med korrekt hreflang
 - Oprydning i metadata og sitemap, verificeret mod det offentlige site
@@ -52,7 +75,7 @@ Projektet viser, at jeg kan omsætte teknisk analyse til konkrete ændringer i p
 
 ---
 
-## twoday / Arbejdstilsynet — DevOps og Infrastruktur
+## twoday / Arbejdstilsynet — DevOps og Infrastruktur {#arbejdstilsynet}
 
 **Område:** DevOps, infrastruktur, CI/CD, observability, offentlig IT  
 **Teknologier:** Azure DevOps, Azure, Bicep, PowerShell DSC, IIS, OpenTelemetry, OpenSearch, C#/.NET
@@ -73,7 +96,7 @@ Erfaringen viser, at jeg kan arbejde i enterprise- og offentlig IT, hvor stabili
 
 ---
 
-## MyPaperFlow — Cloud DevOps, Kubernetes og SAP-integration
+## MyPaperFlow — Cloud DevOps, Kubernetes og SAP-integration {#mypaperflow}
 
 **Område:** DevOps, cloud-infrastruktur, dokumentautomatisering, SAP-integration  
 **Teknologier:** Azure DevOps, Docker, Kubernetes, Helm, KEDA, Azure Service Bus, Azure, Bicep, Terraform, PostgreSQL, .NET
@@ -90,7 +113,7 @@ MyPaperFlow var en cloud-baseret dokument- og fakturaplatform med integration ti
 
 ### Hvorfor det er relevant
 
-Projektet viser praktisk DevOps-erfaring med rigtige cloud-systemer. Ikke kun YAML, men arbejdet med at bygge, deploye, skalere og drifte services i rigtige miljøer.
+Projektet viser praktisk DevOps-erfaring med rigtige cloud-systemer: mere end YAML, nemlig arbejdet med at bygge, deploye, skalere og drifte services i rigtige miljøer.
 
 ---
 
@@ -211,27 +234,3 @@ Jeg er ikke sikkerhedsspecialist, men jeg arbejder med sikkerhed som en del af l
 - **Review med sikkerhedsbriller:** I et review af en infrastruktur-PR fandt jeg et personal access token, der var lækket gennem deployment-historikken.
 - **AI-agenter:** I mine egne agentsystemer er websider og tool-output data, aldrig instruktioner. Eksterne skrivninger, secrets, destruktive Git-kommandoer og deployments til produktion kræver min udtrykkelige godkendelse.
 - **Fællesskab:** Jeg har deltaget i OWASP Copenhagen i 2025 og 2026.
-
----
-
-## Kontraktopgaver {#kontraktopgaver}
-
-Jeg tager freelance- og kontraktopgaver i Storkøbenhavn, hybrid eller remote. Jeg er stærkest, hvor backendudvikling, DevOps og platformarbejde mødes.
-
-Jeg kan bidrage som:
-
-- DevOps Engineer
-- Platform Engineer
-- Site Reliability Engineer
-- Backend Developer med DevOps/platform-ansvar
-- .NET Engineer tæt på infrastruktur og delivery
-
-Min værdi er, at jeg både forstår applikationskode og de systemer, der skal bygge, deploye, monitorere og drifte den.
-
-<div class="contact-cta">
-
-**Har du en opgave?** Skriv til [evgeny@karpov.dk](mailto:evgeny@karpov.dk) eller på LinkedIn. Jeg hjælper også mindre virksomheder med at få AI i brug: se [AI-rådgivning og priser](/ai-raadgivning/).
-
-{{< contact-button subject="Kontraktopgave" label="Skriv om en opgave" >}}
-
-</div>

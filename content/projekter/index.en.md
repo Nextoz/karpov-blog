@@ -1,10 +1,11 @@
 ---
-title: "DevOps, Platform Engineering and .NET Portfolio"
-description: "Portfolio for Evgeny Karpov: Azure DevOps, .NET, Kubernetes, CI/CD, observability, platform engineering, public-sector IT and AI-assisted software development."
+title: "Projects and experience"
+seoTitle: "DevOps, platform engineering and .NET: projects and experience | Evgeny Karpov"
+description: "Client projects, contract work and the systems I build and use myself: .NET, Azure DevOps, Kubernetes, observability and AI agents."
 summary: "Selected experience across DevOps, platform engineering, .NET backend, cloud, CI/CD, observability and AI-assisted software development."
 translationKey: "portfolio"
 schemaType: "portfolio"
-lastmod: 2026-11-16
+lastmod: 2026-11-19
 url: "/en/projects/"
 hidemeta: true
 ShowReadingTime: false
@@ -12,9 +13,30 @@ ShowShareButtons: false
 ShowWordCount: false
 ---
 
-I am a senior software engineer and freelance consultant with a strong .NET/backend background and a growing focus on DevOps, platform engineering, CI/CD, infrastructure, observability and production troubleshooting.
+I help teams with .NET, Azure DevOps and cloud infrastructure, and small businesses with AI.
 
-My professional profile sits between software development and operations: I understand application code, pipelines, cloud infrastructure, deployments, environments and the practical problems that appear when systems need to work reliably in production.
+## Contract work {#contract-work}
+
+I take freelance and contract work in Greater Copenhagen, hybrid or remote. For [the Danish Working Environment Authority](#arbejdstilsynet) (through twoday), I helped set up a new test environment and improved CI/CD pipelines. At [MyPaperFlow](#mypaperflow), I improved autoscaling with KEDA and Azure Service Bus.
+
+Typical tasks:
+
+- Building and improving CI/CD pipelines and release flows in Azure DevOps
+- Infrastructure as code with Bicep or Terraform, so environments can be recreated
+- Deployments, autoscaling and troubleshooting with Docker, Kubernetes and Helm
+- .NET backend: new features, upgrades and legacy code that has to keep running
+- Logs, metrics and tracing, so problems are caught before users notice them
+- Security in delivery: vulnerable dependencies, secrets and access without long-lived keys
+
+<div class="contact-cta">
+
+**Do you have a project?** Write to [evgeny@karpov.dk](mailto:evgeny@karpov.dk) or on LinkedIn. I also help small businesses put AI to work: see [AI consulting and prices](/en/ai-consulting/).
+
+{{< contact-button subject="Contract work" label="Write about a project" >}}
+
+</div>
+
+---
 
 ## Projects
 
@@ -42,6 +64,7 @@ Vintønden is a bar in Frederiksberg that I do ongoing work for. I work directly
 
 #### My contribution
 
+- Fixed the website's table-booking flow
 - Structured data for the bar, its events and frequently asked questions
 - Pages in Danish, English and Spanish with correct hreflang
 - Metadata and sitemap clean-up, verified against the public site
@@ -52,7 +75,7 @@ Vintønden is a bar in Frederiksberg that I do ongoing work for. I work directly
 
 The project shows that I can turn technical analysis into concrete changes in production for a real local business, and that I can work directly with a client without a team around me.
 
-### twoday / Arbejdstilsynet — DevOps and Infrastructure
+### twoday / Arbejdstilsynet — DevOps and Infrastructure {#arbejdstilsynet}
 
 **Area:** DevOps, infrastructure, CI/CD, observability, public-sector IT
 
@@ -72,7 +95,7 @@ At twoday, I worked as a DevOps and infrastructure consultant for Arbejdstilsyne
 
 This experience shows my ability to work in an enterprise/public-sector environment where stability, documentation, controlled deployments and operational understanding matter.
 
-### MyPaperFlow — Cloud DevOps, Kubernetes and SAP integration
+### MyPaperFlow — Cloud DevOps, Kubernetes and SAP integration {#mypaperflow}
 
 **Area:** DevOps, cloud infrastructure, document automation, SAP integration
 
@@ -203,25 +226,3 @@ I am not a security specialist, but I treat security as part of the delivery:
 - **Reviewing with security in mind:** In a review of an infrastructure pull request, I found a personal access token that had leaked through the deployment history.
 - **AI agents:** In my own agent systems, web pages and tool output are data, never instructions. External writes, secrets, destructive Git commands and production deployments need my explicit approval.
 - **Community:** I attended OWASP Copenhagen in 2025 and 2026.
-
-## Contract work {#contract-work}
-
-I take freelance and contract work in Greater Copenhagen, hybrid or remote. I am strongest where backend development, DevOps and platform work meet.
-
-I can contribute as:
-
-- DevOps Engineer
-- Platform Engineer
-- Site Reliability Engineer
-- Backend Developer with DevOps/platform responsibility
-- .NET Engineer close to infrastructure and delivery
-
-My value is that I understand both application code and the systems that build, deploy, monitor and operate it.
-
-<div class="contact-cta">
-
-**Do you have a project?** Write to [evgeny@karpov.dk](mailto:evgeny@karpov.dk) or on LinkedIn. I also help small businesses put AI to work: see [AI consulting and prices](/en/ai-consulting/).
-
-{{< contact-button subject="Contract work" label="Write about a project" >}}
-
-</div>

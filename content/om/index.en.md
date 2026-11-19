@@ -1,7 +1,8 @@
 ---
 title: "About Evgeny Karpov"
-description: "About Evgeny Karpov, senior software engineer in Copenhagen working with .NET, DevOps, Azure DevOps, Kubernetes, CI/CD and AI-assisted software development."
-lastmod: 2026-11-16
+seoTitle: "About Evgeny Karpov: freelance .NET, DevOps and AI consultant in Copenhagen"
+description: "Senior software engineer and freelance consultant in Copenhagen. I run Karpov Consulting and work with .NET, DevOps, Azure and AI automation."
+lastmod: 2026-11-19
 showtoc: false
 summary: "Senior software engineer based in Copenhagen with experience across .NET, DevOps, Azure DevOps, infrastructure and platform engineering."
 translationKey: "about"
@@ -15,9 +16,15 @@ ShowWordCount: false
 
 <img class="about-portrait" src="/images/profile.png" alt="Evgeny Karpov" width="230" height="230">
 
-I am **Evgeny Karpov**, a senior software engineer and freelance consultant based in Copenhagen, working across .NET backend development, DevOps, CI/CD, infrastructure and platform engineering.
+I am **Evgeny Karpov**. I work across .NET backend development, DevOps, CI/CD, infrastructure, platform engineering and AI automation.
 
 My background is in software development, but over time I have moved closer to the full delivery chain: how systems are built, deployed, configured, monitored and kept stable in real environments.
+
+## Experience
+
+I have worked with .NET, DevOps and operations at twoday (for the Danish Working Environment Authority), Visma Enterprise (payroll systems), MyPaperFlow (cloud and Kubernetes) and on the public-sector register system DCAB. Since November 2026 I have run my own business, Karpov Consulting (Danish CVR 44583445). See [projects and experience](/en/projects/).
+
+As an adviser I am independent: I receive no commission, referral fee or reseller margin from AI providers, and I do not sell licences.
 
 I like work where I can combine structured engineering with practical troubleshooting. I am especially interested in Azure DevOps, Kubernetes, infrastructure as code, observability and systems that are complex enough to require real technical ownership.
 

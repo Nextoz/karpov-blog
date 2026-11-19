@@ -77,8 +77,8 @@ The word *vault* comes from my Obsidian vault: a folder of notes written in Mark
 Here is the overall architecture:
 
 <figure class="vc-diagram">
-<img src="/images/vault-companion/architecture-en.svg" alt="The mobile app communicates through a protected API with a versioned vault on GitHub. Desktop sync connects it to local notes, Obsidian and scouts. Scouts can call AI models." width="900" height="740" loading="lazy">
-<figcaption>Simplified architecture. Arrows represent data connections, not a promise of instant synchronisation. The app source code and the private vault are separate things.</figcaption>
+<a href="/images/vault-companion/architecture-en.svg"><img src="/images/vault-companion/architecture-en.svg" alt="The mobile app communicates through a protected API with a versioned vault on GitHub. Desktop sync connects it to local notes, Obsidian and scouts. Scouts can call AI models." width="900" height="740" loading="lazy"></a>
+<figcaption>Simplified architecture. Arrows represent data connections, not a promise of instant synchronisation. The app source code and the private vault are separate things. <a href="/images/vault-companion/architecture-en.svg">Open the full-size diagram</a>.</figcaption>
 </figure>
 
 The frontend is a React app built with Vite and can run as a PWA: a web app that can also be installed on a phone. The API uses Hono on a Cloudflare Worker, protected by Cloudflare Access. Git versions the notes, while synchronisation connects GitHub to my local vault.

@@ -61,6 +61,8 @@
   var toggle = document.querySelector('.menu-toggle');
   var menu = document.getElementById('menu');
   if (!toggle || !menu) return;
+  /* Without this class (no JavaScript) the phone menu stays visible and the toggle stays hidden. */
+  document.documentElement.classList.add('has-menu-js');
 
   function closeMenu() {
     toggle.setAttribute('aria-expanded', 'false');
@@ -74,7 +76,7 @@
   });
 
   document.addEventListener('keydown', function (event) {
-    if (event.key === 'Escape') {
+    if (event.key === 'Escape' && menu.classList.contains('is-open')) {
       closeMenu();
       toggle.focus();
     }

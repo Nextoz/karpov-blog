@@ -1,5 +1,5 @@
 ---
-title: "Ugens research: Når retrieval og coding agents møder den virkelige kontekst"
+title: "Ugens AI-forskning: Når retrieval og coding agents møder den virkelige kontekst"
 date: 2026-10-25T00:00:00+02:00
 lastmod: 2026-10-25T00:00:00+02:00
 slug: "ugens-ai-research-2026-10-25"

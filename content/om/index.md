@@ -1,8 +1,9 @@
 ---
 title: "Om Evgeny Karpov"
-description: "Om Evgeny Karpov, senior software engineer i København med erfaring i .NET, DevOps, Azure DevOps, Kubernetes, CI/CD og AI-assisteret softwareudvikling."
+seoTitle: "Om Evgeny Karpov: freelance .NET-, DevOps- og AI-konsulent i København"
+description: "Senior software engineer og freelance-konsulent i København. Jeg driver Karpov Consulting og arbejder med .NET, DevOps, Azure og AI-automatisering."
 profilePage: true
-lastmod: 2026-11-16
+lastmod: 2026-11-19
 translationKey: "about"
 hidemeta: true
 ShowReadingTime: false
@@ -11,9 +12,15 @@ showtoc: false
 
 <img class="about-portrait" src="/images/profile.png" alt="Evgeny Karpov" width="230" height="230">
 
-Jeg hedder **Evgeny Karpov** og er senior software engineer og freelance-konsulent i København. Jeg arbejder med softwareudvikling, DevOps og platform engineering.
+Jeg hedder **Evgeny Karpov** og arbejder med softwareudvikling, DevOps, platform engineering og AI-automatisering.
 
-Min styrke ligger i krydsfeltet mellem backend-udvikling og driftbar software: jeg forstår både applikationskode, pipelines, cloud-infrastruktur, deployments og de praktiske problemer, der opstår, når systemer skal fungere i rigtige miljøer.
+Jeg er stærkest, hvor backend-kode og drift mødes: applikationskode, pipelines, cloud-infrastruktur og de problemer, der først viser sig, når systemet kører.
+
+## Erfaring
+
+Jeg har arbejdet med .NET, DevOps og drift hos twoday (for Arbejdstilsynet), Visma Enterprise (lønsystemer), MyPaperFlow (cloud og Kubernetes) og på det offentlige registersystem DCAB. Siden november 2026 driver jeg mit eget firma, Karpov Consulting (CVR 44583445). Se [projekter og erfaring](/projekter/).
+
+Som rådgiver er jeg uafhængig: Jeg får ingen provision, henvisningsgebyr eller avance fra AI-leverandører og sælger ikke licenser.
 
 ---
 
@@ -52,7 +59,7 @@ Jeg hjælper også mindre virksomheder med at få AI i brug. Se [AI-rådgivning 
 
 ## Min tilgang
 
-Jeg tror på klare systemer, god dokumentation og praktisk automatisering. DevOps handler for mig ikke kun om tools, men om at gøre det lettere for udviklere at bygge, teste, deploye og forstå deres software.
+Jeg tror på klare systemer, god dokumentation og praktisk automatisering. For mig handler DevOps mindre om værktøjer og mere om at gøre det lettere for udviklere at bygge, teste, deploye og forstå deres software.
 
 Jeg arbejder bedst, når jeg kan kombinere teknisk fordybelse med konkret forbedring: færre manuelle processer, mere synlig drift, bedre pipelines og mere robuste leverancer.
 

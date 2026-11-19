@@ -77,8 +77,8 @@ Ordet *vault* kommer fra min Obsidian-vault: en mappe med noter i Markdown, et e
 Den overordnede arkitektur ser sådan ud:
 
 <figure class="vc-diagram">
-<img src="/images/vault-companion/architecture-da.svg" alt="Mobilappen kommunikerer gennem en beskyttet API med en versionsstyret vault på GitHub. Desktop-synkronisering forbinder den med lokale noter, Obsidian og scouts. Scouts kan kalde AI-modeller." width="900" height="740" loading="lazy">
-<figcaption>Forenklet arkitektur. Pilene viser dataforbindelser, ikke en garanti for øjeblikkelig synkronisering. Appens kildekode og den private vault er forskellige ting.</figcaption>
+<a href="/images/vault-companion/architecture-da.svg"><img src="/images/vault-companion/architecture-da.svg" alt="Mobilappen kommunikerer gennem en beskyttet API med en versionsstyret vault på GitHub. Desktop-synkronisering forbinder den med lokale noter, Obsidian og scouts. Scouts kan kalde AI-modeller." width="900" height="740" loading="lazy"></a>
+<figcaption>Forenklet arkitektur. Pilene viser dataforbindelser, ikke en garanti for øjeblikkelig synkronisering. Appens kildekode og den private vault er forskellige ting. <a href="/images/vault-companion/architecture-da.svg">Åbn diagrammet i fuld størrelse</a>.</figcaption>
 </figure>
 
 Frontend er en React-app bygget med Vite og kan bruges som en PWA — en webapp, der også kan installeres på telefonen. API'et er bygget med Hono på en Cloudflare Worker og beskyttet med Cloudflare Access. Noterne versionsstyres med Git, mens synkronisering forbinder GitHub med min lokale vault.

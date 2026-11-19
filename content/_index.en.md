@@ -1,6 +1,6 @@
 ---
 title: "Evgeny Karpov"
-description: "Evgeny Karpov, senior software engineer in Copenhagen: blog and portfolio on DevOps, .NET, cloud and AI systems in production, and AI consulting for small businesses."
+description: "Freelance AI and DevOps consultant in Copenhagen. AI assessments for small businesses from DKK 4,500, and .NET and Azure DevOps contract work."
 summary: "Notes about software engineering, DevOps, .NET, cloud and AI systems in production."
 translationKey: "home"
 hidemeta: true
